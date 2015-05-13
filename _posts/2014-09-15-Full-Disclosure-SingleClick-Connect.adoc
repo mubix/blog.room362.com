@@ -1,12 +1,5 @@
----
-layout: post
-title: Full Disclosure - SingleClick Connect
-date: 2014-09-15 11:26:38 -0400
-comments: true
-categories: 
-- full disclosure
-- singleclick
----
+= Full Disclosure - SingleClick Connect
+:hp-tags: full disclosure, singleclick
 
 **Update**: I originally posted this to the Full Disclosure mailing list but for some reason it wasn't accepted via the moderator so I'm posting it here. First, so that the information does get out there, and second to see if anyone knows why it may have been rejected.
 
