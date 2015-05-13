@@ -1,4 +1,5 @@
-# 2015 ShmooCon Hiring
+= 2015 ShmooCon Hiring
+:hp-tags: shmoocon, community
 
 It's often tough from both hiring and job hunters to find one another at conferences. I think this is mostly because of a couple things.
 
