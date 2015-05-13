@@ -5,24 +5,22 @@ A while back I needed to set up a pfSense box for CTF/example stuff that didn't 
 
 Once I figured it out at that time, I made a Forum post so that anyone running into the same issue wouldn't have to struggle as much:
 
-[https://forum.pfsense.org/index.php?topic=55504.0](https://forum.pfsense.org/index.php?topic=55504.0)
+https://forum.pfsense.org/index.php?topic=55504.0
 
 Most things never disappear from the Internet but I was looking for an old forum post I had bookmarked regarding some persistence methods that I noticed was no longer there since the forum owner had gotten rid of the forum as too much hassle. I get it, but when I went to Archive.org to get saved they didn't have a copy. So this is what this post is for, to save that content just in case it disappears.
 
 Also, here is a bug report for the "issue" (been open since 2012):
 
-* [http://redmine.pfsense.org/issues/2586](http://redmine.pfsense.org/issues/2586)
+* http://redmine.pfsense.org/issues/2586
 
 
 ---
 
-If you are following:
-
-* [http://doc.pfsense.org/index.php/Creating_Your_Own_Package_Repository](http://doc.pfsense.org/index.php/Creating_Your_Own_Package_Repository)
+If you are following: http://doc.pfsense.org/index.php/Creating_Your_Own_Package_Repository
 
 and you are getting:
 
-> Unable to communicate with 192.168.1.100 Please verify DNS and interface configuration, and that pfSense has functional Internet connectivity.
+WARNING: Unable to communicate with 192.168.1.100 Please verify DNS and interface configuration, and that pfSense has functional Internet connectivity.
 
 because you are using the repo to enable a offline (non internet connected) host to be able to utilize packages all you have to do is:
 
