@@ -1,10 +1,5 @@
----
-layout: post
-title: "pfSense without Internets"
-date: 2015-02-17 12:11:28 -0500
-comments: true
-categories: 
----
+# pfSense without Internets
+
 
 A while back I needed to set up a pfSense box for CTF/example stuff that didn't and wouldn't ever have Internet connectivity. Doesn't seem like much of a task right? Just pop it in and go. Problem is that you loose the use of the packages that help make pfSense so awesome.
 
