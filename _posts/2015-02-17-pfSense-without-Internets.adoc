@@ -12,9 +12,7 @@ Most things never disappear from the Internet but I was looking for an old forum
 
 Also, here is a bug report for the "issue" (been open since 2012): http://redmine.pfsense.org/issues/2586
 
-If you are following: http://doc.pfsense.org/index.php/Creating_Your_Own_Package_Repository
-
-and you are getting:
+If you are following: http://doc.pfsense.org/index.php/Creating_Your_Own_Package_Repository and you are getting:
 
 WARNING: Unable to communicate with 192.168.1.100 Please verify DNS and interface configuration, and that pfSense has functional Internet connectivity.
 
