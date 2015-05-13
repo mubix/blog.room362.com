@@ -1,7 +1,7 @@
 = Effective NTLM / SMB Relaying
 :hp-tags: zackattack, smbrelay, youtube, responder
 
-[SMB Relay](http://en.wikipedia.org/wiki/SMBRelay) has been around for a long while. I even have a post about using it along with LNK files here: [MS08-068 + MS10-046 = Fun until 2018](/blog/2012/02/11/ms08_068-ms10_046-fun-until-2018/)
+http://en.wikipedia.org/wiki/SMBRelay[SMB Relay] has been around for a long while. I even have a post about using it along with LNK files here: [MS08-068 + MS10-046 = Fun until 2018](/blog/2012/02/11/ms08_068-ms10_046-fun-until-2018/)
 
 Here is the problem though. Most of the tools to exploit it either catch the authentication in NTLMv2/NTLMv1 (which is not always easy to crack) or assume administrative access (because they attempt to PSEXEC with the incoming session). Well, since MS08-068 thats much harder to pin down. You have to know who is going to hit your relay server and what other location they might be an admin on. You also have to a service you want to run on that target.
 
@@ -10,11 +10,11 @@ Here is the problem though. Most of the tools to exploit it either catch the aut
   * http://www.xfocus.net/articles/200305/smbrelay.html[SMBRelay]
   * http://www.tarasco.org/security/smbrelay/[SMBRelay3]
   * https://github.com/SpiderLabs/Responder[SpiderLabs Responder]
-  * [SMBRelayX in Impacket](http://corelabs.coresecurity.com/index.php?module=Wiki&action=view&type=tool&name=Impacket)
-  * [HTTP NTLM Relay Metasploit Module](https://github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/server/http_ntlmrelay.rb)
-  * [SMB Relay PSExec Metasploit Module](https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/windows/smb/smb_relay.rb)
-  * [Oracle SMB Relay Metasploit Module](https://github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/admin/oracle/ora_ntlm_stealer.rb)
-  * [SAP SMB Relay Metasploit Module](https://github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/scanner/sap/sap_smb_relay.rb)
+  * http://corelabs.coresecurity.com/index.php?module=Wiki&action=view&type=tool&name=Impacket[SMBRelayX in Impacket]
+  * https://github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/server/http_ntlmrelay.rb[HTTP NTLM Relay Metasploit Module]
+  * https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/windows/smb/smb_relay.rb[SMB Relay PSExec Metasploit Module]
+  * https://github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/admin/oracle/ora_ntlm_stealer.rb[Oracle SMB Relay Metasploit Module]
+  * https://github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/scanner/sap/sap_smb_relay.rb[SAP SMB Relay Metasploit Module]
 
 ### "Soft" relay tools:
 
