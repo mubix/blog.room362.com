@@ -1,0 +1,21 @@
+---
+author: mubix
+comments: true
+date: 2009-08-12 15:30:16+00:00
+layout: post
+title: Applied Network Security Density
+categories:
+- rant
+---
+
+I recently visited Tokyo, Japan. Just as always, my curiosity got the best of me and I started to calculate the population density of the buildings where I was staying. Giving fudge factor of non-populated apartments, I estimated 8,500 families in twelve 15 story buildings, living in a 1.5 mile square piece of land.That's CRAZY. Mass transit and unrestricted modes of transit are not a whim, they are a requirement. I bet you're asking how this applies to security, or for that matter computers at all. It doesn't. But one of it's effects does.  
+  
+As an effect of this density, the Mom & Pap stores businesses flourish. In it's density, the "big iron" is just too inconvenient, it doesn't work. I used the reference for a reason. It was my own mental bridge between the "real" and security world (anyone who denies the difference is confused, and/or just left DefCon).  
+  
+What is the "Big Iron" in the security world? Central management, Correlation, and other ways of supposedly spending "less" on security by having less points of failure. So this is where I stray from the path. I think that networks need to mimic their worldly equivalent. Large organizations need to take an page from Tokyo and decentralize. Yes, it's hard getting 'good' people, and trust is not something we easily come by in this industry, but from an offensive point of view, centralization just means a bigger payoff. Higher walls, maybe, but an 'easier' target to zero in on.  
+  
+So what does this mean? I eluded to it a bit in my previous paragraph, but what it means is more hands on. We need to train the 'security guards' of our network and put them at every location we have a grouping of nodes. The smaller the grouping of nodes the better. VLANs are not enough. I'm going to use the the dreaded "Defense in Depth" phrase: We need to make our defense in depth smaller, more compact. Make it to the point where you don't NEED "Big Iron" because you have such small perimeters that open source stuff on an old *nix box would work just fine. Yes, that's a bit of an exaggeration but you get the point.  
+  
+Every city is different and unique, as is any network, and I am by no means saying that decentralization is for everyone. What I do think is that big organizations are getting too hung up on devices and one stop shops where they can set up a NOC and expect a number, however many, of people to be able to watch everything going on. Exactly the way that corporations lose touch with their employees because of their size, they are loosing touch with their network and how it works. How many places have you worked that they have a good diagram of nodes (not just subnets) on their network? Much less documentation on those nodes. How exactly are you supposed to centrally monitor something you have very little knowledge of? Will it take as many years as it did with personnel to reconnect with the life of the network? Probably, but I hope not.  
+  
+As always, I am open to debate and hearing about flaws in my logic, so please leave a comment and tell me what you think.

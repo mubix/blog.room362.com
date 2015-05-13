@@ -1,0 +1,41 @@
+---
+author: mubix
+comments: true
+date: 2011-06-26 17:47:23+00:00
+layout: post
+title: Metasploit Payloads Explained - Part 1a
+categories:
+- metasploit
+- payloads
+---
+
+In Part 1 I gave an example I used at CCDC with the single 'windows/download_exec'. One of the down sides of that payload is you need to host the binary, giving up an IP/host that can be blocked. Well, Google recently (a couple months ago) allowed people to upload 'anything' to Google docs. And you can then share these files publicly. Probably already see where I'm going with this, but here are some steps to get it going, first upload your malicious binary (not the dropper 'windows/download_exec', but the file it needs to execute). I assume you don't need a picture to find the upload button ;-)
+
+![](/images/postimages/201106_payloads1a_1.png)  
+  
+Next, go to Action -> Share -> Share and make it public:  
+
+![](/images/postimages/201106_payloads1a_2.png)  
+  
+You'll get a link that says docs.google.com / leaf?id= something:  
+
+![](/images/postimages/201106_payloads1a_3.png)  
+  
+Go to that link and copy the link that says 'Download'  
+
+You should have something like this:
+
+https://docs.google.com/uc?id=XXXXXXXX&export=download&hl=en_US
+
+Remove everything after the & and change https to http (download_exec can't talk SSL) so you have something that looks like:
+
+http://docs.google.com/uc?id=XXXXXXXX
+
+Now use that link in the URL option when you generate your 'windows/download_exec' binary and you should be good to go. You can still change your binary on the fly by right clicking the file in your Google Docs list and selecting "Add or manage revisions". Plus you get the added bonus of being virtually unblockable.
+
+One thing to be careful of is the download a 'leaf' link are still live if you put the files in the 'trash' on Google Docs, you need to empty the trash for them to be completely offline.
+
+Incident Responders, if you find something making these requests, switch the UC portion of the download back to 'leaf' and you can find out when it was uploaded, and have the ability to "Report Abusive Content" which if that account continues to do 'bad stuff' it will get looked into by Google.
+
+  
+

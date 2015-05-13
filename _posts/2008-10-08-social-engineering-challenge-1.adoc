@@ -1,0 +1,19 @@
+---
+author: mubix
+comments: true
+date: 2008-10-08 02:29:17+00:00
+layout: post
+title: 'Social Engineering Challenge #1'
+categories:
+- social engineering
+---
+
+Here is the scenerio:  
+  
+There is a line of government, and commerical workers that are in line for the bus. The bus is late, and everyone has had a long day of work. Your target is the first person in line. The line is 75 people long for a bus with a max occupancy of 35 people. Your target is the same sex as you and has headphones in their ears. You can use any prop item that would not look out of place in line for a bus with other commuters.  
+  
+Your goal is to sit next to your target in order to start a dialog. You do not need to be 1st, 2nd or even 3rd in line, but you do have to get on the bus with the least amount of suspicion raised. (That doesn’t rule out being flambouant)  
+  
+Comment your solutions with detail.  
+  
+_**EDIT: I will post how I was able to do it tomorrow. For all of these challenges I will publish the way I succeeded at 11:59 PM EST of the next day.**_

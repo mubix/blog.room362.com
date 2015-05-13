@@ -1,0 +1,38 @@
+---
+author: mubix
+comments: true
+date: 2012-09-06 03:16:47+00:00
+layout: post
+title: Completely In-memory Mimikatz with Metasploit
+categories:
+- metasploit
+- mimikatz
+---
+
+Executing WCE.exe in memory as demoed by Egypt here: [https://community.rapid7.com/community/metasploit/blog/2012/05/08/eternal-sunshine-of-the-spotless-ram](https://community.rapid7.com/community/metasploit/blog/2012/05/08/eternal-sunshine-of-the-spotless-ram) has two issues with it. 1, you leave a file on disk with your hashes and clear text passwords. That just won't do. 2. There is this DLL called WCEAUX.dll that gets written for the briefest second to disk:
+
+![](/images/postimages/201209_mimikatz_1.png)
+
+_(yes I realize I'm running this on disk 'wce32.exe', but it exhibits the same DLL drop when doing in-memory)_
+
+Now, don't get me wrong, I love WCE, and Hernan Ochoa does an amazing job with it, but when it comes down to it, it's the best tool for the job. And today, that's now Mimikatz. 
+
+Just like WCE to execute it in memory you use the -m flag for execute:
+
+`meterpreter> execute -H -i -c -m -d calc.exe -f mimikatz.exe -a '"sekurlsa::logonPasswords full" exit'`
+
+For mimikatz to automatically send commands require double quotes in the command line arguments, so we use single quotes in meterpreter to encircle the execute arguments (-a). Running first "sekurlsa::logonPasswords full" then 'exit' to auto-exit mimikatz console. Like so:
+
+![](/images/postimages/201209_mimikatz_2.png)
+
+And all you get forensically is calc.exe loading a ton of DLLs it has no business loading but no new files touch disk ;-)
+
+![](/images/postimages/201209_mimikatz_3.png)
+
+The downloads for Mimikatz are were they always are: [http://blog.gentilkiwi.com/mimikatz](http://blog.gentilkiwi.com/mimikatz)
+
+Oh, did I mention that Mimikatz is open source and the in-memory goodness has been uploaded to svn: [https://code.google.com/p/mimikatz/](https://code.google.com/p/mimikatz/)
+
+Awesome work [@gentilkiwi](http://twitter.com/gentilkiwi)
+
+If you want to check out the the fix that was implemented to work with Meterpreter's in-memory goodness check here: [https://code.google.com/p/mimikatz/source/detail?r=33](https://code.google.com/p/mimikatz/source/detail?r=33)

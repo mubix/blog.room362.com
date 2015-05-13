@@ -1,0 +1,23 @@
+---
+author: mubix
+comments: true
+date: 2008-06-17 13:17:16+00:00
+layout: post
+slug: 2008617crazed-bovine-traversal-html
+title: Crazed Bovine Traversal
+wordpress_id: 453
+categories:
+- Hacking
+tags:
+- Hacking
+---
+
+So I was at a ‘talk’ recently where the topic was geared toward technically inclined, but the whole talk was geared toward managers and low level IT bubbas, if you will. But as I sat there stabbing myself in the eye with my pencil (hence the mad cow reference) I can up with some hair brained ideas. Now, some of these ideas might already be out there or thought of, and I haven’t googled any of them, just wanted to write them down somewhere for people to comment on.  
+  
+1. **Ringtone viruses**: Now this was by no means an idea that I had but it was mentioned during the talk and I was intrigued how it worked or if the presenter just pulled it out of thin air. The reason I bring it up, other than for someone to explain it to me, but for reference later.  
+  
+2. **iPhone SDK based GPS hacking**: So here is an idea, with the new craze that the new cheaper iPhone is going to create, what is stopping the mal-ware writers from writing an cool app that you can download, and now since you are connected to “MobileMe” it sends all of you email, contacts, files, and calendars to a new source. Plus now that it syncs everywhere, you think you are syncing with the “cool” apps servers and what they are doing a completely new form of spyware. They have a gps location on you, read your email, and have all of your corporate documents that you sync to iDisk. Talk about a Social Engineer/Phishers dream.  
+  
+3. **Contact Phishing**: To keep going down the route we are already on, how often do you check to make sure that the phone number you have for “bank” is the correct number in your contacts list? What if someone using one of the previously mentioned avenues of attack, changed that number to another number and set up a Phishing 1800 line? Now, instead of having a browser to tell you that you are on the wrong server, you have to trust..... ? Exactly.  
+  
+So to completely derail this post off the Mobile Hacking topic. I am looking for a good reference on Unix/FreeBSD crypto. I have a friend that is completely convinced that even if someone has your /etc/shadow file, that you are not in any danger. Help me out guys, a link, and explanation, anything would work.

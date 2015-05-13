@@ -1,0 +1,60 @@
+---
+author: mubix
+comments: true
+date: 2011-11-02 03:06:18+00:00
+layout: post
+title: Run POST Modules On All Sessions
+categories:
+- metasploit
+- meterpreter
+- post modules
+---
+
+[Jcran](http://twitter.com/jcran) recently blogged about an easy way to run a post module on all sessions:
+
+[http://blog.pentestify.com/simple-framework-domain-token-scanner](http://blog.pentestify.com/simple-framework-domain-token-scanner)
+
+```ruby
+msf> use post/windows/gather/enum_domain_tokens
+msf enum_domain_tokens> irb
+framework.sessions.each do |session|
+  run_single("set SESSION #{session.first}")
+  run_single("run")
+  sleep 1
+end
+```
+
+You use the POST module, drop to IRB and run those 4 lines, and bam, you win. With resource files we can automate this a bit more and have it so that we do this effortlessly with any post module.
+
+Thinking back to [http://blog.metasploit.com/2010/03/automating-metasploit-console.html](http://blog.metasploit.com/2010/03/automating-metasploit-console.html) and my rapid file PSEXEC resource file, we know we can run ruby inside of resource files with the <ruby> tag.
+
+Save the following as runall.rc somewhere where you'll remember:
+
+```ruby 
+framework.sessions.each do |session|
+  run_single("set SESSION #{session.first}")
+  print_status("Running #{active_module.fullname} against session #{session.first}")
+  run_single("run")
+  sleep 1
+end
+```
+
+Then when you want to run a POST module against every session you have you simply do:
+
+```
+msf> use post/windows/gather/enum_domain_tokens
+msf enum_domain_tokens> resource runall.rc
+[*] Running post/windows/gather/enum_domain_tokens on session 1
+``` 
+**Update** on 2011-11-06 20:05 by Rob Fuller
+
+A commenter noticed an error in the coding for cross compatibility. The following should work better across versions:
+
+```ruby
+framework.sessions.each_key do |session|
+  run_single("set SESSION #{session}")
+  print_status("Running #{active_module.fullname} against session #{session}")
+  run_single("run")
+  sleep 1
+end
+```

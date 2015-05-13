@@ -1,0 +1,204 @@
+---
+author: mubix
+comments: true
+date: 2009-03-14 06:00:00+00:00
+layout: post
+title: Manager Training Camp - Bootcamp Style
+categories:
+- rant
+---
+
+![](/images/postimages/200903_manager_1.png)
+
+Last Friday (March 6th, 2009) I posed the question above. What I got in return was nothing short of amazing, and to tell you the truth, it amazed me how the tally rounded out. I categorized the answers and counted them up (MANAGERS, listen up!):
+
+
+1. (12 votes) - Security Fundamentals: This category involves the application of A/V, IDS/IPS, basic safe surfing techniques, least privilege use, and an understanding of phishing. It astounds me that this is at the top of the list. I grouped all of these answers together because they truly are the BASICS of Information Security. Why after all these years have managers of security professionals not gotten this drilled into them to the point of bleeding? What are we doing wrong?
+
+2. (8 votes) - Targeting: "We aren't a target", "There isn't anything on saying we are getting attacked". This is another that surprised me to be at the top of the list. How can managers not think that 1. that they are a target, and 2. think that because there aren't any alarms going off, they aren't getting attacked?
+
+3. (6 votes) - Passwords: Complexity, not using stickies, rotation, etc. I left this out of Security Fundamentals, because it's not an easy beast to over come. It's something that definitely needs to be addressed and a plan set down for the application, enforcement and technology behind it.
+
+4. (6 votes) - Compliance and Policy: Everyone in this category made it abundantly clear that compliance to a standard does NOT mean that you are secure, but not at least making the compliance bar is worse. Internal policies need to be created to provide a stricter regimen then the compliance checklist demonstrates.
+
+5. (5 votes) - Accountability: From basic user to CEO and Security Analyst. Accountability has many faces but it usually shows none of them in the security world. Users of the world learn quick when one of coworkers get restricted access because they clicked test phishing  after they had just gone through phishing training.
+
+6. (5 votes) - Defense In Depth: This is an old concept as well, but in recent years have been twisted to include DiD at host and network infrastructure level. The phrase Defense In Dept will continue to grow as the depths at which we can put protections on info systems grows. You need to realize that you ARE a target and you NEED to move with this evolution, not ignore it. Doing so doesn't make it "go away"
+
+7. (3 votes) - Users are stupid: I can't believe that this even made it as an item. Managers, you seriously don't understand that your weakest link on your network is the users?
+
+8. (2 votes) - Data Layer Protection: Encryption. Even if the client data is stored on a super "secure" data node, that doesn't mean somewhere between point A and point B isnt' compromised. If it's sensitive or secret, it needs to be treated as such at EVERY juncture where that data is transferred or can be accessed from.
+
+9. (2 votes) - Risk Management: Managers, this is supposedly your specialty. Get back to it, they want you to be open to understand technically why this or that isn't a threat.
+
+10. (1 vote) - Company buy-in: I am truly surprised this didn't make the top of the list. I personally think that company buy-in to security should precede the rest of the categories.
+
+This is simply a top 10 list of things we as Security Professionals want you to know. It would not be hard to create training in your organization around these 10 categories. If you are a manager or one of us, get it started, make the slides and start getting these topics nailed down.
+
+I have included the raw tweets from the poll so that you as managers can understand what your people want you to learn:
+
+lorddrachenblut
+> passwords dont go on post it notes
+
+taiyed
+> The importance of protecting client data with encryption.
+
+oneeyedcarmen
+> Compliance != Security
+
+clamasters - http://www.curtis-lamasters.com/
+> definitely not my quote but "If you can't measure it, you can't improve it" Put that into security terms and make sure he understands
+
+techsnax - http://techsnax.blogspot.com/
+> that security means more than just passwords!
+
+strcpy - http://strcpy.net/
+> that IDS is completely a flawed concept. Either that or firewalls are not an end-all solution for security. 
+
+tcrweb - http://tcrweb.wordpress.com/
+> That users are the weakest link, convenience and security don't always mesh well
+\_natron\_ - http://blog.invisibledenizen.org/
+>/s/boss/client, layered security
+
+armorguy - http://www.linkedin.com/in/martinjfisher
+> I'd be ecstatic if my boss understood defense in depth. "If we have A/V why do we need other endpoint products?"...
+
+andywillingham - http://andyitguy.blogspot.com/
+> Management has to quit exempting themselves from security policies or others won't buy into them
+
+iamnowonmai
+> Classifying data in containers. 	 
+
+multimode - http://www.chromedpork.net/
+> Risk Management - Identifing the $ risk and priorization of tasks based on that risk.
+
+l3d
+> defense in depth... But i don't have this issue, thank god.
+
+ilovegarick
+> I'd have all my co-workers understand not to open email attachments from unknown senders and not to forward them on either. 	 
+
+multimode -http://www.chromedpork.net/
+> And accuracy in the presentation of those risks to peer and upper management.
+
+mortman
+> but !compliant == !secure 	 
+
+ramblinpeck
+> Ill replace boss with clients, but actually understanding AND using a real least privilege model would be great step for everyone 	 
+
+DFrain - http://www.brinkmasterj.com/
+> @ Compliance as well!
+
+sintixerr - http://sintixerr.wordpress.com/
+> That security is only tangentially related to technology
+
+multimode - http://www.chromedpork.net/
+> Becuase an unsuccesful phishing email is often put way higher on the list then patching critical infrastructure.
+
+tnicholson - http://nicholsonsecurity.com/
+> That people (good/bad) are the weakest link regardless of policies or security related technology. Educate users about security!
+
+cyberhiker - http://howisthatassuranceevidence.blogspot.com/
+> The parts of infosec that make you secure are not the parts that are sexy or come from a vendor.
+
+post_break - http://iamthekiller.net/
+> The notion that forced password changes tend to be more of a security risk rather than a security method. (unless someone got fired)
+
+cloudchaos - http://www.cloudchaos.com/
+> the need for a good password/phrases that are changed regularly. | 
+
+Techdulla - http://techdulla.wordpress.com/
+> That threats (specifically web threats) do not discriminate based on the size of your organization.
+
+michaeldickey
+> Hard question, and worthy of a blog post. I'd say "You *will* have a security incident. Plan for it and plan to find it." 	 
+
+RonW123
+> "If you have responsibility for security, but have no authority, your role is to take the blame when something goes wrong" Spafford 	 
+
+tottenkoph
+> The importance of email and Internet use policies, they're usually overlooked by password policies. :/ 	 
+
+jaysonstreet - http://f0rb1dd3n.com/
+> Just because there is no perceptible change does not mean you are not being attacked. The better your security the less they notice.
+
+ChrisJohnRiley - http://www.c22.cc/
+> Security testing is all well and good, but not following through to fix the issues makes the process a pointless exercise.
+
+MarcoFigueroa - http://www.mafcorp.net/
+> I would make my boss understand that spending less than 1% of the total gross of the company income on Security is unacceptable.
+
+MarcoFigueroa - http://www.mafcorp.net/
+> This seems to be the norm, the ratio of percentage spent on security is always a huge difference in most companies.
+
+dgeorghiou
+> Security is only as good as the system's weakest link. 	 
+
+MarcoFigueroa - http://www.mafcorp.net/
+> @tnicholson We have a security awareness program. It makes them aware but they still get compromised. There excuse is I didn't know!
+
+ddahlen - http://www.poorboys.tv/
+> That even non-windows machines are vulnerable and targets for attack.
+
+timmedin
+> Getting rid of the "we will never be a target" mentality 	 
+
+slick0 - http://www.basenetradio.net/
+> The importance of having an antivirus/antispyware solution in the office. I wish I were joking.
+
+bug_bear
+> Antivirus is not a valid primary defense 	 
+
+lorddrachenblut
+> @slick0 and firewalls per machine 	 
+
+richardebaker
+> that one computer hooked to 2 networks is in fact a gigantic hole in the air gap security on a control net. 	 
+
+lbhuston - http://stateofsecurity.com/
+> One concept: That threats can be identified by transactions with non-real services, accounts and things. 
+
+CrucialCarl - http://www.dontpanictech.com/
+> (cool topic) my concept: Ignorance is not a valid defense and will not make you any less accountable.
+
+danphilpott - http://fismapedia.org/
+> One security concept: Never believe what a sales person says, always get independent analysis.
+
+lorddrachenblut
+> passwords dont go on post it notes 	 
+
+BrianWGray
+> the importance of PUBLISHED policies. 	 
+
+hmjgriffon
+> stop wrting your password on a sticky note on your monitor, and stop making it 123456 	 
+
+jodyfranklin - http://www.elder-n00b.org/
+> if you're still compiling the list how about long passwd != strong passwd
+
+JosephDawson - http://bitstop.ca/
+> get your client to understand one security concept fully... You can't add security after...
+
+curtw
+> within the context of the organization, I'd say the importance of executive representation and project approve/deny power. 	 
+ 
+Replies sent to CORE Security
+
+ben_p - http://www.thegeekzone.com/
+> @CoreSecurity I would love for him to understand that security needs a budget. We have a lot of good ideas but no dedicated resources
+
+ben_p - http://www.thegeekzone.com/
+> @CoreSecurity Actually, they get that but it's the people above them (with the checkbook) that need that realization.
+
+sonofshirt
+> @CoreSecurity That Red Teaming and auditing are not synonymous. 	 
+
+jason_nixon - http://jasonnixon.net/
+> @CoreSecurity Patch management is proactive requirement.
+
+spinzon - http://www.scottpinzon.com/
+> @CoreSecurity One security concept: that the threat is real. Too much security is done to a compliance checklist. Take it seriously, boss!
+
+steveshead
+> @CoreSecurity - that it only takes one 'mistake' to bring it all down!

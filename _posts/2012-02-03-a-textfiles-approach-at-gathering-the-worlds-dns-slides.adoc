@@ -1,0 +1,16 @@
+---
+author: mubix
+comments: true
+date: 2012-02-03 17:24:59+00:00
+layout: post
+title: A @textfiles approach at gathering the world's DNS - Slides
+categories:
+- presentations
+- cons
+- dns
+- deepmagic
+---
+
+This is my talk that I gave at ShmooCon 2012. It was a great honor to be given the chance to speak at ShmooCon as it has been my second home since 2006 (missed the first one... havent missed one since)
+
+<center><iframe src="http://www.slideshare.net/slideshow/embed_code/11406011" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/mubix/a-textfiles-approach-to-gathering-the-worlds-dns" title="A @textfiles approach to gathering the world&#x27;s DNS" target="_blank">A @textfiles approach to gathering the world&#x27;s DNS</a> </strong> from <strong><a href="http://www.slideshare.net/mubix" target="_blank">Rob Fuller</a></strong> </div></center>

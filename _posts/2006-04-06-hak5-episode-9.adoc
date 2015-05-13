@@ -1,0 +1,18 @@
+---
+author: mubix
+comments: true
+date: 2006-04-06 06:24:17+00:00
+layout: post
+title: Hak.5 Episode 9
+categories:
+- hak5
+- usb
+- podcasts
+---
+
+Ok, so I am a little late on posting. Been kinda busy with my new son, work, and everything in between (mainly IRC). The reason I am posting about this episode is because I was welcomed onto the show as a Guest. If you have already seen it. Yes, I was nervous and Yes, I am ugly. Get it? Got it? Good. Ok, well I did a segment on applications that conviently fit onto a USB flash drive. Now, I only showed 4 on the show, my favorites. However there are about 32 applications that I would like to share. Which brings me to my second shout out to all the viewers: Yes, I have the complete list, Yes, it is publicly available, and NO I will not send, email, or IM you the link until the 10th. The reason for this is I was welcomed on the show as a guest as I said before and I respect their way of doing things, so I will retain the knowledge of the link until the rest of the show notes are released.  
+  
+Oh by the way, if you don’t know about Hak.5, go to [http://www.hak5.org/](http://www.hak5.org) and click on Episodes, you will see multiple links to many different ways to download the episodes.  
+  
+**You can find the list of USB applications that I previewed on the show at [/pages/usbgoodies.html](https://web.archive.org/web/20060614073745/http://www.room362.com/pages/usbgoodies.html) or by clicking on the link under static pages.**  
+

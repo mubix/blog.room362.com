@@ -1,0 +1,22 @@
+---
+author: mubix
+comments: true
+date: 2007-04-10 12:44:59+00:00
+layout: post
+title: Missed Shmoo? Now you can experience in the comfort of your home.
+categories:
+- shmoocon
+- cons
+---
+
+![](/images/postimages/hoh.png)
+
+So you couldn't make it. No worry, you have undoubtedly been going through the [videos from shmoocon](http://www.shmoocon.org/2007/videos/) already. If you haven't yet, you should, they were well done and better than last year. But, what you might not have done yet is the Hack or Halo contests.
+
+> Update: We've determined the images have become corrupt during one of the transfers and have been taken offline until the problem has been fixed. It should be fixed by Wednesday night.
+
+For the "Hack" portion of the contest, you can find the images for the contest machines here:
+
+> (DISCLAIMER: THIS IS A 1.8 GB DOWNLOAD) [http://blog.vulnerableminds.com/2007/04/shmoocon-07-hack-or-halo-virtual.html](http://blog.vulnerableminds.com/2007/04/shmoocon-07-hack-or-halo-virtual.html) [Fastest](ftp://mirror.fpux.com/shmoocon/HoH.7z) (FTP) [Faster](http://mirror3.fpux.com/shmoocon/HoH.7z) (HTTP) [Fast](http://shmoocon.tmartin316.com/HoH.7z) (HTTP) [Fast](http://hoh.stevenjackson.info/HoH.7z) (HTTP)
+
+And the Halo portion you can find here: [Halo](http://www.ebgames.com/product.asp?product%5Fid=210263)

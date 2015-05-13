@@ -1,0 +1,51 @@
+---
+author: mubix
+comments: true
+date: 2012-10-30 20:05:21+00:00
+layout: post
+title: BypassUAC got a facelift
+categories:
+- metasploit
+- meterpreter
+- uac
+---
+
+Dave Kennedy and Kevin Mitnick submitted the "bypassuac" post module to Metasploit a while back (last DerbyCon?). Which is awesome and they did some fantastic work, but I had a few complaints as probably anyone did who used the module on a somewhat modern network.
+
+"Old" module `post/windows/escalate/bypassuac`:
+
+![](/images/postimages/201210_bypassuac_1.png)
+
+I decided to give it a bit of a face lift:
+
+"New" local exploit module `exploit/windows/local/bypassuac`:
+
+![](/images/postimages/201210_bypassuac_2.png)
+
+All of the credit for the availability of this module goes to [@egyp7](https://twitter.com/egyp7) though, without his epic addition of local exploits to Metasploit the majority of the updates to this module wouldn't be possible.
+
+Anywho, on to the new features:
+
+1) You can set any windows payload you want to use now:
+
+![](/images/postimages/201210_bypassuac_3.png)
+
+and yes it supports EXE::Custom.
+
+2) It lets you know if it will be able to bypass the current setting of UAC or not:
+
+![](/images/postimages/201210_bypassuac_4.png)
+
+Even when you're going overkill with it:
+
+![](/images/postimages/201210_bypassuac_5.png)
+
+(ASK module if UAC is disabled will just elevate without any kind of user prompt)
+
+And of course it works as expected if UAC needs bypassing:
+
+![](/images/postimages/201210_bypassuac_6.png)
+
+One thing I have yet to update is a simple check to make sure you are an admin that can actually bypass UAC. If you aren't, then you'll be leaving this lovely calling card behind for the user:
+
+![](/images/postimages/201210_bypassuac_7.png)

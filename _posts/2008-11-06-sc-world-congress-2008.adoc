@@ -1,0 +1,35 @@
+---
+author: mubix
+comments: true
+date: 2008-11-06 06:25:41+00:00
+layout: post
+title: SC World Congress 2008
+categories:
+- internet
+---
+
+Haven't had enough conferences yet? First, thanks to everyone who entered through email, twitter and commenting on the CSI give away. Second we do have a winner so please stop the flood. But, on to the show.
+
+The SC World Congress, Dec. 9-10, 2008, at the Javits Convention Center in New York is offering a dicount code to all readers of SBN (Security Blogger's Network). But what is "The SC World Congress" Here is what they say:
+
+> _The SC World Congress, presented by SC Magazine, is the conference and expo that information security professionals won't want to miss.  
+
+> Faced with the challenges of safeguarding their organizations' customer data and intellectual property, complying with a long list of regulatory demands, and staying abreast of new threats and even newer applications, these pros will find at the SC World Congress expert insight and advice they can use. Over two days of plenary sessions, targeted panels and an instructive expo floor, the SC World Congress features the actionable, inside information that IT security and corporate management needs to safeguard their company's critical assets from threats, such as malware, targeted attacks, careless -- or malicious -- employees, and even careless executives.  
+
+> At the SC World Congress, attendees from all the major verticals -- such as finance, health care, government, and more -- will gain insight from industry leaders and fellow security professionals as SC Magazine explores the need-to-know topics that help IT security professionals do their jobs better._
+
+Here's the blurb on how to get a discount:
+
+> "_35% discount against the conference rates for all of your blog readers. Just ask your readers to enter the promotional code **BLOG1** (for a one day pass) or **BLOG2** (for a two day pass) when they register at _[_www.scworldcongress.com_](http://www.scworldcongress.com/)"
+
+If you are in New York or can get your company to pay the full fair (wink wink) then you are set. I took a quick look through the speaker's list and didn't recognize any names, but that doesn't mean much. The price points are as follows:
+
+$**1095** - Conference Two day pass  
+  
+$**795** - Conference One day pass  
+  
+**FREE** - Expo only pass  
+  
+**FREE** - Exhibitor registration  
+  
+**COMPLIMENTARY** - Press (Press ID required on site)

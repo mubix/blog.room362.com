@@ -1,0 +1,13 @@
+---
+author: mubix
+comments: true
+date: 2005-08-07 21:38:01+00:00
+layout: post
+title: Intro to Programming (Java)
+categories:
+- programming
+---
+
+Right now I am taking a class called “Intro to Programming”. And yup! you guessed it! The first assignment is to make a ![](http://www.scionhost.com/images/content/hello_world.png) Hello World program. For those who don’t know, that is the Globaly accepted first assignment for programming languages, be it HTML, Java, C++, PHP, python, or Assembly. Now this is where I get to voice my opinion of Java ![](http://www.setupgroup.com/images/java.gif) so far: It bites! Any language that makes you write 3 lines of code just to print “Hello World” is gay. And another thing! You have to be EXACT on every command you do or your screwed, and WTF is a Class path, why the hell do you get so many errors if you don’t specify one? Gay. Sorry, rage gone (Dr Pepper system is restored). Suggestion to all those who are taking Intro to programming, START WITH PYTHON.
+
+![](http://sendotuxprogramming.files.wordpress.com/2012/12/python-logo.png)

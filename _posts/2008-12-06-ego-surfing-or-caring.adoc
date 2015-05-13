@@ -1,0 +1,52 @@
+---
+author: mubix
+comments: true
+date: 2008-12-06 01:29:27+00:00
+layout: post
+title: Ego Surfing or Caring?
+categories:
+- rant
+- internet
+---
+
+[Gary Vaynerchuk](http://garyvaynerchuk.com/) of [Wine Library TV](http://tv.winelibrary.com/) made a post about [Ego Searching](http://garyvaynerchuk.com/2008/12/05/ego-searching-or-caring/). He describes in this short video that ego searching when you are trying to make a brand is simply caring about your audience: 
+
+<iframe id="viddler-7a059729" src="//www.viddler.com/embed/7a059729/?f=1&offset=0&autoplay=0&disablebranding=0" width="545" height="349" frameborder="0" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+Now even [Leo Laporte](http://live.twit.tv/), while being interviewed on the [Geek Cred](http://www.geekcred.net/) podcast said that as a broadcaster (which can be translated into “Content Producer”), your audience is the most important thing and your responsibility is to them.  
+  
+Well, in this post I will show you a way to ego surf efficiently, taking it to a whole new level to save you time, without sacrificing the interaction that Gary V. detailed:  
+  
+![](/images/postimages/200812_googlealerts_1.png)  
+  
+So lets start with [Google Alerts](http://www.google.com/alerts). Google Alerts are a way to get an update whenever there is a new search result for a specific search. Instead of going on the [Google’s Blog Search](http://blogsearch.google.com/) every day or every hour, you can get an email whenever there is a new result:  
+  
+**Search Terms**: Whatever your brand is  
+  
+**Type**: This is where it starts to get interesting, choose Comprehensive and it will search blogs, news, regular google, videos and google groups.  
+  
+**How Often**: As it happens, daily or once a week updates  
+  
+**Deliver To**: You can either get it as an RSS feed or straight to your email.  
+  
+Well, here is the slight problem with that. You will be getting updates every time you post anything. Lets add some google hacking to these search results so we can get the most bang for our buck:  
+  
+For example, my search would be: 
+
+* `link:room362.com -site:room362.com` 
+  
+This would give me results whenever someone has a link to room362.com on their page, except when it’s on my domain (room362.com). Now, if you are looking at branding it can get much more complicated:  
+  
+Here is one of my searches: 
+
+* `mubix -site:room362.com -site:mubix.blogspot.com -site:hak5.org -site:mubix.vox.com_` 
+  
+This search gives me results whenever “mubix” is even mentioned except when it’s on one of the sites. And you can edit these results all you want. Upping your Google Fu is the name of the game.  
+  
+You can use Google Alerts for all kinds of things. Another one that I have is “Call for Papers”. I have made added a lot of Google Fu to that search so that it just does security gigs, so customize the searches to what you want to see.  
+  
+Now, if you want to take all of this to the extreme, check out [MonitorThis](http://alp-uckan.net/free/monitorthis/).  
+  
+Happy Ego Surfing Caring,  
+  
+mubix

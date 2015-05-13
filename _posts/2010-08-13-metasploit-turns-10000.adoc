@@ -1,0 +1,17 @@
+---
+author: mubix
+comments: true
+date: 2010-08-13 16:36:46+00:00
+layout: post
+title: Metasploit turns 10,000
+categories:
+- metasploit
+---
+
+![](/images/postimages/201008_10k_1.png)
+
+Ask any developer and they will tell you that the age of a project is not calculated in calendar time, but in worker hours or "commits" to a project. The Metasploit Framework hit 10,000 today.
+
+With the project dating back to 2003, much before the official "Revision 1" happened, there have been a lot of changes. Going from the initial incarnation as a network "game" written in perl to the world largest ruby project, the framework has seen it's fair share of blood, sweat, and tears. With Express out and Pro to come, there will definitely be 10,000 more.
+
+Congratulations to the team, both past and present. What you guys do is extraordinary.

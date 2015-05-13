@@ -1,0 +1,29 @@
+---
+author: mubix
+comments: true
+date: 2009-11-18 16:58:00+00:00
+layout: post
+title: A Simplified Astaro UTM now FREE to businesses
+categories:
+- news
+---
+
+Disclaimer: I was given a demo license of the new free business product to break/review. No money has traded hands. This is my brutally honest opinion of the product.
+
+I've played with a gambit of Astaro products, and personally I really hate UTMs, just like I do All-In-One Printer/Copier/Faxes. One thing breaks, they all do. However, Astaro's .. before I go into my opinions of the product, or get on any soap box, here are the facts:
+
+  1. Astaro Security Gateway was free for home use already      
+
+    * (works awesome for VM demos)
+
+  2. On November 16th 2009, Astaro Security Gateway "Essential Firewall Edition" is now FREE to any business that wants to run a copy.     
+
+    * Essential Firewall Edition is basically a enterprise grade firewall w/ VPN and some reporting.
+
+Why I like this product is not because it's Astaro, but because it's the bare essentials. It's exactly what a small to mid size business needs for you to stop getting calls from your friend at 5 AM asking why the Linksys you put DD-WRT on to be slick is down.
+
+There is no better gift you can give a business as an IT/Security guy, then the ability to see and log. Test it out, you'll be amazed at what you see on your network.
+
+Like I said initially, this is a brutally honest post, and I whole heartedly believe in FREE, and one tool for one job. However so far it's been all fluff and daisies. In coming posts, I'll show how it, and other free alternatives break, or stand up from an attack point of view.
+
+On a site note, it works flawlessly with the iPhone ;-) - Use public wifi with no less fear, when all of your traffic is going through a VPN automagically. That'll make the boss happy.

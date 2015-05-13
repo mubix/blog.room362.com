@@ -1,0 +1,13 @@
+---
+author: mubix
+comments: true
+date: 2006-07-09 18:21:47+00:00
+layout: post
+title: Solid Potato Salad
+categories:
+- internet
+---
+
+Check out this video from the 1940s. I have never seen anyone so flexable in my life.  
+  
+<iframe width="560" height="315" src="//www.youtube.com/embed/d1J3NLNWAPU" frameborder="0" allowfullscreen></iframe>

@@ -1,0 +1,34 @@
+---
+author: mubix
+comments: true
+date: 2007-08-01 21:06:40+00:00
+layout: post
+slug: 200781are-you-secure-secunia-to-the-rescue-html
+title: 'Are you secure: Secunia to the rescue'
+wordpress_id: 506
+tags:
+- Uncategorized
+---
+
+Originally Posted on TECH.NOCR.AT @ [http://tech.nocr.at/content/view/22/1/](http://tech.nocr.at/content/view/22/1/)  
+  
+[Secunia.com](http://secunia.com) has been a great resource of vulnerability and virus information over the years for Black, Grey, and White hat hackers alike. Recently they released a BETA project that looks promising and could be the first step into a "package manager" for Windows. In there own words:
+
+
+
+
+> A new addition to the Secunia Software Inspector series, the free Secunia Personal Software Inspector (PSI), is now available for BETA testing. Capable of detecting and categorizing more than 4,200 applications.
+
+
+
+
+  
+So far, I have run it on a Vista Ultimate and XP SP2 box and it has come back with some impressive results. It found some software that I hate to admit, had totally forgotten about, on my system that was out of date. As for cons, I have only found two thus. One, it detected my Firefox install as 2.0.0.4 instead of 2.0.0.6. The second being, not so much a technical fault, but a person preference. It is not portable, you install it and it works on that box.  
+  
+What they don't tell you on the site is that when it detects out of date applications, it provides you a direct download link. This is good and bad, you are not seeing where this download is coming from, so you are trusting Secunia. It's good for us lazy computer geeks though, because it is only one click.  
+  
+Finally, they provide you a detailed write up on the out of date software you have and links to find out what vulnerabilities affect that software package.  
+  
+In closing, this is a great piece of software that I will definitely keep tabs on and take around with me, along with my [File Hippo Updater](http://filehippo.com/updatechecker/)  
+  
+Check out and follow this project at [https://psi.secunia.com/](https://psi.secunia.com/)

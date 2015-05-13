@@ -1,0 +1,19 @@
+---
+layout: post
+title: "Installing Metasploit Community Edition on Windows 8"
+date: 2014-01-13 14:32:04 -0500
+comments: true
+categories: 
+- metasploit minute
+- presentations
+- windows 8
+- metasploit
+---
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/a3nzWgUgQO8" frameborder="0" allowfullscreen></iframe>
+
+* Show URL: [Hak5](http://hak5.org/category/episodes/metasploit-minute)
+
+* Youtube URL: [YouTube](http://www.youtube.com/playlist?list=PLW5y1tjAOzI3n4KRN_ic8N8Qv_ss_dh_F)
+
+* Show RSS feed: [RSS](http://gdata.youtube.com/feeds/api/playlists/W5y1tjAOzI3n4KRN_ic8N8Qv_ss_dh_F)

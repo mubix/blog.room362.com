@@ -1,0 +1,42 @@
+---
+author: mubix
+comments: true
+date: 2010-06-25 11:31:55+00:00
+layout: post
+title: Get off my lawn! iPhone Geo Blocking
+categories:
+- iphone
+- metadata
+---
+
+I was recently approached by [savant](https://twitter.com/savant42),  who told me that a bunch of my Twitpics had geo location in them. Larry Pesce from PaulDotCom has been doing research in this field for a while and each time he brings it up I casually checked a couple of my twitpics and came up empty handed.
+
+But, he gave me exact references, so I went to Twitpic to check them out for myself.
+
+I was surprised to see that Twitpic actually has an option to show all the "Places I've Been":
+
+![](/images/postimages/201006_geo_1.png)
+
+Hopeful, I clicked:
+
+![](/images/postimages/201006_geo_2.png)
+
+Sweet! All of my images are clean right?
+
+But, like I said, the individual gave specific references of images. So, I pointed trusty "[Jeffrey's Exif Viewer](http://regex.info/exif.cgi)" at one of the images that they told me about and:
+
+![](/images/postimages/201006_geo_3.png)
+
+sure enough, it had location data in it.
+
+At a recent [NoVA Hackers](http://www.novahackers.com/) meetup there was a presentation on Geo forensics on mobile phones that was really enlightening, but very depressing for iPhone users like myself. For us, you can either have Location Services (GPS) on, or off. In other words, if you wanted to take a picture without geo information, you would have to open your settings, go into general, switch location services to off.. then when you wanted to use Google Maps to find something you'd have to turn it back on.
+
+Complaints of a lazy person, I know, but remembering to check, and / or going through those steps each time I wanted to find a place or take a picture was a bit beyond my tolerance level.
+
+iPhone OS 4.0 to the rescue: (calling it iOS 4 is just confusing re:cisco)
+
+One of the coolest new features is app based control of geo information. So go to Settings -> General -> Location Services and turn Camera (and any other app you take photos with) OFF.
+
+![](/images/postimages/201006_geo_4.png)
+
+PS: You probably don't need those pics sitting on Twitpic after your Tweet has come and gone. Might as well delete them. ;-) Sorry guys, I hope you have local copies.

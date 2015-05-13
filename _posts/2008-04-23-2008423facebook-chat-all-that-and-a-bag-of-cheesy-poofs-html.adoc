@@ -1,0 +1,31 @@
+---
+author: mubix
+comments: true
+date: 2008-04-23 21:35:32+00:00
+layout: post
+slug: 2008423facebook-chat-all-that-and-a-bag-of-cheesy-poofs-html
+title: Facebook chat - All that and a bag of cheesy poofs
+wordpress_id: 461
+categories:
+- Rant
+tags:
+- Rant
+---
+
+Wow. I have to admit, they did the Facebook chat right. I like how it looks and how it works. I would only change one this and allow chats to disembark from the status bar, but other than that, congrats. It is actually keeping me on Facebook longer.  
+  
+![](http://s3.media.squarespace.com/production/438411/4879756/uploads/logo_facebook-rgb-7inch.jpg)  
+  
+Enough brown nosing, here are the pros and cons:  
+  
+**PRO**: very well done layout - clean, crisp and not in the way  
+  
+**CON**: I have no idea when one of my friends sign on or off, it would be nice to have to show something simple as - Bob signed on, and have it as an option to turn off for those who have reached their 5000 friend limit.  
+  
+**PRO**: I now have access to all of those old friends and people that I have lost touch with over the years and didn’t know their email or IM address. This was already the case, but IMs are much more inviting to use.  
+  
+**CON**: Like I said above, it would be nice if I could dock and undock the IM windows. being stuck to the bottom kinda gets annoying.  
+  
+I still think that Facebook is littered with a lot of useless apps and spam, but the IM ability is helping to ween me back into trying and cleaning up my profile.  
+  
+**EDIT**:Alright, either the Facebook code really fast, or I just didn’t know where to click, but I have been corrected. You can undock the IM interfcae by clicking on the shiloutte and clicking “Pop Out Chat”. This will create a new window and put all of your chatting in the new window. After you are done being pop’ed out, just click Pop-In on the upper right and you are back to normal. While this isn’t the 100% solution I was looking for (Ajax floating chat boxes that could be together or seperate or tabbed)

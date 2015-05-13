@@ -1,0 +1,19 @@
+---
+author: mubix
+comments: true
+date: 2008-11-29 06:41:46+00:00
+layout: post
+title: Gmail Snooze Button
+categories:
+- rant
+---
+
+![](/images/postimages/200811_gmail_1.png)
+
+I use gmail. Not really a big admission nor, very hard to find out. But the reason I use it is becasuse of it’s theading and archiving. For me those two abilities are unmatched anywhere else, both Outlook and Thunderbird fail horribly at this.  
+  
+More to the point, I have reached a certain level of ‘zen’ with my GTD methods on gmail. I am in a constant battle for “[Inbox Zero](http://www.youtube.com/watch?v=z9UjeTMb3Yk)” and have “Starring” extremely useless for me. My problem lies in the fact that I have email threads that I am waiting on people to reply or I simply want to reply later. While keeping them in my Inbox is alright, it is a mental block in my quest for Inbox Zero to have to go to the next page of emails and work from there due to the first page being full of followups.  
+  
+So, I thunked on the problem and came up with the idea of a snooze button. I would like a snooze button in gmail where I can click a email thread, and it asks me for a date and time period and possibly a note to tag along with it. And then, on that date or elapsed period of time OR a new email enters the thread, the thread reappears in my Inbox. I realize that you can Star, then archive, and then check your stars, but that doesn’t work for me, it is simply like making a second inbox to manage.  
+  
+If anyone has any ideas on how to make this happen or a contact at google that would be willing to listen to the idea, please leave a comment or shoot me an email. 

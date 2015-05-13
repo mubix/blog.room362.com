@@ -1,0 +1,31 @@
+---
+author: mubix
+comments: true
+date: 2010-01-08 18:49:13+00:00
+layout: post
+title: grmn00bs podcast
+categories:
+- podcasts
+---
+
+I was recently on the grmn00bs podcast, I had a great time, and I can't wait to see who they pick up next on their series:
+
+[**grmn00bs podcast: episode 9**](http://www.grmn00bs.com/2009/12/16/podcast-episode-9-when-they-were-n00bs-with-rob-fullermubix)
+
+**Update** [Archive.org Link](https://web.archive.org/web/20091227070701/http://www.grmn00bs.com/2009/12/16/podcast-episode-9-when-they-were-n00bs-with-rob-fullermubix)
+
+**"When they were n00bs Series"**
+
+Show Notes:
+
+* [hak5](http://www.hak5.org/) is one of the original security shows. Rob has been featured on several segments.  
+* [Twit Netcast Network with Leo Laporte](http://twit.tv/) is another show that's been around for a while.  
+* [Security Tube](http://www.securitytube.net/) is the Youtube of security videos. This is where I'm at when I should be working. You might even find some GRM n00bs stuff rattling around there.  
+* [The Academy Pro](http://www.theacademypro.com/) is another excellent place to go for security training.  
+* [milw0rm](http://www.milw0rm.com) has lots of exploits. It's a good place to check out some old papers to brush up on security history.  
+* [NewOrder](http://neworder.box.sk/) is another resource to get abreast of lessons learned in the past.  
+* [Jasager](http://www.digininja.org/jasager/) is the "Yes Man" Rob talks about in the show.  
+* [Chris Gates's book list](http://astore.amazon.com/carnal0wnage-20/) has some good ideas for security reading.  
+* [Syngress](http://www.syngress.com/) is a publisher of security texts. They have all my money.  
+
+Donate to [Johnny Long](http://www.hackersforcharity.org/)!

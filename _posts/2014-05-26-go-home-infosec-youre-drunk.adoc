@@ -1,0 +1,33 @@
+---
+layout: post
+title: "Go home InfoSec, you're drunk"
+date: 2014-05-26 21:10:44 -0400
+comments: true
+categories: 
+- rant
+---
+
+Let me start off by saying this post is easy for me to write in one facet as I've never been a heavy drinker or much enjoyed the taste of alcohol. So if you need a reason to disregard what I say next, I leave the door open.
+
+I am still pretty much a runt in the infosec community as I didn't even begin learning computers (outside of playing games on them) until 2005. However, one thing that has nagged at me for a long time is the intertwined nature of hacking/infosec and drinking. Its almost a right of passage in the common fraternity style. The problem lies in the fact that you don't really "graduate" and leave those parties behind.
+
+Now, I have certainly partaken in my share of parties and consumption, even with that nagging feeling in the back of my head. It didn't really take root until just recently. I was at a conference where a student (who was not 21) that looked very much like an older version of my oldest child said that he was going to skip dinner to go get wasted with XYZ "Infosec Rockstar". 
+
+That scared me into thinking that if my son goes into Infosec he will be basically expected to drink like an alcoholic. How can I want my kid to be expected (not forced) to drink a shot on stage if he gets accepted to speak at DEF CON.
+
+**We (the infosec community) are few, and we loose too many to idiotic things like drug overdose, drinking and driving, and other stupidly preventable crap**. For that reason I actually don't want to share the thing I feel so passionate about with my own kids. 
+
+My call to action is this:
+
+**If you are a conference goer**, try going one con completely dry, and if you already do, maybe ask friend to join you.
+
+**If you are speaker**, enough of the drinks on stage and drinking games. Do you really want the next generation, those you are trying to teach, to remember that part of your talk instead of the rest?
+
+**If you are a conference organizer**, maybe a completely dry day at the con? or an AA meeting space? 
+
+**If you are a podcaster**, if you drink during the cast, make it about the taste and selection, instead of how wasted and totally useless the next hour of your listeners life will be.
+
+**ShmooCon runs an AA meeting at the con**
+
+Lets stop losing our friends and family because we are too weak to say 'no thank you' when someone approaches the dais with a shot.
+

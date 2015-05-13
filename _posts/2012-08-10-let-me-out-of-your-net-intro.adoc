@@ -1,0 +1,55 @@
+---
+author: mubix
+comments: true
+date: 2012-08-10 03:22:29+00:00
+layout: post
+title: LetMeOutOfYour.NET – Intro
+categories:
+- egress
+---
+
+Something that is often useful is a known-good. Something out of the control of your adversary or outside modifiers. But back to that in a sec, egress ‘busting’ or getting your payload/backdoor/trojan/c2 out of someone’s network once you’ve gotten that ever elusive “CODE EXECUTION HAPPY DANCE” going on isn’t always easy. There is even a Metasploit payload for it called ‘allports’:
+
+[https://community.rapid7.com/community/metasploit/blog/2009/09/24/forcing-payloads-through-restrictive-firewalls](https://community.rapid7.com/community/metasploit/blog/2009/09/24/forcing-payloads-through-restrictive-firewalls)
+
+There is also ‘Egress Buster’ by the guys over at TrustedSec which can do 1000 ports in just a few seconds:
+
+[https://www.trustedsec.com/july-2012/egress-buster-reverse-bypassav/](https://www.trustedsec.com/july-2012/egress-buster-reverse-bypassav/)
+
+The problem I find with these tools is that they are still straight TCP. *(Yes, yes I know most networks still allow some ports directly outbound) and these tools are still quite valid. During the span between these two tools being released, MrB released a site that listens on all 65k ports: [http://open.zorinaq.com/about/](http://open.zorinaq.com/about/)
+
+Figured I should merge these ideas and add a few more capabilities (and show you how I did it so you can do so yourself), and so LetMeOutOfYour.net was born.
+
+You can hit any subdomain or hostname of letmeoutofyour.net on any port with any HTTP Verb for any resource (web page or folder) and you will always receive a ‘w00tw00t’ back.
+
+For example this request (removed the unimportant headers on the request to save space):
+
+```
+POST /admin/login.php HTTP/1.1       
+Host: development.letmeoutofyour.net:8081
+     
+username=admin&password=password
+```
+
+Will result in this:
+
+```
+HTTP/1.1 200 OK       
+Date: Sat, 11 Aug 2012 02:21:54 GMT        
+Server: Apache        
+Last-Modified: Sat, 11 Aug 2012 02:16:55 GMT        
+Accept-Ranges: bytes        
+Content-Length: 9        
+Vary: Accept-Encoding        
+Keep-Alive: timeout=15, max=100        
+Connection: Keep-Alive        
+Content-Type: text/html        
+       
+w00tw00t
+```
+
+All of those headers are standard Apache headers with the content being just ‘w00tw00t’. Making the connection an HTTP one opens a few doors to things like proxies. It’s ok to cackle at this point. 
+
+In the following parts I’ll show you how to build the server itself and a binary to find it’s way out of networks. Feel free to point your own domains at the IP it’s hosted on, it can handle it. Have a try, I know you want to:
+
+[http://youshouldreally.letmeoutofyour.net/before/i/get/angry/and/youwouldntlikemewhenimangry.asp](http://youshouldreally.letmeoutofyour.net/before/i/get/angry/and/youwouldntlikemewhenimangry.asp)

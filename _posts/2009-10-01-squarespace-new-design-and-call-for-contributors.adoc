@@ -1,0 +1,17 @@
+---
+author: mubix
+comments: true
+date: 2009-10-01 18:50:24+00:00
+layout: post
+title: SquareSpace, New Design and Call for Contributors
+categories:
+- internet
+---
+
+The site has been down for a while, there were a lot of factors that played into that, but mostly it was focus on some family, as I had some in town. I also came to the conclusion that it's time to move to "the cloud" so I moved over to SquareSpace (using the coupon code: DEFCON `</end shameless plug>`). I have an actual web designer looking at hooking this thing up right.
+
+Also, I wanted to ask if anyone was interested in becoming a writer for Room362, opening it to more people to contribute to the content here. Shoot me an email: mubix@hak5.org or one of the other ones I have on the net and we'll work something out.
+
+Thanks, and see you around the net.
+
+Rob

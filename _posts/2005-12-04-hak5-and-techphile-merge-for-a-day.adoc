@@ -1,0 +1,24 @@
+---
+author: mubix
+comments: true
+date: 2005-12-04 17:20:32+00:00
+layout: post
+title: Hak.5 and techPhile merge for a day.
+categories:
+- hak5
+- techphile
+- podcasts
+---
+
+[![](/images/postimages/hak5_logo_small.gif)](http://www.hak5.org)
+
+December 2nd, I drove down to Williamsburg VA to meet up with the guys from Hak.5 and Frank Linhares. For those of you who don't know. Hak.5 is an IPTV (Vidcast) show, which basically boils down to a TV show on the internet. Anyways, I got to meet up with these fellas and a couple other interesting people. While I was there, I had the privilege of helping out not only in the live [techPhile](http://www.techphile.ca) podcast by Frank Linhares, but also the 'glue' segments of Ep 5 of Hak.5. I must say, if and of the Hak.5 crew or Frank are reading this; it was a great pleasure to hang out with you guys. I would also like to make some personal shout outs to each one, and because this is my site. I get to. Muhahaha.  
+  
+* **Frank**: It was awesome to meet and get to know you. You still owe me dinner! ;-) But seriously, it was an honor to help out with the show.
+* **Darren**: You have Hak.5 on lock, keep up the awesome work, and it was cool meeting you. Thanks for the invite. Inviting someone you have never met into your home is a big deal to me, thanks for the trust and respect. 
+* **Wess**: I love you man. We need to tell Alli about us before this gets ugly.
+* **Harrison**: It was sweet meeting you man. We became fast friends; you and I think a lot alike. ('cept for cars: Ferrari Sucks) and I think [ShmooCon 2006](http://www.shmoocon.org) is gonna rock.
+* **Jon**: Man, we will get Gentoo done. If you need any further help you guys got my number - Mubix – Tech Support 24/7 365. Keep it real man.
+* **Alli, Paul, Harrison's Mom, and Jui-Chia**: It was cool hanging out with you guys. I had a blast down there. 1 1/2 hour commute is worth it to hang out w/ you guys.
+  
+One last thanks goes out to all the people in the IRC channel [techPhile IRC server](irc://irc.techphile.ca) #hak5 and #techphile for making my moderation a cake walk. Except for a certain individual, all the questions were perfect and I only had to fix/deny a few of them.

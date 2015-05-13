@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Alive Again"
+date: 2014-01-09 22:42:14 -0500
+comments: true
+categories: 
+- rant
+---
+
+I've taken a rather long hiatus from blogging. This is mostly because I was fed up with the blogging platform that I had (Squarespace) and didn't really have any alternatives that met all of the features I wanted. 
+
+So, where am I at now? Github actually. Github allows users to create "Github Pages" for repositories (or be it's own repo). For the most part these pages are written in Markdown. It's late and I don't feel like looking up who, but someone created a project called "[Jekyll](http://jekyllrb.com/)" which is a Ruby based static page generator and then another project called "[Octopress](http://octopress.org/)" popped up using Jekyll to create a static html based blogging platform.
+
+It's a bit of a pain in the butt to use and learn, but once you have a few things automated it gets simpler. It also hits the most bullet points of any other option.
+
+Expect things to pick up pretty quickly here, but as I'm typing this I'm already thinking that promising something like that is a bad idea. We'll see how it goes, it's just good to be back.

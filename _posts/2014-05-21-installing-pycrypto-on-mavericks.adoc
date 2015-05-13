@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Installing PyCrypto on OSX Mavericks"
+date: 2014-05-21 11:12:42 -0400
+comments: true
+categories: 
+- python
+- pycrypto
+- osx
+- mavericks
+---
+
+Keeping it here for notes and just in case anyone else runs into this same issue.
+
+```
+brew install pip
+sudo ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future pip install pycrypto
+```
+
+If you have a better way please leave a comment below!

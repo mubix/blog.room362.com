@@ -1,0 +1,47 @@
+---
+author: mubix
+comments: true
+date: 2007-10-09 03:13:25+00:00
+layout: post
+slug: 2007108logmeincom-html
+title: Logmein.com
+wordpress_id: 485
+tags:
+- Uncategorized
+---
+
+So, this is my first time writing with [ScribeFire](http://www.scribefire.com/). (We'll see if it auto detects it's name and links to it. But, as you can probably tell by the title, this article isn't about [ScribeFire](http://www.scribefire.com/). It's about [Logmein.com](http://www.logmein.com). Now, you most likely have already seen or used this service, and I have fought back in forth in my head about regurgitating information which I think people already know. However, I'll save that talk for another post. On with it already.  
+  
+Logmein.com is an awesome service and a scary one. As with any useful and powerful tool, it can be used for good or evil. The best way to describe their service is like [VNC](http://en.wikipedia.org/wiki/Virtual_Network_Computing), or Remote Desktop for you Microsoft people. It's SSL based so, if you can resolve it, you can probably use it. Where is your business. ;-)  
+  
+They offer a bunch of services, the free one stays free. I use it mainly to help all of the people in my family that need tech support. Here is how it works:
+
+
+
+
+
+
+  1. Sign up for an account
+
+
+  2. Click the Add Computer
+
+
+  3. Go through the motions (Next, Next, Finish)
+
+
+  4. You're done. Now the computer will be available to you on a list.
+
+
+
+
+There is a dual layer of protection here. You have your account that you log into the web site as, and then the account on the computer that you log in to. So, if for any reason the person that you installed the Logmein client on doesn't want you to have access, or your Logmein account gets compromised, there is still that second layer of security.  
+  
+In summary, I think it is an awesome service, and if you like it, you should check out some of their paid plans as well.  
+  
+
+
+
+
+
+Powered by [ScribeFire](http://scribefire.com/).

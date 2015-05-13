@@ -1,0 +1,17 @@
+---
+author: mubix
+comments: true
+date: 2009-02-16 21:49:00+00:00
+layout: post
+title: Bribing the Security Community
+categories:
+- rant
+---
+
+So here is the deal. I have a ticket to the [RSA Conference](https://365.rsaconference.com/index.jspa) that is April 20-24 in San Francisco, at Moscone Center. I can’t use it. So I am offering it up as a bribe. Here is the bribe. I need a video of The Middler in action. From start (downloading) to finish (compromise / root / [BeEF](http://www.bindshell.net/tools/beef) / owange) of another machine.  
+  
+The video must be without audio, pausing a bit with each step, and a maximum of 1020 x 720 in resolution preferably in [Camtasia Studio](http://www.techsmith.com/camtasia.asp) format. And no, [Jay](http://inguardians.com/info/#Beale), it can’t be the one you used at [ShmooCon](http://www.shmoocon.org/). This video will be added to [The Academy Pro](http://www.theacademypro.com) site through the normal cycle. Submit your videos via link, or attachment to _rob [at] theacademy d0t ca or twitter [@mubix](http://twitter.com/mubix) _  
+  
+If you are a vendor / conference organizer and would like to offer the same deal for whatever kind of video you would like (as long as it fits the M.O. of [The Academy Pro](http://www.theacademypro.com) / [Home](http://www.theacademyhome.com)) please contact me at _rob [at] theacademy d0t ca_.  
+  
+Direct Link to The Middler download: [http://inguardians.com/tools/middler-alpha.tgz](http://inguardians.com/tools/middler-alpha.tgz)

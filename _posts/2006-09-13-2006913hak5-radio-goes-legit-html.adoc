@@ -1,0 +1,21 @@
+---
+author: mubix
+comments: true
+date: 2006-09-13 10:09:06+00:00
+layout: post
+slug: 2006913hak5-radio-goes-legit-html
+title: Hak.5 Radio goes legit
+wordpress_id: 531
+categories:
+- Hak.5
+tags:
+- Hak.5
+---
+
+So, Hak.5 Radio is really taking off! We are now certified free and clear, you can check it out below. Just wanted to make a quick quip, more later.  
+  
+<iframe src="http://nowplaying.loudcity.net/?stationid=864" scrolling="no" width="375" height="225"</iframe>  
+  
+psst - however, as you can plainly see, this is far from LIVE data...  
+  
+jd

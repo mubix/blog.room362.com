@@ -1,0 +1,40 @@
+---
+author: mubix
+comments: true
+date: 2010-01-30 17:00:13+00:00
+layout: post
+title: '@RSnake ’s RFI List in Burp Suite'
+categories:
+- burp
+- rsnake
+---
+
+First of all, get Robert @RSnake Hansen's RFI list here:
+
+[http://ha.ckers.org/blog/20100129/large-list-of-rfis-1000/](http://ha.ckers.org/blog/20100129/large-list-of-rfis-1000/)
+
+it's a great list, but as soon as I saw it, I was like.. hmm.. how can I use that? Well, being that I am a Burp fan, I parsed the .dat with the following line:
+
+```
+cat rfi-locations.dat | grep -v "^#" | awk -F '?' '{print $1}' | sort -u > rsnake_list.txt
+```
+
+This pulls his list down to 906 entries which you can load in to Burp and hammer away with Intruder. If it pops any of them, not only have you better identified what is running on the site, but you might have just found RFI.
+
+But I wanted to take this a step further:
+
+![](/images/postimages/201001_rsnake_1.png)
+
+The OSVDB archive allows you to download their entire database of vulnerabilities (after signing up for an account). I downloaded the CSV version so that I could parse it similar to how I did RSnakes. However, it definitely wasn't that easy.
+
+I downloaded osvd-csv.latest.tar.gz, extracted it and ran the following:
+
+```
+cat * | grep -i "remote file inclusion" | grep -v ",0$" | awk -F "," '{print $13}' | sed 's/^"//' | set 's/"$//' | sort -u > osvdb_rfi.txt
+```
+
+Which got me close. About 3 hours of manual editing after that and I had another list of ~1750 possible remote file inclusions. Is this a full proof way of getting every possibility from the database? Definitely not, but it's close, and I'd love to see some one modify and tweak my bash line to get it even closer. (Or find a completely different way)
+
+**Update** on 2010-02-01 14:17 by Rob Fuller
+
+RSnake has updated his list, same link, same file name with about 2300 RFIs now.

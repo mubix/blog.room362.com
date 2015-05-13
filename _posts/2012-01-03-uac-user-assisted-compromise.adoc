@@ -1,0 +1,66 @@
+---
+author: mubix
+comments: true
+date: 2012-01-03 06:56:22+00:00
+layout: post
+title: (UAC) User Assisted Compromise
+categories:
+- uac
+- meterpreter
+- railgun
+- metasploit
+---
+
+A number of times during tests I've actually run into those mythical creatures called "patched windows machines". At [DerbyCon](http://www.derbycon.com) [Chris Gates](http://twitter.com/carnal0wnage) and I released the "Ask" post module (which I had failed to publish). This module very simply uses the [ShellExecute windows function]("http://msdn.microsoft.com/en-us/library/windows/desktop/bb762153(v=vs.85).aspx") via [Railgun](http://dev.metasploit.com/redmine/projects/framework/wiki/RailgunUsage) with the undocumented (but very well known) operator of 'runas'. These two lines accomplished that:
+
+    client.railgun.add_function( 'shell32', 'ShellExecuteA', 'DWORD',[["DWORD","hwnd","in"],["PCHAR","lpOperation","in"],["PCHAR","lpFile","in"],["PCHAR","lpParameters","in"],["PCHAR","lpDirectory","in"],["DWORD","nShowCmd","in"],])
+    client.railgun.shell32.ShellExecuteA(nil,"runas","evil.exe",nil,nil,5)
+    
+This would quite simply prompt the user with that annoying UAC prompt asking the user to run 'evil.exe' with Administrative privs. If they are not "Admins" themselves then it would prompt them for the user name and password (normally the case in systems attached to domains). Something to be aware of: If your evil.exe is not code-signed the UAC box will be orange instead of blue. You can get around this a bit by using rundll32.exe (which is signed ;-) ) as is svchost.exe. (You may also want to not name it evil.exe)
+
+The downfall here is that 1. You have to drop a binary (boooo) 2. You are prompting the user for UAC control when they didn't do anything to cause it. Users are generally as smart as bait, but it's good practice to assume to the contrary. If for nothing else other than to challenge yourself to up your game.
+
+Number 1 I'll leave to another post, so lets solve #2.
+
+When a "runas" ShellExecute (which UAC runs natively #hint#hint) a few registry locations are checked. One I'd like to point out is the HKLM\Software\Classes\exefile key. The 'exefile' as should be obvious is the registry settings for executables, and as such tells Windows how to interact with them. In HKLM (which is only writable by Administrators) the "shell\open", "shell\runas" and "shell\runasuser" subkeys exist (the structure looks oddly familiar to anyone who visited the ShellExecute page more than once). Inside "shellopencommand" the default string has "%1" %*  - this basically means execute the binary %1 and hand the arguments given directly to it %*. Awesome! From here you can alter how every EXE runs on the system (don't do it, Windows doesn't like you afterwards, trust me, and remember to snapshot if you don't).
+
+Great, but how does this help us, we aren't admins. HKCU is writable by the 'Current User' hence the name, and it so happens to have a very similar registry path: HKCU\Software\Classes. Depending on your system, it may or may not have a "exefile" subkey. If it doesn't it's pretty easy to create. Lets make it match the "runas" one in HKLM
+
+The tree should look something like this when you are done:
+
+* HKLM 
+    * Software 
+        * Classes 
+            * exefile 
+                * shell 
+                    * runas 
+                        * command
+
+Under command change the default value to "%1" %* just as it is in HKLM, and add a new String value called 'IsolatedCommand' with the same value as default. With these settings, very little has changed on the system or its operation. However, if we change the 'IsolatedCommand' String to 'notepad.exe' and attempt to 'Run As Administrator' on that system using any binary guess what happens? Notepad! (as Admin). w00t. Now we can swap in our evil.exe and bob wins right? Sorta. We still have that horrible problem of stealth. Whatever the user was trying to UAC up won't work, and they'll try it again, and start investigating the problem, which we don't want them to do.
+
+Enter 'runyou.exe', it's some very simple C++ that weighs in at a whopping 8k when compiled (probably could loose some weight by those who know better compiler options):
+
+```cpp    
+#include "windows.h"
+#include "stdio.h"
+#include "tchar.h"
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+    if (argv[1])
+    {
+        ShellExecuteW(NULL,NULL,argv[1],NULL,NULL,SW_SHOW);
+        if (argv[2])
+        {
+            ShellExecuteW(NULL,NULL,argv[2],NULL,NULL,SW_HIDE);
+        }
+    }
+    return 0;
+}
+```
+
+This code executes the first program visibly and then the second hidden. You probably see where this is going, but we change our IsolatedCommand String to runyou.exe %1 evil.exe and now we give them exactly what they want in an elevated state, but also get our evil binary there too ;-)
+
+The very real down side to this is you have to wait for the user to use UAC (this does not work if someone else does, it's only for the current user HKCU). But, as a side benefit, it's a very real form of sneaky persistence as well, as it will execute our evil binary every single time they use UAC.
+
+Game Over... ;-)

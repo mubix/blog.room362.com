@@ -1,0 +1,31 @@
+---
+author: mubix
+comments: true
+date: 2011-01-27 15:41:10+00:00
+layout: post
+title: Insider Threat Testing
+categories:
+- rant
+---
+
+![](/images/postimages/201101_insider_1.png)
+
+This day and age everyone is worried about the insider threat. Internal Penetration Testing doesn't really test what would happen if your janitor got paid 50 bucks to put a USB stick in one of your servers. External Penetration Tests are never scoped for that sort of testing. So what is a company to do? How can they know what the risk is? The answer? Usually they guess or assume. Mostly because they are scared to find out, it's happened to them before, or one of a million different justifications. I've got a webinar coming up to describe exactly this type of testing, but I thought I'd go into it a bit here.
+
+The FBI has a files upon files and stories stacked miles high about spies and insiders taking everything from accounting information (I could have put LIVES for effect but that's more of a one-off) to staplers (no I don't think Milton has an FBI file). Insiders throughout time have been the biggest threat to organizations even before sabotage and espionage became words. Ok, so what's the big build up for? Simple. We need to build organizations up in the detection department from a pentesters point of view, not signature based. Our pentesters need to talk to our forensics guys, the incident responders need to talk to pentesters and every which way between. We are loosing this battle, and one of the reasons we are is we keep our bag of tricks to our selves, and that's what insider threat testing is all about, getting all the tricks tested in a more open fashion.
+
+Can your organization see a command and control session via IRC? What if it's pushed over port 80? What about a standard meterpreter reverse_tcp connection? There isn't a money based solution for this, just like there isn't for phishing. Added on to all of the other things your security team does, there needs to be an employee, or a consultant that it is on the phone with your team saying "did you see this?". Sort of like the 'Can you hear me now?' test. I mean, have you ever met an incident response team that took time out of their day to see if they could get poison ivy (one of the most well known RATS /remote access tools/) through the firewall undetected? Probably, but when they came and told you about it you chastised them for it.
+
+![](/images/postimages/201101_insider_2.png)
+
+In any case, I've jumped around roles in this post a lot and I want to focus it back on getting true collaborative testing done, but there has to be a balance. If you're staring at a piece of earth, you'll see the ant walk on by, but you'll probably miss a half dozen of them on your way to check the mail. So how do you do this? Why not make it an educational process? Have the senior staff on the phone with the tester, and then tell the junior guys something like "We just had a breach and it's starting exfil data to this IP: x.x.x.x". Give them a chance to find it then work through with them where / what happened, and why or why not any alerts or alarms went of and if they saw it in their normal flow. Ideally they spot it before the senior staff even mention it.
+
+No, this will not fit into the 'I give you report you give me money' scenario. Companies should consider it a training exercise where they get instant and obvious benefit.
+
+There are many other arenas this helps in too. For example phishing, you know how much harder it will be for an attacker to get a payload to work if you've already tested, detected and have traps (we'll go into setting traps another time) for all the public avenues of C&C and exfiltration? They will get frustrated, and you'll know that you're being attacked. A proactive stance is what 'testing' is all about, and this is a extremely neglected aspect of it.
+
+No one will solve 'security', all we are here to do is minimize the attack surface.
+
+Come to the webinar to heckle, learn, or just hear more, or don't. I just wanted to get this out there and ask the question: Can your most important data leave on a fake Lady Gaga CD without you knowing?
+
+**Update**: Let me squash something real quick. No this is not a new idea. The prevention side is talked about ad nauseum, but hardly anyone talks about testing to see what could really happen.

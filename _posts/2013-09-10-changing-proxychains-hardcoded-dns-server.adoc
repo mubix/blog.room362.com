@@ -1,0 +1,33 @@
+---
+layout: post
+title: "Changing proxychains hardcoded DNS server"
+date: 2013-09-10 13:16:39 -0500
+comments: true
+categories: 
+- proxychains
+- proxy
+- dns
+---
+
+ If you've ever used proxychains to push things through Meterpreter, one of the most annoying things is its "hardcoded" DNS setting for 4.2.2.2, if the org that you are going after doesn't allow this out of their network, or if you are trying to resolve an internal asset, you're SOL. After a ton of googling and annoyed head slams into walls every time I forget where this is I've finally decided to make a note of it.
+
+There isn't much magic here other than knowing that this file exists, but /bin/proxyresolv is a bash script that calls "dig" using TCP and the DNS server specified so it goes through the proxychains. Here is what it looks like:
+(on Kali linux its found here: /usr/lib/proxychains3/proxyresolv)
+
+```bash
+#!/bin/sh
+# This script is called by proxychains to resolve DNS names
+# DNS server used to resolve names
+DNS_SERVER=4.2.2.2
+
+if [ $# = 0 ] ; then
+echo " usage:"
+echo " proxyresolv <hostname> "
+exit
+fi
+
+export LD_PRELOAD=libproxychains.so.3
+dig $1 @$DNS_SERVER +tcp | awk '/A.+[0-9]+\.[0-9]+\.[0-9]/{print $5;}'
+```
+
+Now you could just make the dig request yourself through proxychains then throw whatever you originally attended directly at an IP, or you can make the DNS_SERVER change and hardcode your engagement's internal IP, up to you, but now its documented and I'll never have to go searching like crazy again... as long as I remember that its on someone else's blog.

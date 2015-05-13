@@ -1,0 +1,52 @@
+---
+author: mubix
+comments: true
+date: 2008-06-15 02:52:57+00:00
+layout: post
+slug: 2008615vonage-and-ekiga-on-suse-linux-html
+title: Vonage and Ekiga on SUSE Linux
+wordpress_id: 454
+tags:
+- Uncategorized
+---
+
+This was originally posted at [http://www.jpugh.org/2008/01/vonage-and-ekiga-on-suse-linux.html](http://www.jpugh.org/2008/01/vonage-and-ekiga-on-suse-linux.html)  
+  
+I had to find it via google cache as the page is no longer there or has just been down for the past week. So I am reposting it for reference:  
+
+
+>   
+
+> 
+>   
+
+> 
+> ### Vonage and Ekiga on SUSE Linux
+> 
+>   
+
+> 
+>   
+
+> 
+>   
+  
+For the first time ever, I lost my cell phone. No freakin’ idea where it went and this IS the first time I have every lost a phone. Quite pissed.  
+  
+Regardless…in my searchings for a better way I figured I’d take a look at VOIP using Ekiga. I have been a Vonage user for several years now so that was my first stop. I found an [article](http://brandt.kurowski.net/2004/05/21/kphone) that outlined using kphone with Vonage so I started digging.  
+  
+First, you must have a softphone number from Vonage. It’s 9.99 per month and you can register for one at Vonage (do email me as you will get me a free month and I can get you an extra month free!).  
+  
+Once you have signed up for a softphone number and received all of the gory details simply open Ekiga and input the following into a new account:  
+  
+Account name - I used Vonage  
+  
+Registar - sphone.vopr.vonage.net:5061  
+  
+User - enter your complete softphone number - don’t forget the “1″  
+  
+Password - enter the password Vonage provided.  
+  
+Once you click the checkbox to activate it you will see “Registered to sphone.vopr.vonage.net” and you are all set.  
+  
+Enter in a phone number and enjoy calls through Vonage on Linux!!

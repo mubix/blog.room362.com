@@ -1,0 +1,19 @@
+---
+layout: post
+title: "Metasploit Minute - Mondays with Mubix - Episode 1"
+date: 2014-01-06 14:30:08 -0500
+comments: true
+categories: 
+- hak5
+- metasploit
+- presentations
+- metasploit minute
+---
+
+* Show URL: [Hak5](http://hak5.org/category/episodes/metasploit-minute)
+
+* Youtube URL: [YouTube](http://www.youtube.com/playlist?list=PLW5y1tjAOzI3n4KRN_ic8N8Qv_ss_dh_F)
+
+* Show RSS feed: [RSS](http://gdata.youtube.com/feeds/api/playlists/W5y1tjAOzI3n4KRN_ic8N8Qv_ss_dh_F)
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/TCPyoWHy4eA" frameborder="0" allowfullscreen></iframe>

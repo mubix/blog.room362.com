@@ -1,0 +1,15 @@
+---
+author: mubix
+comments: true
+date: 2008-10-09 04:59:00+00:00
+layout: post
+title: 'Social Engineering Challenge #1 Answer'
+categories:
+- social engineering
+---
+
+Well, it’s not the only answer but I will call them that because it’s what worked for me:  
+  
+> Sitting a couple rows down from the line so that no one would see me from the bus line I was targeting, I waited for the bus to come. As soon as it came rolling up and quickly moved into a dash for the door, timing it so that I could cut in line to be the 4th on. When contronted by the bus driver, I said that I had dropped my wallet a few stops back and and wanted to find it. Dropping my wallet while I ‘looked’ for it allowed me to certify this lie. I asked the busdriver if I could ride the bus back around to my original stop. He said yes and I was allowed to ride free of charge. And, due to all of this drama the target was already seated and others have taken up bubble-room spots (no body likes to sit together), so I didn’t look completely odd sitting next to the target. I even got up when a elderly woman came to sit down. By that time dialog was already started with the target and my honor was solidified by my kindness to others.  
+  
+These challenges don’t have prizes or winners, it’s just here to make you think. The goal is not to raise too much suspicion and gain trust.

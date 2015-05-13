@@ -1,0 +1,162 @@
+---
+author: mubix
+comments: true
+date: 2008-12-26 21:46:37+00:00
+layout: post
+title: Speaking Evolved
+categories:
+- presentations
+- speaking
+---
+
+I believe there is a fear in the security community about speaking. Most don’t believe they either have something important enough to say, or have some awesome ‘thing’ and are just too afraid of the stage. Here are some resources and videos that have helped me gain the confidence to speak.  
+  
+## Gary Vaynerchuck @ Web 2.0 Expo: 
+
+**[**http://www.youtube.com/watch?v=EhqZ0RU95d4**](http://www.youtube.com/watch?v=EhqZ0RU95d4)  
+  
+-- Specifically look at how he speaks. How he starts, how he finishes. Does he have slides?  
+  
+<iframe width="420" height="315" src="//www.youtube.com/embed/EhqZ0RU95d4" frameborder="0" allowfullscreen></iframe>
+
+## Merlin Mann @ Google: 
+
+**[**http://www.youtube.com/watch?v=uOgHE5nEq04**](http://www.youtube.com/watch?v=uOgHE5nEq04)  
+  
+-- Look at his slides, how does he flow through them? Moving from point to point continuously without stopping for the slide change. How does he get the people present to interact with the presentation.  
+  
+<iframe width="560" height="315" src="//www.youtube.com/embed/uOgHE5nEq04" frameborder="0" allowfullscreen></iframe>
+ 
+Those are two dynamic (hate that word), and powerful speakers who know how to make **IT** (not eye-tee) interesting no matter what **IT** is.  
+  
+Ok what about slides, well, basically [SlideShare](http://www.slideshare.com) is the YouTube for presenters. You can post your slides, get them reviewed by some of the best in the biz, browse and see how the pros do it, etc..  
+  
+## Slide Share - [http://www.slideshare.com](http://www.slideshare.com)  
+  
+Here are some select slides that have made a difference in my presentation style:  
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/777679" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/eduruiz8/death-by-power-point-presentation" title="Death By Power Point" target="_blank">Death By Power Point</a> </strong> from <strong><a href="http://www.slideshare.net/eduruiz8" target="_blank">Luis Saga</a></strong> </div>      
+  
+<iframe src="http://www.slideshare.net/slideshow/embed_code/322298" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/tomdolly/better-presentations-322298" title="Better Presentations" target="_blank">Better Presentations</a> </strong> from <strong><a href="http://www.slideshare.net/tomdolly" target="_blank">tomdolly</a></strong> </div>
+
+Also, Garr Reynolds, one of the masters of presenting can be found at [http://www.presentationzen.com/](http://www.presentationzen.com/).  You can find him on SlideShare at [http://www.slideshare.net/garr/](http://www.slideshare.net/garr/) .  
+<iframe width="420" height="315" src="//www.youtube.com/embed/DZ2vtQCESpk" frameborder="0" allowfullscreen></iframe>
+
+One I couldn't recover was here: **Dead Link** - [http://www.slideshare.net/fabiancrabus/presentationzen](http://www.slideshare.net/fabiancrabus/presentationzen)
+
+<object width="425" height="355" data="http://static.slideshare.net/swf/ssplayer2.swf?doc=presentationzen-1207581045216575-9&amp;stripped_title=presentationzen" type="application/x-shockwave-flash"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="src" value="http://static.slideshare.net/swf/ssplayer2.swf?doc=presentationzen-1207581045216575-9&amp;stripped_title=presentationzen" /><param name="allowfullscreen" value="true" /></object> 
+
+## Security Catalyst
+
+Comments from some of the [Security Catalyst](http://www.securitycatalyst.com/) members (Used with permission):  
+
+Are you a member? Want to be? Here is the link to the thread: [http://www.securitycatalyst.org/forums/index.php?topic=1013.0](http://www.securitycatalyst.org/forums/index.php?topic=1013.0)  
+  
+## Andrew Hay - [http://www.andrewhay.ca/](http://www.andrewhay.ca/)
+writes:  
+
+> Great post Rob. I know quite a few people who list “public speaking” as their biggest fear. The only way to overcome that fear is to keep doing it and recording “webinars” (I hate that word) is a great way to get over those jitters.
+ 
+## Dave Hull from - [http://trustedsignal.com/](http://trustedsignal.com/)
+writes:  
+
+> Rob thanks for starting the thread. I’ve been working to increase my face time with groups over the last year plus. I don’t consider myself an extrovert, but do enjoy presenting.  
+  
+> I’ve been studying presentation and teaching styles for the last few years -- [http://www.presentationzen.com/](http://www.presentationzen.com/) is a great site. All the presentations I’ve seen at [http://www.ted.com](http://www.ted.com) are quite good.  
+  
+> I recently attended a pretty bad presentation. The slides were typical PPT -- title, too many bullets with too many words after each bullet. The presenter never moved, was factually wrong on several counts and when he tried to get the audience to participate he flat out insulted one person who mispronounced Ethereal. It was awful, but I learned more about what not to do.  
+  
+> I’d like to start submitting talks to conferences. My problem is a form of writer’s block -- what to talk about. But I know from having attended numerous talks where I didn’t learn anything new, that having a brilliant new idea is not a prerequisite to giving a talk. There’s always going to be folks in the audience who know more and less than you do.  
+  
+> I was fortunate to be invited to speak at my local ISSA and HTCIA chapter meetings this month. It was a last minute invitation due to cancellations of previously scheduled speakers. Both groups needed to hear back right away and when I asked my employer about it, I was told I would have to get the approval of the Ethics Committee. Since that process was going to take some time, I had to decline the invitations. However, I did finally get standing approval for future engagements. Lesson learned, make sure you check with your employer and get your ducks in a row.  
+  
+> I recently checked out the Stand And Deliver audiobook from my local library. It’s not revolutionary, but it’s worth a listen/read for anyone who is interested in public speaking.  
+  
+> Thanks again for the links and the thread.  
+  
+## Security4all - [http://security4all.blogspot.com/](http://security4all.blogspot.com/)
+writes:  
+
+> A favorite topic of mine.  
+
+> Don’t forget the excellent blog Slide:ology from Nancy Duarte who worked on the book with Gar and now has her own book. [http://slideology.com/](http://slideology.com/)  
+  
+> I have yet to buy and read her book myself (due to lack of time).  
+  
+> You might also want to have a look at my own blog for some pointers here and there. I still have a lot to learn and practice but you might find some useful info in there:  
+  
+> [http://blog.security4all.be/search/label/presentations](http://blog.security4all.be/search/label/presentations)  
+
+> Also, have a look at my Slideshare favorites. Sometimes because of the slides, sometimes because of the topic  
+
+> [http://www.slideshare.net/security4all/favorites](http://www.slideshare.net/security4all/favorites)  
+  
+## Wim Remes - [http://domdingelom.blogspot.com/](http://domdingelom.blogspot.com/)
+writes:  
+
+> Ain’t that the truth.
+
+> I am an introvert, no doubt about that.  
+  
+> If there is one thing that helps to get over ‘the fear’, it’s dry-runs, and lots of them. There’s no substitute for training your public speaking skills in front of an audience of people that you know and trust. People that you know will be honest with you and push you forward.   
+  
+> I think most of the sites have already been mentioned PZ, Slideology, TED, Google Video (Authors@google are good sometimes too),  
+  
+> Youtube, at this moment I can’t think of any other.  
+  
+## Didier Stevens - [https://didierstevens.com/](https://didierstevens.com/) 
+writes:  
+  
+> Most don’t believe they either have something important enough to say  
+> I believe this idea is also enforced because of the extra media attention one type of IT security speakers get: “The Sky Is Falling” speakers.  
+> It’s not because you’ve not broken something, or you have no prediction of impending doom, that you’ve nothing valuable to say. To the contrary.  
+> Another hint to help you overcome your fear of speaking in public, is to start with a subject you’re passionate about (or at least interested).  
+> Your passion/subject-expertise will help you gain confidence.  
+> Analyze your fear of speaking in public. Try to identify which particular aspects of speaking in public cause you to fear it.  
+> Are you afraid to  
+> - draw a blank?  
+> - get audience questions?  
+> - look unprepared?  
+> - speak to ranking officers?  
+> - speak to a large public?  
+> - ...  
+> If you can identify precisely what worries you, you can start to work on that specific point to gain confidence.  
+> Example: afraid to draw a blank? Rehearse! Use notes, bullet points, mindmaps, ... 
+  
+## Kevin Riggins - [http://infosecramblings.wordpress.com/](http://infosecramblings.wordpress.com/)
+writes:  
+
+> The suggestions and resources offered so far on this thread are excellent. I would like to add Toastmasters.  I believe it is one of the best venues available for developing your speaking skills.
+
+> As alluded to previously, several studies have shown that the most common fear people have is speaking in public. Toastmasters helps overcome this fear or at least be able to perform in spite of it in the following ways:  
+  
+> - Speaking often - you have the opportunity to speak frequently. As the saying goes, practice makes perfect.  
+
+> - Trusted audience - the people you are speaking to are supportive and understand exactly what you are dealing with.  
+  
+> - Constructive feedback - your audience is expected and in essence required to provide you with feedback. However, it is not rah rah session. I have gotten many helpful tips. Plus there is a designated evaluator for each of your speeches with very focused feedback.  
+  
+> - Great materials - the training materials are great for helping you learn how to develop good speeches and how to deliver them effectively.  
+  
+> Toastmasters is an international organization, so you can find clubs all over the world.  
+  
+## Ron Woerner
+writes:  
+
+> How ironic.  (ISC)2 has an article in their winter magazine on speaking:
+> - ([https://www.isc2.org/uploadedFiles/%28ISC%292_Member_Content/Member_Resources/infosecmag-winter2008.pdf](https://www.isc2.org/uploadedFiles/%28ISC%292_Member_Content/Member_Resources/infosecmag-winter2008.pdf)).    
+
+> It’s cool to see the message is getting across.  
+
+> Although, it’s like golf; the only way to get better is to (a) practice and (b) get qualified feedback.  You can read all you want about it, but that won’t make you a good presenter.  
+
+> Get out there and do it.  Then ask a trusted friend what you can do better.  
+
+> (Of course, Toastmasters provides this)  
+  
+Anyways, I hope this helps. From pro to n00b, the day we stop improving is the day we start dying, As for not having anything good to say, stop fooling yourself.  
+  
+
+Rob  
+  
+[http://www.slideshare.net/mubix/](http://www.slideshare.net/mubix/) -- No posted slides yet, mine will be in que for [http://informer.ihackstuff.com/](http://informer.ihackstuff.com/) -- Johnny Long’s brilliant idea for raising money for charity by having people release to people early based on subscriptions, all proceeds go to children in need.

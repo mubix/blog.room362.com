@@ -1,0 +1,26 @@
+---
+author: mubix
+comments: true
+date: 2009-06-11 02:11:47+00:00
+layout: post
+title: Rant Back – ValSmith
+categories:
+- rant
+---
+
+Val Smith recently wrote a post on the new [Attack Research / carnal0wnage blog](http://carnal0wnage.attackresearch.com) titled:  
+”[Security Conferences, pen tests and incident response](http://carnal0wnage.attackresearch.com/node/361)”  
+  
+Here are my thoughts on what he wrote:  
+  
+In paragraphs 2-6 he talks about two points. The first being that Hacker Conferences have become sort of commercialized with most speakers going for their day in the lime light or to pimp some product/0day. And the second being a lot of the talks are things that most can’t go home / back to work and test out or implement.  
+  
+I agree with him on both points.  
+  
+On the first point I think that one detail was left out of this evaluation. Size. Back when DEFCON was <500 people, almost everyone knew each other. 90% of those attending had the passion, had the fire for that what makes our line of work such an art. Now that our community has become “popular”, that percentage is around 20-30%. These numbers aren’t based on any stats, just something that I have been observing as well.  
+  
+On the second point, my first security conference was ShmooCon ‘06. I was glued to might seat in each talk I attended, and in just 3 short years I have seen EXACTLY what he’s talking about. I used to have to decide between awesome talks in the same hour. Now I actually find times where I’m not interested in anything being presented for that hour. But, rooms still get packed so I guess that’s just my own pickiness.  
+  
+Penetration Testing and Incident is the second portion of his post and I really think he’s hit the nail on the head, Pen Testing and Incident Response should work closely together. I want to throw Vulnerability Assessment and Forensics into the mix as well, feeding each other, sharing data, and assisting. The segmentation of duties / teams is killing collaboration.  
+  
+Lets get back to the basics, and really show what this community is capable of.

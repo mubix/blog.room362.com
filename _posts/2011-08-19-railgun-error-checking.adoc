@@ -1,0 +1,35 @@
+---
+author: mubix
+comments: true
+date: 2011-08-19 02:13:01+00:00
+layout: post
+title: Railgun Error Checking
+categories:
+- railgun
+---
+
+One important thing to note about Railgun is that you are querying the API and just as if you were using C++ the API you are calling just might not be there on the system you are trying to call it on. So here is a quick trick to find out if a the function (API) that you are trying to call is available to you:
+
+For my example I'm using 'getaddrinfo' since it's life in Windows is somewhat odd. If a user has installed Windows 2000's IPv6 package it's there, if not, it's not. So if you run up on a WinNT box or a Win2k box that doesn't have an updater stack this function isn't going to work for you.
+
+(Just as a side note, this is not dependant on the fuction being defined in Railgun already)
+
+getaddrinfo is in ws2_32.dll (WinSock), so we get a handle from that DLL first:
+
+```ruby
+modhandle = client.railgun.kernel32.GetModuleHandleA('ws2_32.dll')
+```
+
+If that returns a error in the form of a Ruby hash with "GetLastError" being '127' that means that ws2_32.dll is either not there in the process. You will need to get it loaded into the process by calling client.railgun.ws2_32 or whatever DLL you are going for. (If it is not definied in Railgun this will fail and you'll have to add the dll like I've talked about in previous posts)
+
+So it's pretty eash to handle that. If modhandle["return"] == 0 something went wrong and we need to handle it, else we got a handle address and we can continue.
+
+Next up is GetProcAddress:
+
+```ruby
+procaddr = client.railgun.kernel32.GetProcAddress(modhandle['return'], 'getaddrinfo')
+```
+
+Same deal, if procaddr["return"] == 0 then we have an issue (probably the function doesnt' exist in that version of the DLL) else, we are good to go to call the function on the meterpreter session we are in and the system we are on.
+
+Easy stuff, doing this on any of the Railgun scripts/post modules you have will greatly increase both the reliability and the user's ability to know why it didn't work.

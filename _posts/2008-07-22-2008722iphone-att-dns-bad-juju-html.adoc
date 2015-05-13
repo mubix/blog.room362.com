@@ -1,0 +1,39 @@
+---
+author: mubix
+comments: true
+date: 2008-07-22 14:00:09+00:00
+layout: post
+slug: 2008722iphone-att-dns-bad-juju-html
+title: iPhone + ATT + DNS = Bad Juju
+wordpress_id: 443
+categories:
+- Hacking
+tags:
+- Hacking
+---
+
+So, now that your feed reader is full up of all the DNS problems, I would like to present you with one more tidbit. How many of you have checked your iPhone, Blackberry, or other web enabled mobile device against this vulnerability?  I did, and wasn’t happy.  
+
+
+![](http://s3.media.squarespace.com/production/438411/4879756/uploads/iPhone_DNS.jpg)
+
+  
+
+
+For more information please check out these links:
+
+  
+  
+
+
+In depth explination: [http://www.mcgrewsecurity.com/?p=151](http://www.mcgrewsecurity.com/?p=151)  
+  
+To check to see if you are vulnerable: [http://www.doxpara.com/](http://www.doxpara.com/)  
+  
+[http://www.mckeay.net/2008/07/21/patch-dns-now/](http://www.mckeay.net/2008/07/21/patch-dns-now/)  
+  
+[http://www.matasano.com/log/mtso/](http://www.matasano.com/log/mtso/)  
+  
+[http://www.doxpara.com/?p=1176](http://www.doxpara.com/?p=1176)  
+  
+[http://blogs.zdnet.com/security/?p=1520](http://blogs.zdnet.com/security/?p=1520)

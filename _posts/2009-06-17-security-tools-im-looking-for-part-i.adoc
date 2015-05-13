@@ -1,0 +1,30 @@
+---
+author: mubix
+comments: true
+date: 2009-06-17 15:14:16+00:00
+layout: post
+title: Security Tools I'm Looking For Part I
+categories:
+- wishlist
+- ideas
+---
+
+There are a lot of tools that I find in my endeavors would be really helpful, but can’t find on the net for whatever reason.  
+
+  1. A portable version of of tshark that has ARP spoofing capabilities. I want to be able to drop the file, issue the arguments and pull the pcap back.
+  	
+  2. A application that can sniff traffic from a specific process. Metasploit’s keylogger is sort of there as it only pulls keys from the process of which it is attached (DLL is to ‘fault’ for this). And Process Hacker is also pretty close, (Process Explorer does a TCPVIew like show of the connections currently happening).
+  	
+  3. An nmap script that sees port 445 open and tries pass the hash, and token passing to run a specified executable. I believe tebo was developing a psexec scanner for Metasploit, but it hasn’t been released as of yet.
+  	
+  4. A meterpreter script that sets the a all user GPO setting for wallpaper and forces the update. (For calling-card notifications during pen-tests)
+  	
+  5. A password list generator that would take URLs, and files (pulling metadata where applicable, strings in other cases). And churn out a dictionary, and also ask if you would like to start generating a Rainbow Table for that specific dictionary.
+  	
+  6. A meterpreter module like “Echo Mirage” by the BeEF guys, sort of like an iptables injection that modifies/accepts/denys packets to a specific process
+  	
+  7. This is Kevin Johnson’s idea but it should be posted: A standard XMLish format for all Web Application Scanners so that the tools interoperate. One spider session can be loaded into another tool and have it’s auditing system check it, instead of being confined too one tool.
+  	
+  8. A screen saver that imitates the screen saver lockout event and has the user login (and has it fail twice by default for “Password Validation ;-)”)  and then allows them back in, capturing those password. (Usually a user will try a couple different passwords so you might be able to glean other credentials to use). It could also have an option to state. “Account Locked, You must be an Administrator to login” so that they call an admin in to unlock it ;-)
+  
+I’ll leave it at that for now. Anyone interested in coding it ?

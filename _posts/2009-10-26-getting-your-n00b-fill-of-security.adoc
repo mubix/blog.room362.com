@@ -1,0 +1,51 @@
+---
+author: mubix
+comments: true
+date: 2009-10-26 23:02:31+00:00
+layout: post
+title: Getting your n00b fill of security
+categories:
+- internet
+---
+
+Continuing my “Getting your fill of” series 
+
+Dave Shackleford recently posted an excellent blog entry titled “One for the n00bs”: [http://daveshackleford.com/?p=277](http://daveshackleford.com/?p=277)
+
+It relates the security community to a high school cafeteria. It’s a good read and pretty dead on. I want to echo his sentiments, “I got my OWN lunch table. And you’re invited.”, I”m just an email away. I also wanted to let you know there are a lot of places where you can learn on your own, at your own pace, and without any chance of ridicule. (well, maybe a little)
+
+In no particular order:
+
+  * [Dan Guido’s Penetration Testing course at Poly U.](http://pentest.cryptocity.net/)              
+    * This mind blowing set of videos (16 so far) are taught by the best in the biz. People pay out the nose for the information released in these videos. Get out your pen and paper, because the from the time you press play you are going to be inundated with technical knowledge. (On the Vimeo site for each video you can even download the full thing for viewing on your i(Phone|Pod|Touch|Brain)) 
+       
+    * PRICE: FREE 
+
+  * [SecurityTube](http://securitytube.net/)              
+    * A consolidation of all the security /hacking related videos posted to the net. Their database of videos is massive. 
+       
+    * PRICE: FREE 
+         
+  * [The Academy](http://www.theacademypro.com/)              
+    * Kinda like Security Tube, but these videos are all professionally done by Peter Giannoulis and crew, and are on some of the big iron security tools and appliances that you wouldn’t normally be able to get your hands on to play with. This is a great way to beef up your knowledge of a product that your potential employer is running (after you have cyber stalked them: [http://www.irongeek.com/i.php?page=security/how-to-cyberstalk-potential-employers](http://www.irongeek.com/i.php?page=security/how-to-cyberstalk-potential-employers)). Or you just want to find out what that Security guy from the other section installed in your rack. 
+       
+    * PRICE: FREE (just have to sign up for a free account) 
+       
+  * [Metasploit Unleashed: Mastering the Framework by Offensive Security](http://www.offensive-security.com/metasploit-unleashed/)              
+    * This is the official documentation for the Metasploit Framework. It’s scenario driven, so it’s really easy to follow along. 
+       
+    * PRICE: FREE (Videos and other materials are available for a donation to Hackers for Charity) 
+
+And I wouldn’t be doing my duty without showing you how to get more:
+
+  * Vimeo search for Metasploit (you can even put it in your favorite feed reader): [http://vimeo.com/videos/search:metasploit](http://vimeo.com/videos/search:metasploit)
+   
+  * Pretty much any video site (youtube, blip.tv, viddler) plus searches for metasploit or hacking will net you a bunch of videos. You’ll have to sift through some trash, but there are definitely some nuggets out there. Vimeo just seems the most noise free at the moment. 
+ 
+I hope this helps you at whatever stage you think you are at since we are all n00bs to an extent. 
+
+Other “Getting your fill of” series posts:
+
+* [Getting your fill of Security](/blog/2009/5/29/getting-your-fill-of-security)
+
+* [Getting your fill of Reverse Engineering and Malware Analysis](/blog/2009/6/12/getting-your-fill-of-reverse-engineering-and-malware-analysis)

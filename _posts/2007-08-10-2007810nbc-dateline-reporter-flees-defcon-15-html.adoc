@@ -1,0 +1,16 @@
+---
+author: mubix
+comments: true
+date: 2007-08-10 11:40:23+00:00
+layout: post
+slug: 2007810nbc-dateline-reporter-flees-defcon-15-html
+title: NBC Dateline Reporter flees Defcon 15
+wordpress_id: 504
+tags:
+- Uncategorized
+---
+
+I know I am a bit late to the game but here it is:  
+[youtube=http://www.youtube.com/watch?v=nCvmkxO5hoQ&w;=425&h;=350]  
+  
+Also, if you can hear, <a href="http://arstechnica.com/news.ars/post/20070805-only-at-defcon-nbc-dateline-nailed-trying-to-nail-feds-hackers.html" >check out this arstechnica article</a>

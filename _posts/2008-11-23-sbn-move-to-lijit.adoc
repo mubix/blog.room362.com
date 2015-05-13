@@ -1,0 +1,16 @@
+---
+author: mubix
+comments: true
+date: 2008-11-23 15:36:49+00:00
+layout: post
+title: SBN move to Lijit
+categories:
+- blogging
+---
+
+Alan posted this about the SBN:  
+
+> Well there is not much sense keeping it a secret any longer, as [others have already blogged](http://help.godaddy.com/topic/154) on it. The Security Bloggers Network is going [Lijit](http://wwww.lijit.com/). Working with the folks who bring you Lijit search widgets, the Security Bloggers Network has a new home. You can find site at [http://www.securitybloggers.net](http://www.securitybloggers.net/) (thanks to Tyler Reguly of [http://www.computerdefense.org](http://www.computerdefense.org/)) and at [http://www.securitybloggersnetwork.com](http://www.securitybloggersnetwork.com/) (this may still be resolving).  Either URL should work.  You can subscribe to the new [feed here](http://www.securitybloggers.net/feed/).[StillSecure, After All These Years](http://www.stillsecureafteralltheseyears.com/ashimmy/2008/11/the-sbn-is-going-lijit-shouldnt-you.html), Nov 2008
+
+
+If you don’t know what the Security Bloggers Network is, it is a colition of security blogger’s feeds, allowing you the reader to only subscribe to one feed, while getting a dynamic set up updates from all kinds of bloggers.

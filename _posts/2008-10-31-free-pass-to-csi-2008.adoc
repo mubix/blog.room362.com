@@ -1,0 +1,27 @@
+---
+author: mubix
+comments: true
+date: 2008-10-31 06:12:23+00:00
+layout: post
+title: Free Pass to CSI 2008
+categories:
+- cons
+- internet
+- csi
+---
+
+What is CSI? This is what CSI says about it:  
+
+> Security is in transition. There is general agreement that security does not work, but not on how to fix it. CSI 2008 is the only event today that faces the challenge to _reconsider security_. This year at CSI’s annual event, the [most innovative minds](https://www.cmpevents.com/CSI35/a.asp?option=G) in security will grapple with the [tough questions](http://www.csiannual.com/conference/questions.php), providing a reality-check and alternative to cookie-cutter conferences that merely tweak the status quo.
+
+I haven’t been to CSI yet, but I will be going this year and it seems like an outstaning conference. Far from [ShmooCon](http://www.shmoocon.org/) but still packed with rockstars such as Jeremiah Grossman and Andy Willingham.  
+  
+Cool, but what is the title about?! Well, I, along with each of the other SBN members have been authorized to give away a free conference pass! All you have to do is name the DLL that was patched in MS08-067. First person to get that answer to me, be it IM, email, or twitter, wins the pass.  
+  
+Ok, what if I don’t win, can I still get something? Sure! Use the coupon code: **BLOG25** to get 25 % off your admission._ TIME IS LIMITED_. This conference starts the week of November 15th.  
+  
+[http://www.csiannual.com/](http://www.csiannual.com/) for more details.  
+
+What do I get out of this ad? Nothing, I was already going. See you there!  
+  
+We have a winner! - But that doesn’t mean other SBN members aren’t also giving away free passes: [http://www.mckeay.net/2008/10/31/tell-me-your-security-or-it-horror-story-and-win-a-pass-to-csi/](http://www.mckeay.net/2008/10/31/tell-me-your-security-or-it-horror-story-and-win-a-pass-to-csi/)

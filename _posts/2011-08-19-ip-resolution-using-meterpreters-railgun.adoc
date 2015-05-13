@@ -1,0 +1,93 @@
+---
+author: mubix
+comments: true
+date: 2011-08-19 19:26:55+00:00
+layout: post
+title: IP Resolution Using Meterpreter’s Railgun
+categories:
+- meterpreter
+- railgun
+---
+
+I saw a post back in June and it just recently came up again:
+
+[http://www.securityartwork.es/2011/06/01/dns-port-forwarding-con-meterpreter/](http://www.securityartwork.es/2011/06/01/dns-port-forwarding-con-meterpreter/)
+
+It looked like a lot of hard work to set that up and I'm really lazy. I didn't want to have to go through all that every time I got onto a new network. So, I made a very simple meterpreter post module to just call a Windows API key called 'gethostbyaddr' using Railgun.
+
+**TL:DR;** You can download the post module here: [ipresolver.rb](https://gist.github.com/mubix/8215137)
+
+The function 'gethostbyaddr' ([http://msdn.microsoft.com/en-us/library/ms738521(v=VS.85).aspx]("http://msdn.microsoft.com/en-us/library/ms738521(v=VS.85).aspx)") is pretty simple at first glance:
+ 
+```cpp
+struct hostent* FAR gethostbyaddr(
+  __in  const char *addr,
+  __in  int len,
+  __in  int type
+);
+```
+
+Give it an address, length and type and it gives you a hostname back… easy right?
+
+Defining it, since it isn't in the Railgun definitions is pretty simple:
+
+```ruby
+client.railgun.add_function('ws2_32', 'gethostbyaddr', 'DWORD', [        
+	['PCHAR', 'addr', 'in'],         
+	['DWORD','len','in'],         
+	['DWORD','type','in']
+])
+```
+
+First hurdle is to get your IP into 'network byte order'. Rex (Metasploit's API/Library) to the rescue.
+
+[http://dev.metasploit.com/documents/api/classes/Rex/Socket.html#M002073](http://dev.metasploit.com/documents/api/classes/Rex/Socket.html#M002073)
+
+The 'addr_aton' method does just that:
+
+```ruby
+nbi = Rex::Socket.addr_aton('192.168.1.100')
+=> "xC0xA8x01d"
+```
+
+Make the call to the API and done right?
+
+```ruby
+result = client.railgun.ws2_32.gethostbyaddr(nbi.to_s, nbi.size,2)
+```
+
+Wrong, what you get back is a pointer to a mess, well lets get the mess (using a google IP for this example):
+
+```ruby
+struct = client.railgun.memread(result['return'],100)
+=> "xA0x03fx00x88x0Efx00x02x00x04x00x8Cx0Efx00x00x00x00x00x94x0Efx00x00x00x00x00J}]cqw-in-f99.1e100.netx00@efx00x06x00bx00x13x01bx00xE0vvx00xvvx00xE8x0Efx00xEEx96x03x00x00bx00x00 x01x00x00x01x00x00x00x01x00x00x00x01x00x00x00"
+```
+
+Ya.. that…
+
+I tried using the pointer at the 12th byte location and that worked most of the time, but failed bad on others:
+
+```ruby
+ptrptr = struct[12,4].unpack("V*")[0]        
+hostnameptr = client.railgun.memread(ptrptr,4).unpack("V*")[0]         
+hostname = client.railgun.memread(hostnameptr+nbi.size,59).split("")[0]
+```
+
+(there were a bunch more lines of error correcting but I'll just wanted to show these as the actual methods used on a successful run)
+
+But on other hosts the 12th byte came back with a pointer to all 0s, so there was no way to jump again (hostnameptr) to the actual hostname.
+
+What I missed while trying to do things the "C" way was that the hostname was always pretexted with the IP address in network byte order… Hold up, I know it begins with something I already know, and ends in the standard "C" string terminator of a null byte. So all of that plus the crazy error correction became:
+
+```ruby
+struct = client.railgun.memread(result['return'],100)        
+hostname = struct.split(nbi)[1].split("")[0]
+```
+
+2 lines… work 100% of the time in my test cases.
+
+That's it, you can check out the download for the post module above.
+
+I do however have 1 disadvantage over how the guys at SecurityArtWork did things. You can't thread it. For whatever reason the API call that I am using uses the exact same memory space for each lookup. I tried putting threading in and what I got was a bunch of systems that resolved to the exact same thing.
+
+If anyone knows a way to fix this I am all ears because right now the module is slow.

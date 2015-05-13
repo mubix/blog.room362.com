@@ -1,0 +1,39 @@
+---
+author: mubix
+comments: true
+date: 2009-01-21 16:21:58+00:00
+layout: post
+title: Podcasters Meetup at ShmooCon
+categories:
+- podcasting
+- shmoocon
+- cons
+---
+
+More information can be found at [http://www.podcastersmeetup.com/](http://www.podcastersmeetup.com/)  
+  
+But here is the down and dirty:   
+  
+We are sponsored this year by: [HP](http://www.hp.com/), [SunbeltSoftware](http://www.sunbeltsoftware.com/), [DojoSec](http://www.dojosec.com/), and [TheAcademyPro](http://www.theacademypro.com/) / [TheAcademyHome](http://www.theacademyhome.com/) solidly so far.  
+  
+The following podcasts will be making an appearance:  
+
+  * [Hak5](http://www.hak5.org/)
+  * [PaulDotCom](http://www.pauldotcom.com/)
+  * [CyberSpeak](http://cyberspeak.libsyn.com/)
+  * [Securabit](http://www.securabit.com/)
+  * [SploitCast](http://www.sploitcast.com/)
+  * [Unpersons](http://www.unpersons.org/)
+  * [Phone Losers of America](http://www.phonelosers.com/)
+  * [SMBMinute](http://smbminute.com/)
+  
+  
+And the schedule goes as such:  
+  
+  * 1700 - 1800 - Meet and greet, and setup (Everyone involved in the live event please show up as close to this start time as possible)
+  * 1800 - 1900 - Live Show (This will probably go over time)
+  * 1900 - 1930 - Book signing and transition time
+  * 1930 - 2030 - FireTalks (more below)
+  * 2030 - 0400 - Food and Drinks on us at local spot. ( We are fielding a couple options right now, but nothing locked down yet.
+  
+Plus a new event: FireTalks. Check out the site for more details.

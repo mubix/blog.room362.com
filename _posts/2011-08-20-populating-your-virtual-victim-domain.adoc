@@ -1,0 +1,120 @@
+---
+author: mubix
+comments: true
+date: 2011-08-20 19:14:53+00:00
+layout: post
+title: Populating Your Virtual Victim Domain
+categories:
+- lab
+- ruby
+- scripting
+---
+
+**Update 1**: No this doesn't need to be in memory since you control the system but it was a fun challenge
+
+**Update 2**: The info from the 'adduser' payload says '_Create a new user and add them to local administration group_' - I'm guessing since I ran this on a DC is why I didn't notice this but it is something to keep in mind when running this script.
+
+**Update 3**: Here is a powershell way of doing things from a CSV, you can do some passwords in the CSV and keep it for reference too. I think this is the best solution I've found to inlude mine: [http://unlockpowershell.wordpress.com/2010/10/12/creating-random-users-for-a-domain/](http://unlockpowershell.wordpress.com/2010/10/12/creating-random-users-for-a-domain/)
+
+Adding users to a domain that you create for learning, training, or just for testing things out on can be quite tedious. Most of the time I just put a few users to simulate the different 'levels' I need for my testing. However that doesn't really give someone you're training much to think about, i.e. It's really easy to identify the 'interesting' users when there are only a couple to pick from.
+
+I am certainly not the first one to solve this problem:
+
+* [http://www.petri.co.il/create_users_for_testing_purposes.htm](http://www.petri.co.il/create_users_for_testing_purposes.htm)
+* [http://blog.commandlinekungfu.com/2010/07/episode-104-fricken-users.html](http://blog.commandlinekungfu.com/2010/07/episode-104-fricken-users.html)
+* [https://twitter.com/#!/Carlos_Perez/status/71373112494661632](https://twitter.com/#!/Carlos_Perez/status/71373112494661632)
+
+These work perfectly and are all really easy. The problem for me is that with some the username is too similar and/or the passwords are the same/similar.
+
+Well, of course I had to do it in Metasploit. (No, not everything has to be in Metasploit, but in this instance it actually helps a lot and you'll see why in a sec)
+
+Easiest way to get a bunch of random users is to download a list of names, I used this one:
+
+[http://packetstormsecurity.org/files/32083/other-names.gz.html](http://packetstormsecurity.org/files/32083/other-names.gz.html)
+
+And of course you need passwords too, and there isn't a better list than the RockYou list. Skull Security has it over here:
+
+[http://www.skullsecurity.org/wiki/index.php/Passwords](http://www.skullsecurity.org/wiki/index.php/Passwords)
+
+**TL:DR;** You can download the Meterpreter script here: [addusers.rb](https://gist.github.com/mubix/8215113)
+
+Start off by importing all the names and passwords into arrays we can manipulate easier:
+    
+```ruby
+namefile = File.new('other-names.txt', 'r')
+passwordfile = File.new('rockyou.txt', 'r')
+usercount = 5000
+
+names = []
+namefile.each_line do |line|
+	names << line.chomp
+end
+
+passwords = []
+passwordfile.each_line do |line|
+	passwords << line.chomp
+end
+```
+
+The 'usercount' variable will be used for out loop on how many users to create. Next, just to shake things up we create another array of common suffixes:
+
+```ruby
+datesnum = []
+(0..9).each do |x|
+	datesnum << x
+end
+
+(40..99).each do |x|
+	datesnum << x
+end
+
+(2000..2013).each do |x|
+	datesnum << x
+end
+```
+
+Now to loop through the account creation, and since I'm not a big fan of running cmd.exe (staying in memory is one of the staples of Meterpreter) we'll do it by injecting $usercount amount of the windows/adduser payload into our current process.
+
+For usernames I take a random name and use it's first letter, and then another random selection for the rest. This makes it look like a first initial + last name username scheme.
+
+For passwords I throw a bit of twist in there I randomly select to have a 'bad/ok/good' password and use just a random selection, random selection + a date or number we generated earlier, or a double random selection put together, respectively.
+
+```ruby    
+(0..usercount).each do
+	fname = names[rand(names.size)]
+	lname = names[rand(names.size)]
+	goodpass = rand(3)
+	password = case goodpass
+	when 0
+		passwords[rand(passwords.size)]
+	when 1
+		"#{passwords[rand(passwords.size)]}#{datesnum[rand(datesnum.size)]}"
+	when 2
+		"#{passwords[rand(passwords.size)]}#{passwords[rand(passwords.size)]}"
+	end
+	username = "#{fname[0].chr}#{lname}"
+	case goodpass
+	when 0
+		puts "#{username} has a bad password of #{password}"
+	when 1
+		puts "#{username} has an ok password of #{password}"
+	when 2
+		puts "#{username} has a good password of #{password}"
+	end
+	
+	payload = 'windows/adduser'
+	pay = client.framework.payloads.create(payload)
+
+	pay.datastore['USER'] = username
+	pay.datastore['PASS'] = password
+
+	raw = pay.generate
+	host_process = client.sys.process.open(client.sys.process.getpid, PROCESS_ALL_ACCESS)
+	mem = host_process.memory.allocate(raw.length + (raw.length % 1024))
+	host_process.memory.write(mem, raw)
+	host_process.thread.create(mem, 0)
+	print_status("#{username} created with password: #{password}")
+end
+```
+
+Know what's great about this? With just a few changed lines you can slam all of the user creation payloads into one binary and have a binary you can run any time you want to gen a bunch of users quickly. (Good to mess with CCDC blue teams too!

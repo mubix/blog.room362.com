@@ -1,0 +1,17 @@
+---
+author: mubix
+comments: true
+date: 2008-12-06 22:00:00+00:00
+layout: post
+title: Security Guards without guns
+categories:
+- rant
+---
+
+![](/images/postimages/200812_securityguard_1.png)   
+  
+I have had this rant on [Twitter](http://www.twitter.com/mubix) (if they had threading I would link to it). I have also had it in person a half dozen times at [CSI Annual](http://www.csiannual.com/). And a piece of it was touched on a piece of the puzzle by [Jack Daniel on his blog](http://blog.uncommonsensesecurity.com/) posting “[The Fallacy of Penetration Testing](http://blog.uncommonsensesecurity.com/2008/12/fallacy-of-penetration-testing.html)”.   
+
+We as “Security Professionals” have a big problem. We usually don’t have the power to make change. This has been a fight that every one of us has gone to bat for and usually lost. We are basically security guards without guns. We don’t have the ability to shoot that intruder if he trys to step up. Now, that is an over simplification, but you understand what I mean.  
+
+So we all want the power, but are we ready for the consequences that such power brings? Are you ready to loose your job or go to jail if someone breaks into your network? Again, an over simplification, and I understand there are things outside the control of all of us, but if you implement security policyes, and products, and they fail, why do we just go ‘oh well, lets mitigate and try to catch them the next time’. I don’t think that the security community as a whole is ready for such power or the consequences it brings. I know this is going to be a very controversial issue, so fell free to post your comments. Tell me why you think we are ready for the guns.

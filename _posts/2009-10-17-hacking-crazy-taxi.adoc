@@ -1,0 +1,25 @@
+---
+author: pragmatk
+comments: true
+date: 2009-10-17 15:36:52+00:00
+layout: post
+title: Hacking Crazy Taxi
+categories:
+- facebook
+- pragmatk
+- guestpost
+---
+
+I had a bet with my friend about getting #1 on the Crazy Taxi high score page (== motivation for this post).
+
+For those who have not been introduced to it yet, it's a Facebook/Flash/2.0 resurrection of a much older game.
+
+Not having extreme timing skills, I quickly gave up on getting the 2,000,000 points required to make it the "normal" way: My first try was modifying the outgoing HTTP traffic using the Tamper Data plugin for Firefox (to catch the obvious ones). The Crazy Taxi Flash does actually submit your score using HTTP in clear text (IIRC they have a reflected XSS there as well), but the GET-param is only used for displaying a score - nothing is saved. By the looks of things, they seem to be RC4-encrypting the score as some sort of weak client-side anti-tamper protection, and even though singling out the request that submitted the score was no pain at a all - it actually said "submitScore" - decompiling the Flash, however, was.
+
+At first I tried with flasm, but for some reason flasm went all bananas when confronted with the Crazy Taxi flash files, so I started sketching up a Flash / AS3 deobfuscator / decompiler with [Frigolit](http://frigolit.net) - and then I realized that simply debugging the host process would be far the fastest way to do it. I started out with setting my score to "6661337", but someone had "beat" it the day after. I wanted to be on top, and I didn't want to have to "maintain" my position. I wanted the maximum score, so that made me look into matters and discover that the score was stored in a signed double (I think they use PHP ;).
+
+Here's a video of me "achieving" 0x7fff ffff points. A nice little thing is that if you go above 0x7ffff ffff (>=0x8000 0000), the sign will flip and your numbers will "shrink" instead of growing. Damn I would like to see the frustrated faces of all them other script kiddies when they sit at home, trying to raise their scores and getting minus values instead :-)
+
+<object width="400" height="225"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=7105034&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=ff9933&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=7105034&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=ff9933&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="225"></embed></object>
+
+[Hacking Crazy Taxi](http://vimeo.com/7105034) from [Joe Pragmatk](http://vimeo.com/pragmatk) on [Vimeo](http://vimeo.com).

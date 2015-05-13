@@ -1,0 +1,67 @@
+---
+author: mubix
+comments: true
+date: 2010-01-26 14:44:37+00:00
+layout: post
+title: Security (CAN BE) an ART not a SCIENCE
+categories:
+- rant
+---
+
+This is far from a new idea, however it's not something that is easily provable. So I had an idea this morning. I posed the following question on Twitter:
+
+![](/images/postimages/201001_art_1.png)
+
+You know what I got in return? a resounding "No" from everyone. (well I had [one outlier](http://twitter.com/falconsview/status/8235524239) but, who doesn't when you are trying to apply science to prove art) I challenge you to name another non-artistic career that people are so passionate about that they would stay in it even if they won the lottery.
+
+Here are a few that I would like to highlight:
+
+[@schuetzdj](https://twitter.com/schuetzdj)
+
+![](/images/postimages/201001_art_2.png)
+
+[@TomSellers](https://twitter.com/TomSellers)
+
+![](/images/postimages/201001_art_3.png)
+
+[@ethicalhack3r](https://twitter.com/ethicalhack3r)
+
+![](/images/postimages/201001_art_4.png)
+
+[@dookie2000ca](https://twitter.com/dookie2000ca)
+
+![](/images/postimages/201001_art_5.png)
+
+This was a somewhat surprising outcome. See a trend? Most people wanted to quit their jobs, and start their own infosec company. Why is this? Is it just "The American Dream" or is it because they are unhappy with the current people in leadership? Or is it simply the fact that they are hindered from actually pursuing and learning hacking/security at work? The world may never know, but I do implore firms to look at the retention rate of their _actual_ talent. (No, I don't buy into the No Infosec Peep left behind bull).
+
+There is a rumor that Google has a practice. 2 hours a day, you (an employee of Google) are REQUIRED to work on a project of your own, that is in no way indebted or owned by Google, even after completion. I can imagine the above answers would change if that were the case where they worked. If their employers fostered learning.
+
+As a result of Infosec / Hacking being an art, do we have our premadonas? Of course. But do we also have our Van Gogh's and Michelangelo's? Definitely.
+
+But, time for a bit of a reality check:
+
+[@daveshackleford](https://twitter.com/daveshackleford)
+
+![](/images/postimages/201001_art_6.png)
+
+Ya, you have NO idea what you would really do with millions of instant cash. I think the number is some 80% of lottery winners go BANKRUPT in the first 10 years. This is because you, and EVERYONE you have ANY connection to, goes absolutely crazy. To the point that there are lottery winner support groups.
+
+However, the fact that people say it now, shows that they at least have the passion for the art. (or are just fronting)
+
+Here some **honest** answers to even out the tide:
+
+[@shmoosr](https://twitter.com/shmoosr)
+
+![](/images/postimages/201001_art_7.png)
+
+[@Bolster](https://twitter.com/Bolster)
+
+![](/images/postimages/201001_art_8.png)
+
+[@andrewsmhay](https://twitter.com/andrewsmhay)
+
+![](/images/postimages/201001_art_9.png)
+
+In conclusion, I believe that hacking is a science, until passion adds the artistic fire to the mix. At least that's what I think, draw your own conclusions.
+
+(That's another thing I love about this field, you are constantly challenged to draw your own conclusions, to think, to learn, to improve, to be… better)

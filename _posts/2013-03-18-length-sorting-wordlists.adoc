@@ -1,0 +1,27 @@
+---
+author: mubix
+comments: true
+date: 2013-03-18 20:01:44+00:00
+layout: post
+title: Length Sorting Wordlists
+categories:
+- cracking
+- cli
+---
+
+This is one of those stupid simple things that are easy to forget so I'm posting it here. Wordlists and dictionaries are awesome for cracking password hashes, and although, thanks to things like Mimikatz and WCE I don't have to, but there is times where it's important.
+
+Now, having John, Hashcat, or Cain go through a dictionary is a 1-for-1 hit, no time wasted no matter how it's sorted and usually is best to sort them by most common first so you get earlier hits. However, if you start throwing rules into the mix that equation changes. If you have "iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii" on the 3rd line of your dictionary, testing every possible permutation where you replace an 'i' with a 1 is going to take a very long time.
+
+Both Hashcat and John deal with this by limiting the length where permutations occur. (HC/JTR peeps please correct me if I'm wrong). Cain on the other hand, will try every possibility and hang on the 3rd line for years (over exagerated). How do you solve that? Easy, remove any word over a certain length. While that does work, and very similar to what the HC/JTR do, I don't like loosing words from my dictionary, so I tend to sort them by length. That way, all the nasty ones are near the end and I can scale back the rules on them.
+
+To do that is very simple:
+
+```
+awk '{print length, $0}' rockyou.txt | sort -n | cut -d " " -f2- > rockyou_ls.txt
+```
+
+Thats it. Basic, simple and stored here for reference.
+
+
+

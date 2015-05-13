@@ -1,0 +1,23 @@
+---
+author: mubix
+comments: true
+date: 2005-10-07 10:27:12+00:00
+layout: post
+title: Hackers are STUCK!
+categories:
+- backtrack
+- livecd
+---
+
+Security oriented Linux Live CD "WHAX" is supposedly merging with Auditor.   
+
+Quick history of WHAX:
+
+* Whoppix based off Knoppix: Awesome CD   
+* Whoppix gets a name change and base distro change: Not broken, don't fix it.   
+* New WHAX website gets hacked: ironic.   
+
+Sep 9th... We (WHAX) are merging with Auditor, we need a new name: Anyone up for a downhill run?  
+STILL NO UPDATE! What's going on guys?  
+  
+jd

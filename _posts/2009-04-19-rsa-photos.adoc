@@ -1,0 +1,16 @@
+---
+author: mubix
+comments: true
+date: 2009-04-19 21:00:00+00:00
+layout: post
+title: RSA Photos
+categories:
+- cons
+- RSA
+---
+
+![](/images/postimages/4_guys_in_a_little_car.png)
+![](/images/postimages/200904_rsa_1.png)
+![](/images/postimages/200904_rsa_2.png)
+
+Stolen from: http://www.flickr.com/photos/31513605@N05/

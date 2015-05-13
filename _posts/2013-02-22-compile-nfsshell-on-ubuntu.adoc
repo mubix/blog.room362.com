@@ -1,0 +1,24 @@
+---
+author: mubix
+comments: true
+date: 2013-02-22 20:36:02+00:00
+layout: post
+title: Compile NFSShell on Ubuntu
+categories:
+- tools
+---
+
+This is here because I always forget how to do it
+
+1. `sudo apt-get install libtirpc-dev libncurses-dev`
+2. `wget http://www.cs.vu.nl/pub/leendert/nfsshell.tar.gz`
+3. `tar zxvf nfsshell.tar.gz`
+4. `cd nfs`
+5. `ln -s /usr/include/tirpc/rpc/clnt_soc.h /usr/include/rpc/clnt_soc.h`
+6. `perl -p -i.orig -e 's/getline/getline_nfs/' nfs.c`
+
+Next part I don't have a good way to automate. You need to go in and comment out (w/ #) the 4 lines following "uncomment the following 4 lines for Solaris 2.x" and uncomment the 2 lines following "For GNU readline support you need to add"
+
+After that a simple "make" should get you ./nfs sitting there for your use.
+
+Will probably make a repo out of this so I don't have to keep doing it..

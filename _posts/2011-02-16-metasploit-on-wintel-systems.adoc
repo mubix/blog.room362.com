@@ -1,0 +1,21 @@
+---
+author: mubix
+comments: true
+date: 2011-02-16 19:23:47+00:00
+layout: post
+title: Metasploit on Wintel Systems
+categories:
+- windows
+---
+
+(No I'm not old enough to have used that term when it was the standard)
+
+I believe that this tweet should be archived for reference:
+
+[http://twitter.com/#!/_ming_se/status/37688231185219584](http://twitter.com/#!/_ming_se/status/37688231185219584)
+
+[![](/images/postimages/201102_wintel_1.png)](http://twitter.com/#!/_ming_se/status/37688231185219584)
+
+And for those who don't get the reference, here is a Pontiac Fiero:
+
+![](/images/postimages/201102_wintel_2.png)

@@ -1,0 +1,15 @@
+---
+author: mubix
+comments: true
+date: 2009-12-22 15:13:06+00:00
+layout: post
+title: Linked in to Twitter
+categories:
+- rant
+---
+
+If you hadn't noticed, LinkedIn has started allowing you to link your Twitter account to your LinkedIn account. So, I didn't know this (since I opted out), but apparently LinkedIn will kick your status updates to Twitter... like when you get a new job...
+
+![](/images/postimages/200912_linkedin_1.png)
+
+Privacy settings out the window! Woohoo for Web 2.0!

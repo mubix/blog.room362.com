@@ -1,0 +1,29 @@
+---
+author: mubix
+comments: true
+date: 2008-03-16 21:10:55+00:00
+layout: post
+slug: 2008316no-tech-hacking-tip-of-the-hat-html
+title: No Tech Hacking - Tip of the Hat
+wordpress_id: 469
+tags:
+- Uncategorized
+---
+
+I just wanted to do my part and tip my hat to Johnny Long from [Ihackstuff.com](http://johnny.ihackstuff.com). He really is doing great work. Also, check out [hackersforcharity.org](http://www.hackersforcharity.org/) to do your part. Without further ado, HERE’S JOHNNY!  
+
+
+> **No Tech Hacking Released!**  
+  
+I’m proud to announce the release of No Tech Hacking from Syngress Publishing! I’m even more happy to announce that 100% of the proceeds will be going to charity. In fact, [each purchase through this Amazon like will feed an African child for one month!](http://www.amazon.com/gp/product/1597492159?&camp=212361&creative=380729&linkCode=wey&tag=ihackstuff-20)  
+  
+What’s the story with the proceeds?  
+  
+It’s simple, really. My proceeds from this book are going to AOET (aoet.org), an organization that provides food, education and medical care to children left in the wake of Africa’s HIV/AIDS epidemic. More than an aid organization, AOET aims to disrupt the cycle of poverty and hopelessness in sub-Saharan Africa through empowerment programs and job training, enabling children and adults to be self-sustaining, restoring not only their health but their pride and hope for a brighter future. A single book purchase made through my Amazon associates account (linked from any of my websites, or though http://tiniuri.com/f/Xpc) will generate enough income for AOET to feed a child for an entire month. Other retail purchases (which generate half as much income) will provide either medical services or educational supplies and funding for a single child through a donation pool set aside for those purposes. Why bother? Because I am called to “look after orphans and widows in their distress” (James 1:27), and I know from personal experience how mutually transformative it can be to take that calling seriously. Hamlet was onto something when he wondered, “Whether ‘tis nobler in the mind to suffer the slings and arrows of outrageous fortune or to take arms against a sea of troubles, and by opposing, end them.”  
+  
+-- Johnny Long
+
+  
+So if you can’t do anything else, buy a book using the link above and help support a child in need. Again, the link is:  
+  
+No Tech Hacking on Amazon.com -  [**http://tinyurl.com/3bt9or**](http://tinyurl.com/3bt9or)

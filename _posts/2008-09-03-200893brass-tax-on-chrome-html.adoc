@@ -1,0 +1,49 @@
+---
+author: mubix
+comments: true
+date: 2008-09-03 15:58:16+00:00
+layout: post
+slug: 200893brass-tax-on-chrome-html
+title: Brass Tax on Chrome
+wordpress_id: 434
+categories:
+- Rant
+tags:
+- Rant
+---
+
+So there is already an exploit: [http://blogs.zdnet.com/security/?p=1843](http://blogs.zdnet.com/security/?p=1843)  
+  
+There are naysayers: [http://www.tgdaily.com/content/view/39154/108/](http://www.tgdaily.com/content/view/39154/108/)  
+  
+And then there is the truth: [http://www.stillsecureafteralltheseyears.com/ashimmy/2008/09/sucking-the-chr.html](http://www.stillsecureafteralltheseyears.com/ashimmy/2008/09/sucking-the-chr.html)  
+  
+I like the design of the tabs and address bar, but I can do that with a theme in firefox. I want my add-ons, even with the memory problems. Chrome is great for Mom and Pap, but for “Internet Power Users” it falls lightyears short on features. So where is the brass tax?  
+  
+IMHO:  
+  
+Firefox > (INSERT CHROME HERE) > Opera > Safari > IE7 > IE8 > IE6  
+  
+In other news: Yousif Yalda has made it to the coveted “Stupid People” link category, where until now was solely held by Ashley Park.  
+  
+And the hits just keep rolling in:  
+
+
+  
+	
+  * [http://www.milw0rm.com/exploits/6353](http://www.milw0rm.com/exploits/6353) -- DoS
+  
+	
+  * [http://evilfingers.com/advisory/google_chrome_poc.php](http://evilfingers.com/advisory/google_chrome_poc.php) - Original PoC for DoS
+  
+	
+  * [http://blogs.zdnet.com/security/?p=1847](http://blogs.zdnet.com/security/?p=1847)
+  
+	
+  * [http://erratasec.blogspot.com/2008/09/lookingglass-vendor-of-week-google.html](http://erratasec.blogspot.com/2008/09/lookingglass-vendor-of-week-google.html)
+  
+	
+  * [http://sunbeltblog.blogspot.com/2008/09/chrome-rocks-i-dont-care-what-others.html](http://sunbeltblog.blogspot.com/2008/09/chrome-rocks-i-dont-care-what-others.html)
+  
+  
+**AUTOMATIC DOWNLOADS? What?!** [http://www.milw0rm.com/exploits/6355](http://www.milw0rm.com/exploits/6355)

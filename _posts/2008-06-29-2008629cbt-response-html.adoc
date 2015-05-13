@@ -1,0 +1,23 @@
+---
+author: mubix
+comments: true
+date: 2008-06-29 18:24:36+00:00
+layout: post
+slug: 2008629cbt-response-html
+title: CBT Response
+wordpress_id: 447
+categories:
+- Hacking
+tags:
+- Hacking
+---
+
+Since I wasn’t able to catch the commenter before they went offline I will leave it anonymous but they make a good point about my [Crazed Bovine Traversal](/archives/198-Crazed-Bovine-Traversal.html) post:  
+
+
+> In response to your “Crazed Bovine Traversal” blog post, a ringtone virus would likely depend upon some sort of code execution bug in the audio parsing code of the mobile device. Propagation could simply be done via text messaging or web site. It’s possible but to be honest sort of unlikely that it would last long. Most exploits for these types of vulnerabilities would be targeted towards a specific mobile device but you could always do something like...  
+  
+-- Anonymous
+
+  
+The response was never completed, but I would like to pose this question. Wouldn’t it be a specific mobile OS not just a specific device? I mean, how often does your phone say. “Patch available, press here to update”. Not to be cynical, but even Microsoft Windows gets updates faster than most phones. I have absolutely no knowledge of how a mobile OS works or the versioning behind them. So please correct me if I am wrong. To be honest, the iPhone, from what I have seen, gets more updates than Windows Mobile and Blackberry combined. I mean just search for Blackberry 4.3 and AT&T. That update has been out for something like a year, and AT&T still won’t release it to it’s customers.

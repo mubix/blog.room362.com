@@ -1,0 +1,23 @@
+---
+author: mubix
+comments: true
+date: 2013-05-30 02:56:57+00:00
+layout: post
+title: Query all windows services config from the command line
+categories:
+- cli
+- privesc
+- services
+---
+
+This is how I did it:
+
+`for /f "tokens=5 delims=" %A in ('reg query HKLM\SYSTEM\CurrentControlSet\Services') do sc qc %A`
+
+Let me know if you know of a better way.
+
+If you don't know why this could be important read here:
+
+[http://www.ihtb.org/security/program.exe-privilege_escalation.txt](http://www.ihtb.org/security/program.exe-privilege_escalation.txt)
+
+If you are on a Win7 box or otherwise have the option to use WMI you can use the following command: `wmic service get pathname`

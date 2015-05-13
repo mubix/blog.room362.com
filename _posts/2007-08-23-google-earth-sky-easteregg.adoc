@@ -1,0 +1,14 @@
+---
+author: mubix
+comments: true
+date: 2007-08-23 04:20:32+00:00
+layout: post
+title: Google Earth SKY Easteregg
+categories:
+- internet
+- technocrat
+---
+
+What star is right around the corner?  
+  
+[read more](http://tech.nocr.at/tech/google-earth-sky-easteregg) | [digg story](http://digg.com/software/Google_Earth_SKY_Easteregg)

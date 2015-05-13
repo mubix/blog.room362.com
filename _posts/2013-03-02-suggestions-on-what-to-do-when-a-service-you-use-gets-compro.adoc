@@ -1,0 +1,24 @@
+---
+author: mubix
+comments: true
+date: 2013-03-02 21:02:22+00:00
+layout: post
+title: Suggestions on what to do when a service you use gets compromised
+categories:
+- internet
+---
+
+It seems like every week there is a new compromise of some service or another. But as a user what are you supposed to do with this knowledge? Here are some suggestions on things to do or think about when reacting:
+
+1. Do you use the password you use there anywhere else?
+1. Think about starting to use a password manager like LastPass, 1Password, KeePass, or a product like Yubico. This way you can very easily use different passwords for different sites.
+1. Sit down and and start changing every where you use that password. Not just web sites, any machines (your work account) or applications are also possible targets. Start with the sites, machines, and applications that are most sensitive to you.
+1. It's ok to have a hand written list of passwords for sites. One of my favorite suggestions is to take your drivers license or business card and generate passwords by using every X character on the license and base the X number on the how many letters are in the website. So you use every 6th character for Google.
+1. It is NOT ok to store your passwords for anything in a Excel, Word or Text document. These are easy pickings for hackers and almost always targeted.
+1. Again, think about using a password manager
+
+Do NOT change your password on the affected site or service immediately. You may never know the extent of the compromise but if the company says anything to the effect of "still under investigation" or "preliminary results", there is a chance that the attacker has also compromised the password reset mechanism so changing your password would just give the attacker the new one you have elected.
+
+Do NOT stop using the service, if they have made it public that they were compromised, especially if they come out with the information first, the company is one of the few that take their dedication to their users seriously. If anything it's a positive (that they came out and said something, not that they were compromised). Very few companies are open about such things as it happens much more often than people want to admit to.
+
+Got other suggestions for people on how to handle such news? Leave a comment and I'll include it in the main post with attribution.

@@ -1,0 +1,28 @@
+---
+author: mubix
+comments: true
+date: 2011-05-30 21:52:59+00:00
+layout: post
+title: Remotely Suspend All Threads with Meterpreter
+categories:
+- metasploit
+- meterpreter
+---
+
+Just a follow up to my previous post. One of the things that sets that method apart is the fact that the suspension (once the DLL injection occurs) comes from within the process, and it suspends all the child processes as well.
+
+Another way you can do this without the injection is just sending a suspend to all the threads in the process.
+
+```ruby
+pid = 2980
+targetprocess = client.sys.process.open(pid, PROCESS_ALL_ACCESS)
+targetprocess.thread.each_thread do |x|
+	targetprocess.thread.open(x).suspend
+end
+```
+
+We open the process just like we did before, and make a very simple 'each_thread' loop. There are a few AVs engines that detected this as tampering. But if you target isn't AV... Say it's Process Explorer during CCDC, this might just confuse them enough to buy you some time to do other things without their watchful eye on you.
+
+The other cool thing that happened when I did this was Process Explorer didn't detect the process as suspended. If you looked under the thread list they were all suspended but not the process itself according to Process Explorer.
+
+Not rocket science at all, but that's because it's built into the framework. Just another thing that metasploit makes dead simple.

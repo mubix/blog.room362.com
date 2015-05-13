@@ -1,0 +1,29 @@
+---
+author: mubix
+comments: true
+date: 2007-07-07 08:23:12+00:00
+layout: post
+slug: 200777usb-tools-torrent-and-more-html
+title: USB Tools Torrent and more!
+wordpress_id: 510
+tags:
+- Uncategorized
+---
+
+<strong>Yup, it's finally here. </strong><a href="/tools.torrent"  title="Mubix's Tools">Download it here!</a> <strong>RIGHT CLICK AND SAVE AS</strong>  
+  
+So now that is done, I get to talk about other things that I am getting into:  
+  
+<strong>Wubi "Linux" Installer:</strong> <a href="http://wubi-installer.org/"  title="Wubi Installer">http://wubi-installer.org/</a>  
+ This is actually pretty amazing. What it does is automagically downloads an ISO (takes a while), makes a virtual disk, puts entries in the Windows boot loader and tells you to restart. When you restart it boots to the virutal disk and installs the version of Ubuntu you chose. From then on (yes there is an uninstaller) you have a "dual boot" machine without having to repartition your system.  
+<strong>  
+<a href="http://tcpxtract.sourceforge.net/"  title="tcpxtract">Tcpxtract</a> and <a href="http://foremost.sourceforge.net/"  title="Foremost">Foremost</a>:</strong>  
+These application try to reconstruct files from network streams or captures. I haven't delved to far into these yet, but they look pretty interesting. I'm thinking tcpxtract + ettercap  
+  
+And I have been wanting to setup <a href="http://www.nagios.org/"  title="Nagios">Nagios</a> and <a href="http://cacti.net/"  title="Cacti">Cacti</a> for the longest time, I just have never gotten around to it. Thoughts? Is it worth it? We set it up at <a href="http://www.shmoocon.org/"  title="Shmoo!">ShmooCon</a> but I really didn't have time to get hands on it.  
+  
+Enjoy the torrent. If you can't figure out a program, just post a comment and I'll explain it.  
+  
+mubix  
+  
+P.S. You guys better appreciate this, I am up at 3:37 AM getting this out to you guys

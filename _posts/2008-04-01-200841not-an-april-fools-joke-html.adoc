@@ -1,0 +1,21 @@
+---
+author: mubix
+comments: true
+date: 2008-04-01 19:41:21+00:00
+layout: post
+slug: 200841not-an-april-fools-joke-html
+title: NOT an April Fools joke
+wordpress_id: 467
+tags:
+- Uncategorized
+---
+
+   
+  
+![](http://s3.media.squarespace.com/production/438411/4879756/uploads/MaltegoV2-sample.png)So, a while back I wrote about a program called “Evolution”. Since then it has evolved into its new form “Maltego”. Maltego has had it’s face ripped off and remolded, and lot of work on the back end, if you know what I mean.  
+  
+So basically I was teased by the creator of Maltego. He sent me these two images showing the awesomeness that will be Maltego v2 (and yes, Awesomeness is a word)  
+  
+![](http://s3.media.squarespace.com/production/438411/4879756/uploads/MaltegoV2-sample2.png)  
+  
+But I have been promised that a beta copy of v2 should be hitting my inbox in the next couple of weeks. So, as soon as I have pushed the new **Awesomeness** to the limits I will post right here on what ya’ll can expect out of a product that already was blowing minds back and forth across the Security / Intel field.

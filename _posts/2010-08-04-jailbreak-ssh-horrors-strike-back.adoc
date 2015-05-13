@@ -1,0 +1,37 @@
+---
+author: mubix
+comments: true
+date: 2010-08-04 04:30:36+00:00
+layout: post
+title: Jailbreak SSH horrors strike back
+categories:
+- iphone
+- jailbreak
+- rant
+---
+
+Back in 2009 the "[ikee](http://blog.jeltel.com.au/2009/11/interview-with-ikee-iphone-virus.html)" rick-rolling worm went around the iPhone world via the password of 'alpine' on the root account. You are now warned to change your root password when you pop into Cydia and Rock the first time. But this thing just wont stay down.
+
+If you have jailbroken your iPad you might want to check out a little file called "master.passwd". In it, there is another user called 'mobile' which has been pointed out since 2008 ([here](http://www.macosxhints.com/article.php?story=20080224231344798)) on the iPhone as another account to change the password of. But the media and Cydia/Rock warnings only put emphasis on 'root'.
+
+Many iPad and iPhone apps STILL do not use the "keyring'" and store your password in plain text or somewhere in a binary file (still plaintext), which the user "mobile" has access to.
+
+[](/images/postimages/201008_jailbreak_1.png)
+
+Ok, "so what" you say. Since this recent jailbreak was using a website, the individuals running that site now have the IP address of freshly jailbroken iPhones and iPads. I am certainly not saying that they have any ill intentions, but sites have been broken into before, and that would be one hell of a gold mine.
+
+Hopefully AT&T has put in blocks of some sort so that it's customers are protected, but who knows what the other countries around the world that carry iPhones are doing.
+
+But at the very least, if you have jailbroken your iPhone, iPod Touch or iPad, please.. please set your passwords accordingly and do not have it a simple dictionary password.
+
+Remember, you ARE giving up some security when you jail break your phone. It is on you to make sure that you lock what you can back down.
+ 
+> To change your password, use 'Terminal' and log in to one account at a time and issue the "passwd" command. You can also just log in to root and issue the "passwd mobile" command to change the password of mobile
+
+**Update** on 2010-08-09 19:39 by Rob Fuller
+
+I've gotten a lot of comments stating that OpenSSH isn't installed by default and that this is not a big deal at all. A couple problems exist in that argument though:
+
+1. The Jailbreak is executing code on your phone/touch/ipad. Unless you do a analysis of the entire disk, you can't be sure the jailbreak doesn't leave some other way into the phone. Yes, that's a far fetched chance, but most users would never know.
+
+2. Even if you don't install it Out-of-the-box. There is a good possibility that you will OpenSSH at a later date. Better to get it fixed while you have it on the mind.

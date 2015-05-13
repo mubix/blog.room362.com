@@ -1,0 +1,42 @@
+---
+author: mubix
+comments: true
+date: 2010-06-28 20:34:43+00:00
+layout: post
+title: Set Wallpaper Meterpreter Script
+categories:
+- metasploit
+- meterpreter
+- script
+---
+
+Certainly nothing to fuss over, but I've had a fascination with setting my target's wallpaper as sort of a calling card for years now. I've been able to set the registry key (HKCUControl PanelDesktopWallpaper), but until recently I didn't know how to get it to refresh so that it displayed without forcing the user to log out...
+
+First, is the most important part, selection of the wallpaper. This is my first selection:
+
+![](/images/postimages/201006_wallpaper_1.jpg)
+
+But, it has to be a BMP. So, I created:
+
+[metasploit_1024.bmp](/images/metasploit_1024.bmp) (2.3 MB)
+
+next run:
+```
+reg add "HKCU\Control Panel\Desktop" /v Wallpaper /t REG_MULTI_SZ /d "C:\metasploit_1024.bmp"
+```
+
+and finally the magic:
+
+`rundll32.exe user32.dll,UpdatePerUserSystemParameters`
+
+thats it, run that, and it'll refresh the settings and display the wallpaper in all of it's glory. But I wouldn't be a metasploit dog if I didn't make it into a meterpreter script:
+
+download: [wallpaper.rb](https://github.com/mubix/stuff/blob/master/metasploit/wallpaper.rb)
+
+it's definitely not ready to be in the trunk, but it works, just edit each of the options in the file to point at the bmp you want on the victim's wallpaper and it'll be there.
+
+Todo:
+
+1. Make each parameter an option so there is no text editing involved
+2. Add the ability to convert other image types on the fly
+3. Figure out how to get the desktop color to refresh with the wallpaper

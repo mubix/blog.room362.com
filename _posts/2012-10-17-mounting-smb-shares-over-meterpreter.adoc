@@ -1,0 +1,54 @@
+---
+author: mubix
+comments: true
+date: 2012-10-17 17:52:30+00:00
+layout: post
+title: Mounting SMB shares over Meterpreter
+categories:
+- metasploit
+- meterpreter
+- smb
+---
+
+Ok, this is pretty straight forward no magic:
+
+![](/images/postimages/201210_smb_1.png)
+
+Got a shell, doesn't have to be SYSTEM
+
+![](/images/postimages/201210_smb_2.png)
+
+Add a route to the internal range or directly to the host you want over the session you want
+
+![](/images/postimages/201210_smb_3.png)
+
+Mosy on over  to the Socks4a module. And in another terminal we need to make sure our proxychains.conf file in /etc/ or where ever you store your conf is correct. 
+
+![](/images/postimages/201210_smb_4.png)
+
+It defaults to 9050 on 127.0.01 for Tor, that's pretty easy to cope with and no reason to mess with it if you actually use it for Tor for other things.
+
+![](/images/postimages/201210_smb_5.png)
+
+Run the socks proxy with the Tor-like settings. (Remember to shutdown Tor first)
+
+![](/images/postimages/201210_smb_6.png)
+
+And the rest is gravy. The % (percent sign if blog software mangles it) is a delimiter that smbclient and other samba tools recognize between user and password (so it doesn't prompt you for it).
+
+And just to love it working:
+
+![](/images/postimages/201210_smb_7.png)
+
+yay files.. Yes I know I didn't use smbmount but it works the same as well as rpcclient.
+
+A side note here is if you are using the pth-tools from:
+
+[https://code.google.com/p/passing-the-hash/](https://code.google.com/p/passing-the-hash/)
+
+You can use hashes instead of passwords for stuff like this. But who are we kidding? Who doesn't get clear text passwords anymore ;-)
+
+
+
+
+ 

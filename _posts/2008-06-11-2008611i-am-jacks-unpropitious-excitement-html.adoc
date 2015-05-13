@@ -1,0 +1,19 @@
+---
+author: mubix
+comments: true
+date: 2008-06-11 18:07:14+00:00
+layout: post
+slug: 2008611i-am-jacks-unpropitious-excitement-html
+title: I am Jack's unpropitious excitement
+wordpress_id: 456
+categories:
+- Rant
+tags:
+- Rant
+---
+
+So, I have to apologize to the whole Security community for my idiocy. Yesterday I was made aware of a post about Backtrack 3 Final coming out. The link I received was a link to Mut’s blog. While reading the post it mentioned something about an early IRC release. Proceeding to IRC I found a direct link to the ISO in the topic. Excited about the release I failed to read the rest of the topic in IRC mentioning that they wanted it to stay within the IRC community. I then started sending out a link to Mut’s post, and the link to the ISO out to my friends and the Wifi Sec mailing list.  
+  
+Today at some point the ISO was pulled offline, according to an email I received, due to my Wifi Sec posting.  
+  
+I am sorry to everyone in the Remote Exploit community, and especially Mutts, Max, and MjM. So, if you read this and see me at one of the conferences. Mention this post’s title and I owe you a beer.

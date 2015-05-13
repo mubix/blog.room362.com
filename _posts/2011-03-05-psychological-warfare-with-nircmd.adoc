@@ -1,0 +1,34 @@
+---
+author: mubix
+comments: true
+date: 2011-03-05 19:52:27+00:00
+layout: post
+title: Psychological Warfare with NirCMD
+categories:
+- ccdc
+- nircmd
+- cli
+---
+
+One of the best ways to throw blue teamers off the scent of another host getting owned, which also has the added effect of stressing them out is a batch script that runs through some of the more annoying features in nircmd.exe in succession and at regular intervals:
+
+[http://www.nirsoft.net/utils/nircmd.html](http://www.nirsoft.net/utils/nircmd.html)
+
+* setdisplay 640x480
+* killprocess taskmgr.exe
+* killprocess procexp.exe
+* win -style title "my computer" 0x00c00000
+* win child title "my computer" +exstyle all 0x00400000
+* win +exstyle title "my computer" 0x00400000
+* win trans ititle "internet explorer" 256
+* win close class "CabinetWClass"
+* multiremote copy "c:tempcomputers.txt" exitwin poweroff force
+* exitwin logoff
+* standby
+* monitor off
+* win child class "Shell_TrayWnd" hide class "button"
+* win hide class progman
+
+Just to name a few...
+
+another fun batch script to have running is 'echo knock knock | clip' in an endless and delayless loop. (I makes 'knock knock' the only thing that will ever be pasted ;-)

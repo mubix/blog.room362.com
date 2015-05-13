@@ -1,0 +1,13 @@
+---
+author: mubix
+comments: true
+date: 2009-02-13 20:04:39+00:00
+layout: post
+title: The History of the Internet - VIDEO
+categories:
+- internet
+---
+
+I got this off of a post by [Jason Appelbaum](http://jasonappelbaum.com/) and I thought it important to repost. We all need to remember where we came from once in a while.
+
+<iframe src="//player.vimeo.com/video/2696386" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/2696386">History of the Internet</a> from <a href="http://vimeo.com/lonja">Melih Bilgil</a> on <a href="https://vimeo.com">Vimeo</a>.</p>

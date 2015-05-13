@@ -1,0 +1,41 @@
+---
+author: mubix
+comments: true
+date: 2008-09-08 05:00:00+00:00
+layout: post
+title: Google Docs Bug
+categories:
+- internet
+---
+
+ So, instead of doing this the right way, which is submitting a bug report to google, I am going to do this the blogger way:
+
+1. Publish article to blog about problem in product
+
+	* Wait for traffic to rise on blog
+
+	* Become giddy at rise in traffic due to outstanding title
+
+	* Watch as traffic falls within days
+
+	* Become angry and write retort (in said blog, still not contacting the company) getting mad about the STILL unfixed problem
+
+
+Actually thats a lie, here is what I reported to Google after I wrote the above statement:
+
+This problem only happens in a specific sequence of events, but can be easily reproduced.
+
+1. User 1 opens Google Doc that is collaboratively edited.
+
+	* User 1 closes browser (with save session ability)
+
+	* User 2 opens Google Doc and makes an edit to that same document
+
+	* User 2 saves the new edits (through AutoSave or save/close or save)
+
+	* User 1 at any point after this save (User 2 doesn’t have to have the document closed), opens his saved session browser and it opens the old version of the doc. If user 1 then waits long enough for AutoSave to do its thing or save/closes it, then the document is saved in its old status.
+
+
+This can easily be fixed by reverting via revision history to the “newer” version, but also can easily go unnoticed. A suggestion for a fix would be a nice popup on User 1’s screen saying that there is a newer version of that document available.
+
+If you have a fix, please leave a comment. I would really hate to find out that this is a simple preferences setting.

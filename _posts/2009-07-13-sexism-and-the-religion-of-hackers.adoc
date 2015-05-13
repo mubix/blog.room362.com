@@ -1,0 +1,45 @@
+---
+author: mubix
+comments: true
+date: 2009-07-13 19:36:05+00:00
+layout: post
+title: Sexism and the religion of hackers
+categories:
+- rant
+---
+
+Let me preempt this post with the following facts: I am a white male veteran with amazing parents. I went to a good school, and was never under-valued by the people I cared about. I fit no minority profiles in other words. I tell you this so that you can latch on to it as why I don't understand anything in your rebuttal. But I think this gives me a unique view on the issue.
+
+> "People are stupid. They will believe a lie because they want to believe it's true, or because they are afraid it might be true."
+
+----Wizard's First Rule - By Terry Goodkind
+
+This post was a long time coming. I feel pretty passionate about "my community". I don't say that in a lead-follower sense, but more of a Kum Ba Ya one. The feather that pushed this post over the edge into existence is @[shazzzam](http://twitter.com/shazzzam)'s post "[Female stereotyping in security research](http://demosthenes.tumblr.com/post/140922392/female-stereotyping-in-security-research)" which was in response to the [Saphead's Binary 300 solution cartoon](http://hackerschool.org/DefconCTF/17/B300.html). But please keep in mind, this only set the cogs in motion for this post that I've been thinking about way before this cartoon came into existence.
+
+Sexism, and for that matter, any "-ism" is flawed on both sides. Now, Shazzzam went no where near the extreme that most of the "-ists" do for their "-isms", she actually had some great points however, that doesn't excuse the presumptions she made. Pusscat, Hypatia, and Shazzzam (+ the many other women in IT) have made enormous contributions, just as males have. Hackers are hackers. The only thing we measure by is the brain in your noggin, but I'll go into that later. Where Shazzzam went wrong is that she assumed that this cartoon was depicting the female falsely, which may or may have not been the case. She then used it as a soap box to express her hate for people who make presumptions about her mental abilities because of her sex.
+
+**_(Damn men, "they" are always assuming I'm an idiot)_**
+
+> "What's the difference between a WM (woman-Marine) and a hooker? Hooker gets paid in the morning and the WM gets paid on the 1st and 15th." 
+----old Marine joke, origin unknown
+
+While this is a crude joke, it illustrates a point. During my time in the Marine Corps I witnessed female Marines that were useless, ones that slept around, and those that outshined their peers, male and female alike. But guess what, those that did well were sadly the minority in my experiences. Now you might hinge your argument on that it's my biased opinion that 'saw' what I wanted to see, and you very well could be right. I hardly consider myself perfect, but lets just say for the sake of argument that what I say is true. We all make assumptions, you are not perfect either, is it so wrong to bet on odds or experience when making assumptions? It's human nature, but keeping an open mind is the key to this. How many Mark Dowds, HDs, Shazzzams and Pusscats are there in this world? How many times have you complained about an idiot boss or co-worker? How many times have you complained about script kiddies? or whatever you complain about on an assumption or amassed experience.
+
+**_(Stupid woman, "they" never do anything right, can't even drive straight)_**
+
+This brings us to my favorite part, and why I love our community. Hackers are hackers:
+
+> <snip> ([original - phrak](http://www.phrack.org/issues.html?issue=7&id=3&mode=txt))
+> We exist without skin color, without nationality, without religious **_(or sexual)_** bias... and you call us criminals. You build atomic bombs, you wage wars, you murder, cheat, and lie to us and try to make us believe it's for our own good, yet we're the criminals.
+> 
+> Yes, I am a criminal. My crime is that of curiosity. My crime is that of judging people by what they say and think, not what they look like. My crime is that of outsmarting you, something that you will never forgive me for.
+> 
+> I am a hacker, and this is my manifesto. You may stop this individual, but you can't stop us all... after all, we're all alike.
+> 
+> +++The Mentor+++
+
+I've taken the liberty of adding "(or sexual)" to this famous manifesto. But I think it stays in the spirit of it's writer's intent. This is my religion. I think all "ists" have forgotten what they fight for and just fight to be right. My suggestion? Make a mental note of those who have forgotten how to truly be what they claim as a title. For they will out themselves time and time again, and be destined to fail.
+
+**_(Damn kids. They're all alike.)_**
+
+#### EDIT: Nikita has done an excellent job of expressing what I so obviously failed at doing: [http://attrition.org/news/content/09-07-14.001.html](http://attrition.org/news/content/09-07-14.001.html)

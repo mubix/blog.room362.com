@@ -1,0 +1,21 @@
+---
+author: mubix
+comments: true
+date: 2008-09-07 20:22:33+00:00
+layout: post
+title: Notepad is a virus
+categories:
+- av
+---
+
+Original Article: [http://sunbeltblog.blogspot.com/2008/09/how-to-make-notepadexe-malicious-file.html](http://sunbeltblog.blogspot.com/2008/09/how-to-make-notepadexe-malicious-file.html) 
+
+[Archive.org Saved Page](https://web.archive.org/web/20080914164527/http://sunbeltblog.blogspot.com/2008/09/how-to-make-notepadexe-malicious-file.html)
+  
+Alex Eckelberry over at Sunbelt got an itch to see which virus vendors were just using packer signatures instead of emulating the defaltion process and detecting the virus inside. This is a shortcut that can yield false positives such as demonstarted in Alex’s experiment, but is done due to the overhead such an undertaking would introduce, I assume, to the client software.  
+  
+I bring this up here because I recently conducted a somewhat similar test, although I admittedly know very little about packers. I submitted a couple of No-CD cracks that I got from a unnamed source ([GameCopyWorld.com](http://www.gamecopyworld.com/)) and tested it with [VirusTotal.com](http://www.virustotal.com/) to see if they had viruses, and all of them came back positive. I doubted these finding since they were mostly labeld “Trojan.Downloader” and similar generic names. I then used Sunbelt’s very own [CWSandbox](http://research.sunbelt-software.com/Submit.aspx) and a few local tools to determine of the trojan downloaders I had were actually that. All tests came back stating non network connections, packed by UPX, and made minimal DLL calls which were all used to disply windows GUIs.  
+  
+Alex’s article and my recent research renewed my want to learn more about packers. Where to start? Wikipedia. Nope! Wikipedia’s article on [runtime packers](http://en.wikipedia.org/w/index.php?title=Runtime_packer&action=edit&redlink=1) hasn’t been written yet. I haven’t stopped searching for a good resource on the topic, but if anyone knows one, please leave a comment and a link.  
+  
+Thanks

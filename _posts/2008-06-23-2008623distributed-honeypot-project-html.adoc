@@ -1,0 +1,38 @@
+---
+author: mubix
+comments: true
+date: 2008-06-23 14:24:16+00:00
+layout: post
+slug: 2008623distributed-honeypot-project-html
+title: Distributed Honeypot Project
+wordpress_id: 452
+categories:
+- Hacking
+tags:
+- Hacking
+---
+
+So I had another one of my harebrained ideas and it goes something like this:  
+  
+Do you use your “DMZ” feature on your router at home? If you do, you shouldn’t. It’s like putting your computer directly on the net. Bad idea all around. Well, instead of having all those packets hit a brick wall, why not put them to good use?  
+  
+So, create a Virtual Machine that you have running on your system and point your DMZ switch at. Here are the specs:  
+
+
+  
+	
+  1. Has an IP (duh?)
+  
+	
+  2. Low memory and cpu usage. You don’t want this thing inconveniencing the user, or else it will never be widely used.
+  
+	
+  3. At all costs, does not allow anything it sucks up to get out. Something like a hard iptables block of everything outbound except it’s packaged dumps
+  
+	
+  4. Has to be able intelligent enough to correlate streams and sessions
+  
+  
+There are probably more things that it could do, but if this could be widely used, anyone trying to *ware analysis would have more data than they would know what to do with. You start to correlate data with mass amounts of people, you can make block lists, and virus definitions, and all kinds of good stuff. This is the kind of information that big vendors like Symantec and McAfee already have from their products being installed on your systems. Although, they don’t have the DMZ pointed at them.  
+  
+Hmm, there would also have to be some kind of sanitization. That way no P2P or otherwise not so legal traffic would be published... If you have ideas on how that portion could be done, please post a comment.

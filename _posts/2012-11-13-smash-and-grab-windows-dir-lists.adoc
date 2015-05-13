@@ -1,0 +1,29 @@
+---
+author: mubix
+comments: true
+date: 2012-11-13 08:44:47+00:00
+layout: post
+title: 'Smash and Grab: Windows Dir Lists'
+categories:
+- cli
+---
+
+Looking through network shares can be slow, and waiting for individual searches to finish looking through the whole "drive" is redundant. Easier to just use some Windows voodoo to get a good list to look through offline:
+
+```
+start /b cmd /c dir /b /s \\nas\users_home_share$ ^> shareinfo.txt
+```
+
+Breaking that down:
+
++ `start /b` - starts a process that won't hang up our current one, with the "b" flag meaning "background", yay not visible to the user! (unless your process forces it back)
++ `cmd /c` - no reason to explain this one it runs something.. (since dir isn't an executable but something that resides inside of cmd this is needed)
++ `dir /b /s` - the "s" means sub directories and pretty widely known. The one that isn't as well known is the "b" which means "bare" format. Also known as "puts-path-on-every-line-to-make-it-easy-to-find-and-grep-stuff" mode.
+
+The path is arbitrary, if you didn't know you could dir list a UNC path, now ya do.
+
+The `^>` is the cool trick. If you use "start" to create a process in the background, re-routing its output to a file instead of just getting the fact that start began (the only thing start outputs), is made possible by this lowly 'carrot' before the greater-than.
+
+And that's it. With big drives, come back in an hour or two and you'll have a perfectly grep-able file waiting for you to grep through for file names and extensions to your heart's content.
+
+One caveat, don't freak out if it's been 30 minutes and the file size is still ZERO. It doesn't write the output until the end, it write buffered in the process and then "start" pulls it back out at the end with the carrot.

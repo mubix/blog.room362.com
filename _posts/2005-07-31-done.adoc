@@ -1,0 +1,11 @@
+---
+author: mubix
+comments: true
+date: 2005-07-31 07:30:19+00:00
+layout: post
+title: Done
+categories:
+- rant
+---
+
+Well, I finally got a working CMS type deal going on for a blog. I was going to write one but decided not to. Call it lazy or standing on the shoulders of programming gods, you choose.

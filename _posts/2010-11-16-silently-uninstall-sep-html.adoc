@@ -1,0 +1,22 @@
+---
+author: mubix
+comments: true
+date: 2010-11-16 05:00:00+00:00
+layout: post
+title: Silently uninstall SEP
+categories:
+- metasploit
+- meterpreter
+- symantec
+- sep
+---
+
+Uninstallation is not new
+
+Deleting and removing things on a box you own isn't new
+
+This method and how to do it remotely was [posted in Feb 2007](http://it.toolbox.com/blogs/locutus/how-to-silently-and-remotely-remove-symantec-antivirus-14625)
+
+But I didn't know how to do it, and I thought it was hilarious, so I made a video:
+
+<iframe width="420" height="315" src="//www.youtube.com/embed/tkoApCp8rQ4" frameborder="0" allowfullscreen></iframe>

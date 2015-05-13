@@ -1,0 +1,33 @@
+---
+author: mubix
+comments: true
+date: 2007-02-12 13:56:07+00:00
+layout: post
+slug: 2007212microsoft-what-are-you-doing-html
+title: Microsoft. What are you doing?!
+wordpress_id: 526
+categories:
+- Microsoft
+tags:
+- Microsoft
+---
+
+Alright, before you start sending hate mail or posting comments on how you hate my mother for giving birth to me, bare with me.  
+  
+So, Microsoft puts out their new operating system that is "A New Day". Microsoft at the launch states that they are already "full speed ahead on SP1". Microsoft releases that they will be releasing Vienna's successor in 2009.  
+  
+Those are the facts. Or, as I like to call them "Time-insensitive" facts. Now time to as you a question:  
+  
+Who is Microsoft's biggest customer?  
+  
+That's RIGHT! Big business.  
+  
+Now, what am I thinking as a "Big business" executive that is looking to upgrade my infrastructure?  
+  
+Right again! I am going to think that Vista has held up this long, I am going to wait for Vienna and save myself the time and money of upgrading to an OS that already has vulnerabilities that aren't patched, "a la SP1", that will cost me millions to deploy globally, and it's server counterpart is still in beta, or, just wait for Vienna and hope for the best.  
+  
+It's a hard decision and that is why they get paid the big bucks, but come on Microsoft. The whole wow, shock and amaze factor is gone and these corporate execs are put between a rock and a hard place.  
+  
+But, that’s just my take on things, I’m just another security guy in a room with a small sign on the door that says “IT Dept”. What would I know?  
+  
+jd

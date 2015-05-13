@@ -1,0 +1,27 @@
+---
+author: mubix
+comments: true
+date: 2007-08-18 03:44:13+00:00
+layout: post
+slug: 2007818its-time-to-evolve-html
+title: It's time to Evolve
+wordpress_id: 498
+tags:
+- Uncategorized
+---
+
+Ok, admit it. You have searched for your name in Google, Technorati, or egoSurf.org just to see how you were ranked. You may have even gone to the extent of using RSS feed searches or services such as MonitorThis to keep tabs on your name/handle.  
+  
+Or, you might be a Penetration Tester who is in the “Enumeration / Information Gathering” phase. Or a Security Professional that wants to keep tabs on what kind of fingerprint their company has out there.  
+  
+Any one of these reasons and methods might leave you with information overload, or just not enough information. Well, it’s time to evolve.  
+  
+Paterva has released a product called Evolution. It comes in 3 forms. Web, which is their “classic” version. GUI, which is an installable version that I think is FAR superior. And then they have “Wizard”, which isn’t completed yet.  
+  
+So, when I first heard about this product, I was like “meh, another google search aggregator”. But when I gave it a shot, it floored me. Evolution does relational linking of search results. Now all the Database geeks just peed their pants and the rest of us pretended like we knew what that meant. (I had to google it) What that means is, it automates the process of looking at the search results and finds relationships between them, scoring them on how much a certain item is related to.  
+  
+What does this mean to you? Scarier or more informative results, depends on which side of the coin you are on, Security Pro, Pen Tester, or just another eager ego surfer.  
+  
+My only gripe about the GUI is that it doesn’t run on Vista. But, it is still in the perpetual beta that is the industry standard now ‘n days.  
+  
+[read more](http://tech.nocr.at/hacking-security/its-time-to-evolve) | [digg story](http://digg.com/software/It_s_time_to_Evolve)

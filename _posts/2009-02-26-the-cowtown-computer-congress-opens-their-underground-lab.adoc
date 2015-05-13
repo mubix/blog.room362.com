@@ -1,0 +1,40 @@
+---
+author: mubix
+comments: true
+date: 2009-02-26 18:09:44+00:00
+layout: post
+title: The Cowtown Computer Congress Opens Their Underground Lab
+categories:
+- ccckc
+- hacker spaces
+- press release
+---
+
+**Official Press Release**:   
+
+> February 24th, 2009.  Kansas City, MO - The Cowtown Computer Congress (CCCKC) is happy to announce the opening of their Underground Lab to the public with a full week of events  Beginning on March 2nd, the grand opening showcase the rich and vibrant community of creative minds in the Kansas City area.   CCCKC, the first organization of its kind in the midwest, will serve the community by providing technology classes, donating unique projects to local organizations and technology assistance to those in need.  
+  
+> The week will kick off on Monday, March 2nd with an open house for individuals and organizations who are interested in learning more about the organization and how they can take advantage the Underground Lab for meetings, classes and other activities.  
+  
+> The creative talents of CCCKC members will be showcased on Wednesday March, 4th.  The member project showcase will be followed by a screening of Make:TV, a public television series which will be shown for the first time in the Kansas City area that night.  If you’re curious about what CCCKC and the maker culture are all about, this is the night to come be inspired.  Projects to be showcased range from alternative methods of energy generation to a labyrinth game which is controlled with the balance board from a Nintendo Wii Fit.  
+  
+> Thursday, March 5th is the regular member meeting where members come together to discuss group projects being developed for donation to local organizations and plan future community service projects like our monthly free computer repair opportunities.  
+  
+> Friday evening will feature a slate of speakers covering topics ranging from improving home security and information management to protecting data from theft while using public wireless internet.  
+  
+> On Saturday the public is invited to take part in a range of free workshops on basic electronics and soldering, e-textiles and Nintendo Wii hacking.  All day members will be available to assist members of the public choose, install and configure computers using the free and open source Linux operating system.  
+  
+> About The Cowtown Computer Congress  
+  
+> The Cowtown Computer Congress (CCCKC) is a not for profit technology cooperative founded to advance technology of all kinds.  They are a member supported organization providing technology classes, workshops and services to the public free of charge.  CCCKC brings together some of the finest minds in midwest to collaborate on research and projects for other local groups.  Through their affiliate program, CCCKC gives assistance to specialized technology user groups by providing them with a facility to hold meetings and work on projects of their own.  
+  
+> CCCKC’s Underground Lab is located 85 feet below the surface of the earth at 31st Street and Southwest Trafficway in Kansas City, Missouri.  
+
+> [http://www.cowtowncomputercongress.org](http://www.cowtowncomputercongress.org/) 
+> Further inquires should be made to:  
+[press@cowtowncomputercongress.org](mailto:press@cowtowncomputercongress.org) or to  
+> John Benson - President and Co-Founder  
+> 816-332-6389
+
+  
+So if you live in Kansas City or surrounding area, please go check out CCCKC. If you live in Washington D.C. or surrounding areas also check out [http://www.hacdc.org/ ](http://www.hacdc.org/)and for all other locations around the world, check out [http://www.hackerspaces.org/](http://www.hackerspaces.org/)

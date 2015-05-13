@@ -1,0 +1,53 @@
+---
+author: mubix
+comments: true
+date: 2008-08-27 03:40:34+00:00
+layout: post
+slug: 2008827multi-boot-security-livecd-dvd-html
+title: Multi-Boot Security LiveCD DVD
+wordpress_id: 435
+categories:
+- Hacking
+tags:
+- Hacking
+---
+
+_**EDIT: I got to talk about this DVD on the latest episode of **_[_**Securabit**_](http://www.securabit.com/)_** (**_[_**Episode 9**_](http://securabit.com/2008/09/04/securabit-episode-9/)_**)**_  
+  
+_**Edit 2: There is a cool new Live DVD by the guys at [Sun Tzu Data](http://www.suntzudata.com). ([Click here for post](/archives/255-Ask-and-you-shall-receive-SumoLinux.html))**_  
+  
+[NERV-LABS](http://www.nerv-labs.com) subsidiary [Badfoo.net](http://www.badfoo.net) has released quite the awesome DVD. Now, the lucky few of you who have suffered through my constant microsoft-bashing linux evangelism alright have heard about all the Multiboot LiveDVDs out there. Until now, they have all been booting various generic Linux distro. With the release of Badfoo’s LiveDVD, that has all changed:  
+  
+   
+
+
+[MultiISO LiveDVD](http://badfoo.net/linux/EmErgEs_MultiBOOT_ISO.torrent.torrent) is an integrated Live DVD technology which combines some of the very popular Live CD ISOs already available on the internet. It can be used for security reconnaissance, vulnerability identification, penetration testing, system rescue, media center and multimedia, system recovery, etc. It’s a all-in-one multipurpose LiveDVD put together. There’s something in it for everyone. I hope you enjoy it.
+
+  
+
+
+OS Choices:
+
+  
+  
+
+
+Backtrack 3[![](http://s3.media.squarespace.com/production/438411/4879756/uploads/security_dvd1.serendipityThumb.jpg)](http://s3.media.squarespace.com/production/438411/4879756/uploads/security_dvd1.serendipityThumb.jpg)  
+  
+Damn Small Linux 4.2.5  
+  
+GeeXBoX 1.1 (not geekbox :P )  
+  
+Damn Vulnerable Linux (Strychnine) 1.4  
+  
+Knoppix 5.1.1  
+  
+MPentoo 2006.1  
+  
+Ophcrack 1.2.2 (with 720 mb tables)  
+  
+Puppy Linux 3.01  
+  
+Byzantine OS i586-20040404  
+  
+Now add the awesome power of [UNetBootin](http://lubi.sourceforge.net/unetbootin.html) (Boot ISO via USB) and now you have a USB stick that boots multiple security related Linux operating systems. [What do you have on your keychain](http://pauldotcom.com/wiki/index.php/Episode115#Tech_Segment:_Larry.27s_Hacker_Keychain)?

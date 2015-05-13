@@ -1,0 +1,13 @@
+---
+author: mubix
+comments: true
+date: 2010-04-01 16:32:52+00:00
+layout: post
+title: Metasploit Cyberwarfare
+categories:
+- metasploit
+---
+
+I'm not sure I will want to `svn up` tomorrow. This Cyberwarfare version has advanced powers:
+
+![](/images/postimages/201004_aprilfools.png)

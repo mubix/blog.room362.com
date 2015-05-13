@@ -1,0 +1,35 @@
+---
+author: mubix
+comments: true
+date: 2009-05-23 19:30:37+00:00
+layout: post
+title: Couch to Career - Follow up
+categories:
+- presentations
+---
+
+First of all, here is my slide deck from DojoSec with a couple added slides, words, and slight modifications:  
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/1477627" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/mubix/from-couch-to-career-in-80-hours" title="From Couch To Career In 80 Hours" target="_blank">From Couch To Career In 80 Hours</a> </strong> from <strong><a href="http://www.slideshare.net/mubix" target="_blank">Rob Fuller</a></strong> </div>
+
+I have put this article off quite a few times due to some very cool and interesting things happening in our field as it applies to getting a job. That, and [Matt Johansen](http://www.mattjaysecurity.com) beat me to it with his blog post titled: "[A lot of Information Security Career Advice](http://www.mattjaysecurity.com/?p=39)", which I highly recommend you check out and add to your RSS reader.  So instead of rewriting things that other people have already covered I'll just post the links to them:  
+  
+We start our journey as any real hacker would, with the "[Hacker Handle Generator](http://www.rootcompromise.org/hhg/)".  And since I am more of an Audio/Visual Leaner  let's start off with "[Exotic Liability Episode 10: Advice](http://exoticliability.libsyn.com/index.php?post_id=462895)" Where Ryan Jones, DJ Jackalope, and Chris Nickerson, of "[Tiger Team](http://en.wikipedia.org/wiki/Tiger_Team_(TV_series))" fame, fortune and power,  call back Michigan Justin and talk at length about how to start out in the community. We also have Don Donzal from [EthicalHacker.net](http://www.ethicalhacker.net) who talks about "[DIY Career in Ethical Hacking](http://www.ethicalhacker.net/content/view/201/24/)" ([MP3](http://www.ethicalhacker.net/images/stories/columns/editor/diycareer/donzal_diycareerinethicalhacking_sanspentestsummit2008.mp3) / [SLIDES](http://www.ethicalhacker.net/images/stories/columns/editor/diycareer/diy%20career%20in%20ethical%20hacking.pdf)), and about 16 tips from "[Ugly Resumes get Jobs!](http://www.slideshare.net/jrallis/tips-from-ugly-resumes-get-jobs)" on Slideshare. But this A/V setup wouldn't be complete if I didn't tell you guys where you can get all kinds of videos actually teaching you security so that you can have a leg up on everyone else. Head on over to [TheAcademyPro.com](http://www.theacademypro.com/) where you can watch 1-5 minute videos on everything from configuring Snort and exploiting systems with Metasploit, to configuring Sourcefire 3D and destroying the world with Core Impact. Another site to bookmark is [SecurityTube.net](http://www.securitytube.net/). The guys there work their fingers to the bone to locate security videos across the net and put them all in one central pace for you to access.  
+  
+Now on for those people who like to do all that "reading" stuff.  First head on over to the [Security Catalyst](http://www.securitycatalyst.com/) for [Part 1](http://www.securitycatalyst.com/career-advice-for-security-geeks-part-1/) and [Part 2](http://www.securitycatalyst.com/career-advice-for-security-geeks-part-2/) of "Career Advice for Security Geeks" and Paul Asadoorian's post titled "[Getting Started In Information Security How-To](http://pauldotcom.com/2009/05/getting-started-in-information.html)" and Kees Leune's post titled "[Tips for Getting Started in Information Security](http://www.leune.org/blog/kees/2008/10/-tips-for-getting-started-1.html)", and if you are really feeling froggy, read all 4+ years (only 6 or so pages don't worry too much) of the discussion on the Defcon forums: "[Getting started in the security field](https://forum.defcon.org/showthread.php?t=3741&page=1)"  
+  
+Finally, sticking with the theme that I try to keep going on this blog I want to give you something new to digest:  
+  
+James Arlen (aka myrcurial) does a talk at Notacon about going from [BlackHat to BlackSuit](http://vimeo.com/4311958)  
+  
+LifeHacker's "[Top 10 Tools for landing a better job](http://lifehacker.com/5157794/top-10-tools-for-landing-a-better-job)"  
+  
+Aaron Crowe writes about "[How to avoid being scammed in a job hunt](http://www.walletpop.com/blog/2009/05/16/how-to-avoid-being-scammed-in-a-job-hunt/)"  
+  
+Lee Kushner writes about "[Wanting a Job Too Much](http://www.infosecleaders.com/2009/05/career-advice-wanting-a-job-too-much/)"  
+  
+Two Mashable articles: "[How to find a Job on Twitter](http://mashable.com/2009/03/13/twitter-jobs/)" and "[How to exchange Biz cards on Twitter](http://mashable.com/2009/05/19/twtbizcard/)"  
+  
+But I wanted to close with some advice that a lot of people have a hard time with. And that is how to talk dollars, and how to do it well.  And Jack Chapman is certainly the guy to learn from. Check out a write-up on him on [GetRichSlowly.org](http://www.getrichslowly.org/) titled "[Negotiating Your Salary: How to Make $1,000 a Minute](http://www.getrichslowly.org/blog/2009/05/06/negotiating-your-salary-how-to-make-1000-a-minute/)" (which is the title of Chapman's book). And [Chapman's site](http://salarynegotiations.com/) where he has tons of YouTube videos of tips that he describes in the book.  
+  
+Sorry this is a bunch of links, and if you guys would like me to explain each slide in my Couch to Career deck I'll make another post about it.

@@ -1,0 +1,41 @@
+---
+author: mubix
+comments: true
+date: 2009-12-03 17:00:06+00:00
+layout: post
+title: 2009 Geek Christmas List
+categories:
+- wishlist
+- internet
+---
+
+What's on your list? Here is mine (in no particular order):
+
+**Number 1**: iPhone compatible alarm clock with good sound
+
+**Number 2**: iPhone car mount that charges and is compatible with aux cables
+
+* [32GB E-flash (esata, USB2.0)](http://www.amazon.com/dp/B001O2JC7U)
+* [Drobo 4 bay backup solution](http://www.amazon.com/Data-Robotics-FireWire-Storage-DR04DD10/dp/B001CZ9ZEE/)
+* [The Tauntaun Sleeping Bag](http://www.thinkgeek.com/geektoys/plush/bb2e/)
+* [Griffin PowerMate](http://www.thinkgeek.com/computing/accessories/5ca2/)
+* [Kindle DX](http://www.amazon.com/Kindle-Wireless-Reading-Display-Generation/dp/B0015TCML0/) or [Barnes and Noble Nook](http://www.barnesandnoble.com/nook/)
+* [Nokia N900](http://www.newegg.com/Product/Product.aspx?Item=N82E16875205178)
+* [Roku HD-XR](http://www.roku.com/roku-products)
+* This [Tesla](http://www.tigerdirect.com/applications/SearchTools/item-details.asp?EdpNo=4259469&CatId=4044) or [this one](http://www.teslamotors.com/design/gallery-body.php)
+* [Canon EOS Rebel T1i](http://www.newegg.com/Product/Product.aspx?Item=N82E16830120355)
+* [Popcorn Hour Device](http://www.popcornhour.com/onlinestore/index.php?pluginoption=catalog) (trumps the Roku)
+* [Logitech MX Revolution](http://www.amazon.com/gp/product/B000HCT12O)
+* [Logitech Harmony One](http://www.amazon.com/Logitech-Harmony-Advanced-Universal-Remote/dp/B00119T6NQ)
+* [The Art of Software Security Assessment](http://astore.amazon.com/carnal0wnage-20/detail/0321444426) by Mark Dowd
+* [Windows Internals 5](http://astore.amazon.com/carnal0wnage-20/detail/0735625301) by Mark Russinovich and David Solomon
+* [Wi-Spy 2.4gz Spectrum Analyzer](http://www.thinkgeek.com/gadgets/electronic/9558/)
+* [Hacker bumper sticker](http://www.thinkgeek.com/gadgets/car/5f9e/)
+* [X-mini iHome Capsule Speakers](http://www.thinkgeek.com/computing/speakers/9e68/)
+* [Optimus Maximus Keyboard](http://www.thinkgeek.com/computing/usb-gadgets/9836/)
+* [Sensitivity V Backpack](http://www.thinkgeek.com/computing/bags/8915/)
+* [Case of Bawls](http://www.thinkgeek.com/caffeine/drinks/2818/)
+* [Turtle Beach Ear Force X41 Digital RF Wireless Gaming/Podcasting Headset](http://www.amazon.com/dp/B002KSPKRS)
+
+
+## What's on your list?

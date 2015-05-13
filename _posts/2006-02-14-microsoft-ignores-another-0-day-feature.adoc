@@ -1,0 +1,18 @@
+---
+author: mubix
+comments: true
+date: 2006-02-14 03:51:00+00:00
+layout: post
+title: Microsoft ignores another 0 day 'feature'
+categories:
+- full disclosure
+- internet
+---
+
+Today I saw on Bugtraq a new 0 day coming that affects all up to date versions of windows. The most extraordinary part of this, and similar disclosures, is their workarounds. Since Redmond has decided not to patch, until a later date, it is up to the discloser or a likeminded individual to figure out how to protect the masses. Guess what ends up being the fix? “Disable said Microsoft FEATURE”. Imagine that. For more information you can refer to:  
+  
+[http://readlist.com/lists/securityfocus.com/bugtraq/1/9704.html](http://readlist.com/lists/securityfocus.com/bugtraq/1/9704.html)
+  
+This exploit only affects you if you navigate to a site (or what looks like a site) and drag and drop something. You have been warned.  
+  
+jd.

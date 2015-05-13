@@ -1,0 +1,384 @@
+---
+author: mubix
+comments: true
+date: 2008-08-24 22:12:00+00:00
+layout: post
+slug: 2008824defcon-16-the-tools-not-the-toools-html
+title: 'DEFCON 16: The Tools not the Toools'
+wordpress_id: 436
+categories:
+- Hacking
+tags:
+- Hacking
+---
+
+Originally posted to the Zero Day blog on Ziff Davis: [http://blogs.zdnet.com/security/?p=1735](http://blogs.zdnet.com/security/?p=1735)  
+  
+This article was also referenced in a Dark Reading blog post by John Sawyer: [http://www.darkreading.com/blog.asp?blog_sectionid=447&doc_id=162049](http://www.darkreading.com/blog.asp?blog_sectionid=447&doc_id=162049)  
+  
+**_All updates will reside here as I have no control over the article on Ziff Davis._**  
+  
+    DEFCON, the 9000+ attendee hacker conference in Vegas has become a sort of hydra conference. It has become more like a global fair than what most people think of conferences; even the badge is highly unique. I say this because there are so many things to do at DEFCON, other than going to talks, that you could spend your whole weekend looking at the “World’s Largest Boar!”, so to speak. One of the CTF (Capture the Flag) contest winners this year actually exclaimed that he only made it to 2 talks in 12 years! I am also one of those individuals who barely get a chance to go to talks and now that the speaker pool is so diverse it’s hard to find all of the “stuff” they release. Before anyone has a chance to post “It’s all on the DEFCON CD dummy” I want to challenge them to try. After a weekend of googling (which came back with few results) and making contact with some of the speakers, I provide you with a mostly accurate list of “stuff” that was released at DEFCON this year. If any of the information is inaccurate, or a tool is missing, please contact me and I will update this post.  
+  
+The DEFCON CD can be found here: [http://edge.i-hacked.com/defcon16-cd-iso-posted](http://edge.i-hacked.com/defcon16-cd-iso-posted)  
+  
+Think you are good enough? The binaries from Capture the Flag have been posted here: [http://nopsr.us/ctf2008/](http://nopsr.us/ctf2008/)  
+  
+ **PE-Scambler by Nick Harbour**  
+
+
+  
+	
+  * Description: (pending update)
+  
+	
+  * Homepage Link: [http://www.rnicrosoft.net/](http://www.rnicrosoft.net/)
+  
+	
+  * Email Address: nick.harbour@gmail.com
+  
+  
+**Packet-O-Matic by Guy Martin**  
+
+
+  
+	
+  * Description: “A real time packet processor” - It extracts and can reinject packets. This includes VoIP calls in real time, Cable Modem (DOCSIS) traffic, and a whole host of others.
+  
+	
+  * Homepage Link: [http://www.packet-o-matic.org/](http://www.packet-o-matic.org/)
+  
+	
+  * Email Address: gmsoft@tuxicoman.be
+  
+  
+**SA Exploiter by Securestate**  
+
+
+  
+	
+  * Description: A GUI SQL Injection tool that creates SQL injection queries and brakes the 64k barrier using MS Debugger.
+  
+	
+  * Homepage Link: [http://securestate.com/pages/free-tools.aspx](http://securestate.com/pages/free-tools.aspx)
+  
+  
+**Fast-Track by Securestate**  
+
+
+  
+	
+  * Description: A python based tool that automates several different typs of attacks including Metasploit’s Autopwn and SQL Injection
+  
+	
+  * Homepage Link: [http://securestate.com/pages/free-tools.aspx](http://securestate.com/pages/free-tools.aspx)
+  
+  
+**Beholder – by Nelson Murilo and Luis Eduardo**  
+
+
+  
+	
+  * Description: An open source wireless IDS program
+  
+	
+  * Homepage Link:  [http://www.beholderwireless.org/](http://www.beholderwireless.org/)
+  
+	
+  * Email Address: bh@beholderwireless.org
+  
+  
+** The Middler – by Jay Beale**  
+
+
+  
+	
+  * Description: The end-all be-all of MITM tools
+  
+	
+  * Homepage Link: http://www.themiddler.com/ (Online?)
+  
+	
+  * Preface Link: [http://www.intelguardians.com/themiddler.html](http://www.intelguardians.com/themiddler.html)
+  
+  
+**ClientIPS – by Jay Beale**  
+
+
+  
+	
+  * Description: An open source inline “transparent” client-side IPS
+  
+	
+  * Homepage Link: http://www.ClientIPS.org/  (Online?)
+  
+  
+** Marathon Tool – by Daniel Kachakill**  
+
+
+  
+	
+  * Description: A Blind SQL Injection tool based on heavy queries
+  
+	
+  * Download Link: [http://www.codeplex.com/marathontool](http://www.codeplex.com/marathontool)
+  
+	
+  * Email Address: dani@kachakil.com
+  
+  
+**The Phantom Protocol – by Magnus Brading**  
+
+
+  
+	
+  * Description: A Tor-like protocol that fixes some of Tor’s major attack vectors
+  
+	
+  * Homepage Link: [http://code.google.com/p/phantom](http://code.google.com/p/phantom)
+  
+	
+  * Email Address: brading@fortego.se
+  
+  
+**ModScan – by Mark Bristow**  
+
+
+  
+	
+  * Description: A SCADA Modbus Network Scanner
+  
+	
+  * Homepage Link: [http://modscan.googlecode.com/](http://modscan.googlecode.com/)
+  
+	
+  * Email Address: mark.bristow@gmail.com
+  
+  
+** Grendel Scan – by David Byrne**  
+
+
+  
+	
+  * Description: Web Application scanner that searches for logic and design flaws as well as the standard flaw seen in the wild today (SQL Injection, XSS, CSRF)
+  
+	
+  * Homepage Link: [http://grendel-scan.com/](http://grendel-scan.com/)
+  
+  
+**iKat – interactive Kiosk Attack Tool**  (This site has an image as a banner that is definitely not safe for work! – You have been warned) **by Paul Craig**  
+
+
+  
+	
+  * Description: A web site that is dedicated to helping you break out of Kiosk jails
+  
+	
+  * Homepage Link: [http://ikat.ha.cked.net](http://ikat.ha.cked.net)
+  
+	
+  * Email Address: paul.craig@security-assessment.com
+  
+  
+**DAVIX – by Jan P. Monsch and Raffael Marty**  
+
+
+  
+	
+  * Description: A SLAX based Linux Distro that is geared toward data/log visualization
+  
+	
+  * Homepage Link: [http://code.google.com/p/davix/](http://code.google.com/p/davix/)
+  
+	
+  * Download Link: [http://www.geekceo.com/davix/davix-0.5.0.iso.gz](http://www.geekceo.com/davix/davix-0.5.0.iso.gz)
+  
+	
+  * Email Addresses: jan.monsch@iplosion.com and raffy@secviz.org
+  
+  
+**CollabREate – by Chris Eagle and Tim Vidas**  
+
+
+  
+	
+  * Description: An IDA Pro plugin with a server backend that allows multiple people to collaborate on a single RE (reverse engineering) project.
+  
+	
+  * Homepage Link: [http://www.idabook.com/defcon](http://www.idabook.com/defcon)
+  
+	
+  * Email Addresses: cseagle@gmail.com and tvidas@gmail.com
+  
+  
+**VMware Pen-Testing Framework – by John Fitzpatrick**  
+
+
+  
+	
+  * Description: A collection of tools created to pen-test VMware enviroments
+  
+	
+  * Homepage: [http://www.tinternet.org.uk/vmware/](http://www.tinternet.org.uk/vmware/)
+  
+	
+  * Email Address: john.fitzpatrick@mwrinfosecurity.com
+  
+  
+**Dradis – by John Fitzpatrick**  
+
+
+  
+	
+  * Description: A tool for organizing and sharing information during a penetration test
+  
+	
+  * Homepage: [http://dradis.sourceforge.net](http://dradis.sourceforge.net)
+  
+	
+  * Email Address: john.fitzpatrick@mwrinfosecurity.com
+  
+  
+**Squirtle – by Kurt Grutzmacher**  
+
+
+  
+	
+  * Description: A rogue server with controlling desires that steals NTLM hashes.
+  
+	
+  * Homepage: [http://code.google.com/p/squirtle](http://code.google.com/p/squirtle)
+  
+	
+  * Email Address: grutz@jingojango.net
+  
+  
+**WhiteSpace – by Kolisar**  
+
+
+  
+	
+  * Description: A script that can hide other scripts such as CSRF and iframes in spaces and tabs
+  
+	
+  * Download Link: DEFCON 16 CD
+  
+  
+**VoIPer – by nnp**  
+
+
+  
+	
+  * Description: VoIP automated fuzzing tool with support for a large number of VoIP applications and protocols
+  
+	
+  * Homepage Link: [http://voiper.sourceforge.net/](http://voiper.sourceforge.net/)
+  
+  
+**Barrier – by Errata Security**  
+
+
+  
+	
+  * Description: A browser plugin that pen-tests every site that you visit.
+  
+	
+  * Homepage Link: [http://www.erratasec.com](http://www.erratasec.com)
+  
+	
+  * Email Address: sales@erratasec.com
+  
+  
+**Psyche – by Ponte Technologies**  
+
+
+  
+	
+  * Description: An advanced network flow visualization tool that is not soley based on time.
+  
+	
+  * Homepage Link: [http://psyche.pontetec.com/](http://psyche.pontetec.com/)
+  
+  
+   
+  
+Other blogs that have linked this or my ZD Net post:  
+
+
+  
+	
+  * [http://infosecevents.net/2008/08/19/defcon-16-tools/](http://infosecevents.net/2008/08/19/defcon-16-tools/)
+  
+	
+  * [http://midnightresearch.com/pages/new-tools-from-defcon/](http://midnightresearch.com/pages/new-tools-from-defcon/)
+  
+	
+  * [http://www.terminal23.net/2008/08/tools_released_at_defcon_16.html](http://www.terminal23.net/2008/08/tools_released_at_defcon_16.html)
+  
+	
+  * [http://nicholsonsecurity.com/2008/08/23/links-to-all-the-software-from-defcon-16/](http://nicholsonsecurity.com/2008/08/23/links-to-all-the-software-from-defcon-16/)
+  
+	
+  * [http://datenterrorist.wordpress.com/2008/08/22/tools-released-at-defcon-16/](http://datenterrorist.wordpress.com/2008/08/22/tools-released-at-defcon-16/)
+  
+	
+  * [http://securabit.com/2008/08/22/latest-tools-from-defcon-16/](http://securabit.com/2008/08/22/latest-tools-from-defcon-16/)
+  
+	
+  * [http://buhera.blog.hu/2008/08/20/a_defcon_idei_termesei](http://buhera.blog.hu/2008/08/20/a_defcon_idei_termesei)
+  
+	
+  * [http://blog.tiyun.de/index.php?/archives/1408-DEFCON-16-List-of-tools-and-stuff-released.html](http://blog.tiyun.de/index.php?/archives/1408-DEFCON-16-List-of-tools-and-stuff-released.html)
+  
+	
+  * [http://wp.jarretthousenorth.com/2008/08/19/links-for-2008-08-19/](http://wp.jarretthousenorth.com/2008/08/19/links-for-2008-08-19/)
+  
+	
+  * [http://community.livejournal.com/securityblogru/17570.html](http://community.livejournal.com/securityblogru/17570.html)
+  
+	
+  * [http://alexav8.livejournal.com/68264.html](http://alexav8.livejournal.com/68264.html)
+  
+	
+  * [http://carzel.wordpress.com/2008/08/19/lista-de-herramientas-de-seguridad-lanzadas-en-defcon16/](http://carzel.wordpress.com/2008/08/19/lista-de-herramientas-de-seguridad-lanzadas-en-defcon16/)
+  
+	
+  * [http://www.security-alert.nl/forums/hacking-cracking/8755-defcon-16-list-tools-compiled.html](http://www.security-alert.nl/forums/hacking-cracking/8755-defcon-16-list-tools-compiled.html)
+  
+	
+  * [http://www.nickbrawn.com/2008/08/security-roundup-august/](http://www.nickbrawn.com/2008/08/security-roundup-august/)
+  
+	
+  * [http://boanchanggo.tistory.com/340](http://boanchanggo.tistory.com/340)
+  
+	
+  * [http://databyss.com/2008/08/21/links-for-2008-08-20/](http://databyss.com/2008/08/21/links-for-2008-08-20/)
+  
+	
+  * [http://julianrdz.wordpress.com/2008/08/20/defcon-16-released-tools/](http://julianrdz.wordpress.com/2008/08/20/defcon-16-released-tools/)
+  
+	
+  * [http://dismalsci.wordpress.com/2008/08/20/links-for-2008-08-20/](http://dismalsci.wordpress.com/2008/08/20/links-for-2008-08-20/)
+  
+	
+  * [http://security4all.blogspot.com/2008/08/list-of-tools-from-defcon-16-and-some.html](http://security4all.blogspot.com/2008/08/list-of-tools-from-defcon-16-and-some.html)
+  
+	
+  * [http://blogs.sun.com/yglee/entry/defcon_16_august_8_10](http://blogs.sun.com/yglee/entry/defcon_16_august_8_10)
+  
+	
+  * [http://kikuz0u.x0.com/td/?date=20080822#p05](http://kikuz0u.x0.com/td/?date=20080822#p05)
+  
+	
+  * [http://twinturbo.org/security/defcon-16-%E2%80%93-the-tools/](http://twinturbo.org/security/defcon-16-%E2%80%93-the-tools/)
+  
+	
+  * [http://lair.moria.org/blog/archives/94](http://lair.moria.org/blog/archives/94)
+  
+	
+  * [http://bobmah.wordpress.com/2008/08/19/defcon-16-list-of-tools-and-stuff-released/](http://bobmah.wordpress.com/2008/08/19/defcon-16-list-of-tools-and-stuff-released/)
+  
+	
+  * [http://www.portal4gamers.de/wordpress/index.php/2008/08/19/defcon-16-slides-and-tools/](http://www.portal4gamers.de/wordpress/index.php/2008/08/19/defcon-16-slides-and-tools/)
+  
+

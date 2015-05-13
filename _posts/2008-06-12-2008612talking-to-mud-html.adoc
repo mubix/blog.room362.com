@@ -1,0 +1,137 @@
+---
+author: mubix
+comments: true
+date: 2008-06-12 01:22:46+00:00
+layout: post
+slug: 2008612talking-to-mud-html
+title: Talking to Mud
+wordpress_id: 455
+tags:
+- Funny
+---
+
+A low doorway in the east wall allows access to the example room, a glowing  
+  
+portal in the north wall leads to the mortal start area, and to the northeast  
+  
+is the quiet room, the door of which is currently open.  
+  
+The LIMA mudlib greeter stands here, smiling politely.  
+  
+There’s a Camaro Z28 parked here.  
+  
+Sco’s Pet  
+  
+There are many clear bottles here.  
+  
+A map of Lima Bean is pinned to the wall.  
+  
+There’s a Camaro Z28 parked here.  
+  
+Onoz the title-less [fully documented] [idle 1w]  
+  
+Acidtrux of Anomaly [idle 3d]  
+  
+The ghost of Jetboy [idle 1d]  
+  
+Boo the title-less [idle 1w]  
+  
+Lollerskater the title-less [fully documented] [idle 3d]  
+  
+Xdne the title-less [fully documented] [idle 1w]  
+  
+Mudos the title-less [idle 1w]  
+  
+Rarry the title-less [idle 3d]  
+  
+Skout the title-less [fully documented] [idle 1d]  
+  
+Tuning in the newbie channel (newbie /on)  
+  
+Tuning in the gossip channel (gossip /on)  
+  
+> get in Camaro Z28  
+  
+You can’t get in Camaro Z28.  
+  
+> hello  
+  
+Getting desperate?  
+  
+> no  
+  
+I don’t know the word: no.  
+  
+> why not  
+  
+You can’t be serious.  
+  
+> I am  
+  
+I don’t know the word: I.  
+  
+> why  
+  
+Gamedriver tell you, “Why the hell not?! Let’s shutdown...”  
+  
+> ok  
+  
+You ok.  
+  
+> yes  
+  
+You exclaim, “YES!”  
+  
+> eat Sco’s Pet  
+  
+There is no Sco’s Pet here.  
+  
+> eat Sco  
+  
+There is no Sco here.  
+  
+> jump  
+  
+You jump up and down.  
+  
+> duck  
+  
+You duck.  
+  
+> do the thriller  
+  
+I don’t know the word: do.  
+  
+> cry  
+  
+You cry.  
+  
+> Hi Ken Shoto... I know one of you is seeing this.  
+  
+There is no Shoto... I know one of you is seeing this. here.  
+  
+> hahah  
+  
+I don’t know the word: hahah.  
+  
+> why not  
+  
+An interesting idea.  
+  
+> thank you  
+  
+You thank you.  
+  
+> you’re welcome  
+  
+There is no welcome here.  
+  
+> Now don’t start that again!  
+  
+I don’t know the word: Now.  
+  
+> quit  
+  
+You have left KMud.  
+  
+Connection closed by foreign host.

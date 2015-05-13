@@ -1,0 +1,30 @@
+---
+author: mubix
+comments: true
+date: 2008-06-24 15:28:00+00:00
+layout: post
+slug: 2008624network-security-projects-using-hacked-wireless-routers-html
+title: Network Security Projects Using Hacked Wireless Routers
+wordpress_id: 450
+tags:
+- Pimping
+---
+
+Just wanted to pimp Paul from PaulDotCom’s class coming up here shortly. Also, to register go to  [**http://www.pauldotcom.com/sans**](http://www.pauldotcom.com/sans)  and help their podcast out.
+
+  
+  
+[SANS Institute - SANSFIRE 2008](http://www.sans.org/sansfire08/description.php?tid=1817)  
+
+
+  
+
+
+Wednesday, July 23, 2008 : _9am - 5pm_  
+  
+[Paul Asadoorian, Defensive Intuition](http://www.sans.org/sansfire08/faculty.php#iid177)  
+  
+6 CPE Credits
+
+  
+

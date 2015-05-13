@@ -1,0 +1,22 @@
+---
+author: mubix
+comments: true
+date: 2009-09-16 17:52:22+00:00
+layout: post
+title: Corrections and Questions about Nessus on Securabit
+categories:
+- rant
+---
+
+*Update* I can't say with 100% certainty that Nessus ever used NMAP as it's base scanner, I was going off of memory. I apologize for not being perfect.  
+  
+*Update 2* Since people can't seem to let it go, I would say that I was totally wrong and the nmap was absolutely never used in nessus ever, but then I would be caught in another absolute that I can't confirm. According to their wiki, the nmap nasl script were taken out because people were No, I haven't listened to the latest episode of Securabit in which Paul comes on and talks about Nessus. If he states in there that nmap was never the port scanning engine for nessus, then please go bug him if you think he is wrong.  
+  
+*Update 3* Ron Gula of Tenable has confirmed via email that Nessus has never used nmap as it's base scanner. Also, Attrition.org posted a bit of history on the subject: [http://attrition.org/misc/ee/nessus_and_nmap.html](http://attrition.org/misc/ee/nessus_and_nmap.html)  
+  
+On [Securabit](http://www.securabit.com/) [ Episode 37](http://www.securabit.com/2009/08/25/securabit-episode-37-%e2%80%93-mapping-networks-with-fyodor-and-nmap/) - I made the statement that some people could be running nmap and not even know it. While this could still hold true, the context I put around it. "Nessus uses nmap for scanning" showed my years a bit. That statement is now a falsehood. Nessus uses it's own "optimized" port scanner. I put quotes around the word "optimized" simply because I don't know what tweaks that have been done. Paul Asadorian from PaulDotCom Security Weekly sent an email into Securabit letting us know of the error.  
+  
+I didn't take the news very gallantly, but Paul was nice enough to lay out how someone would go about using nmap with Nessus these day. Those steps are pretty drawn out too, which I find kinda disheartining that not only do you not have nmap as your base port scanner, but the NASL scripts to use nmap are no longer included in the base install of Nessus (according to Paul, I haven't confirmed that, but he does work for the company). And who knows why they decided to leave those script out, but you will have your chance to ask those questions because Paul will be on Securabit LIVE tonight to tie up any loose ends and talk about Nessus tonight at 8 PM EST (September 16th 2009).  
+  
+For more info about tonight's show:  
+[http://www.securabit.com/2009/09/15/securabit-live-wednesday-with-paul-asadoorian-from-pauldotcom/](http://www.securabit.com/2009/09/15/securabit-live-wednesday-with-paul-asadoorian-from-pauldotcom/)

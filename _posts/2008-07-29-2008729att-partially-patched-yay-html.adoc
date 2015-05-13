@@ -1,0 +1,30 @@
+---
+author: mubix
+comments: true
+date: 2008-07-29 19:58:35+00:00
+layout: post
+slug: 2008729att-partially-patched-yay-html
+title: ATT partially patched. Yay!
+wordpress_id: 440
+categories:
+- Hacking
+tags:
+- Hacking
+---
+
+So, according to my iPhone, the DNS servers that it uses is patched. (209.183.33.23 - schinetdns.mycingular.net) However, when I tried to send an image of the doxpara page through email it gave me an SSL error and asked me to accept the certificate.... Um, no thank you. So, for the time being I will not be checking my email for a while, or for that matter anything I need to authenticate with. Too much? probably, but just erring on the side of caution. I will post the screen caps when I don’t have SSL errors.  
+  
+![](http://s3.media.squarespace.com/production/438411/4879756/uploads/att.png)H.D. Moore actually contacted ATT about the issue. Check out his post to twitter for the response they gave him:[H.D. Moore vs. ATT](http://twitter.com/hdmoore/statuses/871802502)  
+
+
+> “reads a response from AT&T: ”We will investigate your complaint and take appropriate action.“ DNS server is now offline...”
+
+  
+Now I wonder how many iPhones out there have already clicked “Continue”  
+  
+   
+  
+EDIT: Here is a weird thing, as soon as I dropped to the “EDGE” network, the email sent with no errors. So here is the image: (Remember, this was taken while on 3G)  
+
+
+![](http://s3.media.squarespace.com/production/438411/4879756/uploads/att_now3.jpg)![](http://s3.media.squarespace.com/production/438411/4879756/uploads/att_now2.jpg)![](http://s3.media.squarespace.com/production/438411/4879756/uploads/att_now.jpg)

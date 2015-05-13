@@ -1,0 +1,75 @@
+---
+author: mubix
+comments: true
+date: 2011-10-09 06:20:22+00:00
+layout: post
+title: MSFConsole Prompt Fiddling
+categories:
+- metasploit
+- msfconsole
+---
+
+In @[carnal0wnage](http://twitter.com/carnal0wnage) and my presentation at [DerbyCon](http://www.derbycon.com/) 2011 we talked about using [SCREEN](http://linux.die.net/man/1/screen) and [SCRIPT](http://linux.die.net/man/1/script) to keep connections live / use them across SSH sessions, and log everything that happens. What we didn't cover is the fact that there isn't a time stamp for those logs. Now, Metasploit has multiple ways of creating logs:
+
+
+* `cat ~/.msf4/logs/framework.log`
+  * This log automatically logs all of the error data that is great for trouble shooting when something is working, but doesn't record what you are doing inside of msfconsole
+* `msf> spool ~/myclient.log`
+  * The spool command is great for logging output from anything you do in either consoles or sessions, even when you drop to a shell. My one gripe about this one is that it doesn't log the actual command you issued.
+*
+```
+msf> set ConsoleLogging true  
+msf> set LogLevel 5  
+msf> set SessionLogging true  
+msf> set TimestampOutput true
+```
+  * These combined essentially do the same thing as spool except that they go into different logs, but do actually log the command you issued
+
+Plenty of logging right? But none of them really 'log everything' and time stamps are not a regular occurrence in them. Cool, but we need both. We've got the 'log everything' with the Linux 'script' command, we just need a way to inject time stamps into our log.
+
+- - - - -
+**Enter the ever mutable 'msf>' prompt:**
+- - - - -
+
+A lesser known variable in MSFConsole is 'PROMPT'. You can set this pretty much like any other OS can, however there are some metasploit specific things you can add. Using a three letter abbreviation you can even add color to it.
+
+For example lets add our hostname to our prompt:
+
+`msf> set PROMPT %H`
+
+changes msf> to myhostname>
+
+And you can combine and add things that you wish:
+
+`set PROMPT %H Just more text %U`
+
+changes the prompt to:  myattackmachine Just more text mubix> (%U is username)
+
+For reference here are the other working % variables that I know of:
+
+  * **%D** = Current local directory (not sure if this changes when in meterpreter or not for the victims dir, that would be cool)
+  * **%H** = Host name (again, would be cool if this changed when in meterpreter)
+  * **%J** = Current number of jobs running
+  * **%L** = Local IP (makes it easy to remember what to put in LHOST)
+  * **%S** = Currently number of sessions open
+  * **%T** = Time stamp
+  * **%U** = Username (yes, would be awesome if this changed in meterpreter too)
+
+Now if you wanted to add colors to that, all you would do is use something like %grn%T to make the time stamp green. You'll have to play around with the color's names as I don't know them all. %red %blu %blk etc...
+
+Combine all of that with script and you've got something awesome. I set my PROMPT to:
+
+```
+msf> set PROMPT %T S:%S J:%J
+1970-01-01 00:00:00 +0000 S:0 J:0>
+```
+
+This gives me the number of jobs and sessions and has the time stamp every time I throw a command, so in my logs I can very easily narrow down the exact time when I did or didnt' do something. The number of sessions and jobs are just good to know items.
+
+- - - - -
+**Throw in one more trick to make the whole thing a cake walk:**
+- - - - -
+
+In your ~/.msf4 directory, if you haven't already, create a file called 'msfconsole.rc'. This magical file will run every time you start msfconsole (_with the express exception of when you specify a resource file to run from the command line using the -r argument_). Throw your 'set PROMPT %blah %blah %blah' in there formatted however you like, and now whenever you start msfconsole you'll have your handy dandy timestamp.
+
+Shout out to @[egyp7](http://twitter.com/egyp7) for showing me this.

@@ -1,0 +1,84 @@
+---
+layout: post
+title: "ShmooCon 2014 Guide"
+date: 2014-01-11 13:28:58 -0500
+comments: true
+published: false
+categories:
+- shmoocon
+- cons
+---
+
+There are guides like this all around for conferences big and small
+
+
+# Other Shmoo guides
+
+* [ShmooCon 2014 Travel Guide by ThePrez](http://theprez98.blogspot.com/2014/01/shmoocon-2014-travel-protips-arrivals.html)
+* [ShmooCon 2013 Parking Guide by Thor!](http://www.excivity.com/ComputeCycle/getting-to-shmoocon-2013-a-parking-guide/)
+* [ShmooCon 2013 Travel Guide by Thor!](http://www.excivity.com/ComputeCycle/shmoocon-2013-a-navigation-guide/)
+
+
+# Pre-Con
+
+## Tickets
+
+* Purchasing tickets can be tough. Hitting F5 at just the right time isn't always easy. There are some guides on the best setups and other things but I find that just sitting in front of a pair of computers with firefox open to the registration page and a couple friends doing the same things works best. Chrome has some pre-caching stuff that you can turn off but I always forget to and IE/Safari are flaky sometimes for me at reg time.
+* If you happen to buy extra tickets or know someone who does, remind them that the easiest way to handle transfering or selling the tickets is through the ShmooCon staff. They can verify the ticket ahead of time and the funds transfer can happen after verification. Much safer then trusting that someone on eBay isn't just selling the same ticket to multiple people.
+
+## What to bring
+
+* **Laptop / Tablet / Primitive note taking device + writing instrument** - this is real up to you. I've taken my laptop to a bunch of cons, sometimes never got it out of my bag (which gets old carrying it around all weekend), and others I used it the whole con (competing in CTF)
+* **3G/LTE Mifi / Dongle** - Just like Def Con, don't trust the hotel wifi. The conference Wifi is actually pretty good and they usually offer a host segmented radius based option that you can then VPN through provided by the ShmooCon Laps people.
+* **Pocket Charger** - One thing that is always the case at any con is that your smart phone is used a lot, and it's usually right when your trying to find your friends to meet up for dinner that it dies.
+
+## Things to pre-register or get involved with
+
+* **[ShmoooCon Labs](http://www.shmoocon.org/shmoocon_labs)** - Is a bunch of volunteers teaming up with ShmooCon staff to create the network at ShmooCon. It's a great opportunity for people who wouldn't regularly get to, to play with enterprise level networking gear.
+* **[Barcode Shmarcode](http://www.shmoocon.org/barcode_shmarcode)** - This is a contest that needs a bit of prepwork, you are essentially challenged to transform and modify your barcode into the craziest idea you can think of where the barcode will still scan correctly.
+
+## Taxi Fares
+
+Taxi Fare Finder says it's ~23 dollars (low 18 => high 38) to get from [Reagan National Airport to the ShmooCon Venue](http://www.taxifarefinder.com/main.php?city=Washington-DC&from=Ronald+Reagan+Washington+National+Airport+%28DCA%29&to=1919+Connecticut+Ave+NW%2C+Washington%2C+DC%2C+United+States). From [Washington Dulles International Airport to the Venue](http://www.taxifarefinder.com/main.php?city=Washington-DC&from=Washington+Dulles+International+Airport+%28IAD%29&to=1919+Connecticut+Ave+NW%2C+Washington%2C+DC%2C+United+States) can range anywhere from 62 to 73 dollars.
+
+Those estimations are base prices so you still need to work out other fees and tips, for example:
+
+```
+╔═════════════════════╦════════════╗
+║     Description     ║    Cost    ║
+╠═════════════════════╬════════════╣
+║ Initial Fare        ║    $3.25   ║
+║ Add. Metered Fare   ║   $61.99   ║
+║ Credit Card Fee     ║    $0.25   ║
+║ Tip (15%)           ║    $9.82   ║
+║ Estimated Taxi Fare ║   $75.31   ║
+╠═════════════════════╩════════════╣
+║  Additional charges may apply.   ║
+╚══════════════════════════════════╝
+```
+
+*
+
+# During ShmooCon
+
+## Parking
+
+
+
+## Contests
+
+## Food
+
+## Talks
+
+## Speaker Advice
+
+## Weather
+
+![](/images/postimages/201401_shmooprep_1.png)
+
+Source image from [@theprez98 tweet on Jan 11 2014](http://twitter.com/theprez98/status/422183524934758400)
+
+# After ShmooCon
+
+Of course I would be remiss if I didn't mention the After-con that the NoVA Hackers run: [ShmooCon Epilogue](http://novahackers.blogspot.com/p/shmoo.html)

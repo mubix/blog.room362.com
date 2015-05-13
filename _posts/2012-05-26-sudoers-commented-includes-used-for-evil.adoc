@@ -1,0 +1,36 @@
+---
+author: mubix
+comments: true
+date: 2012-05-26 05:33:00+00:00
+layout: post
+title: SUDOERS Commented Includes used for Evil
+categories:
+- sudo
+- post exploitation
+- linux
+---
+
+I found a number of things interesting when reading the following post:
+
+[http://www.offensive-security.com/vulndev/freepbx-exploit-phone-home/](http://www.offensive-security.com/vulndev/freepbx-exploit-phone-home/)
+
+Too bad that nmap's interactive mode was taken out, but there are a great number of other such methods, most notably VI's shell mode. 
+
+But when I started looking into appending or inserting lines into /etc/sudoers for [CCDC](http://www.nationalccdc.org/), I happened upon an interesting function of that file. Near the end of the file there are two lines:
+
+```
+# See sudoers(5) for more information on "#include" directives:  
+#includedir /etc/sudoers.d
+```
+
+Both look commented out, but in actuality, exactly as-is the #includedir line is interpreted and acted upon. So any file that you put in the /etc/sudoers.d directory counts as an extension of the /etc/sudoers file. Make a small edit to the default README file with a bunch of added # commented out lines copied directly from the sudo man page, with a
+
+**nobody ALL = NOPASSWD: ALL**
+
+or www-data plus a webshell makes for easy re-exploitation. Just an evil way to stay hidden on a 'nix box… 
+
+**Update: **
+
+`nmap --script <(echo "os.execute('/bin/sh')")`
+
+'nuf said…  (thanks [@bonsaiviking](https://twitter.com/bonsaiviking) )

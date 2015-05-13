@@ -1,0 +1,40 @@
+---
+author: mubix
+comments: true
+date: 2011-06-27 14:32:16+00:00
+layout: post
+title: 'fxsst.dll persistence: the evil fax machine'
+categories:
+- persistence
+---
+
+Nick Harbour wrote a [post on Mandiants blog](https://blog.mandiant.com/archives/1786) about some Malware that was using a dll called 'fxsst.dll' to hide and stay persistent on a system. The DLL is used by Windows when it is acting as a Fax server (anyone still do that?). He mentions some very interesting points:
+
+* The DLL gets loaded at login by Explorer
+* The DLL exists in System32 but is looked for in Windows first
+* Explorer doesn't try to use anything inside of it via exports unless the system is acting as a fax server (aka safe to put a pretty bland DLL there)
+
+I thought... no it couldn't be that simple... lets see:
+
+![](/images/postimages/201106_fxsst_1.png)  
+
+We have our victim in a session and are going to make a DLL that points back to our reverse_https multi handler over port 443
+
+![](/images/postimages/201106_fxsst_2.png)  
+
+Ok, we've got our super evil fxsst.dll now lets put it in place.
+
+![](/images/postimages/201106_fxsst_3.png)  
+
+Lets test it out just to make sure it works. I will use the PID of explorer.exe (cause thats where it's going to be normally) and I'm going to use the method I talked about in the [Remote DLL Injection post](/blog/2011/5/30/remote-dll-injection-with-meterpreter).
+
+![](/images/postimages/201106_fxsst_4.png)  
+
+Woot! Ok, so the DLL works, but does it load when a user logs in... (drop out of our 2 sessions first)
+
+![](/images/postimages/201106_fxsst_5.png)  
+
+Thats me logging in 2 times because I couldn't believe that it worked. System was fine, and I had a shell. These tests were performed on XP. On Win7 x64 it make the systems freeze up. Right now the DLL payload generation in Metasploit for 64bit systems isn't setup. So, stay away from doing this on x64 bit systems at least with the Metasploit DLL, since it's run at login so you'll have to use psexec or another session to actually remove the file while everyone is logged out. TEST PRIOR TO USE as always.
+
+  
+

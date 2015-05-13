@@ -1,0 +1,17 @@
+---
+author: mubix
+comments: true
+date: 2009-02-02 17:48:00+00:00
+layout: post
+title: Bob Stories - Airport Boredom
+categories:
+- internet
+---
+
+I registered [Bobstories.com](http://www.bobstories.com/) after listening to [PaulDotCom](http://www.pauldotcom.com) for a while. I have always told stories of this manor, but never quite put a name to “my friend”. Now that he has a name, it is only fitting that he has a domain and a blog. Please, come, register under the name bob_#### with a [mailinator](http://www.mailinator.com/) address to match, or your own name and email address if you wish. I’ll moderate all posts simply for spam purposes and have them up post haste. So to start things off, here is my Bob story:  
+  
+Bob and I were hanging out at an airport waiting for our flights. He was headed to Kenya and I to Canada. Being the evil guy that Bob is, he wipped out his DD-WRT Fonera router, hooked it up to his laptop, turned on internet sharing and shared out his teathered internetconnection to his ethernet port and connected the other end to his Fon.  He then proceeded to boot up his BT3 VM and attach his USB Alfa to it. Connecting to the WPA AP portion of his Fon he configured the other virtual wireless interface for “Free Public Wireless” and pulled a DHCP address from his laptop for the WAN port. Disconnecting the Alfa he proceeded to start using it to mass deauth the other APs in the area. Leaving that to go he spun up dsniff, wifizoo, cain and able, and ettercap listening on the ‘vmware briged ethernet’.  
+  
+And of course being the ethical person that I am, I proceeded to pressure Bob until he finally dumped the logs right before his flight left.  
+  
+We parted ways and I haven’t seen him since. Is Bob in your city/town/country register on [Bobstories.com](http://www.bobstories.com/) and tell us what evil thing he did today.

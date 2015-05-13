@@ -1,0 +1,91 @@
+---
+author: mubix
+comments: true
+date: 2007-04-25 14:57:15+00:00
+layout: post
+slug: 2007425amazon-prices-increase-html
+title: Amazon Prices Increase!
+wordpress_id: 518
+tags:
+- Uncategorized
+---
+
+When I checked my Amazon account today, I was amazed to find that about 90% of the books that I have in my “Saved for later” cart have increased in price. What’s going on? I guess this raises a good question. What regulates the rise and fall of prices on the internet? Do you “shop around” for books on the internet? Or do you just go to Amazon.com and buy what you need? I definitely fall in the latter category. Do you know any good sites that compare prices on books? Other than the deceased Froogle and other similar all encompassing consumer compare sites. Well, if you get nothing out of this article other than a list of good books to read, then I have done my job.  
+
+
+>   
+
+> 
+>   
+  
+
+> 
+>   
+
+> **Important Messages**  
+
+> 
+>   
+	
+>   * Please note that the price of [Extrusion Detection: Security Monitoring for Internal Intrusions](http://www.amazon.com/Extrusion-Detection-Security-Monitoring-Intrusions/dp/0321349962) has decreased from $34.49 to $32.99 since you placed it in your Shopping Cart. Items in your cart will always reflect the most recent price displayed on their product detail pages.
+>   
+	
+>   * Please note that the price of [Extreme Exploits: Advanced Defenses Against Hardcore Hacks (Hacking Exposed)](http://www.amazon.com/Extreme-Exploits-Advanced-Defenses-Hardcore/dp/0072259558) has increased from **$31.49 to $33.99** since you placed it in your Shopping Cart. Items in your cart will always reflect the most recent price displayed on their product detail pages.
+>   
+	
+>   * Please note that the price of [The Art of Deception: Controlling the Human Element of Security](http://www.amazon.com/Art-Deception-Controlling-Element-Security/dp/076454280X) has increased from **$25.19 to $34.19** since you placed it in your Shopping Cart. Items in your cart will always reflect the most recent price displayed on their product detail pages.
+>   
+	
+>   * Please note that the price of [1337 h4x0r h4ndb00k](http://www.amazon.com/1337-h4x0r-h4ndb00k-tapeworm/dp/0672327279) has increased from **$10.19 to $11.69** since you placed it in your Shopping Cart. Items in your cart will always reflect the most recent price displayed on their product detail pages.
+>   
+	
+>   * Please note that the price of [Stealing the Network: How to Own the Box](http://www.amazon.com/Stealing-Network-How-Own-Box/dp/1931836876) has decreased from $34.47 to $32.97 since you placed it in your Shopping Cart. Items in your cart will always reflect the most recent price displayed on their product detail pages.
+>   
+	
+>   * Please note that the price of [The Unofficial Guide to Ethical Hacking, Second Edition](http://www.amazon.com/Unofficial-Guide-Ethical-Hacking-Second) has increased from **$27.99 to $32.99** since you placed it in your Shopping Cart. Items in your cart will always reflect the most recent price displayed on their product detail pages.
+>   
+	
+>   * Please note that the price of [Google Hacking for Penetration Testers](http://www.amazon.com/Google-Hacking-Penetration-Testers-Johnny/dp/1931836361) has increased from **$24.72 to $29.67** since you placed it in your Shopping Cart. Items in your cart will always reflect the most recent price displayed on their product detail pages.
+>   
+	
+>   * Please note that the price of [Gray Hat Hacking : The Ethical Hacker’s Handbook](http://www.amazon.com/Gray-Hat-Hacking-Ethical-Handbook/dp/0072257091) has decreased from $34.49 to $32.99 since you placed it in your Shopping Cart. Items in your cart will always reflect the most recent price displayed on their product detail pages.
+>   
+	
+>   * Please note that the price of [Rootkits: Subverting the Windows Kernel (Addison-Wesley Software Security Series)](http://www.amazon.com/Rootkits-Subverting-Addison-Wesley-Software-Security/dp/0321294319) has increased from **$25.64 to $32.99** since you placed it in your Shopping Cart. Items in your cart will always reflect the most recent price displayed on their product detail pages.
+>   
+	
+>   * Please note that the price of [Silence on the Wire: A Field Guide to Passive Reconnaissance and Indirect Attacks](http://www.amazon.com/Silence-Wire-Passive-Reconnaissance-Indirect/dp/1593270461) has increased from **$22.37 to $26.37** since you placed it in your Shopping Cart. Items in your cart will always reflect the most recent price displayed on their product detail pages.
+>   
+	
+>   * Please note that the price of [Nessus, Snort, & Ethereal Power Tools: Customizing Open Source Security Applications (Jay Beale’s Open Source Security) (Jay Beale’s Open Source Security)](http://www.amazon.com/Nessus-Snort-Ethereal-Power-Tools/dp/1597490202) has increased from **$27.57 to $29.16** since you placed it in your Shopping Cart. Items in your cart will always reflect the most recent price displayed on their product detail pages.
+>   
+	
+>   * Please note that the price of [Intrusion Detection with SNORT: Advanced IDS Techniques Using SNORT, Apache, MySQL, PHP, and ACID](http://www.amazon.com/Intrusion-Detection-SNORT-Advanced-Techniques/dp/0131407333) has increased from **$27.89 to $32.84** since you placed it in your Shopping Cart. Items in your cart will always reflect the most recent price displayed on their product detail pages.
+>   
+	
+>   * Please note that the price of [Aggressive Network Self-Defense](http://www.amazon.com/Aggressive-Network-Self-Defense-Neil-Wyler/dp/1931836205) has increased from **$32.97 to $37.96** since you placed it in your Shopping Cart. Items in your cart will always reflect the most recent price displayed on their product detail pages.
+>   
+	
+>   * Please note that the price of [Intrusion Prevention and Active Response: Deploying Network and Host IPS](http://www.amazon.com/Intrusion-Prevention-Active-Response-Deploying/dp/193226647X) has increased from **$35.46 to $36.46** since you placed it in your Shopping Cart. Items in your cart will always reflect the most recent price displayed on their product detail pages.
+>   
+	
+>   * Please note that the price of [Penetration Tester’s Open Source Toolkit](http://www.amazon.com/Penetration-Testers-Open-Source-Toolkit/dp/1597490210) has decreased from $39.57 to $37.77 since you placed it in your Shopping Cart. Items in your cart will always reflect the most recent price displayed on their product detail pages.
+>   
+	
+>   * Please note that the price of [Ajax in Action](http://www.amazon.com/Ajax-Action-Dave-Crane/dp/1932394613) has increased from **$24.72 to $28.32** since you placed it in your Shopping Cart. Items in your cart will always reflect the most recent price displayed on their product detail pages.
+>   
+	
+>   * Please note that the price of [Somebodies and Nobodies: Overcoming the Abuse of Rank](http://www.amazon.com/Somebodies-Nobodies-Overcoming-Abuse-Rank/dp/0865714878) has increased from **$12.37 to $13.22** since you placed it in your Shopping Cart. Items in your cart will always reflect the most recent price displayed on their product detail pages.
+>   
+	
+>   * Please note that the price of [All Rise: Somebodies, Nobodies, and the Politics of Dignity (BK Currents)](http://www.amazon.com/All-Rise-Somebodies-Nobodies-Politics/dp/1576753859) has increased from **$15.61 to $17.90** since you placed it in your Shopping Cart. Items in your cart will always reflect the most recent price displayed on their product detail pages.
+>   
+  
+
+>   
+  
+  
+
+
+  
+jd

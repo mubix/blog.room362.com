@@ -1,0 +1,51 @@
+---
+author: mubix
+comments: true
+date: 2008-06-23 19:11:31+00:00
+layout: post
+slug: 2008623maltego-goes-communal-html
+title: Maltego Goes Communal
+wordpress_id: 451
+tags:
+- Pimping
+---
+
+Now that everyone and their mother has posted about [Back|Track Final](http://www.offensive-security.com/) being released I feel that I am safe in disclosing that information. But on to the topic, with said release, the folks over at [Paterva](http://www.paterva.com) have released a “Community” edition of [Maltego](http://www.paterva.com/maltego/). Straight from the horses mouth, here are the limitations:  
+
+
+>   
+
+> 
+> ### Limitations
+> 
+>   
+The Community Edition is limited in the following ways:  
+
+> 
+>   
+	
+>   * A 15second nag screen
+>   
+	
+>   * Save and Export has been disabled
+>   
+	
+>   * Limited zoom levels
+>   
+	
+>   * Can only run transforms on a single entity at a time
+>   
+	
+>   * Cannot copy and paste text from detailed view
+>   
+	
+>   * Transforms limited to 75 per day
+>   
+	
+>   * Throttled client to TAS communication
+>   
+  
+
+
+  
+Also, directly on the heals of this release is a [community forums](http://www.paterva.com/forum/)! Which haven’t quite been linked to from the main site, but I HAVE AUTHORIZATION THIS TIME!... not going to make the same mistake twice. Anyways, go check it out.

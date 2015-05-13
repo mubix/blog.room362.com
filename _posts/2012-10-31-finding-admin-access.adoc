@@ -1,0 +1,78 @@
+---
+author: mubix
+comments: true
+date: 2012-10-31 01:28:22+00:00
+layout: post
+title: Finding Admin Access
+categories:
+- metasploit
+- meterpreter
+---
+
+You've got shell, and a set of credentials but you're coming up empty on what you can do with those credentials. This is especially problematic when you can't get past UAC as you are either in a AlwaysNotify situation or not a local admin.
+
+(I'm not trying to pull some some "insert magic here" on the assumption of credentials just at the time of this writing I have only just started working (created a blank file) on a post module to do this as your current user, so until then, you need credentials)
+
+Enter the auxiliary module: `auxiliary/admin/smb/check_dir_file`
+
+First we set up a route as aux modules don't have a "SESSION" parameter:
+
+![](/images/postimages/201210_adminaccess_1.png)
+
+Use the module and set our credentials:
+
+![](/images/postimages/201210_adminaccess_2.png)
+
+Next, set ADMIN$ as we can't guarantee C$ is the primary drive, but ADMIN$ will definitely be the WINDOWS directory. Our RHOSTS is our target range
+
+![](/images/postimages/201210_adminaccess_3.png)
+
+A simple 'run' and away it goes:
+
+![](/images/postimages/201210_adminaccess_4.png)
+
+So we can see that our lowly user that doesn't have any chance of bypassing the UAC on his current system can pivot to these other systems (172.16.10.10, and 172.16.10.150) quite easily.
+
+=============================================================================
+
+The rest of this has nothing to do about admin access, just some tricks to do it better
+
+=============================================================================
+
+As many of you know I'm not a huge fan of sending packets I don't need to so instead of just spraying a range (which I doubt would be seen, but why take the chance?)
+
+[**Update**: While computer_browser_discovery does lookup all the hosts and sends -more- packets than check_dir_file would, those extra packets are sent at DNS resolvers not into empty space that can be detected by network sensors]
+
+Enter computer_browser_discovery:
+
+![](/images/postimages/201210_adminaccess_5.png)
+
+This module does the equivalent of 'net view' to get a list of computers on the domain. You can change the LTYPE to "SQL" to just get MSSQL boxes but we're going for everything:
+
+![](/images/postimages/201210_adminaccess_6.png)
+
+As you can see WIN7X86 (the box we are on came up with 0.0.0.0) expected. and the .150 address didn't show up at all as it's not on the domain. So the benefits is that it's quieter on the wire and you probably will find hosts that aren't in your immediate IP range. (Not the case here simply because I don't have a big enough test network). The disadvantages are as with the .150 address you may miss hosts.
+
+Next we add the found host's IP addresses to a text file (targethosts.txt)
+
+[because at the time of this writing the computer_browser_discovery module doesn't add the hosts to the MSF database]
+
+Then use the smb_version module which does a couple things, it verifies that the hosts are there and alive, adds them to the MSF database, and what version of Windows (or samba) they are running:
+
+![](/images/postimages/201210_adminaccess_7.png)
+
+(We still have our route set up so this is module is going through our low privilege user still)
+
+And now we have info in the DB for better targeting:
+
+![](/images/postimages/201210_adminaccess_8.png)
+
+Then back in our check_dir_file module we just use the hosts -R to have the database automatically set RHOSTS to the hosts in the database that match your search or alternatively use services -p 445 -R to add all the hosts that you've found port 445 open (everything smb_version finds will be shown in services)
+
+One more way you can get hosts is doing reverse lookups of ranges. You can just hit a range you know of, or guess ranges based on the computer_browser_discovery results. You can do this with resolve_ip module (this can be pretty slow on ranges that don't have many hosts):
+
+![](/images/postimages/201210_adminaccess_9.png)
+
+I used the range this blog is hosted on 1) because for some reason my stupid VM wasn't resolving internal stuff 2) To demonstrate that you can use the module to resolve anything, not just internal ranges.
+
+So to wrap up, we have a ton of ways to find hosts that don't involve traditional scanning (smb_version is the only thing that comes close). And we've located two hosts that we have the ability to administer. One oddly enough being the domain controller, so don't ever discount the access you already have. Tunnel vision is the pentesters worst enemy.

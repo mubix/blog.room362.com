@@ -1,0 +1,20 @@
+---
+author: mubix
+comments: true
+date: 2013-01-25 16:12:20+00:00
+layout: post
+title: Metasploit Mastery meets CanSecWest
+categories:
+- metasploit
+- training
+- cansecwest
+- cons
+---
+
+In 2012 @[egypt](https://twitter.com/egyp7) and I taught [Metasploit Mastery](https://www.derbycon.com/traning-classes-2012/#metasploit) for a day and a half @[DerbyCon](https://twitter.com/derbycon) . This was a lot of fun but we had to cram a TON of slides into that short period of time. PLUS we had a CTF at the end where people had to break into a corporate network (virtualized) and sell their shells, data, passwords, or flags to us (egypt and I were acting as opposing countries). You could sell low to one and high to another whatever. Most money at the end wins. (We used a score card with ranges to keep it even)
+
+We are doubling down on the content being provided and doing a 3 full days @[CanSecWest](https://twitter.com/secwest). You get to learn the nooks and cranies of Metasploit's guts from _the_ egypt himself, and operational use from me, with a ton mixed in between. I mean, just getting in the room with egypt's beard is worth the price of admission.
+
+See you there!
+
+Link: [http://cansecwest.com/dojos/2013/meta_mastery.html](http://cansecwest.com/dojos/2013/meta_mastery.html)

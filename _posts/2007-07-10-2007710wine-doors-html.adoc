@@ -1,0 +1,26 @@
+---
+author: mubix
+comments: true
+date: 2007-07-10 13:05:21+00:00
+layout: post
+slug: 2007710wine-doors-html
+title: Wine Doors
+wordpress_id: 509
+tags:
+- Uncategorized
+---
+
+I don't use Wine. It's difficult to get anything working and a pain once it is. However since I found out about the <a href="http://www.wine-doors.org/"  title="Wine-Doors">Wine-Doors</a> project, it's made me go back on that thought.  
+  
+It's a fairly new project, but well on it's way to being an enabler for a great many users. A great many users have been looking for that one last thing, to get them over the hump of still using Windows. Some tried Wine, and couldn't get it to work properly, like myself, that is where Wine-Doors helps out. Out of the box it installs things like the Microsoft core fonts, winegecko, mozilla activex control and the visual C++ runtime, which resolves a great many discrepancies that users wrestle with in wine.  
+  
+Once installed, you can install some of the hardest Wine apps with the grace of the double click:  
+  
+<strong>World of Warcraft  
+Halflife 2 (Steam)  
+iTunes  
+Flash 8  
+</strong>  
+And many more, with more all the time. You can check out the growing list at the <a href="http://www.wine-doors.org/trac/wiki"  title="Wiki">Wine-Doors wiki</a> under <a href="http://www.wine-doors.org/trac/wiki/BundledWith"  title="Bundled Apps">BundledWith</a>  
+  
+mubix

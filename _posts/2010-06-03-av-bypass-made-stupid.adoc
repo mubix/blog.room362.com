@@ -1,0 +1,65 @@
+---
+author: mubix
+comments: true
+date: 2010-06-03 03:41:13+00:00
+layout: post
+title: AV bypass made stupid
+categories:
+- antivirus
+---
+
+***WARNING* if you use fgdump like I did, it extracts pwdump to %TEMP% at run time, which is detected by AV.**
+
+First of all, I was floored when this worked. Really AV? It's that easy? Really?
+
+So here is the break down, go get "[Resource Hacker](http://bit.ly/cVM4RE)"… You're almost done. Only 3 steps left. (1 of which is optional)
+
+I started with fgdump, a well known hashdumping/pwdump tool. It's detected by 80% of all AVs and by all the top 10. You see this on your AV report for your domain controller, and you're having a bad day, probably week.
+
+![](/images/postimages/201006_avbypass_1.png)
+
+_**Watch this magic trick though:**_
+
+**[*] Step 1:**
+
+Open Res Hacker and drag a "normal" executable on to the window or Open File.
+
+Click "Save All Resources"
+
+![](/images/postimages/201006_avbypass_2.png)
+
+Essentially what you are doing in this step is simply extracting the .ico file (Icon) from the executable. Now you can do this with other tools, but we'll be using resource hacker in a minute again, so it's just easy to do it all with one tool.
+
+We are done with this executable unless you are doing Step 2, in that case, leave it open, open another Res Hacker window and open your 'evil'. (In our case, fgdump.exe)
+
+**[*] Step 2 (Optional):**
+
+If you destination executable has tell-tale signs of it's intent, much like fgdump as seen below:
+
+![](/images/postimages/201006_avbypass_3.png)
+
+You can simply copy and paste the version info from your 'normal' executable into your new one and hit "Compile Script":
+
+![](/images/postimages/201006_avbypass_4.png)
+
+**[*] Step 3:**
+
+Next we need to "Add a new Resource" (our icon) into our "evil" binary.
+
+![](/images/postimages/201006_avbypass_5.png)
+
+Once this prompt comes up, select the ICO file that shows the icon you want it to have (some binaries have a ton, so make sure it's the right one). Put in '1' for resource name, and '1033' for your resource language. (You can play with these values, not sure what impact they have, but from the binaries I've looked at those values are pretty standard for a windows executable).
+
+![](/images/postimages/201006_avbypass_6.png)
+
+Save your new awesome binary as something else, I chose vlc2.exe
+
+![](/images/postimages/201006_avbypass_7.png)
+
+And… (drum roll)
+
+![](/images/postimages/201006_avbypass_8.png)
+
+Tada! Sad isn't it? Only 1 of the top 10 AV now detect this binary. Good job AVG and Avast! You still picked it up, but Trend, Symantec, Microsoft, ClamAV, Kaspersky, Panda, Norman, NOD32, Sunbelt, F-Secure, Fortinet, BitDefender WTF guys!?
+
+Oh and Kaspersky now flags it as "not-a-virus" but still flags it.

@@ -1,0 +1,28 @@
+---
+author: mubix
+comments: true
+date: 2008-12-15 04:39:09+00:00
+layout: post
+title: Burp Suite v1.2 Released
+categories:
+- burp
+- releases
+---
+
+ It’s official Burp Suite 1.2 is officially released to the masses. It includes a whole host of new features. Mainly (the ones spoke of in the [blog post about the release](http://blog.portswigger.net/2008/12/burp-suite-v12-released.html)):  
+
+  * Site map showing information accumulated about target applications in tree and table form
+  	
+  * Suite-level target scope configuration, driving numerous individual tool actions
+  	
+  * Display filters on site map and Proxy request history
+  	
+  * Suite-wide search function
+  	
+  * Support for invisible proxying
+  	
+  * Fully fledged web vulerability scanning ([pro version only](http://www.portswigger.net/suite/download.html))
+  	
+  * Ability to save and restore state ([pro version only](http://www.portswigger.net/suite/download.html))
+  
+You can download the new version at [http://www.portswigger.net/suite/download.html](http://www.portswigger.net/suite/download.html)

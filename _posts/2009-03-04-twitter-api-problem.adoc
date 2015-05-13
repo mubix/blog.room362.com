@@ -1,0 +1,23 @@
+---
+author: mubix
+comments: true
+date: 2009-03-04 15:54:59+00:00
+layout: post
+title: Twitter API Problem
+categories:
+- rant
+---
+
+![](/images/postimages/200903_twitter_1.png)  
+  
+Most of you Twitterholics have seen this beautiful status. You get a total of 100 API calls per Twitter account per hour. What happens if you use all of your afforded calls? You can just use http://www.twitter.com/ no problem right? Well you loose a lot of what makes Twitter clients so useful (search, grouping, instant updates.. etc).  
+  
+Well, what if you leave you client up at home? TweetDeck by itself uses most of the API calls just by itself. So in this scenerio, you are destined (at least for that day) to spend it on the twitter site, which as we already discussed, leaves much to be desired.  
+  
+Mom taught me never to point out a problem without suggeting a solution, so here is what I think would be an awesome addition to Twitter, that might have other advantages as well:  
+  
+![](/images/postimages/200903_twitter_2.png)  
+  
+This is at the bottom of gmail. It allows you to see where else your account is being accessed from (IP). You can also click "Details"  and click to log out of all other sessions. This would be nice in twitter for a couple reasons. It would allow you to block/logout the client you left at home, but also check to make sure the IPs that are accessing the API on your behalf are your own.  
+  
+Just a suggestion..

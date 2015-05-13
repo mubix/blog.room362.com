@@ -1,0 +1,15 @@
+---
+author: mubix
+comments: true
+date: 2005-08-23 19:19:45+00:00
+layout: post
+title: Microsoft's New Keyboard
+categories:
+- rant
+---
+
+**UPDATE** This keyboard is NOT compatible with Windows Longhorn but sources speculate that Vista will support this new keyboard possibly starting late 2007  
+  
+Microsoft has come up with a new keyboard that includes a curious button. This keyboard is said to have already been distributed to all of their employees globally. Room362 reporters followed one of the Redmond employees home in the chance that he/she might leak information on a global release date or possibly a picture of the keyboard. All he/she gave our reporters was the image shown above, proclaiming that it was the best keyboard he/she ever used. As to the functionality of the button itself, he/she wouldn’t say. Updates will be posted as we get them.  
+
+![](/images/postimages/longhorn_logo.jpg)

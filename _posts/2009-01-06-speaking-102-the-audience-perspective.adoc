@@ -1,0 +1,29 @@
+---
+author: mubix
+comments: true
+date: 2009-01-06 20:44:18+00:00
+layout: post
+title: Speaking 102 - The Audience Perspective
+categories:
+- speaking
+- presentations
+- rant
+---
+
+![](/images/postimages/200901_speaking102_1.png)
+
+Today I was in a brief / talk / meeting and I just wanted to share with you some of the things that I saw in this event that might better help you know what NOT to do while getting up in front of any size crowd.  
+
+* Death by bullets (Yes this is bulleted to be ironic). But seriously, this was a reoccuring theme throughout the meeting. Try and keep it to 3 or 5. 
+*Simple = Better
+* The slides should not be more important than the speaker. If your slides can be printed out and disbursed. Don’t waste the time of everyone attending by reading them or having us read them.
+* If the audience takes more than 5 seconds to read a slide = **FAIL**
+* If the speaker takes more than 2 seconds to read a slide = **FAIL** (this is only tolerable at the 2 second limit during long and information intense talks)
+* If your text during slide creation is _**AUTOSIZING DOWN**_, you are in the **process of FAIL**
+* Visio is a hand out development tool. Using it as a slide development tool = **FAIL**
+* Holding items in your hands without the items being on topic = **FAIL** (do not figit with a book, or a pen or an award until it is time to use said object)	
+* Interrupting you co-speaker to enhance points = **FAIL** (this is _**NEVER **_a good thing) You are demeaning your co-speakers presence.
+* Making it obvious that you were not paying attention to your co-speaker by stating that you don’t know something that was actually just presented by your co-speaker = **MAJOR FAIL**
+  
+  
+I just wanted to get these off my chest as the speakers were not interested in input. I hope these help you become a better speaker.

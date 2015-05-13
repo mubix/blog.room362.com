@@ -1,0 +1,16 @@
+---
+author: mubix
+comments: true
+date: 2009-01-07 19:30:52+00:00
+layout: post
+title: Random Thoughts - Web App Hacking
+categories:
+- rant
+- thoughts
+---
+
+* SQLi through meta refreshes using cookies or useragents. Making SQLi a client-side attack. How much do you want to bet that the person that visits the site the most is the administrator :)
+  
+* Javascript adding hidden files upload form fields that are auto populated with `C:\Windows\System32\config\SAM` or `C:\Windows\Repair` .. yadada. You get the idea.
+  
+

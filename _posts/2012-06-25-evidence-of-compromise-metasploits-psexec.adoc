@@ -1,0 +1,28 @@
+---
+author: mubix
+comments: true
+date: 2012-06-25 18:27:18+00:00
+layout: post
+title: Evidence of Compromise - Metasploit's PSEXEC
+categories:
+- incident response
+- psexec
+---
+
+Was messing with the Windows service binaries in Metasploit today and I noticed something unique I hadn't noticed before. For the PSEXEC module, the service name (actually just the display name, 'service name' is random) always started with an uppercase 'M'.
+
+![](/images/postimages/201206_psexec_1.png)
+
+Curious to why that was I looked and found [Line 246 of the PSEXEC](https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/windows/smb/psexec.rb#L246) module to be the culprit:
+
+![](/images/postimages/201206_psexec_2.png)
+
+I can guess why the M is there. Might be just a quirk with old Windows versions that didn't allow lowercase service names, not sure. Lets change it a bit. Looking around my XP VM I found the perfect one to emulate ;-)
+
+![](/images/postimages/201206_psexec_3.png)
+
+So, quick edit to make it say display name = 'System Events Notification' (added the (s) because services can't have the same display name) and WA LA!
+
+![](/images/postimages/201206_psexec_4.png)
+
+A less visually detectable psexec run. However, how often do you look at your Event logs? ;-)

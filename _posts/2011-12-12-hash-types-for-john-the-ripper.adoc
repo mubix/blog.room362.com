@@ -1,0 +1,69 @@
+---
+author: mubix
+comments: true
+date: 2011-12-12 06:53:18+00:00
+layout: post
+title: Hash Types for John the Ripper
+categories:
+- Uncategorized
+---
+
+Pentest Monkey is a great resource for a lot of things. One of which is this:
+
+[John The Ripper Hash Formats | pentestmonkey](http://pentestmonkey.net/cheat-sheet/john-the-ripper-hash-formats)
+
+I used it, plus a bit of bash fu to try to figure out some hashes that I was trying to crack.
+
+Step 1: Create file of supported hash types. For me, that was simple I just threw the following in 'supported_types.txt' in the same directory as john.
+
+> DES  
+BSDI  
+MD5  
+BF  
+AFS  
+LM  
+NT  
+XSHA  
+PO  
+raw-MD5  
+MD5-gen  
+IPB2  
+raw-sha1  
+md5a  
+hmac-md5  
+phpass-md5  
+KRB5  
+bfegg  
+nsldap  
+ssha  
+openssha  
+oracle  
+oracle11  
+MYSQL  
+mysql-sha1  
+mscash  
+lotus5  
+DOMINOSEC  
+NETLM  
+NETNTLM  
+NETLMv2  
+NETNTLMv2  
+NETHALFLM  
+mssql  
+mssql05  
+epi  
+phps  
+mysql-fast  
+pix-md5  
+sapG  
+sapB  
+md5ns  
+HDAA
+
+Then it's as simple as issuing:
+
+`cat supported_types.txt | xargs -t -I type ./john --pot=unknownhash.pot --wordlist=shortlist.txt --format=type hashfile.txt`
+
+That will essentially try each of the types on the hash file. It's important to use a wordlist, and probably a small one initially because if you don't john will not finish once it gets to the first hash type that it accepts, which may not actually be correct.
+
+You can take this a step further and create a hash mangler script that takes a clean hash and adds the few prefixs and suffixs that are common on Pentest Monkey's list to get the most odds at John picking it up.

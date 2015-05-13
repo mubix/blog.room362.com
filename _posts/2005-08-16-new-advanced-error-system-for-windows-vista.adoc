@@ -1,0 +1,13 @@
+---
+author: mubix
+comments: true
+date: 2005-08-16 11:46:18+00:00
+layout: post
+title: New "Advanced" Error system for Windows Vista
+categories:
+- rant
+---
+
+![](/images/postimages/200508_vista_1.png) 
+  
+This and more [Atom Smasher's Error Message Gallery](http://atom.smasher.org/error/gallery/)

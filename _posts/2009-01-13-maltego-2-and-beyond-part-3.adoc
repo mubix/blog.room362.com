@@ -1,0 +1,38 @@
+---
+author: mubix
+comments: true
+date: 2009-01-13 18:23:08+00:00
+layout: post
+title: Maltego 2 and beyond - Part 3
+categories:
+- tools
+- maltego
+---
+
+## Table of Contents:
+
+  * [Part 1 - Introduction](/blog/2009/09/08/maltego-2-and-beyond-part-1)
+  * [Part 2 - Entities and Transforms](/blog/2008/09/26/maltego-2-and-beyond-part-2/)
+  * Part 3 - The Human Factor
+  * Part 4 - Server Time (CTAS, PTTAS, MALTAS, SQLTAS, SNTAS)
+  * Part 5 - Hacks, Tips, and Tricks
+  
+Today we are taking a brief step outside of Maltego and at the end we’ll show how you can use what you have learned to take Maltego to another level. So, without further ado:
+
+![](/images/postimages/200901_maltego_1.jpg)
+
+The Human Factor is why we all still have jobs in the security world. It is impossible for machines at this day in age to make logical leaps of faith. Yes, there is fuzzy logic, but the human brain still trumps computers on being able to instinctively make those leaps. Instinct, that word describes the whole reason for this part in the series. Just as a PI uses he gut to lead him on the right trail, as an OSINT (Open Source Intelligence) Specialist you have to use your instincts to guide your investigation as well. The following paragraphs will describe my own method of making those leaps. If you disagree or have better methods, please comment below so that others can learn as well.
+
+What is a logical leap of faith? Well, most pentesters do it daily if not hourly, when they assume a cracked password is going to work in other places. It’s all about betting on standards. Standards in this reference is anything that has become common place, not specifically a written rule, but those are good to. Dan Geer ‘left’ @Stake when he and other thought leaders in the security community published a paper back in 2003:
+
+**Cyber _In_Security: The Cost of Monopoly** [[PDF](http://www.ccianet.org/papers/cyberinsecurity.pdf)]
+
+Archived Link: http://pdf.textfiles.com/academics/cyberinsecurity.pdf
+
+![Dan Geer](/images/postimages/200901_maltego_2.png)
+
+I was originally planning on making this article full of examples on how you can make these leaps, but I have had a lot of time to think these examples and have decided against it. To practice this method you must use your own experiences. Where do people do the same thing? Think about it. I’m sure you can come up this at least a dozen examples where even you do the same thing across the board... Ok, so I can’t resist. Using the same password, or username on different sites. Seeing a User Agent that is concatenated by a proxy. The router being .1 or .2. Using full class C networks. Always adding the same core friends or co-workers to every social networking site. What about referencing the same ‘ficticous’ bank when describing a problem with that bank. What examples have you come up with?
+
+How do you pull this out-of-the-box thinking into Maltego? When entering an email for an entity, try putting it in under different domains (yahoo.com, aol.com, gmail.com, google.com, hotmail.com). When entering a domain, try putting it in under different TLDs (.net, .org, .tv). You might be surprised at the gems you find when you find those forgotten pieces of information. This all falls back on my mantra that you should put in ALL of the information you have (and estimated) before you even start running transforms.
+
+Maltego is a tool that can only take you so far. Your creativity is what makes a tool like this powerful.

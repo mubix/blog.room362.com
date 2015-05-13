@@ -1,0 +1,22 @@
+---
+author: mubix
+comments: true
+date: 2008-12-24 05:59:45+00:00
+layout: post
+title: BSODomizer - Cube Warfare and Beyond
+categories:
+- hardware
+- pranks
+---
+
+![](/images/postimages/200812_bsodomizer_1.jpg)
+  
+Alright you all have heard of some of the annoying items that make [ThinkGeek](http://www.thinkgeek.com/) a one stop shop for [cube warfare](http://www.thinkgeek.com/geektoys/warfare/), such as the [Annoy-a-tron](http://www.thinkgeek.com/gadgets/electronic/b278/) and the [Phantom Keystroker](http://www.thinkgeek.com/gadgets/electronic/ae83/). Well nothing can hold a candle to the BSODomizer. Along the lines of the Annoy-a-tron and the Phantom Keystroker, this device is hardware and messes with your target on a timer based method. But what gets added to the mix is the fact that it has an IR reciever as well, so while you are giggling in your cube trying not to bust up laughing, you can actually use any Universal Remote set to the Sony TV code, a [TV-B-Gone](http://www.tvbgone.com/) ([Mitch Altman](http://en.wikipedia.org/wiki/Mitch_Altman)’s awesome invention), or even a computer that it set to send that signal from it’s IR port. There are a bunch of settings on the [BSODomizer](http://bsodomizer.com/), including the NSFW option that spawned it’s name. It has both Windows and Mac blue screens and a multitude of timings. It also works with VGA to DVI converter and rumors have been heard of a two port and / or a DVI based one. I liked this thing so much I ventured into making my first video (which I begged Darren Kitchen to help edit, and he graciously did).   
+  
+[Joe Grand](http://www.grandideastudio.com/) of [Kingpin Empire](http://www.kingpinempire.com/) and [Zoz](http://mit.edu/zoz/www/) released the BSODomzier on the world this year at [DefCon 16](http://defcon.org/html/defcon-16/dc-16-speakers.html#Grand2).  Here is what they they say about it on their site:  
+  
+> BSODomizer is a small, battery-powered, mischievous electronic gadget that interfaces between a laptop or desktop and VGA monitor and flashes a fake [BSOD (Blue Screen of Death)](http://en.wikipedia.org/wiki/Blue_Screen_of_Death) onto the monitor at random time intervals or when triggered by an infrared remote control. This will cause the user to become confused and turn off or reset his or her machine. You can also choose to pop up a much more sinister BGOD (Blue Goatse of Death) after the BSOD has been visible for a few seconds. The BSODomizer will automatically detect when the computer has been turned off or restarted and will revert to the harmless video pass-through mode, leaving the user unaware of any wrongdoing. Legitimate uses of the BSODomizer include monitor/projector/video calibration or as a simple timer to remind the user to take a break from sitting in front of the computer. Various configuration settings are selected via on-board DIP switches.
+
+<iframe src="//player.vimeo.com/video/2582210" width="500" height="377" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/2582210">BSODomizer Review</a> from <a href="http://vimeo.com/mubix">mubix</a> on <a href="https://vimeo.com">Vimeo</a>.</p>  
+  
+Check out the [Manual](http://bsodomizer.com/bsod_manual.pdf) for all of the possible options and [the site](http://bsodomizer.com/) for details on how to make one for your self or buy a pre-built.

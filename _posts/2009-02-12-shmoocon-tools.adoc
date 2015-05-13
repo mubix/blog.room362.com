@@ -1,0 +1,20 @@
+---
+author: mubix
+comments: true
+date: 2009-02-12 15:58:59+00:00
+layout: post
+title: ShmooCon Tools
+categories:
+- shmoocon
+- tools
+---
+
+It figures that someone who didn’t go actually made a list of tools. (Probably because they didn’t have to suffer the ShmooFlu)  
+  
+Check out: [http://blog.security4all.be/2009/02/shmoocon-2009-overview-collection-of.html](http://blog.security4all.be/2009/02/shmoocon-2009-overview-collection-of.html)   
+  
+Thanks to [Security4all](http://twitter.com/security4all) for posting it up!  
+  
+If you see something that he doesn’t have, pictures, videos, links, or tools, please let him know.  
+  
+FireTalks / PodCasters Meetup audio can be found here soon: [http://pcm.libsyn.com/](http://pcm.libsyn.com/)

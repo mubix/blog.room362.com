@@ -1,0 +1,27 @@
+---
+author: mubix
+comments: true
+date: 2008-12-05 22:00:00+00:00
+layout: post
+title: GoPC links with ThinLinX
+categories:
+- internet
+---
+
+Unless you have been hiding under a rock, or just started reading this blog today. You have heard about [GoPC](http://www.gopc.net/). I featured it in my [USB Goodies 2008](/blog/2008/10/15/usb-goodies-2008/) and I love their product. Now that they have entered into a “Strategic Alliance” with a company called [ThinLinX](http://www.thinlinx.com). Now, the details of this alliance and the future it holds aren’t clear at the moment. And of course I have my own speculations. What are yours?   
+  
+To kind of get the ball rolling I’ll give you a brief intro to each company:  
+
+![](/images/postimages/200812_gopc_1.png)
+
+**GoPC** allows you to either through a web interface, or a portable app that you can have on a thumb drive, you can login to a virtual desktop. Having the ability to take a powerful machine with you whereever you go without having to lug around a laptop is a great experiance. I plug in my USB or surf to their site on an computer and I am instantly on my own customized desktop.
+
+**ThinLinX** has incorporated the power and speed of NoMachine NX into a tiny box. These thin clients are set up to only allow the connection back to the mothership and connect you to your desktop. Making it a relatively safe enviroment for you to login to enterprise email, surf the intra and inter nets. 
+
+Now, as a security addict, I tried to say away from word like “Cloud Computing” and “Secure”. Mostly becuase they have both become bad words in the industry. I plan on getting one and putting it through the ringers as it is the first thin client that I can afford at 99 bucks!   
+  
+I can’t wait to see what comes of these two companies.  
+
+Check out their press release at: [http://www.gopc.net/blog/?p=40](http://www.gopc.net/blog/?p=40) - [Archive.org link](https://web.archive.org/web/20081212142652/http://www.gopc.net/blog/2008/12/thinlinx-and-gopc-enter-strategic-alliance/)
+
+![](/images/postimages/200812_gopc_2.png)

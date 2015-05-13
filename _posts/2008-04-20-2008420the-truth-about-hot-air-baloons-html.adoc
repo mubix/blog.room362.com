@@ -1,0 +1,41 @@
+---
+author: mubix
+comments: true
+date: 2008-04-20 06:40:14+00:00
+layout: post
+slug: 2008420the-truth-about-hot-air-baloons-html
+title: The truth about hot air baloons
+wordpress_id: 462
+tags:
+- Funny
+---
+
+   
+
+
+> [Programmers vs. Management](http://www.cshel.com/miscellany/2008/04/programmers-vs-management/)  
+  
+Posted on April 17th, 2008 by Carolyn Shelby  
+  
+**Received from my mom today, via email.**  
+  
+A man in a hot air balloon realized he was lost. He reduced altitude and spotted a woman below. He descended a bit more and shouted, Excuse me, can you help me? I promised a friend I would meet him an hour ago, but I don’t know where I am.  
+  
+The woman below replied, You’re in a hot air balloon hovering approximately 30 feet above the  
+  
+ground. You’re between 40 and 41 degrees north latitude and between 59 and 60 degrees west longitude.�  
+  
+You must be a programmer, said the balloonist.  
+  
+I am,� replied the woman, How did you know?  
+  
+Well,� answered the balloonist, everything you told me is technically correct, but I’ve no idea what to make of your information, and the fact is I’m still lost. Frankly, you’ve not been much help at all. If anything, you’ve delayed my trip.�  
+  
+The woman below responded, You must be in Management.�  
+  
+I am,� replied the balloonist, but how did you know?�  
+  
+Well,� said the woman, you don’t know where you are or where you’re going. You have risen to where you are due to a large quantity of hot air. You made a promise, which you’ve no idea how to keep, and you expect people beneath you to solve your problems. The fact is you are in exactly the same position you were in before we met, but now, somehow, it’s my fault.�
+
+  
+[Programmers vs. Management | Cshel SEO and PR](http://www.cshel.com/miscellany/2008/04/programmers-vs-management/)

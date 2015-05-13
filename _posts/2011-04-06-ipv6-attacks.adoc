@@ -1,0 +1,13 @@
+---
+author: mubix
+comments: true
+date: 2011-04-06 04:13:04+00:00
+layout: post
+title: IPv6 Attacks
+categories:
+- ipv6
+---
+
+This is probably the most practical and applicable IPv6 talk I've ever seen. Amazing job.
+
+<iframe src="//player.vimeo.com/video/21293321" width="500" height="250" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/21293321">Rick Hayes - Assessing and Pen-Testing IPv6 Networks</a> from <a href="http://vimeo.com/user729137">Adrian Crenshaw</a> on <a href="https://vimeo.com">Vimeo</a>.</p>

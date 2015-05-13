@@ -1,0 +1,20 @@
+---
+author: mubix
+comments: true
+date: 2008-11-07 20:54:54+00:00
+layout: post
+title: McGoodies from operat0r
+categories:
+- internet
+---
+
+Many of you know who [operat0r](http://rmccurdy.com/) is, [Darren](http://darrenkitchen.net/) in particular since operat0r pulled a magic trick on [Darren’s ACER ONE](http://www.darrenkitchen.net/knoppix-ate-my-bios) ([Archive.org Links](https://web.archive.org/web/20090105195514/http://www.darrenkitchen.net/knoppix-ate-my-bios)) that turned it from brick to badass in less than 5 minutes. But what some of you may not know is that ol’ McCurdy ([operat0r](http://rmccurdy.com/)) has some other awesome side projects that run the same course as my style of apps. PORTABLE. But these aren’t the standard portable apps that I find on the net. Well... let me just get to the list. Oh and I’m not linking directly to the projects because the download links change as he updates the tools.  
+
+  * w3af PORTABLE
+
+  * MetaSploit PORTABLE
+
+  * WebScarab PORTABLE
+  
+  
+You can find all of these awesome McGoodies at operat0r’s site: [http://rmccurdy.com/](http://rmccurdy.com/)

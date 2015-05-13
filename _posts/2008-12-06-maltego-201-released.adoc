@@ -1,0 +1,16 @@
+---
+author: mubix
+comments: true
+date: 2008-12-06 02:03:00+00:00
+layout: post
+title: Maltego 2.01 Released
+categories:
+- tools
+- releases
+---
+
+This is just a quick blurb because [Tom](http://spylogic.net) from the [Security Justice Podcast](http://securityjustice.com/) already has a great post about all the changes:  
+  
+Check out his post here: [http://spylogic.net/item/382](http://spylogic.net/item/382)
+
+New link: http://www.spylogic.net/2008/12/maltego-201-released/

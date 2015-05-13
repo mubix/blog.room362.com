@@ -1,0 +1,34 @@
+---
+author: mubix
+comments: true
+date: 2008-11-10 03:05:13+00:00
+layout: post
+title: Hack or Halo 5 at ShmooCon 2009
+categories:
+- shmoocon
+- cons
+---
+
+![](/images/postimages/200811_hackhalo_1.jpg)
+
+Even if you have been to [ShmooCon](http://www.shmoocon.org/), something that alludes most con-goers is the [Hack or Halo](http://www.shmoocon.org/hoh.html) contest. Most of the time you will see it’s organizers at table near the registration desk getting people signed up. What you may not know is how the whole thing goes down. It’s after hours so, you aren’t missing the great content during the day, and it might save you a few dollars of money spending bar time. But the primary purpose of [Hack or Halo](http://www.shmoocon.org/hoh.html) isn’t to put money back in your pocket (and yes it’s free). The primary purpose is to get your game on be it gaming or hacking. Actually Chris Compton spells out what goes down really well on the [Hack or Halo blog](http://hackorhalo.blogspot.com/) in his post called “[In The Beginning](http://hackorhalo.blogspot.com/2008/11/in-beginning.html)”.  
+  
+I would suggest that for a leg up on the rest of the contestants, you slap the [blog](http://hackorhalo.blogspot.com/) in your RSS feed and follow them on twitter [@HackorHalo](http://twitter.com/HackOrHalo). You never know, they might ‘accidentally’ release some pertinent information.  
+  
+Primary excuses for not participating:  
+
+  * I didn’t bring my tools  
+	
+    * You are the tool, download BT3 VM put boot it up, update it, take diable the TCP/IP stack on your sisters laptop that you borrowed for the con and you are already better off than some of the other contestants
+  	
+  * I’m not go enough  
+  	
+    * If Zeff comes for Halo, or Chris Eagle is allowed to hack, you are right, you aren’t, but damn would you have some bragging rights if you kicked their arse.
+  	
+  * I’m doing something that night  
+	
+    * No, you really aren’t... you know it, I know it.
+
+Now that we got it all straight. See you there.  
+  
+P.S. The picture is [@Kym_Possible](https://twitter.com/Kym_Possible) from the Hack or Halo squad. For most geeks out there, she will be reason enough to sign up. And yes, I may die tomorrow for posting this.

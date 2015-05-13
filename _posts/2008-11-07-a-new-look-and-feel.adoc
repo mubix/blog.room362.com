@@ -1,0 +1,11 @@
+---
+author: mubix
+comments: true
+date: 2008-11-07 02:33:35+00:00
+layout: post
+title: A new look and feel
+categories:
+- internet
+---
+
+So I have graduated from the black and green standard hacker theme (with forest header) to a much easier to read and iPhone friendly theme. I have also added a few things to the site. Probably the most noticeable is the new logo. The logo was the created by my good friend [TestMAD](http://www.thinstack.com/). He is a starving graphic artist that runs the IRC network [ThinStack](http://www.thinstack.com/). He also supports a number of other projects like [Geekcred](http://www.geekcred.net/), and [Wess Tobler](http://wesstobler.vox.com/)'s new project, [Unpersons](http://www.unpersons.org/site/).

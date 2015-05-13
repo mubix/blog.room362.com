@@ -1,0 +1,15 @@
+---
+author: mubix
+comments: true
+date: 2007-10-29 21:01:57+00:00
+layout: post
+slug: 20071029time-to-shape-up-html
+title: Time to shape up.
+wordpress_id: 477
+categories:
+- Rant
+tags:
+- Rant
+---
+
+A while ago I said that I was going to start putting more security related articles up. Well, it's now on the wire. I have applied to join the [Security Blogger's Network](http://networks.feedburner.com/Security-Bloggers-Network). So a lot more people than just the Hak.5 crew are going to possibly be reading this blog. I may or may not be chosen to join the network, but if I do, it should be an wild ride. I encourage all of you out there floating in the cloud to add the feed to your readers and to those security bloggers out there, apply to join.  The rush begins.

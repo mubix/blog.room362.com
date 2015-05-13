@@ -1,0 +1,61 @@
+---
+author: mubix
+comments: true
+date: 2007-06-24 07:01:36+00:00
+layout: post
+slug: 2007624fonera-fun-html
+title: Fonera Fun
+wordpress_id: 512
+tags:
+- Uncategorized
+---
+
+I received a Fonera router from my friend [boxgamex](http://www.boxgamex.net) and what was the first thing I thought of doing to it? Slaping OpenWRT on it and going to town. Well it took me 2 days of intense R&D but here is what I can tell you to make your life a little easier than mine was:  
+  
+I am definitely not going to reinvent the wheel, there are some great tutorials out there and I am going to link to them through out this article.  
+  
+First of all you have to decide if you are going to do straight OpenWRT or DD-WRT. Both have pluses and minuses. You just have to decide for yourself which you want, and you can always change it out. Also, the best setup for this is having your computer directly connected to the Fonera Router. A few things you need to download before you start:  
+[Putty](http://www.putty.nl/) (only for the SSH part, using Putty for Telnet makes it impossible to backspace errors)  
+[HTTP File Server](http://www.rejetto.com/hfs/?f=dl) (for loading files)  
+[Tftpd32](http://tftpd32.jounin.net/) (The easier way to load files)  
+  
+[SSH Enabler](http://uselesshacks.com/wp-content/uploads/2007/03/sshenable.htm) (just an html doc *right click and save it*)  
+[openwrt-ar531x-2.4-vmlinux-CAMICIA.lzma](http://fonera.info/camicia/openwrt-ar531x-2.4-vmlinux-CAMICIA.lzma) (You’ll need it)  
+[out.hex](openwrt-ar531x-2.4-vmlinux-CAMICIA.lzma) The is the super secret code that lets you break free from the oppressive FON empire.  
+  
+Now, you can either put DD-WRT or OpenWRT on the FON so here are the links for each:  
+[http://www.dd-wrt.com/dd-wrtv2/down.php?path=downloads%2Fbeta%2FFONERA/](http://www.dd-wrt.com/dd-wrtv2/down.php?path=downloads%2Fbeta%2FFONERA/)  
+[http://downloads.openwrt.org/snapshots/atheros-2.6/](http://downloads.openwrt.org/snapshots/atheros-2.6/)  
+  
+All you need from one of the above links is a root file system (rootfs or jffs) and a kernel (vmlinux). And you are done.  
+  
+**Step 1:** Get SSH Access, block the FON updates, and enable SSH on Boot (No problems here, just follow the guide [(GUIDE LINK)](http://uselesshacks.com/?p=23) and you are set.  
+  
+**Step 2:** Enable “RedBoot” and boot into it. (Easy enough, using the guide above)  
+  
+**HINT** I have found the best way to Telnet in before the router loads the kernel is to have a Ethereal capture or tcpdump running and wait/watch for traffic from 192.168.1.254. As soon as it shows up hit ENTER on your prepared command ( telnet 192.168.1.254 9000 ) oh and don’t use PuTTy for the telnet portion, unless you type perfectly.  
+  
+**Step 3:** Load the new FS and Kernel. The biggest problems here is getting the memory positions (i.e. 0x80000000) correct. I will link to all of the tutorials that I have used. The memory positions that worked for me are the ones from the guide that I initially linked you to, at the bottom of this posting I will like you to a few others guides that have different memory positions to try out.  
+  
+***HINT* Now this is a big one. Unless you want to go completely bonkers leave the telnet session alone! Step away from the keyboard and don’t touch the computer. If you run into a command (the “fs create” ones) that seems like it is frozen. Step away. It will finish. If you hit enter or any other button, the telnet client will try and poll the telnet server (your FON router) to keep the connection alive, since your FON router at that moment would be reformatting itself your telnet session would close. And yes, it took me forever to figure that one out.**  
+  
+**Step 4:** Reboot into your brand spanking new router. What you do from here with it, is on you.  
+  
+Oh, now that you have gone through the hard part, here is a link to a GUI that does it all for you: Flashing GUI:[ http://berlin.freifunk.net/sven-ola/fonera/](http://berlin.freifunk.net/sven-ola/fonera/)  
+  
+Links:  
+Kamikaze Options: http://wiki.openwrt.org/OpenWrtDocs/KamikazeConfiguration  
+OpenWRT Forum for Kamikaze: http://forum.openwrt.org/viewforum.php?id=10  
+OpenWRT Fonera Info: http://wiki.openwrt.org/OpenWrtDocs/Hardware/Fon/Fonera  
+Best Guide (DD-WRT): http://uselesshacks.com/?p=23  
+Another Guide: http://www.mcgrewsecurity.com/blog/?p=28  
+  
+Firmware Downloads:  
+http://downloads.openwrt.org/snapshots/atheros-2.6/  
+http://www.dd-wrt.com/dd-wrtv2/down.php?path=downloads%2Fbeta%2FFONERA/  
+  
+Flashing GUI: http://berlin.freifunk.net/sven-ola/fonera/  
+  
+mubix  
+  
+**P.S. My USB list/torrent is next on my TO-DO list, again, sorry for the wait.**

@@ -1,0 +1,14 @@
+---
+author: mubix
+comments: true
+date: 2005-12-14 23:34:45+00:00
+layout: post
+title: VPN Hacking Game
+categories:
+- hak5
+- podcasts
+---
+
+I have created this post to invite all who read this (all 5 of ya, yes, I know your IPs by heart) to a game that was initiated out of a forum thread on [the Hak.5 Forums](http://www.hak5.tv/forums/viewtopic.php?t=433). If you would like to join the game, by you commenting on this post you are accepting an agreement that ANYTHING that happens across this VPN is not my or any of the participants fault. You are also authorizing yourself to be a target. HOWEVER, the rules of this game are that of the WHITE HAT. You are not allowed to destroy ANYTHING on ANY computer on the VPN unless explicitly announced. Also, if there is a complaint, a valid complaint against you for not adhering to these rules, you certificate will be revoked and you will no longer be able to participate. I will be the final judge on wither or not a complaint is valid or not. I will be recording ALL traffic across the VPN. Yes, I do have enough space. If you agree to these rules, please add the comment of “I AGREE” , your handle, and include your email address in a human legible way. When the game begins I will email out each individual certificate. Further rules will be set once an initial panel of judges is formed.  
+  
+If you would like to be a judge. There will be 2 spots. Email me for more information.

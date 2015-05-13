@@ -1,0 +1,20 @@
+---
+author: mubix
+comments: true
+date: 2011-09-15 18:10:33+00:00
+layout: post
+title: Disconnect Stalled SSH Session
+categories:
+- ssh
+- cli
+---
+
+This doesn't really apply to Windows users as you can just close puTTy. But for everyone else, stalled SSH Sessions suck. You are either slamming enter to get it to realize it's been disconnected or just waiting for it to. Well, for those of us who are impatient just hit:
+
+```
+~.
+```
+
+Thats right, SHIFT + the key above TAB, release, and hit the period. You may have to hit ENTER first to clear the buffer or whatever it does, but do that and it will disconnect the SSH session right away.
+
+Stupid trick, but I use it all the time (especially on shotty MiFi connections).

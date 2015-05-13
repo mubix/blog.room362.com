@@ -1,0 +1,29 @@
+---
+author: mubix
+comments: true
+date: 2008-06-29 17:04:53+00:00
+layout: post
+slug: 2008629hacker-steals-quake-html
+title: Hacker steals Quake
+wordpress_id: 448
+tags:
+- Breaking News
+---
+
+On a Dutch news site there was a story about a hacker that stole 50,000 credit cards (well, the information at least) and also stole a prerelease version of Quake Wars. What do you think made the title line? Quake Wars. That puts things in perspective on what is impotant. Big companies like the one that made Quake Wars have the liquid budget to chase this guy down, but the 50,000 individuals don’t.  
+  
+Is it bad that my sole thought after reading this article is wondering how he got into the Id Software servers?  
+  
+Source: [HERE](http://www.dutchnews.nl/news/archives/2008/06/hacker_arrested_for_stealing_q.php)  
+  
+In other hacker news,  
+
+
+  
+	
+  * “[**Hacker reveals flaws in school website security**](http://www.news.com.au/couriermail/story/0,23739,23933178-952,00.html)”
+  
+	
+  * “[**Woman accused of hacking Houston organ bank indicted**](http://news.cnet.com/8301-10789_3-9978151-57.html)”
+  
+

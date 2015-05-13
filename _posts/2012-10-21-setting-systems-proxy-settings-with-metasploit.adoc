@@ -1,0 +1,64 @@
+---
+author: mubix
+comments: true
+date: 2012-10-21 07:40:11+00:00
+layout: post
+title: Setting SYSTEM's proxy settings with Metasploit
+categories:
+- metasploit
+- proxy
+---
+
+One of the great things about the reverse_http(s) payloads is that it is proxy aware. However one of the pitfalls to this is that SYSTEM doesn't have proxy settings, nor do users who have never logged into a system (unless profile loading is triggered). The problem here arrises when you are trying to do anything as SYSTEM, also the PSEXEC only has the option of getting you a SYSTEM shell (so you're done for right out of the door)
+
+Now, there is a stub in Metasploit that I have been unable to complete due to my lack of knowledge in the shell code world. The stub allows you to create payloads that have static proxies, which basically invalidates the need for the following. Until then here is a few ways to set / read the proxy settings for SYSTEM or any other user for that matter.
+
+Its here if you want to take a whack at it: `external/source/shellcode/windows/x86/src/block/block_reverse_https_proxy.asm`
+
+One of the ways @[carnal0wnage](https://twitter.com/carnal0wnage) and I demoed @[DerbyCon](https://twitter.com/derbycon) was using the bitsadmin binary. Windows7/Vista/2008 come with version 2.0+ which has this great ability to run the following:
+
+`bitsadmin /util /setieproxy localsystem MANUAL_PROXY 192.168.1.55:3128 ";"`
+
+(2000,XP,2003 you could upload a copy of bitsadmin that was new enough and that would still work)
+
+That command sets the proxy settings for the SYSTEM account. I was able to jump through hoops and do this remotely by using the windows/exec payload via psexec, then reverse_http(s) would work.
+
+But I wanted a better way to do this. I watched the execution of bitsadmin to see what it was doing and all it was actually doing is setting a registry key. Awesome, I can do that.
+
+Enter enum_proxy:
+
+![](/images/postimages/201210_proxy_1.png)
+
+And...
+
+![](/images/postimages/201210_proxy_2.png)
+
+If you've noticed that RHOST option, Metasploit has the ability to do remote registry calls as well (this module will attempt to start the RemoteRegistry service if the user has the privilege to do so):
+
+![](/images/postimages/201210_proxy_3.png)
+
+Output from it finding a disabled RemoteRegistry:
+
+```
+msf post(enum_proxy) > run
+
+[-] Unable to contact remote registry service on 172.16.10.217
+[*] Attempting to start service remotely...
+[*] Proxy Counter = 9
+[*] Setting: WPAD and AutoConfigure script
+[*] AutoConfigURL: http://anotherproxyserver/pac.pac
+[*] Post module execution completed
+```
+
+"Awesome but you promised setting the proxy settings", well right now all I can give you is a cloner ;-)
+
+Enter clone_proxy_settings module:
+
+![](/images/postimages/201210_proxy_4.png)
+
+And thats it. Still working on an actual "set_proxy" module, but this should do for now, and a lot less to type.
+
+As of this post both are currently pull requests:
+
++ [https://github.com/rapid7/metasploit-framework/pull/942](https://github.com/rapid7/metasploit-framework/pull/942)
++ [https://github.com/rapid7/metasploit-framework/pull/943](https://github.com/rapid7/metasploit-framework/pull/943)

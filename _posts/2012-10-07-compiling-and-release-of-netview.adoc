@@ -1,0 +1,45 @@
+---
+author: mubix
+comments: true
+date: 2012-10-07 04:10:51+00:00
+layout: post
+title: Compiling and Release of Netview
+categories:
+- netview
+- tools
+- releases
+---
+
+If you haven't caught [Chris Gates](http://carnal0wnage.attackresearch.com/) ([@carnal0wnage](https://twitter.com/carnal0wnage)) and my [talk](http://www.irongeek.com/i.php?page=videos/derbycon2/1-1-6-rob-fuller-chris-gates-dirty-little-secrets-part-2) at [DerbyCon 2012](http://www.derbycon.com/) - we released 2 tools, [Netview](https://github.com/mubix/netview), and [Ditto](https://github.com/mubix/ditto). Here I'll walk you through compiling Netview yourself, in the next blog post we'll go over compiling Ditto and how you can remove it's icon to reduce the size if you want. But for Netview it's pretty straight forward. First you pull a copy of the GIT repository:
+
+[https://github.com/mubix/netview](https://github.com/mubix/netview)
+
+Once you've done that, you've got a directory looking like this:
+
+![](/images/postimages/201210_netview_1.png)
+
+You will also need Visual Studio C++ (The Express version if free here: [http://www.microsoft.com/visualstudio/eng/downloads#d-2010-express](http://www.microsoft.com/visualstudio/eng/downloads#d-2010-express) )
+
+Once you have both you double click the .sln file (Solution File)
+
+And you get a ugly blue and purple box like this:
+
+![](/images/postimages/201210_netview_2.png)
+
+Where you switch the compile option from "Debug" to "Release" and click to "Build Solution":
+
+![](/images/postimages/201210_netview_3.png)
+
+Sounds much more grandiose than it really is. If all goes well you'll get the box at the bottom to say "Build: 1 succeeded"
+
+![](/images/postimages/201210_netview_4.png)
+
+You'll have a new folder:
+
+![](/images/postimages/201210_netview_5.png)
+
+and inside is your wonderful prize:
+
+![](/images/postimages/201210_netview_6.png)
+
+You could go through all of that… or just download it here: [/projects/netview.exe](/projects/netview.exe)

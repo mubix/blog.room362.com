@@ -1,0 +1,17 @@
+---
+author: mubix
+comments: true
+date: 2008-09-07 06:30:24+00:00
+layout: post
+slug: 200897chrome-all-polished-up-html
+title: Chrome all polished up
+wordpress_id: 431
+tags:
+- Uncategorized
+---
+
+  Just like it’s LOVELY auto download feature, Google Chrome slipped in a new version. I was testing out some of the latest and greatest posts of exploits for .27 and they were failing to work. Checked my version and low and behold a new version number was displayed. I didn’t upgrade, all done automagically. (Evilgrade anyone?)  
+  
+  I wonder what will pop on this new version.  
+  
+[![](http://s3.media.squarespace.com/production/438411/4879756/uploads/chrome_newver.serendipityThumb.png)](http://s3.media.squarespace.com/production/438411/4879756/uploads/chrome_newver.serendipityThumb.png)

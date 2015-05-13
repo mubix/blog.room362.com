@@ -1,0 +1,60 @@
+---
+author: mubix
+comments: true
+date: 2012-10-24 15:03:58+00:00
+layout: post
+title: lm2ntlm with John the Ripper
+categories:
+- cracking
+- jtr
+---
+
+Since I didn't see any documentation bringing how to take an LM hash that you've cracked and convert it to the NTLM equivalent all in one place. And I google how to do it almost every time. I wanted to put all these links in one place and remember how to do it for john. Go-go-gadget blog-notes.
+
+So there is this: [https://github.com/snarez/rcracki/blob/master/lm2ntlm.cpp](https://github.com/snarez/rcracki/blob/master/lm2ntlm.cpp)
+
+And this: [https://github.com/rapid7/metasploit-framework/blob/master/tools/lm2ntcrack.rb](https://github.com/rapid7/metasploit-framework/blob/master/tools/lm2ntcrack.rb)
+
+And this: [http://www.securityfocus.com/tools/6696](http://www.securityfocus.com/tools/6696)
+
+And the edited version of the above: [http://atenlabs.com/blog/so-you-pillaged-a-domain-controllers-hashes/](http://atenlabs.com/blog/so-you-pillaged-a-domain-controllers-hashes/)
+
+But Metasploit's is currently [borked](http://dev.metasploit.com/redmine/issues/7351),(**Update: this is now fixed**) I don't want to compile cpp, and perl sucks. One thing I did find was that someone submitted it to the JtR dev mailing list here:
+
+[http://www.openwall.com/lists/john-dev/2011/03/29/7](http://www.openwall.com/lists/john-dev/2011/03/29/7)
+
+And I asked on that same list what had become of it:
+
+[http://www.openwall.com/lists/john-dev/2012/10/24/2](http://www.openwall.com/lists/john-dev/2012/10/24/2)
+
+The result is as follows:
+
+Given this hash: 
+```
+Administrator:500:AA1AB12D9BE8C0D18F900ABF62624751:A2855453E8F6E555E5F22956F7DAA398:::
+```
+
+which is the LM and NTLM equiv of SUPERPASSWORD/SuPerPaSsWord respectively. So just so I don't have to make a screen shot of a text file assume that hash exactly as-is is in pwdump.txt.
+
+![](/images/postimages/201210_lm2ntlm_1.png)
+
+cracked the LM side in 16 seconds. Now you don't need to use John to get the LM side (rainbow tables work better at times),
+
+Solar Designer (JtR's main dev) suggested the following path:
+
+![](/images/postimages/201210_lm2ntlm_2.png)
+
+A bit hard to read but here are the commands:
+
+```
+./john -show pwdump.txt | cut -d: -f2 > cracked      
+./john -w=cracked -rules:nt -format=nt pwdump.txt
+```
+
+As you can see (if you squint) that works well. Rich Rumble suggested:
+
+[http://www.openwall.com/lists/john-dev/2012/10/24/3](http://www.openwall.com/lists/john-dev/2012/10/24/3)
+
+using the loopback as so: `./john pwdump.txt -format=nt -loopback=john.pot -rules=nt`
+
+The loopback been an amazing addition that is as Solar Designer put it "not in core JtR, it is a fairly recent addition to jumbo". The loopback allows you to use previously cracked passwords as a dictionary without doing any cut/awk/sed voodoo. The problem with the suggested method for going from LM to NTLM and the loopback option is that it (rightly so) identifies LM hashes by their halves. When it tries to use those halves to crack the NTLM, every with the NT rule-set, it sees each half as separate passwords to try, so it fails.

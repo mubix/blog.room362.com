@@ -1,0 +1,16 @@
+---
+author: mubix
+comments: true
+date: 2005-08-30 21:21:29+00:00
+layout: post
+title: Technology meets Rednecks!
+categories:
+- joke
+- internet
+---
+
+I found a site that breaks down the barriers between technology and rednecks! This revolutionary teaching method comes to us from [Advanced Redneck Learning Center](http://www.stud.ntnu.no/~shane/stasj/pics/humor/div/198.html). You can also click the thumbnail below to print out this cue card for all of your redneck friends.  
+
+![](/images/postimages/computer_science_lesson.jpg)
+
+_Ashley Park update: I posted her comment on the static page._

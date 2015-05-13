@@ -1,0 +1,22 @@
+---
+author: mubix
+comments: true
+date: 2010-10-01 18:00:51+00:00
+layout: post
+title: Acceptable Questions Checklist
+categories:
+- common sense
+- internet
+---
+
+"There is no stupid question" but, if it doesn't meet this checklist, it's officially a time wasting one.
+
+Acceptable questions checklist:  
+1. Have I tried it  
+2. Have I checked the manual, wiki, or forum  
+3. Have I googled and searched for an answer
+
+* All marks must be achieved before a question is asked unless the target of the question is getting paid to answer the source's inquires
+* "Have I tried it" mark can only be skipped in the case of life threatening actions
+
+PDF version is available upon request.

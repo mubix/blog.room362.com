@@ -1,0 +1,20 @@
+---
+author: mubix
+comments: true
+date: 2006-01-10 05:53:59+00:00
+layout: post
+title: SploitCast hits the shelves!
+categories:
+- podcasts
+- sploitcast
+---
+
+`.-.. .. ... - . -. / - --- / ... .--. .-.. --- .. - -.-. .- ... - / .-- .-- .-- .-.-.- ... .--. .-.. --- .. - -.-. .- ... - .-.-.- -.-. --- --` 
+
+The above is Morse code. But anyways, we release the first episode of SploitCast yesterday night and we already have 1164 diggs. Which is pretty exciting. A lot of people have said quite a few good things about what we are doing. One thing that we do have to work on is the volume equalizing, which is just time and experiance. I am very glad that so many people viewed our first episode as a hit. Thanks for all your support. You can subscribe to SploitCast on iTunes by clicking [here](http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=116603876&amp;s=143441) or by going to [SploitCast.com](http://www.sploitcast.com). Check it out and tell us what you think. You can also help us out by digging the the story at digg.com :   
+
+[SploitCast - a new podcast for hackers](https://web.archive.org/web/20090222085828/http://digg.com/security/SploitCast_-_a_new_podcast_for_hackers)
+  
+jd
+
+## [Archive.org copy of Sploitcast.com](https://web.archive.org/web/20090307174402/http://sploitcast.com/)

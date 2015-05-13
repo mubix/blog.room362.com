@@ -1,0 +1,17 @@
+---
+author: mubix
+comments: true
+date: 2005-12-15 02:35:24+00:00
+layout: post
+title: TechTV Holiday Meetup
+categories:
+- podcasting
+- techtv
+- hak5
+---
+
+## Debating security with Steve Gibson and Leo Laporte
+
+![](/images/postimages/200512_techtv_1.png)
+
+Stolen from: http://www.flickr.com/photos/globalhermit/sets/1592265/with/74157804/

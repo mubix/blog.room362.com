@@ -1,0 +1,23 @@
+---
+author: mubix
+comments: true
+date: 2007-04-03 11:07:42+00:00
+layout: post
+slug: 200743think-you-can-hack-it-in-my-world-prove-it-html
+title: Think you can hack it in my world? Prove it.
+wordpress_id: 522
+tags:
+- Uncategorized
+---
+
+The contest that won two "hackers" PS3s at ShmooCon is now open to the public. I found this post on http://hkashfi.blogspot.com/index.html
+
+
+
+
+> ShmooCon07 "Hack it" Contest  During Shmoocon2007 there was a [contest](http://www.shmoocon.org/contests.html) open to interested hackers. If you're curious about it but hadn`t chance to join the con, well it's still open for you to check your skills but don't expect any reward :> If you like to get familiar with challenges in Cons, you can try this one. It's consisted of 8 levels, each one require different class of skills. you can try it [HERE](http://www.appliedsec.com/files/shmoocon.tar.gz) . If you're not 31337 enough to solve them, here's the answers for you but I highly recommend you NOT to get it before giving the challenge a try . Such challenges are cool until you do not have the answers and should get them yourself . Finally because this challenge comes from ShmooCon does NOT mean it's something magical or hard to solve.  By S. Hamid Kashfi
+
+
+
+
+I suppressed the link to the answers. You can go to Kashfi's page if you want those, you cheater.   mubix

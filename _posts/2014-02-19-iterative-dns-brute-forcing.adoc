@@ -1,0 +1,148 @@
+---
+layout: post
+title: "Iterative DNS Brute Forcing"
+date: 2014-02-19 23:33:50 -0500
+comments: true
+categories: 
+- scripting
+- dns
+---
+
+Everyone has their list of hostnames they brute force domains with. In my last post I even mentioned a few ways to use one with XARGS or PARALLEL. But one fact about wordlist brute forcing is that there is no "one list to rule them all".  But over the years of doing DNS record collection I have noticed one thing, most domains have a large number of short hostnames that are easy to remember, usually 4 characters or less.
+
+I'm sure you already know where I'm going with this, I wanted to brute force all possible hostnames up to 4 characters. For a long time I struggled with coding this, but couldn't wrap my head around it. I would come back to it every so often, finally a few days ago I happened upon a script on gist: https://gist.github.com/petehamilton/4755855 that suited my needs perfectly.
+
+I modified it to suite my needs (just use the yield method) and here is what I ended up with (remember DNS is case insensitive):
+
+**Notice:** This script doesn't end, it will keep doing lookups on longer and longer hostnames until you hit CTRL-C
+
+```
+#!/usr/bin/env ruby
+
+#
+## Brute code stolen form: https://gist.github.com/petehamilton/4755855
+#
+
+@domain = 'microsoft.com'
+
+def result?(sub)
+	results = %x(dig +noall #{sub}.#{@domain} +answer)
+	if results != ""
+		puts "============================"
+		puts "FOUND: \t#{sub}"
+		puts "============================"
+		puts "#{results}"
+		puts "============================"
+	end
+	1 == 2
+end
+
+def crack_yielding(chars)
+	crack_yield(chars){ |p|
+		return p if result?(p)
+	}
+end
+
+
+def crack_yield(chars)
+	chars.each { |c| yield c }
+
+	crack_yield(chars) { |c|
+		chars.each do |x|
+			yield c + x
+		end
+	}
+end
+
+chars = ('a'..'z').to_a
+(0..9).each {|x| chars << x.to_s} 
+
+crack_yielding(chars)
+
+```
+
+This worked but it was slow, so I sped it up using methods that I talked about in my last post and a quick modification:
+
+I used this:
+```
+#!/usr/bin/env ruby
+
+#
+## Brute code stolen form: https://gist.github.com/petehamilton/4755855
+#
+
+def result?(sub)
+	puts sub	
+	1 == 2
+end
+
+def crack_yielding(chars)
+	crack_yield(chars){ |p|
+		return p if result?(p)
+	}
+end
+
+
+def crack_yield(chars)
+	chars.each { |c| yield c }
+
+	crack_yield(chars) { |c|
+		chars.each do |x|
+			yield c + x
+		end
+	}
+end
+
+chars = ('a'..'z').to_a
+(0..9).each {|x| chars << x.to_s} 
+
+crack_yielding(chars)
+
+```
+
+which just prints all the possibilities:
+
+```
+a
+b
+c
+d
+e
+f
+...
+```
+
+and piped it into parallel + dig:
+```
+ruby brutelist.rb | parallel -j100 dig +noall {}.microsoft.com +answer
+```
+
+and got the following:
+```
+c.microsoft.com.	2	IN	CNAME	c.microsoft.akadns.net.
+c.microsoft.akadns.net.	499	IN	A	65.55.58.184
+e.microsoft.com.	3599	IN	A	191.234.1.50
+g.microsoft.com.	2798	IN	CNAME	g.msn.com.
+g.msn.com.		99	IN	CNAME	g.msn.com.nsatc.net.
+g.msn.com.nsatc.net.	148	IN	A	131.253.34.154
+i.microsoft.com.	779	IN	CNAME	i.toggle.www.ms.akadns.net.
+i.toggle.www.ms.akadns.net. 44	IN	CNAME	i.g.www.ms.akadns.net.
+i.g.www.ms.akadns.net.	225	IN	CNAME	i.microsoft.com.edgesuite.net.
+i.microsoft.com.edgesuite.net. 116 IN	CNAME	a1475.g.akamai.net.
+a1475.g.akamai.net.	16	IN	A	23.45.65.26
+a1475.g.akamai.net.	16	IN	A	23.45.65.33
+m.microsoft.com.	3599	IN	CNAME	origin.mobile.ms.akadns.net.
+origin.mobile.ms.akadns.net. 299 IN	A	65.55.186.235
+s.microsoft.com.	3599	IN	CNAME	reroute.microsoft.com.
+reroute.microsoft.com.	3599	IN	A	65.55.58.201
+reroute.microsoft.com.	3599	IN	A	64.4.11.37
+cs.microsoft.com.	81	IN	CNAME	wedcs.trafficmanager.net.
+wedcs.trafficmanager.net. 7	IN	CNAME	wedcseus.cloudapp.net.
+wedcseus.cloudapp.net.	8	IN	A	137.116.48.250
+...
+```
+
+Happy bruting. Both scripts can be found on my gists page:
+ 
++ Domain version: https://gist.github.com/mubix/9107284
++ Parallel version: https://gist.github.com/mubix/9107276

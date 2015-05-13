@@ -1,0 +1,91 @@
+---
+author: mubix
+comments: true
+date: 2008-07-28 20:54:16+00:00
+layout: post
+slug: 2008728podcasters-meetup-defcon-16-update-2-html
+title: Podcaster's Meetup @ DEFCON 16 Update 2
+wordpress_id: 441
+tags:
+- Uncategorized
+---
+
+It’s almost that time. DefCon is right around the corner and things are coming together nicely. Here is where we stand and a rough schedule of events:  
+
+
+  
+	
+  * Bloggers welcome. I got a lot of feedback asking if it’s just for “Podcasters” but we would like to invite bloggers to participate as well.
+  
+	
+  * I-Hacked.com and Astaro are our current sponsors, and I am still waiting on confirmation from two others.
+  
+	
+  * We have Skybox 208 all day Saturday. During the day it will be open to all podcasters to record in peace and quite if they wish.
+  
+	
+  * We have the following podcasters attending that I know of  
+  
+	
+    * PaulDotCom - Larry and Paul
+  
+	
+    * CyberSpeak - Bret and Ovie (possible)
+  
+	
+    * Network Security Podcast
+  
+	
+    * Security Justice
+  
+	
+    * Securabit
+  
+	
+    * SploitCast
+  
+	
+    * Security Catalyst (possible)
+  
+  
+
+  
+	
+  * Special Guests  
+  
+	
+    * Hvensnt from I-Hacked.com
+  
+  
+  
+	
+    * Offensive Security
+  
+  
+
+  
+	
+  * Schedule of Events (Saturday)  
+  
+	
+    * 10 AM to 7 PM - Open to Podcasters Only
+  
+	
+    * 7 PM - 8:30 - Setup and Testing for Live show
+  
+	
+    * 8:30 - 9:00 - Doors open for audience
+  
+	
+    * 9 - 10 - Live Show
+  
+	
+    * 10 + After Party
+  
+  
+
+  
+  
+We’ll see you there!  
+  
+mubix

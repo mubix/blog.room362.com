@@ -1,0 +1,31 @@
+---
+author: mubix
+comments: true
+date: 2008-12-10 21:35:48+00:00
+layout: post
+title: Ask and you shall receive - SumoLinux
+categories:
+- releases
+---
+
+ If you haven’t seen it yet, I posted about a [Nerv-Labs Live DVD](/archives/218-Multi-Boot-Security-LiveCD-DVD.html) that included all kinds security distros in one bootable DVD. Which was also featured in [Episode 0x415](http://www.hak5.org/episodes/episode-415) of [Hak5](http://www.hak5.org/). Well, there were some things that it was kinda lacking, mainly Helix and Samurai.  
+
+Well, my buddy [Marcus Carey](http://weblog.suntzudata.com/) from [SunTzu Data](http://www.suntzudata.com) did it up right. Let me introduce [SumoLinux](http://sumolinux.suntzudata.com/). SumoLinux has the following linux distributions on it:
+	
+  * [Backtrack 3](http://www.remote-exploit.org/backtrack_download.html)
+
+  * [Helix 2.0](http://www.e-fense.com/helix/)
+	
+  * [Samurai Linux](http://samurai.inguardians.com/)
+	
+  * [DBAN](http://www.dban.org/)
+	
+  * [DVL](http://www.damnvulnerablelinux.org/index.php/eng/Damn%20Vulnerable%20Linux%20Distro)
+  
+  
+**DOWNLOAD IT HERE**: [http://thepiratebay.org/torrent/4527605/SUMO_Linux](http://thepiratebay.org/torrent/4527605/SUMO_Linux)  
+
+
+You probably know what Backtrack 3 is, it’s the distro that is produced by the guys at [Offensive Security](http://www.offensive-security.com/). Helix 2.0 is the forensics distro, and Samurai is the awesome web application attack/assessment distro put out by [InGuardians](http://inguardians.com/). But the last two you may not have heard of. DBAN (Darik’s Boot and Nuke) is a disk wiping boot cd that has templates for DoD, Gutmann, and PCMP wiping standards. And last but not least is DVL (Damn Vulnerable Linux) which is a distro where you can learn security, starting from basic netcat listening to exploit development.
+
+Thanks go to Marcus for making our dreams come true, now if I could just get another USB stick to put this on. [Unetbootin](http://lubi.sourceforge.net/unetbootin.html) here I come!

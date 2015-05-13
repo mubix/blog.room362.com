@@ -1,0 +1,34 @@
+---
+author: mubix
+comments: true
+date: 2007-02-21 15:34:44+00:00
+layout: post
+slug: 2007221on-a-rant-html
+title: On a RANT
+wordpress_id: 525
+categories:
+- Rant
+tags:
+- Rant
+---
+
+First of all, every blog entry on every blog, is in fact a RANT. So, stating that one is, is kind of pointless. That being said. Here is my rant:  
+  
+Now that I have changed this part of my blogisphere, I have been getting guff about not covering certain exploits and 0-days. So here it is:  
+<blockquote><strong><a href="http://www.milw0rm.com/exploits/3193"  title="Excel 0-day">Microsoft Excel 0-day</a></strong>  
+The easiest way to make a unix based system (Mac) insecure:  
+&bull; Step 1: Install a Microsoft Product  
+as for the Windows Versions; <strong>DON'T OPEN ATTACHMENTS</strong>  
+-While I am on the topic. Word users, watch out as well. <a href="http://www.milw0rm.com/exploits/3260"  title="milw0rm exploit #3260">milw0rm exploit #3260</a>  
+</blockquote>  
+  
+I troll all the security sites with my RSS reader, and as soon as I find something that hasn't been covered to death (i.e. ANOTHER Excel/Word exploit) I'll post it up.  
+  
+I'm getting off my soap box. For those that have found my previous 'rants' informative and did not send me an email wining that I didn't cove the aforementioned exploit. I apologize.  
+  
+But, that’s just my take on things, I’m just another security guy in a room with a small sign on the door that says “IT Dept”. What would I know?  
+  
+jd  
+  
+P.S.   
+<blockquote>Now that I am sorta in the eZine world with the release of <a href="http://www.hak5.org/wiki/Analog5:eZine"  title="Analog.5">Analog.5</a> for <a href="http://www.hak5.org"  title="Hak.5">Hak.5</a>.  I wanted to tag another eZine well worth reading. <a href="http://neworder.box.sk/user.php?name=rattle"  title="Rattle's Neworder Profile">Rattle</a> and the folks from <a href="http://www.awarenetwork.org/"  title="Aware Networks">.aware</a> created the <a href="http://www.awarenetwork.org/etc/zine1/"  title=".aware's eZine">.aware eZine</a> or lovingly called <a href="http://www.awarenetwork.org/etc/zine1/"  title=".aware's eZine">.behold</a> check it out.</blockquote>

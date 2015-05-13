@@ -1,0 +1,44 @@
+---
+author: mubix
+comments: true
+date: 2012-10-08 04:36:00+00:00
+layout: post
+title: Compiling and Release of Ditto
+categories:
+- ditto
+- tools
+- releases
+---
+
+If you follow the exact same steps you did for Netview: [/blog/2012/10/07/compiling-and-release-of-netview/](/blog/2012/10/07/compiling-and-release-of-netview/)
+
+then you already have the steps needed to create a compiled version of ditto from the repo here:
+
+[https://github.com/mubix/ditto](https://github.com/mubix/ditto)
+
+And while the sheep icon is cute, and a nod to what ditto does, it comes at a pretty hefty cost:
+
+![](/images/postimages/201210_ditto_1.png)
+
+Size. Now if you're scoffing at 408 KB then you don't have any issues, but I like not having to wait while a binary I am trying to push to a victim box is transferring. Removing the icon is pretty straight forward. Once you've loaded the .SLN file up in Visual Studio C++ just expand the "Resource Files" folder in the "Solution Explorer":
+
+![](/images/postimages/201210_ditto_2.png)
+
+And summarily delete both files (Right click and go to Remove or just press the Del button)
+
+(Side note, don't forget to rename or copy the one with the icon somewhere first if you want to keep that version)
+
+Then "Build Solution" again, and wa-la! A much smaller, less witty but highly functional Ditto:
+
+![](/images/postimages/201210_ditto_3.png)
+
+And of course, like last time, you could go through all that, or just download them here:
+
+Without the icon: [/projects/ditto_noicon.exe](/projects/ditto_noicon.exe)
+
+With the icon: [/projects/ditto_withicon.exe](/projects/ditto_withicon.exe)
+
+
+
+
+ 

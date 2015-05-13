@@ -1,0 +1,27 @@
+---
+author: mubix
+comments: true
+date: 2009-06-29 23:18:53+00:00
+layout: post
+title: Local Security - DC-NoVA-MD
+categories:
+- novahackers
+---
+
+Looking for local events?  
+  
+I've gotten a lot of people asking me recently where the local events are in DC, and I almost every time turn them to the awesome [http://www.novainfosecportal.com/](http://www.novainfosecportal.com/) which is hands down the best source for local events for the DC-NoVA-MD area, not just NoVA.  
+  
+[Grecs](http://twitter.com/grecs) (follow him on twitter) does an amazing job at keeping it up to date and filled with every event possible. (Subscribe to his google calendar of events, get the RSS feed.. all good stuff)  
+  
+But there are other resources too:  
+  
+DojoSec - [http://www.dojosec.com/](http://www.dojosec.com/)- run by the amazing Marcus J. Carey who recently joined the P[aulDotCom Security Weekly](http://www.pauldotcom.com) crew. DojoSec is a Monthly min-conference with 1 track and some of the best speakers in the local area, definitely worth  
+  
+The Shmoo Group hosts the recently revived Security Geeks mailing list:  [http://lists.shmoo.com/mailman/listinfo/secgeeks](http://lists.shmoo.com/mailman/listinfo/secgeeks)  
+  
+I run a luncheon that you can get on the list simply by emailing me (mubix hak5.org) or commenting here if you wish.  
+  
+Another site to keep up on is [http://infosecevents.net/](http://infosecevents.net/) run by [GGEE](http://twitter.com/ggee) has a more broad scope of events, not just in the area.  
+  
+Hope this helps more people find ways of getting connected with the community.

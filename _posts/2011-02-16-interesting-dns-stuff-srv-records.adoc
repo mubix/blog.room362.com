@@ -1,0 +1,66 @@
+---
+author: mubix
+comments: true
+date: 2011-02-16 07:48:14+00:00
+layout: post
+title: Interesting DNS Stuff - SRV Records
+categories:
+- dns
+---
+
+The following are good adds to your DNS brute force list:
+
+These are all **SRV** records so make sure your type is set correctly. The great thing about SRV records is that it tells you the port in the answer. Isn't that nice of them?
+
+I don't know of any DNS tools that utilize SRV as part of their process, but scripting dig to do so isn't tough.
+
+```
+_autodiscover._tcp
+_caldav._tcp
+_client._smtp
+_gc._tcp
+_h323cs._tcp
+_h323cs._udp
+_h323ls._tcp
+_h323ls._udp
+_h323rs._tcp
+_h323rs._tcp
+_http._tcp
+_iax.udp
+_imap._tcp
+_imaps._tcp
+_jabber-client._tcp
+_jabber._tcp
+_kerberos-adm._tcp
+_kerberos._tcp
+_kerberos._tcp.dc._msdcs
+_kerberos._udp
+_kpasswd._tcp
+_kpasswd._udp
+_ldap._tcp
+_ldap._tcp.dc._msdcs
+_ldap._tcp.gc._msdcs
+_ldap._tcp.pdc._msdcs
+_msdcs
+_mysqlsrv._tcp
+_ntp._udp
+_pop3._tcp
+_pop3s._tcp
+_sip._tcp
+_sip._tls
+_sip._udp
+_sipfederationtls._tcp
+_sipinternaltls._tcp
+_sips._tcp
+_smtp._tcp
+_stun._tcp
+_stun._udp
+_tcp
+_tls
+_udp
+_vlmcs._tcp
+_vlmcs._udp
+_wpad._tcp
+_xmpp-client._tcp
+_xmpp-server._tcp
+```

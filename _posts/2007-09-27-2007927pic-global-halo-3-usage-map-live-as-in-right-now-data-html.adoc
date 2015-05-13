@@ -1,0 +1,15 @@
+---
+author: mubix
+comments: true
+date: 2007-09-27 03:37:35+00:00
+layout: post
+slug: 2007927pic-global-halo-3-usage-map-live-as-in-right-now-data-html
+title: (PIC) global Halo 3 usage map - live (as in right now) data
+wordpress_id: 491
+tags:
+- Uncategorized
+---
+
+As of submit time there is 94K online and 1.2 million online in the last 24 hours. Pretty cool, huh?  
+  
+[read more](http://www.bungie.net/Stats/Halo3/Nightmap.ashx) | [digg story](http://digg.com/xbox_360/PIC_global_Halo_3_usage_map_live_as_in_right_now_data)

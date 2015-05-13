@@ -1,0 +1,28 @@
+---
+author: mubix
+comments: true
+date: 2013-01-06 03:55:45+00:00
+layout: post
+title: Cyber Pickpocketing
+categories:
+- training
+- cyberpickpocket
+---
+
+Drink!!
+
+So I've been working on a training package that takes a bit of a different approach than what I've normally done. The training breaks down like this:
+
++ Day 1: Local LAN based exploit (Windows)
++ Day 2: Remote Web based exploit (Linux)
++ Day 3: Client side exploit (Windows)
++ Day 4: Local exploit (FreeBSD)
++ Day 5: Network of the Seven Bells Test
+
+Each day (save for the 5th) will focus on a single exploit, explaining it, running it on virtual machines, and spending 8 hours diving into as many detectable changes that exploit makes on a system.. and how to not make them or make them vanish.
+
+Day 5 will be a lot like a CTF where you know all the answers. First one to get all 7 exploits completed without being detected wins.
+
+Venue is TBD but I've been putting a lot of time into making the VMs and slides and stuff just needed to get some feedback on what you guys think.
+
+Let me know in the comments (something more valuable then, "great idea!" or , "thats stupid" please)

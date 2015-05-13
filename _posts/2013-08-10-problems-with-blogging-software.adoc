@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Problems with blogging software"
+date: 2013-08-10 00:43
+comments: true
+categories:
+- rant
+---
+
+Problems are that everyone does this whole blogging thing in so many different ways. Me, personally? I like to have a client that I can save drafts it, work on things a little bit here and there and then finalize stuff when I'm ready to post. I have a couple dozen of these posts ready and set with final tweaks needed but my blogging software Squarespace up and moved on to "Squarespace 6". The the current stage you don't have to move to 6 but at some point the owners of Squarespace are going to force everyone over. I don't want to wait for that to happen.
+
+Octopress and Postach.io are my favorite options right now. Both blog in markdown language which is ok. Converting 8 years of blog posts to markdown is going to be a lot of work but a one time deal. Plus it would give me a chance to go through and fix the things that were broken over the years of modified blogging clients and services.
+
+Postach.io has one major downside, they don't have good "code" block support, whereas Octopress/Jekyll have excellent support as well code hilighting. The major upside? It's based on Evernote. Which means I can blog from whereever I have Evernote. They also used to have an EXCELLENT feature that seems to have disappeared where if you updated a post it would automatically throw the blog post up to the top of your page, meaning your update would get back in your RSS feed and the update wouldn't go unnoticed as most updates to blog posts do.
+

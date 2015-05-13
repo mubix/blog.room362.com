@@ -1,0 +1,77 @@
+---
+author: mubix
+comments: true
+date: 2012-10-15 04:24:21+00:00
+layout: post
+title: Pass the Hash without Metasploit - Part 2
+categories:
+- passthehash
+---
+
+I read this article a while back:
+
+[http://fuzzynop.blogspot.com/2012/09/pass-hash-without-metasploit.html](http://fuzzynop.blogspot.com/2012/09/pass-hash-without-metasploit.html)
+
+by [@FuzzyNop](https://twitter.com/FuzzyNop)
+
+Great article showing the use of WCE's "-s" flag to Pass-The-Hash locally and I highly recommend checking it out. 
+
+Anywho, I was once in a similar scenario, where I had no Metasploit to back me up, but the box I was on did have one interesting thing, ruby and an accessible target for relatively up-to-date ruby gems. Since Metasploit's powerhouse library 'rex' installed just fine I was set.
+
+**Notice**: This is now `gem install librex`
+
+![](/images/postimages/201210_pth_1.png)
+
+Then copy the following to the machine:
+
+[https://github.com/rapid7/metasploit-framework/blob/master/tools/psexec.rb](https://github.com/rapid7/metasploit-framework/blob/master/tools/psexec.rb)
+
+That's a standalone version of psexec module (minus any advanced options). Once you have it down, make two quick edits (removing the requires for fast lib and msfenv):
+
+![](/images/postimages/201210_pth_2.png)
+
+And then you should see this:
+
+![](/images/postimages/201210_pth_3.png)
+
+Now, I elected to use the windows/adduser Metasploit single for my purposes, you can just as well use any executable you want depending on what you are trying to accomplish. So this is the users list before hand:
+
+![](/images/postimages/201210_pth_4.png)
+
+And then I executed this:
+
+![](/images/postimages/201210_pth_5.png)
+
+Which resulted in:
+
+![](/images/postimages/201210_pth_6.png)
+
+w00t. Game over. But wait, there's more...
+
+There is another GEM that makes things even easier to continue if your next hop doesn't have Ruby:
+
+[http://ocra.rubyforge.org](http://ocra.rubyforge.org)
+
+OCRA (One-Click-Ruby-Application), you just need to 'gem install ocra' and you can then compile Ruby into Windows executables (it does this the same way as Py2Exe - packaging a interpreter in with the script). 
+
+To build the executable (once our gem is installed) is pretty straight forward:
+
+![](/images/postimages/201210_pth_7.png)
+
+And as you can see, we have a ~5.5 meg file:
+
+![](/images/postimages/201210_pth_8.png)
+
+The output without options looks like this:
+
+![](/images/postimages/201210_pth_9.png)
+
+You can plainly see the Temp directory it's being extracted to. It does do a very good job at cleaning up the temp directory after it's run the Ruby script which is nice, but not forensically (obviously), just a heads up.
+
+But, the result is the same:
+
+![](/images/postimages/201210_pth_10.png)
+
+Now you can take your 5.5 meg bin anywhere you want and psexec with a hash to your heart's content.
+
+(As a side note, this works REALLY well to bypass UAC if you have a username and password/hash for a local admin. Just don't forget that it runs the EXE as SYSTEM, who normally doesn't have proxy settings)

@@ -1,0 +1,202 @@
+---
+author: mubix
+comments: true
+date: 2008-06-01 03:34:00+00:00
+layout: post
+slug: 200861shmoocon-2008-videos-hit-the-shelves-html
+title: ShmooCon 2008 Videos Hit the Shelves
+wordpress_id: 459
+tags:
+- Uncategorized
+---
+
+The videos from ShmooCon 2008 have hit the shelves. Go download them at:  
+  
+[http://www.shmoocon.org/2008/videos/](http://www.shmoocon.org/2008/videos/)  
+  
+[Digg It](/archives/192-ShmooCon-2008-Videos-Hit-the-Shelves.html)  
+  
+EDIT: As of the time of this post, some of the videos are incorrectly named. Here is the 1-> 1:  
+**Correctly Named**:  
+
+
+  
+	
+  1. 21st Century Shellcode for Solaris
+  
+	
+  2. Advanced Protocol Fuzzing - What We Learned when Bringing Layer2 Logic to SPIKE land
+  
+	
+  3. Backtrack Demo - “Hacking and Stuff”
+  
+	
+  4. Bake Not (Fried, spelling error on filename) Fired - Performing Unauthorized Phishing
+  
+	
+  5. Closing Remarks
+  
+	
+  6. Forensic Image Analysis for Password Recovery (same video is also under another name below)
+  
+	
+  7. Got Citrix Hack it!
+  
+	
+  8. Hacking the Samurai Spirit
+  
+	
+  9. Keynote Address - Alex Halberman
+  
+	
+  10. Legal Issues for Bot-Net Researchers and Mitigators
+  
+	
+  11. Malware Software Armoring Circumvention (same video is also under another name below)
+  
+	
+  12. On the Social Responsbility of Hackers - Hacker Panel
+  
+	
+  13. Opening Remarks
+  
+	
+  14. Path X - Explosive Security Testing Using Xpath
+  
+	
+  15. PEAP Pwned Extensible Authntication Protocol
+  
+	
+  16. Practical Hacker Crypto
+  
+	
+  17. SIPing Your Network
+  
+	
+  18. The Geek and the Gumshoe
+  
+	
+  19. They’re Hacking Our Clients - What are we focusing on Servers? (same video is also under another name below)
+  
+	
+  20. TL1 Device Security (same video is also under another name below)
+  
+	
+  21. Using Aspect Oriented Programming to Prevent App Attacks
+  
+	
+  22. Virtual Worlds - Real Exploits
+  
+	
+  23. VOIP Penetration Testing Lessons Learned
+  
+	
+  24. Web Portals - Gateway to Information or Hole in Our Perimeter Defenses
+  
+	
+  25. Why are Databases so Hard to Secure
+  
+  
+
+
+  
+	
+  * **Named:** Flash Drives and Solid State Drives Data Recovery Comparison to Hard Drives  
+  
+	
+    * **Actually: **Hacking Windows Vista Security
+  
+  
+
+  
+	
+  * **Named:** Active 802.11 Fingerprinting  
+  
+	
+    * **Actually: **Using Aspect Oriented Programming to Prevent App Attacks
+  
+  
+
+  
+	
+  * **Named:** Own the Con  
+  
+	
+    * **Actually: **TL1 Device Security
+  
+  
+
+  
+	
+  * **Named:** A Hacker Looks Past 50  
+  
+	
+    * **Actually: **RenderMan’s: How do I Pwn Thee
+  
+  
+
+  
+	
+  * **Named**: I will be your Eyes and Hands  
+  
+	
+    * **Actually**: Malware Software Armoring Circumvention
+  
+  
+
+  
+	
+  * **Named**: Intercepting Mobile Phone GSM Traffic  
+  
+	
+    * **Actually**: Forensic Image Analysis for Password Recovery
+  
+  
+
+  
+	
+  * **Named**: Passive Host Characterization  
+  
+	
+    * **Actually**: They’re Hacking Our Clients - Why are we focusing on Servers
+  
+  
+
+  
+	
+  * **Named**: Smarter Password Cracking  
+  
+	
+    * **Actually**: Practical Hacker Crypto
+  
+  
+
+  
+	
+  * **Named**: Vulncatcher - Fun with Vtrace and Programmatic Debugging  
+  
+	
+    * **Actually**: Path X - Explosive Security Testing Using XPath
+  
+  
+
+  
+	
+  * **Named**: When Lawyers Attack! Dealing with the New Rules of Electronic Discovery  
+  
+	
+    * **Actually**: Legal Issues for Bot-Net Researchers and Mitigators
+  
+  
+
+  
+	
+  * **Named**: You Must Be This Tall to Ride the Security Ride  
+  
+	
+    * **Actually**: Closing Remarks
+  
+  
+
+  
+

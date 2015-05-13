@@ -1,0 +1,27 @@
+---
+author: mubix
+comments: true
+date: 2007-10-09 03:32:04+00:00
+layout: post
+slug: 2007108automatix-automated-html
+title: Automatix automated.
+wordpress_id: 484
+tags:
+- Uncategorized
+---
+
+  
+Original Source: [http://ubuntu.qio.dk/ubuntu/  
+](http://ubuntu.qio.dk/ubuntu/)  
+I recently stumbled upon a awesome script. Tried and test, works out of the box. Basically you open a terminal, paste this in, and hit enter.
+
+
+
+
+> sudo -k && clear && gksudo -D "setup script" echo && sudo apt-get update && sudo apt-get install -y ubuntu-restricted-extras  gstreamer0.10-ffmpeg gstreamer0.10-plugins-bad gstreamer0.10-plugins-bad-multiverse libdvdread3 unrar totem-gstreamer  vlc  nfs-kernel-server samba gparted  && gconftool-2 --type boolean --set /apps/nautilus/preferences/always_use_browser false && sudo gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type boolean --set /apps/nautilus/preferences/always_use_browser false && gconftool-2 --type string --set /desktop/gnome/volume_manager/autoplay_dvd_command "vlc %m" && sudo gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /desktop/gnome/volume_manager/autoplay_dvd_command "vlc %m" && sudo /usr/share/doc/libdvdread3/install-css.sh  && echo -e \n\nBxnl, nyy qbar. Lbh pna pybfr guvf jvaqbj abj. \n | tr '[a-m][n-z][A-M][N-Z]' '[n-z][a-m][N-Z][A-M]'
+
+
+
+
+Worked like a charm, codecs, DVD playing, flash, java, just as the original post says. I still suggest Automatix, for the other 'stuff' but if you are just looking at Automatix for the aforementioned features, here is a quick and easy solution.  
+

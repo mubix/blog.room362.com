@@ -1,0 +1,15 @@
+---
+author: mubix
+comments: true
+date: 2007-09-03 14:36:21+00:00
+layout: post
+slug: 200793official-microsoft-hackers-blog-html
+title: Official Microsoft Hackers Blog
+wordpress_id: 492
+tags:
+- Uncategorized
+---
+
+Microsoft employs some of the best hackers in the world and actively recruits them and develops them. They work on all kinds of projects, whether it be in development, research, testing, management and of course security.  
+  
+[read more](http://blogs.msdn.com/hackers) | [digg story](http://digg.com/microsoft/Official_Microsoft_Hackers_Blog)

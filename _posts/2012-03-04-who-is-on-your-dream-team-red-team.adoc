@@ -1,0 +1,11 @@
+---
+author: mubix
+comments: true
+date: 2012-03-04 10:21:21+00:00
+layout: post
+title: Who is on your dream team red team?
+categories:
+- rant
+---
+
+This was an honest idea to help identify people that might not get the media attention of other "Top X in Infosec" lists. But I should have known better than to put a poll on the internet...

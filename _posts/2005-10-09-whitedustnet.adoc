@@ -1,0 +1,18 @@
+---
+author: mubix
+comments: true
+date: 2005-10-09 07:19:00+00:00
+layout: post
+title: Whitedust.net
+categories:
+- sharedlinks
+---
+
+For those of you who do not know [Whitedust.net](http://whitedust.net) is the leading independent ‘hacker’ portal. Yes that’s right! All of you Skiddies out there, you may not know who you are but WE DO, this site is NOT for you. Now that that disclaimer is over:  
+  
+Ladies and Gentlemen,  
+If you have been luck, you’ve already seen them on [/.](http://www.slashdot.org) or even on [digg.com](http://digg.com). Whitedust.net is an awesome site that has great articles relating to security and other such things. The articles come from staff and the community alike. Check them out, and if you don’t want to, do it anyways.  
+  
+jd.  
+  
+[![](/images/postimages/whitedust_logo.jpg)](http://whitedust.net)

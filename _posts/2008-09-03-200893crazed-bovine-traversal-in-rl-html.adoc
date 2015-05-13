@@ -1,0 +1,17 @@
+---
+author: mubix
+comments: true
+date: 2008-09-03 18:13:00+00:00
+layout: post
+slug: 200893crazed-bovine-traversal-in-rl-html
+title: Crazed Bovine Traversal in RL
+wordpress_id: 433
+categories:
+- Hacking
+tags:
+- Hacking
+---
+
+As you may have heard me rant and rave about a special USB stick that downloads contact, messaging, and other information from phones just by plugging them in on [Episode 5](http://securabit.com/2008/06/29/securabit-episode-5/) of [Securabit ](http://securabit.com/)or read about it via an earlier posting on my blog ([Crazed Bovine Traversal](/archives/198-Crazed-Bovine-Traversal.html)). A company called Paraben Corporation went out and made it (Motorola and Samsung support only so far)  
+  
+I first learned about it via CNet’s report “[CSI Stick grabs data from cell phones](http://news.cnet.com/8301-1009_3-10028589-83.html?tag=newsEditorsPicksArea.0)” and you can find it directly on [http://csistick.com/](http://csistick.com/) for $199.00 plus you have to buy the accessory “DS Lite” just to read the data on it. (another 99.00). I think they should at least send me one for free for stealing my idea ;-)

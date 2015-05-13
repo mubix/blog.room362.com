@@ -1,0 +1,18 @@
+---
+author: mubix
+comments: true
+date: 2009-01-30 16:32:10+00:00
+layout: post
+title: Full Disclosure gets dusted off
+wordpress_id: 387
+categories:
+- internet
+---
+
+The Full Disclosure mailing list has a long and illustrious past. It has played host to everything from zero days to politics. One thing that has rung true for a number of years, if not since it’s inception is that it is unregulated (save spam of course). However in recent months it has fallen pray to less and less technical discussions, and more bickering, name calling, and outright trolling.  
+  
+The reason for this post is to let everyone know that has unsubscribed, that a change is coming. A bit of “Spring cleaning” of sorts. Please see the following FD post to see the dirt:  
+  
+[Post 960 - 2009](http://archives.neohapsis.com/archives/fulldisclosure/2009-01/0960.html)  
+  
+So get back on, the wild west has been cleared. Sign up here: [https://lists.grok.org.uk/mailman/listinfo/full-disclosure](https://lists.grok.org.uk/mailman/listinfo/full-disclosure)

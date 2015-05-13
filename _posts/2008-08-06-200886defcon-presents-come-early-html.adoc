@@ -1,0 +1,28 @@
+---
+author: mubix
+comments: true
+date: 2008-08-06 16:18:57+00:00
+layout: post
+slug: 200886defcon-presents-come-early-html
+title: Defcon presents come early!
+wordpress_id: 437
+categories:
+- Hacking
+tags:
+- Hacking
+---
+
+So, just monitoring [twitter for Defcon](http://search.twitter.com/search?q=defcon) tweets and came across this one: [Matthewneely status update 878833018](http://twitter.com/matthewneely/statuses/878833018)  
+  
+Screencap:  
+  
+ [![](http://s3.media.squarespace.com/production/438411/4879756/uploads/sa_exploiter.serendipityThumb.png)](http://s3.media.squarespace.com/production/438411/4879756/uploads/sa_exploiter.serendipityThumb.png)  
+  
+Link to video: [HERE](http://www.securestate.com/files/SA_Exploiter/defcon_16_video.html)  
+
+
+So what is cool about this tool? It generates an SQL injection that skirts the 64k size limit using MS Debugger on the victim end.[![](http://s3.media.squarespace.com/production/438411/4879756/uploads/defcon_16_badge.serendipityThumb.jpg)](http://s3.media.squarespace.com/production/438411/4879756/uploads/defcon_16_badge.serendipityThumb.jpg)
+
+  
+  
+And of course the DEFCON 16 via Wired Mag ([Artcile](http://blog.wired.com/27bstroke6/2008/08/exclusive-defco.html))
