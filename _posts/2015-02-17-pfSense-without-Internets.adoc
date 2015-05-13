@@ -9,12 +9,7 @@ https://forum.pfsense.org/index.php?topic=55504.0
 
 Most things never disappear from the Internet but I was looking for an old forum post I had bookmarked regarding some persistence methods that I noticed was no longer there since the forum owner had gotten rid of the forum as too much hassle. I get it, but when I went to Archive.org to get saved they didn't have a copy. So this is what this post is for, to save that content just in case it disappears.
 
-Also, here is a bug report for the "issue" (been open since 2012):
-
-* http://redmine.pfsense.org/issues/2586
-
-
----
+Also, here is a bug report for the "issue" (been open since 2012): http://redmine.pfsense.org/issues/2586
 
 If you are following: http://doc.pfsense.org/index.php/Creating_Your_Own_Package_Repository
 
