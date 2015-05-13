@@ -1,16 +1,10 @@
----
-layout: post
-title: "Why good leaders make you feel safe"
-date: 2014-05-27 22:31:53 -0400
-comments: true
-categories: 
-- ted
-- video
-
----
+= Why good leaders make you feel safe
+:hp-tags: ted, video
 
 This talk really touched home with me and I wanted to share it, and not just because he talked about Marines. ;-)
 
 Forward this talk on to your fellow employees, boss, etc.
 
+++++
 <iframe src="http://embed.ted.com/talks/simon_sinek_why_good_leaders_make_you_feel_safe.html" width="560" height="315" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+++++
