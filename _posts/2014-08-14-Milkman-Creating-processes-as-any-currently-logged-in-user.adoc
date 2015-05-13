@@ -1,12 +1,5 @@
----
-layout: post
-title: "Milkman: Creating processes as any currently logged in user"
-date: 2014-08-14 00:09:21 -0400
-comments: true
-categories:
-- code
-- psexec
----
+= Milkman: Creating processes as any currently logged in user
+:hp-tags: code, psexec
 
 One of the problems with using PSEXEC from Metasploit (any of the psexec modules) is that it runs as **SYSTEM**. What's the problem with that? Isn't **SYSTEM** god mode? Ya, and normally I'd agree that it's the best level to have, but the defenses these days have gotten better, and getting direct connections out is pretty rare. That leaves proxies, and as you know **SYSTEM** doesn't get any proxy settings.
 
@@ -49,4 +42,6 @@ It will start up every time the computer starts, which is completely useless, si
   
 Thoughts? What would you like Milkman to do, or what use case do you think a tweak would make it work better for? Leave a comment below.
 
+++++
 <script src="https://gist.github.com/mubix/5d0cacdabfe092922fa3.js"></script>
+++++
