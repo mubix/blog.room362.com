@@ -1,4 +1,5 @@
 = CCDC Red Teamer's Creed
+:hp-tags: redteam, rant
 
 This is my box. There are many like it, but they are all mine.
 
