@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Full Disclosure - SingleClick Connect</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="//blog.room362.com/themes/Casper/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="//blog.room362.com/themes/Casper/assets/css/screen.css?v=1.0.0" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+
+    <link rel="canonical" href="http://blog.room362.com/2014/09/15/Full-Disclosure-SingleClick-Connect.html" />
+    
+    <meta property="og:site_name" content="Room362.com" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Full Disclosure - SingleClick Connect" />
+    <meta property="og:description" content="Update: I originally posted this to the Full Disclosure mailing list but for some reason it wasn&amp;#8217;t accepted via the moderator so I&amp;#8217;m posting it here. First, so that the information does get out there, and..." />
+    <meta property="og:url" content="http://blog.room362.com/2014/09/15/Full-Disclosure-SingleClick-Connect.html" />
+    <meta property="article:published_time" content="2014-09-15T04:00:00.000Z" />
+    <meta property="article:modified_time" content="2015-05-13T03:03:49.253Z" />
+    <meta property="article:tag" content="full disclosure" />
+    <meta property="article:tag" content="singleclick" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Full Disclosure - SingleClick Connect" />
+    <meta name="twitter:description" content="Update: I originally posted this to the Full Disclosure mailing list but for some reason it wasn&amp;#8217;t accepted via the moderator so I&amp;#8217;m posting it here. First, so that the information does get out there, and..." />
+    <meta name="twitter:url" content="http://blog.room362.com/2014/09/15/Full-Disclosure-SingleClick-Connect.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Room362.com",
+    "author": {
+        "@type": "Person",
+        "name": "Rob Fuller",
+        "image": "https://avatars.githubusercontent.com/u/679319?v=3",
+        "url": "undefined/author/undefined",
+        "sameAs": "http://www.room362.com/"
+    },
+    "headline": "Full Disclosure - SingleClick Connect",
+    "url": "http://blog.room362.com/2014/09/15/Full-Disclosure-SingleClick-Connect.html",
+    "datePublished": "2014-09-15T04:00:00.000Z",
+    "dateModified": "2015-05-13T03:03:49.253Z",
+    "keywords": "full disclosure,  singleclick",
+    "description": "Update: I originally posted this to the Full Disclosure mailing list but for some reason it wasn&amp;#8217;t accepted via the moderator so I&amp;#8217;m posting it here. First, so that the information does get out there, and..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="Room362.com" href="http://blog.room362.com/rss" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+</head>
+<body class="post-template tag-full-disclosure tag-singleclick">
+
+    
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="http://blog.room362.com">Home</a>
+        <!-- <a class="subscribe-button icon-feed" href="http://blog.room362.com/rss/">Subscribe</a> -->
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post tag-full-disclosure tag-singleclick">
+
+        <header class="post-header">
+            <h1 class="post-title">Full Disclosure - SingleClick Connect</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2014-09-15">15 September 2014</time>  on <a href="http://blog.room362.com/tag/full-disclosure">full disclosure</a>, <a href="http://blog.room362.com/tag/singleclick"> singleclick</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Update</strong>: I originally posted this to the Full Disclosure mailing list but for some reason it wasn&#8217;t accepted via the moderator so I&#8217;m posting it here. First, so that the information does get out there, and second to see if anyone knows why it may have been rejected.</p>
+</div>
+<div class="paragraph">
+<p>I was helping out a family member with their computer when it came up that they "already had remote help software" (SingleClickConnect or SCC), when I asked what this was, the family member said it was installed by Dell Support when trying to fix their issue. This was in 2008. I removed it, and helped to fix the issue.</p>
+</div>
+<div class="paragraph">
+<p>In 2010 another issue arose on the new computer (Dell again) of the same family member. Again, calling support first they had installed this software.</p>
+</div>
+<div class="paragraph">
+<p><strong>Disclaimer</strong>: I can not say for certain that it was Dell&#8217;s support rep, or even that it was them that installed it, but if Dell is using this as a means of support they should probably cease for the following reasons:</p>
+</div>
+<div class="paragraph">
+<p>Apache (port 40080) listening 0.0.0.0, MySQL (port 17771) listening 127.0.0.1, PHP, and UltraVNC (5900) are installed as a part of the software package.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_issue_1">ISSUE #1</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Without decoding the ionCube "copyright protecting" software a large number of XSS, CSRF, and SQLi vulnerabilities were found, all unauthenticated to the web app that runs there.</p>
+</div>
+<div class="paragraph">
+<p>No specifics are being posted on these vulnerabilities as I assume the site on the net (company&#8217;s site), where a registered user would log in are the same as the ones locally hosted (at least the app looks the same and has similar page structure)</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_issue_2">ISSUE #2</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>MySQL&#8217;s root password is blank and there are two other default accounts as well allowing easy privilege escalation to SYSTEM (via the SCC local account - see ISSUE #5):</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>	dsl *7E1CA3417E3A159A9188657F44C7034A8E9FDFF2
+	tera *B2744A6BC5E8B1667BE5AED0111A2B941356E4A4
+^ uncracked at this point. For all I know they could be randomized at install</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_issue_3">ISSUE #3</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Another service listens on 0.0.0.0 via port 17667 that I haven&#8217;t been able to identify, however when you connect to the socket, it starts listing users, services, printers and interfaces (and that is without sending any data to it).</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ ncat 172.16.102.149 17667
+8�TXPBASELINEXP_BASEP�RAdministratorGuestHelpAssistantSingleClick
+AdminSUPPORT_388945a0!aCACAMD PCNET Family PCI Ethernet Adapter -
+Packet Scheduler Miniport{47F69AAC-AE9A-40A9-88F5-A246A169CE92}�f�
+)�n�����f�f��fDownloadsC:\Documents and Settings\Administrator\My
+Documents\DownloadsMicrosoft XPS Document
+WriterXPSPortprinter#:2TPVM#:1TPVMACDWindows FirewallMicrosoftCreative
+Sound Blaster PCI</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_issue_4">ISSUE #4</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When UltraVNC is installed, it uses the same password as the one for your 'registered' account (just password auth) and listens on 0.0.0.0. It is easily to decrypt from the UltraVNC.ini that is located in <code>%ApplicationData%</code> for the user</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_issue_5">ISSUE #5</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A local account called "SingleClick Admin" is installed with a static
+password and added to the Administrators group. 3 services are also
+installed with the SingleClick Admin account as the user it runs
+under:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Package d'authentification  : NTLM
+Utilisateur principal       : SingleClick Admin
+     msv1_0 :     lm{ 7a9793d3082ba83b790ce07b3bdf85ea }, ntlm{ 2c292724d67fcf310d1c4dd153467be8 }
+     kerberos :     ~!3no1972!~
+     ssp :
+     wdigest :     ~!3no1972!~</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Name         : _SC_Apache2.2</p>
+</li>
+<li>
+<p>Service      : .\SingleClick Admin</p>
+</li>
+<li>
+<p>Current      : <sub>!3no1972!</sub></p>
+</li>
+<li>
+<p>Name         : _SC_dsl-fs-sync</p>
+</li>
+<li>
+<p>Service      : .\SingleClick Admin</p>
+</li>
+<li>
+<p>Current      : <sub>!3no1972!</sub></p>
+</li>
+<li>
+<p>Old          : <sub>!3no1972!</sub></p>
+</li>
+<li>
+<p>Name         : _SC_hnmsvc</p>
+</li>
+<li>
+<p>Service      : .\SingleClick Admin</p>
+</li>
+<li>
+<p>Current      : <sub>!3no1972!</sub></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_concern_1">CONCERN #1</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>As far as I can tell the software continuously scans you local network for other computers and file system for changes and reports these back to the central server so that when you login to their service you can see your files and connect to other systems in the LAN of the machine SingleClickConnect is installed on.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_concern_2">CONCERN #2</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The user account password that you use to register and connect remotely is stored in the database. This actually looks decently done, or I just haven&#8217;t been able to identify the storage</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Database:     p2p
+Table:           config_info
+Value:           “user_hash”</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_concern_3">CONCERN #3</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Not sure what this registry key contains other than being named Cred4RA and assuming it&#8217;s credentials for the remote administration. Hopefully encrypted some how.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>[HKEY_LOCAL_MACHINE\SOFTWARE\SingleClick Systems\Advanced Networking
+Service\Settings\Remote Access]
+"ConfigState"=dword:00000001
+"Cred4RA"=hex:01,00,00 (snip snip)</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_additional_information">Additional Information</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>+ Software original site: <a href="http://www.singleclickconnect.com/" class="bare">http://www.singleclickconnect.com/</a>
++ Current site: <a href="http://www.vivedriveconnect.com/" class="bare">http://www.vivedriveconnect.com/</a>
++ Direct download of software (for home use): <a href="http://downloads.vivedriveconnect.com/scc_setup.exe" class="bare">http://downloads.vivedriveconnect.com/scc_setup.exe</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_vendor_contact">Vendor Contact</h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>  + Email sent in **2010 July** about issues 1 - 5
+    + No reply, and forgot about until 2013 when the software was
+mentioned by a friend (if I had ever heard of it)
+  + **2013 April** - Email sent again, forwarding original, bounced back as
+account unknown
+  + **2014 August** - Accidentally found notes while searching for
+something else, attempted to relocate the software via Archive.org
+with the feeling that the site had gone away and happened upon the new
+site,, downloaded software, confirmed issues, and forwarded the email
+to the new point of contact at the new domain. No response.
+  + **2014 September**, Full disclosure.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Dell&#8230;&#8203; If your techs do actually use this software for support (I
+hope not) in any form or fashion, you are putting each one of them at
+a pretty high risk.</p>
+</div>
+</div>
+</div>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="" style="background-image: url(https://avatars.githubusercontent.com/u/679319?v=3)"><span class="hidden">Rob Fuller's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="">Rob Fuller</a></h4>
+
+                    <p>Read <a href="">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    <span class="author-link icon-link"><a href="http://www.room362.com/">http://www.room362.com/</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/share?text=Full%20Disclosure%20-%20SingleClick%20Connect&amp;url=http://blog.room362.com/2014/09/15/Full-Disclosure-SingleClick-Connect.html"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.room362.com/2014/09/15/Full-Disclosure-SingleClick-Connect.html"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://blog.room362.com/2014/09/15/Full-Disclosure-SingleClick-Connect.html"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+
+    </article>
+
+</main>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="http://blog.room362.com">Room362.com</a> &copy; 2015</section>
+        <section class="poweredby">Proudly published with <a href="http://hubpress.io">HubPress</a></section>
+    </footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();      
+      </script>
+
+    <script type="text/javascript" src="//blog.room362.com/themes/Casper/assets/js/jquery.fitvids.js?v=1.0.0"></script>
+    <script type="text/javascript" src="//blog.room362.com/themes/Casper/assets/js/index.js?v=1.0.0"></script>
+
+</body>
+</html>
