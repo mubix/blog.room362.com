@@ -23,7 +23,7 @@
     <meta property="og:description" content="A while back I needed to set up a pfSense box for CTF/example stuff that didn&amp;#8217;t and wouldn&amp;#8217;t ever have Internet connectivity. Doesn&amp;#8217;t seem like much of a task right? Just pop it..." />
     <meta property="og:url" content="http://blog.room362.com/2015/02/17/pfSense-without-Internets.html" />
     <meta property="article:published_time" content="2015-02-17T05:00:00.000Z" />
-    <meta property="article:modified_time" content="2015-05-13T02:11:29.888Z" />
+    <meta property="article:modified_time" content="2015-05-13T02:19:31.092Z" />
     
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="pfSense without Internets" />
@@ -45,7 +45,7 @@
     "headline": "pfSense without Internets",
     "url": "http://blog.room362.com/2015/02/17/pfSense-without-Internets.html",
     "datePublished": "2015-02-17T05:00:00.000Z",
-    "dateModified": "2015-05-13T02:11:29.888Z",
+    "dateModified": "2015-05-13T02:19:31.092Z",
     "description": "A while back I needed to set up a pfSense box for CTF/example stuff that didn&amp;#8217;t and wouldn&amp;#8217;t ever have Internet connectivity. Doesn&amp;#8217;t seem like much of a task right? Just pop it..."
 }
     </script>
@@ -85,7 +85,7 @@
 <p>Once I figured it out at that time, I made a Forum post so that anyone running into the same issue wouldn&#8217;t have to struggle as much:</p>
 </div>
 <div class="paragraph">
-<p>[<a href="https://forum.pfsense.org/index.php?topic=55504.0" class="bare">https://forum.pfsense.org/index.php?topic=55504.0</a>](<a href="https://forum.pfsense.org/index.php?topic=55504.0" class="bare">https://forum.pfsense.org/index.php?topic=55504.0</a>)</p>
+<p><a href="https://forum.pfsense.org/index.php?topic=55504.0" class="bare">https://forum.pfsense.org/index.php?topic=55504.0</a></p>
 </div>
 <div class="paragraph">
 <p>Most things never disappear from the Internet but I was looking for an old forum post I had bookmarked regarding some persistence methods that I noticed was no longer there since the forum owner had gotten rid of the forum as too much hassle. I get it, but when I went to Archive.org to get saved they didn&#8217;t have a copy. So this is what this post is for, to save that content just in case it disappears.</p>
@@ -96,30 +96,28 @@
 <div class="ulist">
 <ul>
 <li>
-<p>[<a href="http://redmine.pfsense.org/issues/2586" class="bare">http://redmine.pfsense.org/issues/2586</a>](<a href="http://redmine.pfsense.org/issues/2586" class="bare">http://redmine.pfsense.org/issues/2586</a>)</p>
+<p><a href="http://redmine.pfsense.org/issues/2586" class="bare">http://redmine.pfsense.org/issues/2586</a></p>
 </li>
 </ul>
 </div>
 <hr>
 <div class="paragraph">
-<p>If you are following:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>[<a href="http://doc.pfsense.org/index.php/Creating_Your_Own_Package_Repository" class="bare">http://doc.pfsense.org/index.php/Creating_Your_Own_Package_Repository</a>](<a href="http://doc.pfsense.org/index.php/Creating_Your_Own_Package_Repository" class="bare">http://doc.pfsense.org/index.php/Creating_Your_Own_Package_Repository</a>)</p>
-</li>
-</ul>
+<p>If you are following: <a href="http://doc.pfsense.org/index.php/Creating_Your_Own_Package_Repository" class="bare">http://doc.pfsense.org/index.php/Creating_Your_Own_Package_Repository</a></p>
 </div>
 <div class="paragraph">
 <p>and you are getting:</p>
 </div>
-<div class="quoteblock">
-<blockquote>
-<div class="paragraph">
-<p>Unable to communicate with 192.168.1.100 Please verify DNS and interface configuration, and that pfSense has functional Internet connectivity.</p>
-</div>
-</blockquote>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+Unable to communicate with 192.168.1.100 Please verify DNS and interface configuration, and that pfSense has functional Internet connectivity.
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>because you are using the repo to enable a offline (non internet connected) host to be able to utilize packages all you have to do is:</p>
