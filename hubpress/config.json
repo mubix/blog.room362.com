@@ -1,10 +1,1 @@
-{
-  "meta": {
-    "username": "mubix",
-    "repositoryName": "blog.room362.com",
-    "branch": "gh-pages"
-  },
-  "theme": {
-    "name": "Casper"
-  }
-}
+{"meta":{"username":"mubix","repositoryName":"blog.room362.com","branch":"gh-pages","cname":"blog.room362.com"},"site":{"url":"http://blog.room362.com"},"socialnetwork":{},"theme":{"name":"Casper","url":"//mubix.github.io/blog.room362.com/themes/Casper"}}
