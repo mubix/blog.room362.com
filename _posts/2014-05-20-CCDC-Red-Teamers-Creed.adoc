@@ -1,10 +1,4 @@
----
-layout: post
-title: "CCDC Red Teamer's Creed"
-date: 2014-05-20 12:08:58 -0400
-comments: true
-categories: 
----
+= CCDC Red Teamer's Creed
 
 This is my box. There are many like it, but they are all mine.
 
