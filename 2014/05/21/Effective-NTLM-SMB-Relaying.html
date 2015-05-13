@@ -30,10 +30,10 @@
     <meta property="og:site_name" content="Room362.com" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Effective NTLM / SMB Relaying" />
-    <meta property="og:description" content="[SMB Relay](http://en.wikipedia.org/wiki/SMBRelay) has been around for a long while. I even have a post about using it along with LNK files here: [MS08-068 + MS10-046 = Fun until 2018](/blog/2012/02/11/ms08_068-ms10_046-fun-until-2018/..." />
+    <meta property="og:description" content="SMB Relay has been around for a long while. I even have a post about using it along with LNK files here: [MS08-068 + MS10-046 = Fun until 2018](/blog/2012/02/11/ms08_068-ms10_046-fun-until-2018/) Here is the problem though. Most..." />
     <meta property="og:url" content="http://blog.room362.com/2014/05/21/Effective-NTLM-SMB-Relaying.html" />
     <meta property="article:published_time" content="2014-05-21T04:00:00.000Z" />
-    <meta property="article:modified_time" content="2015-05-13T23:02:28.523Z" />
+    <meta property="article:modified_time" content="2015-05-13T23:06:12.463Z" />
     <meta property="article:tag" content="zackattack" />
     <meta property="article:tag" content="smbrelay" />
     <meta property="article:tag" content="youtube" />
@@ -41,7 +41,7 @@
     
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Effective NTLM / SMB Relaying" />
-    <meta name="twitter:description" content="[SMB Relay](http://en.wikipedia.org/wiki/SMBRelay) has been around for a long while. I even have a post about using it along with LNK files here: [MS08-068 + MS10-046 = Fun until 2018](/blog/2012/02/11/ms08_068-ms10_046-fun-until-2018/..." />
+    <meta name="twitter:description" content="SMB Relay has been around for a long while. I even have a post about using it along with LNK files here: [MS08-068 + MS10-046 = Fun until 2018](/blog/2012/02/11/ms08_068-ms10_046-fun-until-2018/) Here is the problem though. Most..." />
     <meta name="twitter:url" content="http://blog.room362.com/2014/05/21/Effective-NTLM-SMB-Relaying.html" />
     
     <script type="application/ld+json">
@@ -59,9 +59,9 @@
     "headline": "Effective NTLM / SMB Relaying",
     "url": "http://blog.room362.com/2014/05/21/Effective-NTLM-SMB-Relaying.html",
     "datePublished": "2014-05-21T04:00:00.000Z",
-    "dateModified": "2015-05-13T23:02:28.523Z",
+    "dateModified": "2015-05-13T23:06:12.463Z",
     "keywords": "zackattack,  smbrelay,  youtube,  responder",
-    "description": "[SMB Relay](http://en.wikipedia.org/wiki/SMBRelay) has been around for a long while. I even have a post about using it along with LNK files here: [MS08-068 + MS10-046 = Fun until 2018](/blog/2012/02/11/ms08_068-ms10_046-fun-until-2018/..."
+    "description": "SMB Relay has been around for a long while. I even have a post about using it along with LNK files here: [MS08-068 + MS10-046 = Fun until 2018](/blog/2012/02/11/ms08_068-ms10_046-fun-until-2018/) Here is the problem though. Most..."
 }
     </script>
 
@@ -153,7 +153,7 @@
                 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>[SMB Relay](<a href="http://en.wikipedia.org/wiki/SMBRelay" class="bare">http://en.wikipedia.org/wiki/SMBRelay</a>) has been around for a long while. I even have a post about using it along with LNK files here: [MS08-068 + MS10-046 = Fun until 2018](/blog/2012/02/11/ms08_068-ms10_046-fun-until-2018/)</p>
+<p><a href="http://en.wikipedia.org/wiki/SMBRelay">SMB Relay</a> has been around for a long while. I even have a post about using it along with LNK files here: [MS08-068 + MS10-046 = Fun until 2018](/blog/2012/02/11/ms08_068-ms10_046-fun-until-2018/)</p>
 </div>
 <div class="paragraph">
 <p>Here is the problem though. Most of the tools to exploit it either catch the authentication in NTLMv2/NTLMv1 (which is not always easy to crack) or assume administrative access (because they attempt to PSEXEC with the incoming session). Well, since MS08-068 thats much harder to pin down. You have to know who is going to hit your relay server and what other location they might be an admin on. You also have to a service you want to run on that target.</p>
@@ -174,19 +174,19 @@
 <p><a href="https://github.com/SpiderLabs/Responder">SpiderLabs Responder</a></p>
 </li>
 <li>
-<p>[SMBRelayX in Impacket](<a href="http://corelabs.coresecurity.com/index.php?module=Wiki&amp;action=view&amp;type=tool&amp;name=Impacket" class="bare">http://corelabs.coresecurity.com/index.php?module=Wiki&amp;action=view&amp;type=tool&amp;name=Impacket</a>)</p>
+<p><a href="http://corelabs.coresecurity.com/index.php?module=Wiki&amp;action=view&amp;type=tool&amp;name=Impacket">SMBRelayX in Impacket</a></p>
 </li>
 <li>
-<p>[HTTP NTLM Relay Metasploit Module](<a href="https://github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/server/http_ntlmrelay.rb" class="bare">https://github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/server/http_ntlmrelay.rb</a>)</p>
+<p><a href="https://github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/server/http_ntlmrelay.rb">HTTP NTLM Relay Metasploit Module</a></p>
 </li>
 <li>
-<p>[SMB Relay PSExec Metasploit Module](<a href="https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/windows/smb/smb_relay.rb" class="bare">https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/windows/smb/smb_relay.rb</a>)</p>
+<p><a href="https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/windows/smb/smb_relay.rb">SMB Relay PSExec Metasploit Module</a></p>
 </li>
 <li>
-<p>[Oracle SMB Relay Metasploit Module](<a href="https://github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/admin/oracle/ora_ntlm_stealer.rb" class="bare">https://github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/admin/oracle/ora_ntlm_stealer.rb</a>)</p>
+<p><a href="https://github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/admin/oracle/ora_ntlm_stealer.rb">Oracle SMB Relay Metasploit Module</a></p>
 </li>
 <li>
-<p>[SAP SMB Relay Metasploit Module](<a href="https://github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/scanner/sap/sap_smb_relay.rb" class="bare">https://github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/scanner/sap/sap_smb_relay.rb</a>)</p>
+<p><a href="https://github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/scanner/sap/sap_smb_relay.rb">SAP SMB Relay Metasploit Module</a></p>
 </li>
 </ul>
 </div>
