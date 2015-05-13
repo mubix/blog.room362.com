@@ -1,13 +1,6 @@
----
-layout: post
-title: "OSX Persistence via PHP Webshell"
-date: 2014-09-09 15:25:27 -0400
-comments: true
-categories:
-- osx
-- persistence
-- php
----
+= OSX Persistence via PHP Webshell
+:hp-tags: osx, persistence, php, howto, webshell
+
 
 As I learn more and more about OSX I find things that surprise me. For instance, in this post I will be showing you how to, **with root or sudo priviledge**, enable the **built-in** apache server on OSX and it's **PHP** module....
 
@@ -39,9 +32,9 @@ And undoing the damage with:
 sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist
 ```
 
-![](/images/postimages/osx_apache.png)
+image::osx_apache.png[]
 
-After that, just drop your favorite PHP shell into the `/Library/WebServer/Documents/` directory and you're done. (My favorites are [b374k](https://github.com/b374k/b374k) and PHP Meterpreter.
+After that, just drop your favorite PHP shell into the `/Library/WebServer/Documents/` directory and you're done. (My favorites are link:https://github.com/b374k/b374k[b374k] and PHP Meterpreter.
 
-![](/images/postimages/osx_php_shell.png)
+image::osx_php_shell.png[]
 
