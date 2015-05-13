@@ -1,10 +1,4 @@
----
-layout: post
-title: "2015 ShmooCon Hiring"
-date: 2015-01-13 10:55:08 -0500
-comments: true
-categories: 
----
+# 2015 ShmooCon Hiring
 
 It's often tough from both hiring and job hunters to find one another at conferences. I think this is mostly because of a couple things.
 
