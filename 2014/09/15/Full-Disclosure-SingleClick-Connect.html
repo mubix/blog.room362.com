@@ -33,7 +33,7 @@
     <meta property="og:description" content="Update: I originally posted this to the Full Disclosure mailing list but for some reason it wasn&amp;#8217;t accepted via the moderator so I&amp;#8217;m posting it here. First, so that the information does get out there, and..." />
     <meta property="og:url" content="http://blog.room362.com/2014/09/15/Full-Disclosure-SingleClick-Connect.html" />
     <meta property="article:published_time" content="2014-09-15T04:00:00.000Z" />
-    <meta property="article:modified_time" content="2015-05-13T04:55:40.398Z" />
+    <meta property="article:modified_time" content="2015-05-16T06:24:33.702Z" />
     <meta property="article:tag" content="full disclosure" />
     <meta property="article:tag" content="singleclick" />
     
@@ -57,7 +57,7 @@
     "headline": "Full Disclosure - SingleClick Connect",
     "url": "http://blog.room362.com/2014/09/15/Full-Disclosure-SingleClick-Connect.html",
     "datePublished": "2014-09-15T04:00:00.000Z",
-    "dateModified": "2015-05-13T04:55:40.398Z",
+    "dateModified": "2015-05-16T06:24:33.702Z",
     "keywords": "full disclosure,  singleclick",
     "description": "Update: I originally posted this to the Full Disclosure mailing list but for some reason it wasn&amp;#8217;t accepted via the moderator so I&amp;#8217;m posting it here. First, so that the information does get out there, and..."
 }
@@ -184,12 +184,14 @@
 <div class="paragraph">
 <p>MySQL&#8217;s root password is blank and there are two other default accounts as well allowing easy privilege escalation to SYSTEM (via the SCC local account - see ISSUE #5):</p>
 </div>
-<div class="literalblock">
+<div class="listingblock">
 <div class="content">
-<pre>	dsl *7E1CA3417E3A159A9188657F44C7034A8E9FDFF2
-	tera *B2744A6BC5E8B1667BE5AED0111A2B941356E4A4
-^ uncracked at this point. For all I know they could be randomized at install</pre>
+<pre class="highlight"><code>dsl *7E1CA3417E3A159A9188657F44C7034A8E9FDFF2
+tera *B2744A6BC5E8B1667BE5AED0111A2B941356E4A4</code></pre>
 </div>
+</div>
+<div class="paragraph">
+<p>uncracked at this point. For all I know they could be randomized at install</p>
 </div>
 </div>
 </div>
@@ -199,16 +201,16 @@
 <div class="paragraph">
 <p>Another service listens on 0.0.0.0 via port 17667 that I haven&#8217;t been able to identify, however when you connect to the socket, it starts listing users, services, printers and interfaces (and that is without sending any data to it).</p>
 </div>
-<div class="literalblock">
+<div class="listingblock">
 <div class="content">
-<pre>$ ncat 172.16.102.149 17667
+<pre class="highlight"><code>$ ncat 172.16.102.149 17667
 8�TXPBASELINEXP_BASEP�RAdministratorGuestHelpAssistantSingleClick
 AdminSUPPORT_388945a0!aCACAMD PCNET Family PCI Ethernet Adapter -
 Packet Scheduler Miniport{47F69AAC-AE9A-40A9-88F5-A246A169CE92}�f�
 )�n�����f�f��fDownloadsC:\Documents and Settings\Administrator\My
 Documents\DownloadsMicrosoft XPS Document
 WriterXPSPortprinter#:2TPVM#:1TPVMACDWindows FirewallMicrosoftCreative
-Sound Blaster PCI</pre>
+Sound Blaster PCI</code></pre>
 </div>
 </div>
 </div>
@@ -225,54 +227,30 @@ Sound Blaster PCI</pre>
 <h2 id="_issue_5">ISSUE #5</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>A local account called "SingleClick Admin" is installed with a static
-password and added to the Administrators group. 3 services are also
-installed with the SingleClick Admin account as the user it runs
-under:</p>
+<p>A local account called "SingleClick Admin" is installed with a static password and added to the Administrators group. 3 services are also installed with the SingleClick Admin account as the user it runs under:</p>
 </div>
-<div class="literalblock">
+<div class="listingblock">
 <div class="content">
-<pre>Package d'authentification  : NTLM
+<pre class="highlight"><code>Package d'authentification  : NTLM
 Utilisateur principal       : SingleClick Admin
      msv1_0 :     lm{ 7a9793d3082ba83b790ce07b3bdf85ea }, ntlm{ 2c292724d67fcf310d1c4dd153467be8 }
      kerberos :     ~!3no1972!~
      ssp :
-     wdigest :     ~!3no1972!~</pre>
+     wdigest :     ~!3no1972!~
+
+ 8. Name         : _SC_Apache2.2
+ 8. Service      : .\SingleClick Admin
+ 8. Current      : ~!3no1972!~
+
+ 9. Name         : _SC_dsl-fs-sync
+ 9. Service      : .\SingleClick Admin
+ 9. Current      : ~!3no1972!~
+ 9. Old          : ~!3no1972!~
+
+10. Name         : _SC_hnmsvc
+10. Service      : .\SingleClick Admin
+10. Current      : ~!3no1972!~</code></pre>
 </div>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Name         : _SC_Apache2.2</p>
-</li>
-<li>
-<p>Service      : .\SingleClick Admin</p>
-</li>
-<li>
-<p>Current      : <sub>!3no1972!</sub></p>
-</li>
-<li>
-<p>Name         : _SC_dsl-fs-sync</p>
-</li>
-<li>
-<p>Service      : .\SingleClick Admin</p>
-</li>
-<li>
-<p>Current      : <sub>!3no1972!</sub></p>
-</li>
-<li>
-<p>Old          : <sub>!3no1972!</sub></p>
-</li>
-<li>
-<p>Name         : _SC_hnmsvc</p>
-</li>
-<li>
-<p>Service      : .\SingleClick Admin</p>
-</li>
-<li>
-<p>Current      : <sub>!3no1972!</sub></p>
-</li>
-</ol>
 </div>
 </div>
 </div>
@@ -290,11 +268,11 @@ Utilisateur principal       : SingleClick Admin
 <div class="paragraph">
 <p>The user account password that you use to register and connect remotely is stored in the database. This actually looks decently done, or I just haven&#8217;t been able to identify the storage</p>
 </div>
-<div class="literalblock">
+<div class="listingblock">
 <div class="content">
-<pre>Database:     p2p
-Table:           config_info
-Value:           “user_hash”</pre>
+<pre class="highlight"><code>Database:     p2p
+Table:        config_info
+Value:        “user_hash”</code></pre>
 </div>
 </div>
 </div>
@@ -305,12 +283,12 @@ Value:           “user_hash”</pre>
 <div class="paragraph">
 <p>Not sure what this registry key contains other than being named Cred4RA and assuming it&#8217;s credentials for the remote administration. Hopefully encrypted some how.</p>
 </div>
-<div class="literalblock">
+<div class="listingblock">
 <div class="content">
-<pre>[HKEY_LOCAL_MACHINE\SOFTWARE\SingleClick Systems\Advanced Networking
+<pre class="highlight"><code>[HKEY_LOCAL_MACHINE\SOFTWARE\SingleClick Systems\Advanced Networking
 Service\Settings\Remote Access]
 "ConfigState"=dword:00000001
-"Cred4RA"=hex:01,00,00 (snip snip)</pre>
+"Cred4RA"=hex:01,00,00 (snip snip)</code></pre>
 </div>
 </div>
 </div>
@@ -318,30 +296,44 @@ Service\Settings\Remote Access]
 <div class="sect1">
 <h2 id="_additional_information">Additional Information</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>+ Software original site: <a href="http://www.singleclickconnect.com/" class="bare">http://www.singleclickconnect.com/</a>
-+ Current site: <a href="http://www.vivedriveconnect.com/" class="bare">http://www.vivedriveconnect.com/</a>
-+ Direct download of software (for home use): <a href="http://downloads.vivedriveconnect.com/scc_setup.exe" class="bare">http://downloads.vivedriveconnect.com/scc_setup.exe</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Software original site: <a href="http://www.singleclickconnect.com/" class="bare">http://www.singleclickconnect.com/</a></p>
+</li>
+<li>
+<p>Current site: <a href="http://www.vivedriveconnect.com/" class="bare">http://www.vivedriveconnect.com/</a></p>
+</li>
+<li>
+<p>Direct download of software (for home use): <a href="http://downloads.vivedriveconnect.com/scc_setup.exe" class="bare">http://downloads.vivedriveconnect.com/scc_setup.exe</a></p>
+</li>
+</ul>
 </div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_vendor_contact">Vendor Contact</h2>
 <div class="sectionbody">
-<div class="literalblock">
-<div class="content">
-<pre>  + Email sent in **2010 July** about issues 1 - 5
-    + No reply, and forgot about until 2013 when the software was
-mentioned by a friend (if I had ever heard of it)
-  + **2013 April** - Email sent again, forwarding original, bounced back as
-account unknown
-  + **2014 August** - Accidentally found notes while searching for
-something else, attempted to relocate the software via Archive.org
-with the feeling that the site had gone away and happened upon the new
-site,, downloaded software, confirmed issues, and forwarded the email
-to the new point of contact at the new domain. No response.
-  + **2014 September**, Full disclosure.</pre>
-</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Email sent in <strong>2010 July</strong> about issues 1 - 5</p>
+</li>
+<li>
+<p>No reply, and forgot about until 2013 when the software was
+mentioned by a friend (if I had ever heard of it)</p>
+</li>
+<li>
+<p><strong>2013 April</strong> - Email sent again, forwarding original, bounced back as
+account unknown</p>
+</li>
+<li>
+<p><strong>2014 August</strong> - Accidentally found notes while searching for something else, attempted to relocate the software via Archive.org with the feeling that the site had gone away and happened upon the new site,, downloaded software, confirmed issues, and forwarded the email to the new point of contact at the new domain. No response.</p>
+</li>
+<li>
+<p><strong>2014 September</strong>, Full disclosure.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>Dell&#8230;&#8203; If your techs do actually use this software for support (I
