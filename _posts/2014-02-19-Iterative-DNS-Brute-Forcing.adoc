@@ -1,12 +1,5 @@
----
-layout: post
-title: "Iterative DNS Brute Forcing"
-date: 2014-02-19 23:33:50 -0500
-comments: true
-categories: 
-- scripting
-- dns
----
+= Iterative DNS Brute Forcing
+:hp-tags: scripting, dns
 
 Everyone has their list of hostnames they brute force domains with. In my last post I even mentioned a few ways to use one with XARGS or PARALLEL. But one fact about wordlist brute forcing is that there is no "one list to rule them all".  But over the years of doing DNS record collection I have noticed one thing, most domains have a large number of short hostnames that are easy to remember, usually 4 characters or less.
 
@@ -16,7 +9,7 @@ I modified it to suite my needs (just use the yield method) and here is what I e
 
 **Notice:** This script doesn't end, it will keep doing lookups on longer and longer hostnames until you hit CTRL-C
 
-```
+```ruby
 #!/usr/bin/env ruby
 
 #
