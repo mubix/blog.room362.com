@@ -33,7 +33,7 @@
     <meta property="og:description" content="So there was this blog post that talking about a number of ways to dump windows credentials by @lanjelot [definitly someone to follow] - here: https://www.securusglobal.com/community/2013/12/20/dumping-windows-credentials/ and at the very bottom of..." />
     <meta property="og:url" content="http://blog.room362.com/2014/05/14/Dumping-NTDSdit-domain-hashes-using-Samba.html" />
     <meta property="article:published_time" content="2014-05-14T04:00:00.000Z" />
-    <meta property="article:modified_time" content="2015-05-16T06:32:13.762Z" />
+    <meta property="article:modified_time" content="2015-05-16T06:35:02.174Z" />
     <meta property="article:tag" content="samba" />
     <meta property="article:tag" content="ntds.dit" />
     <meta property="article:tag" content="passwords" />
@@ -58,7 +58,7 @@
     "headline": "Dumping NTDS.dit domain hashes using Samba",
     "url": "http://blog.room362.com/2014/05/14/Dumping-NTDSdit-domain-hashes-using-Samba.html",
     "datePublished": "2014-05-14T04:00:00.000Z",
-    "dateModified": "2015-05-16T06:32:13.762Z",
+    "dateModified": "2015-05-16T06:35:02.174Z",
     "keywords": "samba,  ntds.dit,  passwords",
     "description": "So there was this blog post that talking about a number of ways to dump windows credentials by @lanjelot [definitly someone to follow] - here: https://www.securusglobal.com/community/2013/12/20/dumping-windows-credentials/ and at the very bottom of..."
 }
@@ -155,8 +155,17 @@
 <div class="paragraph">
 <p>What it boils down to is if you can position a system that can do DNS resolution to the target domain, and perform some other UDP traffic, you can fake join a samba server you control to a domain and it <strong><em>doesn&#8217;t require code execution in any way on the domain controller</em></strong>.</p>
 </div>
-<div class="paragraph">
-<p>Notice: I am not doing this on a Kali Linux box, there is already an install of Samba there and I didn&#8217;t want to try uninstalling or modifying the one installed.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+I am not doing this on a Kali Linux box, there is already an install of Samba there and I didn&#8217;t want to try uninstalling or modifying the one installed.
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>First, you need this patch:</p>
