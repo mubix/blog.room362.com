@@ -57,7 +57,7 @@ crack_yielding(chars)
 This worked but it was slow, so I sped it up using methods that I talked about in my last post and a quick modification:
 
 I used this:
-```
+``` ruby
 #!/usr/bin/env ruby
 
 #
@@ -136,6 +136,6 @@ wedcseus.cloudapp.net.	8	IN	A	137.116.48.250
 ```
 
 Happy bruting. Both scripts can be found on my gists page:
- 
-+ Domain version: https://gist.github.com/mubix/9107284
-+ Parallel version: https://gist.github.com/mubix/9107276
+
+* Domain version: https://gist.github.com/mubix/9107284
+* Parallel version: https://gist.github.com/mubix/9107276
