@@ -33,7 +33,7 @@
     <meta property="og:description" content="PSEXEC has been a staple for Windows post exploitation pivoting and system administration for a long while. The basic premise of how all &quot;psexec&quot; tools work is: (Optional) Upload a service executable (PSEXECSVC.EXE in the case of SysInternal&amp;#8217;..." />
     <meta property="og:url" content="http://blog.room362.com/2014/04/19/Executing-code-via-SMB-DCOM-without-PSEXEC.html" />
     <meta property="article:published_time" content="2014-04-19T04:00:00.000Z" />
-    <meta property="article:modified_time" content="2015-05-16T06:51:07.808Z" />
+    <meta property="article:modified_time" content="2015-05-16T06:53:32.477Z" />
     <meta property="article:tag" content="wmi" />
     <meta property="article:tag" content="wmis" />
     <meta property="article:tag" content="impacket" />
@@ -58,7 +58,7 @@
     "headline": "Executing code via SMB / DCOM without PSEXEC",
     "url": "http://blog.room362.com/2014/04/19/Executing-code-via-SMB-DCOM-without-PSEXEC.html",
     "datePublished": "2014-04-19T04:00:00.000Z",
-    "dateModified": "2015-05-16T06:51:07.808Z",
+    "dateModified": "2015-05-16T06:53:32.477Z",
     "keywords": "wmi,  wmis,  impacket",
     "description": "PSEXEC has been a staple for Windows post exploitation pivoting and system administration for a long while. The basic premise of how all &quot;psexec&quot; tools work is: (Optional) Upload a service executable (PSEXECSVC.EXE in the case of SysInternal&amp;#8217;..."
 }
@@ -174,7 +174,7 @@
 <p>Now, as you can guess, the uploading of a file, creating, starting, stopping, and deletion of services create quite the logs and forensic evidence.</p>
 </div>
 <div class="paragraph">
-<p>As you might imagine, thats not the best thing for us on the offensive side of infosec. Luckily big brother Microsoft provides another option, WMI (Windows Management Interface). I demonstrated the use of this in the past: [HERE](/blog/2013/06/10/volume-shadow-copy-ntdsdit-domain-hashes-remotely-part-1/) and [HERE](/blog/2013/10/06/dumping-a-domain-worth-of-passwords-with-mimikatz/)</p>
+<p>As you might imagine, thats not the best thing for us on the offensive side of infosec. Luckily big brother Microsoft provides another option, WMI (Windows Management Interface). I demonstrated the use of this in the past: <a href="/blog/2013/06/10/volume-shadow-copy-ntdsdit-domain-hashes-remotely-part-1/">HERE</a> and <a href="/blog/2013/10/06/dumping-a-domain-worth-of-passwords-with-mimikatz/">HERE</a></p>
 </div>
 <div class="paragraph">
 <p>The downside to using the WMIC directly is that you need a valid token or a valid password for it to work. Passing the hash didn&#8217;t used to be an available option.</p>
