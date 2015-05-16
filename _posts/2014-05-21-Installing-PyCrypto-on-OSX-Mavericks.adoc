@@ -3,7 +3,7 @@
 
 Keeping it here for notes and just in case anyone else runs into this same issue.
 
-```
+``` bash
 brew install pip
 sudo ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future pip install pycrypto
 ```
