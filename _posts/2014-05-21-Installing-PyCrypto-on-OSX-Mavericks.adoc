@@ -1,14 +1,5 @@
----
-layout: post
-title: "Installing PyCrypto on OSX Mavericks"
-date: 2014-05-21 11:12:42 -0400
-comments: true
-categories: 
-- python
-- pycrypto
-- osx
-- mavericks
----
+= Installing PyCrypto on OSX Mavericks
+:hp-tags: python, pycrypto, osx, mavericks
 
 Keeping it here for notes and just in case anyone else runs into this same issue.
 
