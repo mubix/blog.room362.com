@@ -27,7 +27,6 @@
 
     <link rel="canonical" href="http://blog.room362.com" />
     <link rel="prev" href="http://blog.room362.com/page/2/" />
-    <link rel="next" href="http://blog.room362.com/page/4/" />
     <meta name="generator" content="Ghost ?" />
     <link rel="alternate" type="application/rss+xml" title="Room362.com" href="http://blog.room362.com/rss" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
@@ -110,21 +109,6 @@
 <main class="content" role="main">
 
 
-    <article class="post tag-zackattack tag-smbrelay tag-youtube tag-responder">
-        <header class="post-header">
-            <span class="post-meta"><time datetime="2014-05-21">21 May 2014</time> </span>
-            <h2 class="post-title"><a href="http://blog.room362.com/2014/05/21/Effective-NTLM-SMB-Relaying.html">Effective NTLM / SMB Relaying</a></h2>
-
-        </header>
-        <section class="post-excerpt">
-            <p>SMB Relay has been around for a long while. I even have a post about using it along with LNK files here: MS08-068 + MS10-046 = Fun until 2018 Here is the problem though. Most of the tools to exploit it either catch the authentication in NTLMv2/NTLMv1 (which is not always easy to crack) or assume administrative access (because they attempt to PSEXEC with the incoming session). Well, since MS08-068&hellip;</p>
-        </section>
-        <a class="button read-more right small" href="http://blog.room362.com/2014/05/21/Effective-NTLM-SMB-Relaying.html">Read more</a>
-        <aside class="tags fi-pricetag-multiple">Posted on <a href="http://blog.room362.com/tag/zackattack">zackattack</a>, <a href="http://blog.room362.com/tag/smbrelay"> smbrelay</a>, <a href="http://blog.room362.com/tag/youtube"> youtube</a>, <a href="http://blog.room362.com/tag/responder"> responder</a></aside>
-        <div class="clearfix"></div>
-    </article>
-
-
     <article class="post tag-redteam tag-rant">
         <header class="post-header">
             <span class="post-meta"><time datetime="2014-05-20">20 May 2014</time> </span>
@@ -140,55 +124,39 @@
     </article>
 
 
-    <article class="post tag-samba tag-ntdsdit tag-passwords">
+    <article class="post tag-cli tag-dig tag-dns">
         <header class="post-header">
-            <span class="post-meta"><time datetime="2014-05-14">14 May 2014</time> </span>
-            <h2 class="post-title"><a href="http://blog.room362.com/2014/05/14/Dumping-NTDSdit-domain-hashes-using-Samba.html">Dumping NTDS.dit domain hashes using Samba</a></h2>
+            <span class="post-meta"><time datetime="2014-01-29">29 Jan 2014</time> </span>
+            <h2 class="post-title"><a href="http://blog.room362.com/2014/01/29/Hostname-bruteforcing-on-the-cheap.html">Hostname bruteforcing on the cheap</a></h2>
 
         </header>
         <section class="post-excerpt">
-            <p>So there was this blog post that talking about a number of ways to dump windows credentials by @lanjelot [definitly someone to follow] - here: https://www.securusglobal.com/community/2013/12/20/dumping-windows-credentials/ and at the very bottom of this post it says "AD Replication (EXPERIMENTAL)" What it boils down to is if you can position a system that can do DNS resolution to the target domai&hellip;</p>
+            <p>Quick update: As @MikeDamm points out, xargs has a -P option that can do the same thing I&#8217;m using parallel for. If you have a supported version of xargs you can use -P 0 to do the same thing as -j0 with parallel, but if your version doesn&#8217;t support the 0 you can simply use the same number parallel uses ala: cat subdomains.txt | xargs -P 122 -I subdomain dig +noall subdomain.microsoft.&hellip;</p>
         </section>
-        <a class="button read-more right small" href="http://blog.room362.com/2014/05/14/Dumping-NTDSdit-domain-hashes-using-Samba.html">Read more</a>
-        <aside class="tags fi-pricetag-multiple">Posted on <a href="http://blog.room362.com/tag/samba">samba</a>, <a href="http://blog.room362.com/tag/ntdsdit"> ntds.dit</a>, <a href="http://blog.room362.com/tag/passwords"> passwords</a></aside>
+        <a class="button read-more right small" href="http://blog.room362.com/2014/01/29/Hostname-bruteforcing-on-the-cheap.html">Read more</a>
+        <aside class="tags fi-pricetag-multiple">Posted on <a href="http://blog.room362.com/tag/cli">cli</a>, <a href="http://blog.room362.com/tag/dig"> dig</a>, <a href="http://blog.room362.com/tag/dns"> dns</a></aside>
         <div class="clearfix"></div>
     </article>
 
 
-    <article class="post tag-wmi tag-wmis tag-impacket">
+    <article class="post tag-rant">
         <header class="post-header">
-            <span class="post-meta"><time datetime="2014-04-19">19 Apr 2014</time> </span>
-            <h2 class="post-title"><a href="http://blog.room362.com/2014/04/19/Executing-code-via-SMB-DCOM-without-PSEXEC.html">Executing code via SMB / DCOM without PSEXEC</a></h2>
+            <span class="post-meta"><time datetime="2005-07-31">31 Jul 2005</time> </span>
+            <h2 class="post-title"><a href="http://blog.room362.com/2005/07/31/Done.html">Done</a></h2>
 
         </header>
         <section class="post-excerpt">
-            <p>PSEXEC has been a staple for Windows post exploitation pivoting and system administration for a long while. The basic premise of how all "psexec" tools work is: (Optional) Upload a service executable (PSEXECSVC.EXE in the case of SysInternal&#8217;s tool) to the ADMIN$ share Connect to the service manager on the remote host, and create a service based on either a local (to the remote system) exec&hellip;</p>
+            <p>Well, I finally got a working CMS type deal going on for a blog. I was going to write one but decided not to. Call it lazy or standing on the shoulders of programming gods, you choose.&hellip;</p>
         </section>
-        <a class="button read-more right small" href="http://blog.room362.com/2014/04/19/Executing-code-via-SMB-DCOM-without-PSEXEC.html">Read more</a>
-        <aside class="tags fi-pricetag-multiple">Posted on <a href="http://blog.room362.com/tag/wmi">wmi</a>, <a href="http://blog.room362.com/tag/wmis"> wmis</a>, <a href="http://blog.room362.com/tag/impacket"> impacket</a></aside>
-        <div class="clearfix"></div>
-    </article>
-
-
-    <article class="post tag-scripting tag-dns">
-        <header class="post-header">
-            <span class="post-meta"><time datetime="2014-02-19">19 Feb 2014</time> </span>
-            <h2 class="post-title"><a href="http://blog.room362.com/2014/02/19/Iterative-DNS-Brute-Forcing.html">Iterative DNS Brute Forcing</a></h2>
-
-        </header>
-        <section class="post-excerpt">
-            <p>Everyone has their list of hostnames they brute force domains with. In my last post I even mentioned a few ways to use one with XARGS or PARALLEL. But one fact about wordlist brute forcing is that there is no "one list to rule them all".  But over the years of doing DNS record collection I have noticed one thing, most domains have a large number of short hostnames that are easy to remember, usual&hellip;</p>
-        </section>
-        <a class="button read-more right small" href="http://blog.room362.com/2014/02/19/Iterative-DNS-Brute-Forcing.html">Read more</a>
-        <aside class="tags fi-pricetag-multiple">Posted on <a href="http://blog.room362.com/tag/scripting">scripting</a>, <a href="http://blog.room362.com/tag/dns"> dns</a></aside>
+        <a class="button read-more right small" href="http://blog.room362.com/2005/07/31/Done.html">Read more</a>
+        <aside class="tags fi-pricetag-multiple">Posted on <a href="http://blog.room362.com/tag/rant">rant</a></aside>
         <div class="clearfix"></div>
     </article>
 
 
     <nav class="pagination" role="navigation">
     	<a href="http://blog.room362.com/page/2/"" class="tiny secondary button fi-arrow-left"></a>
-    <span class="page-number">Page 3 of 4</span>
-    	<a href="http://blog.room362.com/page/4/"" class="tiny secondary button fi-arrow-right"></a>
+    <span class="page-number">Page 3 of 3</span>
 </nav>
 
     <div class="row">
