@@ -1,7 +1,7 @@
 = Dumping NTDS.dit domain hashes using Samba
 :hp-tags: samba, ntds, passwords
 
-So there was this blog post that talking about a number of ways to dump windows credentials by [@lanjelot](https://twitter.com/lanjelot) [definitly someone to follow] - here: https://www.securusglobal.com/community/2013/12/20/dumping-windows-credentials/ and at the very bottom of this post it says "**AD Replication (EXPERIMENTAL)**"
+So there was this blog post that talking about a number of ways to dump windows credentials by https://twitter.com/lanjelot[@lanjelot] [definitly someone to follow] - here: https://www.securusglobal.com/community/2013/12/20/dumping-windows-credentials/ and at the very bottom of this post it says "**AD Replication (EXPERIMENTAL)**"
 
 What it boils down to is if you can position a system that can do DNS resolution to the target domain, and perform some other UDP traffic, you can fake join a samba server you control to a domain and it **_doesn't require code execution in any way on the domain controller_**.
 
