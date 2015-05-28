@@ -30,17 +30,17 @@
     <meta property="og:site_name" content="Room362.com" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Dumping NTDS.dit domain hashes using Samba" />
-    <meta property="og:description" content="So there was this blog post that talking about a number of ways to dump windows credentials by @lanjelot [definitly someone to follow] - here: https://www.securusglobal.com/community/2013/12/20/dumping-windows-credentials/ and at the very bottom of..." />
+    <meta property="og:description" content="So there was this blog post that talking about a number of ways to dump windows credentials by [@lanjelot](https://twitter.com/lanjelot) [definitly someone to follow] - here: https://www.securusglobal.com/community/2013/12/20/dumping-windows-credentials/ and at..." />
     <meta property="og:url" content="http://blog.room362.com/2014/05/14/Dumping-NTDSdit-domain-hashes-using-Samba.html" />
     <meta property="article:published_time" content="2014-05-14T04:00:00.000Z" />
-    <meta property="article:modified_time" content="2015-05-16T06:35:02.174Z" />
+    <meta property="article:modified_time" content="2015-05-28T19:23:38.594Z" />
     <meta property="article:tag" content="samba" />
-    <meta property="article:tag" content="ntds.dit" />
+    <meta property="article:tag" content="ntds" />
     <meta property="article:tag" content="passwords" />
     
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Dumping NTDS.dit domain hashes using Samba" />
-    <meta name="twitter:description" content="So there was this blog post that talking about a number of ways to dump windows credentials by @lanjelot [definitly someone to follow] - here: https://www.securusglobal.com/community/2013/12/20/dumping-windows-credentials/ and at the very bottom of..." />
+    <meta name="twitter:description" content="So there was this blog post that talking about a number of ways to dump windows credentials by [@lanjelot](https://twitter.com/lanjelot) [definitly someone to follow] - here: https://www.securusglobal.com/community/2013/12/20/dumping-windows-credentials/ and at..." />
     <meta name="twitter:url" content="http://blog.room362.com/2014/05/14/Dumping-NTDSdit-domain-hashes-using-Samba.html" />
     
     <script type="application/ld+json">
@@ -58,9 +58,9 @@
     "headline": "Dumping NTDS.dit domain hashes using Samba",
     "url": "http://blog.room362.com/2014/05/14/Dumping-NTDSdit-domain-hashes-using-Samba.html",
     "datePublished": "2014-05-14T04:00:00.000Z",
-    "dateModified": "2015-05-16T06:35:02.174Z",
-    "keywords": "samba,  ntds.dit,  passwords",
-    "description": "So there was this blog post that talking about a number of ways to dump windows credentials by @lanjelot [definitly someone to follow] - here: https://www.securusglobal.com/community/2013/12/20/dumping-windows-credentials/ and at the very bottom of..."
+    "dateModified": "2015-05-28T19:23:38.594Z",
+    "keywords": "samba,  ntds,  passwords",
+    "description": "So there was this blog post that talking about a number of ways to dump windows credentials by [@lanjelot](https://twitter.com/lanjelot) [definitly someone to follow] - here: https://www.securusglobal.com/community/2013/12/20/dumping-windows-credentials/ and at..."
 }
     </script>
 
@@ -68,7 +68,7 @@
     <link rel="alternate" type="application/rss+xml" title="Room362.com" href="http://blog.room362.com/rss" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
 </head>
-<body class="post-template tag-samba tag-ntdsdit tag-passwords">
+<body class="post-template tag-samba tag-ntds tag-passwords">
 
 <div id="outdated">
     <h6>Your browser is out-of-date!</h6>
@@ -141,7 +141,7 @@
 
 <main class="content" role="main">
 
-    <article class="post tag-samba tag-ntdsdit tag-passwords">
+    <article class="post tag-samba tag-ntds tag-passwords">
 
 
             <h1 class="post-title">Dumping NTDS.dit domain hashes using Samba</h1>
@@ -150,22 +150,13 @@
 
             <section class="post-content">
                 <div class="paragraph">
-<p>So there was this blog post that talking about a number of ways to dump windows credentials by <a href="https://twitter.com/lanjelot">@lanjelot</a> [definitly someone to follow] - here: <a href="https://www.securusglobal.com/community/2013/12/20/dumping-windows-credentials/" class="bare">https://www.securusglobal.com/community/2013/12/20/dumping-windows-credentials/</a> and at the very bottom of this post it says "<strong>AD Replication (EXPERIMENTAL)</strong>"</p>
+<p>So there was this blog post that talking about a number of ways to dump windows credentials by [@lanjelot](<a href="https://twitter.com/lanjelot" class="bare">https://twitter.com/lanjelot</a>) [definitly someone to follow] - here: <a href="https://www.securusglobal.com/community/2013/12/20/dumping-windows-credentials/" class="bare">https://www.securusglobal.com/community/2013/12/20/dumping-windows-credentials/</a> and at the very bottom of this post it says "<strong>AD Replication (EXPERIMENTAL)</strong>"</p>
 </div>
 <div class="paragraph">
 <p>What it boils down to is if you can position a system that can do DNS resolution to the target domain, and perform some other UDP traffic, you can fake join a samba server you control to a domain and it <strong><em>doesn&#8217;t require code execution in any way on the domain controller</em></strong>.</p>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-I am not doing this on a Kali Linux box, there is already an install of Samba there and I didn&#8217;t want to try uninstalling or modifying the one installed.
-</td>
-</tr>
-</table>
+<div class="paragraph">
+<p>Notice: I am not doing this on a Kali Linux box, there is already an install of Samba there and I didn&#8217;t want to try uninstalling or modifying the one installed.</p>
 </div>
 <div class="paragraph">
 <p>First, you need this patch:</p>
@@ -310,7 +301,7 @@ uber_history0:1105:444d1edcad01ae08f49f073e12e8cc14:88e4d9fabaecf3dec18dd8090552
 <div class="paragraph">
 <p>Game over. The great thing is that it never actually shows up as a joined box in the domain, and as far as I can tell the only log on the real DC is the login success of a domain admin. Plus one of the huge benefits to this method is that once you have the database Samba makes it really easy to query information like group membership or users info after the fact, not just hashes.</p>
 </div>
-                        <aside class="tags fi-pricetag-multiple">Posted on <a href="http://blog.room362.com/tag/samba">samba</a>, <a href="http://blog.room362.com/tag/ntdsdit"> ntds.dit</a>, <a href="http://blog.room362.com/tag/passwords"> passwords</a></aside>
+                        <aside class="tags fi-pricetag-multiple">Posted on <a href="http://blog.room362.com/tag/samba">samba</a>, <a href="http://blog.room362.com/tag/ntds"> ntds</a>, <a href="http://blog.room362.com/tag/passwords"> passwords</a></aside>
             </section>
             <hr>
             <footer class="post-footer">
