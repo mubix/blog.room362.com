@@ -33,9 +33,11 @@
     <meta property="og:description" content="Everyone has their list of hostnames they brute force domains with. In my last post I even mentioned a few ways to use one with XARGS or PARALLEL. But one fact about wordlist brute forcing is that there is no..." />
     <meta property="og:url" content="http://blog.room362.com/2014/02/19/Iterative-DNS-Brute-Forcing.html" />
     <meta property="article:published_time" content="2014-02-19T05:00:00.000Z" />
-    <meta property="article:modified_time" content="2015-05-16T07:11:10.966Z" />
-    <meta property="article:tag" content="scripting" />
+    <meta property="article:modified_time" content="2015-05-29T00:43:03.904Z" />
+    <meta property="article:tag" content="bash" />
     <meta property="article:tag" content="dns" />
+    <meta property="article:tag" content="xargs" />
+    <meta property="article:tag" content="parallel" />
     
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Iterative DNS Brute Forcing" />
@@ -57,8 +59,8 @@
     "headline": "Iterative DNS Brute Forcing",
     "url": "http://blog.room362.com/2014/02/19/Iterative-DNS-Brute-Forcing.html",
     "datePublished": "2014-02-19T05:00:00.000Z",
-    "dateModified": "2015-05-16T07:11:10.966Z",
-    "keywords": "scripting,  dns",
+    "dateModified": "2015-05-29T00:43:03.904Z",
+    "keywords": "bash,  dns,  xargs,  parallel",
     "description": "Everyone has their list of hostnames they brute force domains with. In my last post I even mentioned a few ways to use one with XARGS or PARALLEL. But one fact about wordlist brute forcing is that there is no..."
 }
     </script>
@@ -67,7 +69,7 @@
     <link rel="alternate" type="application/rss+xml" title="Room362.com" href="http://blog.room362.com/rss" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
 </head>
-<body class="post-template tag-scripting tag-dns">
+<body class="post-template tag-bash tag-dns tag-xargs tag-parallel">
 
 <div id="outdated">
     <h6>Your browser is out-of-date!</h6>
@@ -140,7 +142,7 @@
 
 <main class="content" role="main">
 
-    <article class="post tag-scripting tag-dns">
+    <article class="post tag-bash tag-dns tag-xargs tag-parallel">
 
 
             <h1 class="post-title">Iterative DNS Brute Forcing</h1>
@@ -162,7 +164,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-ruby" data-lang="ruby">#!/usr/bin/env ruby
+<pre class="highlight"><code>#!/usr/bin/env ruby
 
 #
 ## Brute code stolen form: https://gist.github.com/petehamilton/4755855
@@ -213,7 +215,7 @@ crack_yielding(chars)</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-ruby" data-lang="ruby">#!/usr/bin/env ruby
+<pre class="highlight"><code>#!/usr/bin/env ruby
 
 #
 ## Brute code stolen form: https://gist.github.com/petehamilton/4755855
@@ -310,7 +312,7 @@ wedcseus.cloudapp.net.	8	IN	A	137.116.48.250
 </li>
 </ul>
 </div>
-                        <aside class="tags fi-pricetag-multiple">Posted on <a href="http://blog.room362.com/tag/scripting">scripting</a>, <a href="http://blog.room362.com/tag/dns"> dns</a></aside>
+                        <aside class="tags fi-pricetag-multiple">Posted on <a href="http://blog.room362.com/tag/bash">bash</a>, <a href="http://blog.room362.com/tag/dns"> dns</a>, <a href="http://blog.room362.com/tag/xargs"> xargs</a>, <a href="http://blog.room362.com/tag/parallel"> parallel</a></aside>
             </section>
             <hr>
             <footer class="post-footer">
