@@ -1,5 +1,5 @@
 = Iterative DNS Brute Forcing
-:hp-tags: scripting, dns
+:hp-tags: bash, dns, xargs, parallel
 
 Everyone has their list of hostnames they brute force domains with. In my last post I even mentioned a few ways to use one with XARGS or PARALLEL. But one fact about wordlist brute forcing is that there is no "one list to rule them all".  But over the years of doing DNS record collection I have noticed one thing, most domains have a large number of short hostnames that are easy to remember, usually 4 characters or less.
 
@@ -9,7 +9,7 @@ I modified it to suite my needs (just use the yield method) and here is what I e
 
 **Notice:** This script doesn't end, it will keep doing lookups on longer and longer hostnames until you hit CTRL-C
 
-```ruby
+```
 #!/usr/bin/env ruby
 
 #
@@ -57,7 +57,7 @@ crack_yielding(chars)
 This worked but it was slow, so I sped it up using methods that I talked about in my last post and a quick modification:
 
 I used this:
-``` ruby
+```
 #!/usr/bin/env ruby
 
 #
@@ -136,6 +136,6 @@ wedcseus.cloudapp.net.	8	IN	A	137.116.48.250
 ```
 
 Happy bruting. Both scripts can be found on my gists page:
-
-* Domain version: https://gist.github.com/mubix/9107284
-* Parallel version: https://gist.github.com/mubix/9107276
+ 
+- Domain version: https://gist.github.com/mubix/9107284
+- Parallel version: https://gist.github.com/mubix/9107276
