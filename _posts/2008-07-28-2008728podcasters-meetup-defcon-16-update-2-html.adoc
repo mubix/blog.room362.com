@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-07-28 20:54:16+00:00
-layout: post
-slug: 2008728podcasters-meetup-defcon-16-update-2-html
-title: Podcaster's Meetup @ DEFCON 16 Update 2
-wordpress_id: 441
-tags:
-- Uncategorized
----
+= Podcaster's Meetup @ DEFCON 16 Update 2
+:hp-tags: Uncategorized
 
 It’s almost that time. DefCon is right around the corner and things are coming together nicely. Here is where we stand and a rough schedule of events:  
 

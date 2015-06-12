@@ -1,16 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-10-29 18:03:47+00:00
-layout: post
-slug: 20071029history-is-mad-html
-title: History is MAD
-wordpress_id: 478
-categories:
-- Rant
-tags:
-- Rant
----
+= History is MAD
+:hp-tags: Rant, Rant
 
 It is not often, especially this day in age, that shakes one to the core. This is one of those times.  Original Source: http://www.eightcitiesmap.com/transcript_bc.htm
 

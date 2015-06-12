@@ -1,16 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-07-21 03:42:17+00:00
-layout: post
-slug: 2008721iphone-apps-vs-iphone-web-apps-html
-title: iPhone Apps vs iPhone Web Apps
-wordpress_id: 444
-categories:
-- Rant
-tags:
-- Rant
----
+= iPhone Apps vs iPhone Web Apps
+:hp-tags: Rant, Rant
 
 I am truely getting tired of iPhone "Web Apps". I created the title like I was going to give them a fair chance, but they truely have ZERO integration into the actual phone. They do have a pretty interface and I have to give props to some of the design developers, but does this seem more of a copout to anyone else?
 

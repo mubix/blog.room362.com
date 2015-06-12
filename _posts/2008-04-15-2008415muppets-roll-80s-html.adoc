@@ -1,13 +1,4 @@
----
-author: mubix
-comments: true
-date: 2008-04-15 03:31:20+00:00
-layout: post
-slug: 2008415muppets-roll-80s-html
-title: Muppets roll 80s
-wordpress_id: 465
-tags:
-- Funny
----
+= Muppets roll 80s
+:hp-tags: Funny
 
 [youtube=http://www.youtube.com/watch?v=3AdFA6WWJ7E&w;=425&h;=355]

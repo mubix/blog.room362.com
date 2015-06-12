@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-08-26 10:14:12+00:00
-layout: post
-title: Pass the Hash Metasploit Demo
-categories:
-- pass the hash
----
+= Pass the Hash Metasploit Demo
+:hp-tags: pass the hash
 
 Here is a quick no nonsense PTH video I made for the guys over at [SecurityAegis](http://www.securityaegis.com/)
 

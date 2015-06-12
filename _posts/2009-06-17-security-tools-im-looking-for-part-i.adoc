@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-06-17 15:14:16+00:00
-layout: post
-title: Security Tools I'm Looking For Part I
-categories:
-- wishlist
-- ideas
----
+= Security Tools I'm Looking For Part I
+:hp-tags: wishlist, ideas
 
 There are a lot of tools that I find in my endeavors would be really helpful, but can’t find on the net for whatever reason.  
 

@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-09-17 06:23:21+00:00
-layout: post
-title: '#DerbyCon Approaches...'
-categories:
-- presentations
-- cons
----
+= '#DerbyCon Approaches...'
+:hp-tags: presentations, cons
 
 Chris Gates ([@carnal0wnage](https://twitter.com/carnal0wnage)) and I will be speaking at DerbyCon next week:
 

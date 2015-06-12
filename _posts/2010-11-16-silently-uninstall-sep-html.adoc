@@ -1,15 +1,5 @@
----
-author: mubix
-comments: true
-date: 2010-11-16 05:00:00+00:00
-layout: post
-title: Silently uninstall SEP
-categories:
-- metasploit
-- meterpreter
-- symantec
-- sep
----
+= Silently uninstall SEP
+:hp-tags: metasploit, meterpreter, symantec, sep
 
 Uninstallation is not new
 

@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-07-31 16:13:12+00:00
-layout: post
-slug: 2008731missrftc-makes-twitter-history-html
-title: '@MissRFTC makes twitter history'
-wordpress_id: 439
-tags:
-- Funny
----
+= '@MissRFTC makes twitter history'
+:hp-tags: Funny
 
 [![](http://s3.media.squarespace.com/production/438411/4879756/uploads/MissRFTC.serendipityThumb.png)](http://s3.media.squarespace.com/production/438411/4879756/uploads/MissRFTC.serendipityThumb.png)
 

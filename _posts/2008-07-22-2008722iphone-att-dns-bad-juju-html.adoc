@@ -1,16 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-07-22 14:00:09+00:00
-layout: post
-slug: 2008722iphone-att-dns-bad-juju-html
-title: iPhone + ATT + DNS = Bad Juju
-wordpress_id: 443
-categories:
-- Hacking
-tags:
-- Hacking
----
+= iPhone + ATT + DNS = Bad Juju
+:hp-tags: Hacking, Hacking
 
 So, now that your feed reader is full up of all the DNS problems, I would like to present you with one more tidbit. How many of you have checked your iPhone, Blackberry, or other web enabled mobile device against this vulnerability?  I did, and wasn’t happy.  
 

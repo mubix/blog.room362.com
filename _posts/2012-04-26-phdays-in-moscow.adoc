@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2012-04-26 21:33:58+00:00
-layout: post
-title: phDays in Moscow
-categories:
-- mimikatz
-- presentations
----
+= phDays in Moscow
+:hp-tags: mimikatz, presentations
 
 A friend of mine is presenting at phDays in Moscow at the end of May. If you are in the area, or can be, I would highly recommend you attend, and in particularly his talk.
 

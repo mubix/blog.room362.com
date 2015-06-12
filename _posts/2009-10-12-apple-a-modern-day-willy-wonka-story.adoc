@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-10-12 15:42:00+00:00
-layout: post
-title: 'APPLE: A Modern Day Willy Wonka Story'
-categories:
-- internet
-- rant
----
+= 'APPLE: A Modern Day Willy Wonka Story'
+:hp-tags: internet, rant
 
 Yes, I just called everyone who works at Apple an Oompa Loompa, but I digress:
 

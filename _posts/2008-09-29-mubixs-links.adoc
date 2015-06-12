@@ -1,11 +1,4 @@
----
-author: mubix
-comments: true
-date: 2008-09-29 20:06:03+00:00
-layout: post
-title: Mubix's Links
-categories:
-- internet
----
+= Mubix's Links
+:hp-tags: internet
 
 So there are all kinds of links that I find and queue up to look at but hate keeping them open in tabs, and they aren’t always in Google Reader and I don’t want to spam to twitter, so [Mubix’s Links](http://mubix.blogspot.com/) was born. I setup [ScribeFire](http://www.scribefire.com/) with a new blogspot account and now, no more tabs, it truely feels like an application of GTD. Plus it allows anyone who is interested to follow along via the blogspot feed. As [edsmiley](http://edsmiley.com/) commented in IRC something to the effect of that he doesn’t need all the security blog feeds he just lets me do all the work.

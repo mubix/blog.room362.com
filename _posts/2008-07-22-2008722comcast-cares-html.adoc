@@ -1,16 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-07-22 17:28:39+00:00
-layout: post
-slug: 2008722comcast-cares-html
-title: Comcast Cares?
-wordpress_id: 442
-categories:
-- Rant
-tags:
-- Rant
----
+= Comcast Cares?
+:hp-tags: Rant, Rant
 
 So after my last post, which autotwittered, I got a reply from a guy by the name of [Frank Eliason](http://www.google.com/search?hl=en&q=Frank+Eliason&btnG=Google+Search), who goes by the handle “[ComcastCares](http://twitter.com/comcastcares)” on Twitter. And this is how the converation went:  
 

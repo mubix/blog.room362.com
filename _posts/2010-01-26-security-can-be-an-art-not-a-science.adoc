@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2010-01-26 14:44:37+00:00
-layout: post
-title: Security (CAN BE) an ART not a SCIENCE
-categories:
-- rant
----
+= Security (CAN BE) an ART not a SCIENCE
+:hp-tags: rant
 
 This is far from a new idea, however it's not something that is easily provable. So I had an idea this morning. I posed the following question on Twitter:
 

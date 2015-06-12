@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-03-04 19:24:25+00:00
-layout: post
-title: PHP Web Shell
-categories:
-- ccdc
-- webshell
----
+= PHP Web Shell
+:hp-tags: ccdc, webshell
 
 This is mostly for my memory for CCDC
 

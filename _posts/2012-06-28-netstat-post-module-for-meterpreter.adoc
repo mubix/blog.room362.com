@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2012-06-28 13:18:52+00:00
-layout: post
-title: Netstat Post Module for Meterpreter
-categories:
-- metasploit
-- meterpreter
----
+= Netstat Post Module for Meterpreter
+:hp-tags: metasploit, meterpreter
 
 Submitted it to MSF via pull request here: [https://github.com/rapid7/metasploit-framework/pull/538](https://github.com/rapid7/metasploit-framework/pull/538)
 

@@ -1,16 +1,5 @@
----
-author: mubix
-comments: true
-date: 2012-10-06 03:02:45+00:00
-layout: post
-title: Lab Setup - Windows Proxy and Egress Filtering
-categories:
-- analogx
-- lab
-- peerblock
-- proxy
-- tools
----
+= Lab Setup - Windows Proxy and Egress Filtering
+:hp-tags: analogx, lab, peerblock, proxy, tools
 
 [pfSense](http://www.pfsense.org) is an excellent free way of including a firewall / ids / proxy in your lab or VMs. It runs small and fast, but even as simple as pfsense is sometimes you need a bit less complexity and speed of configuration.
 

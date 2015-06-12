@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-11-14 20:38:34+00:00
-layout: post
-title: ShmooCon Room Sharing
-categories:
-- shmoocon
-- cons
----
+= ShmooCon Room Sharing
+:hp-tags: shmoocon, cons
 
 ## Update - Shmoocon already had a list:
 

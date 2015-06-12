@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-05-09 02:12:22+00:00
-layout: post
-slug: 200759hak5-2x10-usb-goodies-with-encryption-html
-title: Hak.5 2x10 - USB Goodies with Encryption
-wordpress_id: 516
-tags:
-- Uncategorized
----
+= Hak.5 2x10 - USB Goodies with Encryption
+:hp-tags: Uncategorized
 
 Ok, so I got a lot of questions of how everything works on my encrypted U3 drive. I started off with the  
   

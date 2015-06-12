@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-06-27 13:44:54+00:00
-layout: post
-title: Linksys WRT54G Ultimate Hacking
-categories:
-- wireless
----
+= Linksys WRT54G Ultimate Hacking
+:hp-tags: wireless
 
 ![](/images/postimages/200706_wrt54g_1.png)  
   

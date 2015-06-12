@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2012-06-15 14:55:55+00:00
-layout: post
-title: Integration of Mimikatz into Metasploit Stage1
-categories:
-- metasploit
-- mimikatz
-- railgun
----
+= Integration of Mimikatz into Metasploit Stage1
+:hp-tags: metasploit, mimikatz, railgun
 
 One of the powers of Metasploit is it's ability to stay memory resident. Through the use of reflective DLL injection even keeping new functionality the attack loads from ever touching disk. Well, the first thing I wanted to do with Mimikatz is get to that same level.
 

@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-11-10 01:57:35+00:00
-layout: post
-slug: 20071110podcasters-meetup-html
-title: Podcasters Meetup
-wordpress_id: 475
-tags:
-- Uncategorized
----
+= Podcasters Meetup
+:hp-tags: Uncategorized
 
 <p>So, last <a href="http://www.shmoocon.org/">Shmoocon (2007)</a> was my second year running at the con and we did something that hasn't been done before: A Security/Hacker's Pod/Vidcast meetup at the conference which gave a chance for their listeners/viewers to meet the people behind the mic/camera.  Well, a little less than one year later and plans for the next meetup are already underway. And, as I learn the ropes of putting something like this together we will be getting better venues and hopefully down the road meetups will pop up at <a href="http://www.defcon.org">Defcon</a> and other conferences.  Here are the details so far:</p>  
 <ul>  

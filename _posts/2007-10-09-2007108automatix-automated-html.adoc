@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-10-09 03:32:04+00:00
-layout: post
-slug: 2007108automatix-automated-html
-title: Automatix automated.
-wordpress_id: 484
-tags:
-- Uncategorized
----
+= Automatix automated.
+:hp-tags: Uncategorized
 
   
 Original Source: [http://ubuntu.qio.dk/ubuntu/  

@@ -1,16 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-09-03 15:58:16+00:00
-layout: post
-slug: 200893brass-tax-on-chrome-html
-title: Brass Tax on Chrome
-wordpress_id: 434
-categories:
-- Rant
-tags:
-- Rant
----
+= Brass Tax on Chrome
+:hp-tags: Rant, Rant
 
 So there is already an exploit: [http://blogs.zdnet.com/security/?p=1843](http://blogs.zdnet.com/security/?p=1843)  
   

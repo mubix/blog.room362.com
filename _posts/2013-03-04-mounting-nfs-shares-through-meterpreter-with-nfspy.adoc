@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2013-03-04 21:20:19+00:00
-layout: post
-title: Mounting NFS shares through Meterpreter with NfSpy
-categories:
-- tools
-- nfs
----
+= Mounting NFS shares through Meterpreter with NfSpy
+:hp-tags: tools, nfs
 
 You've found an NFS share on a pentest, it's sharing out your target's home directories (/home) and some SAN with all of the Windows AD users "home" directories under /volumes/users/. You only have a meterpreter session though... enough back story, problem is that Metasploit doesn't really have any auxiliary modules or otherwise to access the things on those shares. Please correct me if I'm wrong, but there also aren't any tools for talking to NFS shares over TCP only proxies.
 

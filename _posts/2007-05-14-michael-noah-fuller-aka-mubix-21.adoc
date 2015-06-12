@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-05-14 03:34:21+00:00
-layout: post
-title: Michael Noah Fuller a.k.a. Mubix 2.1
-categories:
-- family
----
+= Michael Noah Fuller a.k.a. Mubix 2.1
+:hp-tags: family
 
 ![](/images/postimages/babyandmomma.jpg)  
 

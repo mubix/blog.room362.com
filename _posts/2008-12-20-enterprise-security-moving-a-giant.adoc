@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-12-20 03:08:43+00:00
-layout: post
-title: Enterprise Security - Moving a Giant
-categories:
-- rant
----
+= Enterprise Security - Moving a Giant
+:hp-tags: rant
 
 Yesterday on Twitter I posed 3 questions:  
   

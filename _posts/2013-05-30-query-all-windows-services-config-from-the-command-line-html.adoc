@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2013-05-30 02:56:57+00:00
-layout: post
-title: Query all windows services config from the command line
-categories:
-- cli
-- privesc
-- services
----
+= Query all windows services config from the command line
+:hp-tags: cli, privesc, services
 
 This is how I did it:
 

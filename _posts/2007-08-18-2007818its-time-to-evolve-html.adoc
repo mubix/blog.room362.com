@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-08-18 03:44:13+00:00
-layout: post
-slug: 2007818its-time-to-evolve-html
-title: It's time to Evolve
-wordpress_id: 498
-tags:
-- Uncategorized
----
+= It's time to Evolve
+:hp-tags: Uncategorized
 
 Ok, admit it. You have searched for your name in Google, Technorati, or egoSurf.org just to see how you were ranked. You may have even gone to the extent of using RSS feed searches or services such as MonitorThis to keep tabs on your name/handle.  
   

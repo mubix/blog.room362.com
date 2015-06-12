@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-06-10 13:21:05+00:00
-layout: post
-title: PassiveX fun with Metasploit
-categories:
-- metasploit
-- passivex
----
+= PassiveX fun with Metasploit
+:hp-tags: metasploit, passivex
 
 I posted this walkthrough to the Metasploit mailing list, but thought that it would serve well here as well. Especially with the recent iPhone 3.0 “Special” download spam I recently received. The binary comes out to a whopping 97 bytes for the stager. Would be a blazing fast download and coupled with the [IExpress “hack”](/archives/440-metasploit-2.html) would make for an very hard to spot payload.
 

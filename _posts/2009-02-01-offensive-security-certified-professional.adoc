@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-02-01 18:53:00+00:00
-layout: post
-title: Offensive Security Certified Professional
-categories:
-- certifications
----
+= Offensive Security Certified Professional
+:hp-tags: certifications
 
 I recently obtained the status **Offensive Security Certified Professional**. It is one of the best courses I have ever taken. It challenged me to think and learn new skills on the fly. You start the course with a bunch of video files, a huge pdf and an lzm file to get your VPN setup. It is self paced and intense. The topics cover everything from [Back|Track](http://www.remote-exploit.org/) basics to the HXDEF rootkit.  
   

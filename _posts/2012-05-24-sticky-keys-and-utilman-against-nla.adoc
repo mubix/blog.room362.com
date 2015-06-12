@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2012-05-24 17:10:24+00:00
-layout: post
-title: Sticky Keys and Utilman against NLA
-categories:
-- persistance
-- sethc
-- utilman
----
+= Sticky Keys and Utilman against NLA
+:hp-tags: persistance, sethc, utilman
 
 At CCDC, Sticky Keys via RDP was a very successful re-entry point for the Red Team. You can read more about how this works here:
 

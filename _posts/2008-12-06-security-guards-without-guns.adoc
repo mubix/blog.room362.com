@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-12-06 22:00:00+00:00
-layout: post
-title: Security Guards without guns
-categories:
-- rant
----
+= Security Guards without guns
+:hp-tags: rant
 
 ![](/images/postimages/200812_securityguard_1.png)   
   

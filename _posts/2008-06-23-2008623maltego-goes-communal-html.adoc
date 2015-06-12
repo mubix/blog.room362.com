@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-06-23 19:11:31+00:00
-layout: post
-slug: 2008623maltego-goes-communal-html
-title: Maltego Goes Communal
-wordpress_id: 451
-tags:
-- Pimping
----
+= Maltego Goes Communal
+:hp-tags: Pimping
 
 Now that everyone and their mother has posted about [Back|Track Final](http://www.offensive-security.com/) being released I feel that I am safe in disclosing that information. But on to the topic, with said release, the folks over at [Paterva](http://www.paterva.com) have released a “Community” edition of [Maltego](http://www.paterva.com/maltego/). Straight from the horses mouth, here are the limitations:  
 

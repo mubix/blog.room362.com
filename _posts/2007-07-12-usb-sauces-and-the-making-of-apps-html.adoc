@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-07-12 11:39:35+00:00
-layout: post
-slug: 2007712usb-sauces-and-the-making-of-apps-html
-title: USB Sauces and the making of Apps
-wordpress_id: 508
-tags:
-- Uncategorized
----
+= USB Sauces and the making of Apps
+:hp-tags: Uncategorized
 
 A couple people have asked for links on where I got this portable app or that, well, all over really. Here are a few links to get you started:  
 <a href="http://www.dirk-loss.de/win-tools.htm"  title="http://www.dirk-loss.de/win-tools.htm">http://www.dirk-loss.de/win-tools.htm</a>  

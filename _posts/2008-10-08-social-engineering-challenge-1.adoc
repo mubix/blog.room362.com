@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-10-08 02:29:17+00:00
-layout: post
-title: 'Social Engineering Challenge #1'
-categories:
-- social engineering
----
+= 'Social Engineering Challenge #1'
+:hp-tags: social engineering
 
 Here is the scenerio:  
   

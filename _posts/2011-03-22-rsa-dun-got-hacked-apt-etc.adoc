@@ -1,17 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-03-22 02:07:34+00:00
-layout: post
-title: RSA Dun-got hacked! APT etc..
-categories:
-- appsec
-- apt
-- attackers
-- auroa
-- evilbadguys
-- fud
----
+= RSA Dun-got hacked! APT etc..
+:hp-tags: appsec, apt, attackers, auroa, evilbadguys, fud
 
 I felt left out...
 

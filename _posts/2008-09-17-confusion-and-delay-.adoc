@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-09-17 13:55:39+00:00
-layout: post
-title: Confusion and Delay
-categories:
-- rant
-- excuses
----
+= Confusion and Delay
+:hp-tags: rant, excuses
 
 Due to a PEBKAC error with the ID 10 T, I have had to retype parts 2 and 3, which were ready to go out the door.  
   

@@ -1,16 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-08-06 16:18:57+00:00
-layout: post
-slug: 200886defcon-presents-come-early-html
-title: Defcon presents come early!
-wordpress_id: 437
-categories:
-- Hacking
-tags:
-- Hacking
----
+= Defcon presents come early!
+:hp-tags: Hacking, Hacking
 
 So, just monitoring [twitter for Defcon](http://search.twitter.com/search?q=defcon) tweets and came across this one: [Matthewneely status update 878833018](http://twitter.com/matthewneely/statuses/878833018)  
   

@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2012-09-01 05:16:14+00:00
-layout: post
-title: Old School On-target NBNS Spoofing
-categories:
-- nbns
-- tools
----
+= Old School On-target NBNS Spoofing
+:hp-tags: nbns, tools
 
 One of pen testers favorite attacks is NBNS spoofing. Now Wesley who I originally learned this attack from, traced this back to sid ([http://www.notsosecure.com/folder2/2007/03/14/abusing-tcpip-name-resolution-in-windows-to-carry-out-phishing-attacks/](http://www.notsosecure.com/folder2/2007/03/14/abusing-tcpip-name-resolution-in-windows-to-carry-out-phishing-attacks/)) . Wesley's stuff can be found here: [http://www.mcgrewsecurity.com/tools/nbnspoof/](http://www.mcgrewsecurity.com/tools/nbnspoof/)
 

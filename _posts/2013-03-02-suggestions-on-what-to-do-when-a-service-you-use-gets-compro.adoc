@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2013-03-02 21:02:22+00:00
-layout: post
-title: Suggestions on what to do when a service you use gets compromised
-categories:
-- internet
----
+= Suggestions on what to do when a service you use gets compromised
+:hp-tags: internet
 
 It seems like every week there is a new compromise of some service or another. But as a user what are you supposed to do with this knowledge? Here are some suggestions on things to do or think about when reacting:
 

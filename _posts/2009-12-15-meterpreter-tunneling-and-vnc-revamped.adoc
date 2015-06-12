@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-12-15 13:00:37+00:00
-layout: post
-title: Meterpreter tunneling and VNC revamped
-categories:
-- metasploit
-- meterpreter
-- vnc
----
+= Meterpreter tunneling and VNC revamped
+:hp-tags: metasploit, meterpreter, vnc
 
 So yesterday (December 14th, 2009) [HD Moore](http://twitter.com/hdmoore) posted [a tweet](http://twitter.com/hdmoore/status/6663737357) with a pic of the new VNC meterpreter script that he wrote:
 

@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-11-19 04:00:06+00:00
-layout: post
-title: Stop blaming the admins!
-categories:
-- rant
----
+= Stop blaming the admins!
+:hp-tags: rant
 
 We (the security community) all know, and make fun of "Users", and "Admins". They are derogatory terms in our community. So much so, that they could almost be classified at curse words. (I can see the XKCD now: Security stick figure talking to IT stick figure. "You stupid A****").
 

@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-08-11 04:22:24+00:00
-layout: post
-slug: 2007811how-to-avoid-tethered-data-charges-on-your-mobile-device-html
-title: How to avoid tethered data charges on your Mobile device.
-wordpress_id: 503
-tags:
-- Uncategorized
----
+= How to avoid tethered data charges on your Mobile device.
+:hp-tags: Uncategorized
 
 How to save $840 a year by using Internet Connection Sharing instead of the paid service from your cell phone provider on your Windows mobile device.  
   

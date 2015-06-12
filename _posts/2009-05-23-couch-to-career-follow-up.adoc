@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-05-23 19:30:37+00:00
-layout: post
-title: Couch to Career - Follow up
-categories:
-- presentations
----
+= Couch to Career - Follow up
+:hp-tags: presentations
 
 First of all, here is my slide deck from DojoSec with a couple added slides, words, and slight modifications:  
 

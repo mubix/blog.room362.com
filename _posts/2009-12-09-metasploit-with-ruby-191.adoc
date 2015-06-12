@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-12-09 13:09:00+00:00
-layout: post
-title: Metasploit with Ruby 1.9.1
-categories:
-- metasploit
-- ruby
----
+= Metasploit with Ruby 1.9.1
+:hp-tags: metasploit, ruby
 
 UPDATE: if you don't make some additional steps, the 'rvm 1.9.1' command only is active for the current console session. See the site for details: http://rvm.beginrescueend.com/
 

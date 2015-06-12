@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-04-16 15:06:26+00:00
-layout: post
-slug: 2008416phrack-is-back-again-html
-title: Phrack is back! Again.
-wordpress_id: 463
-tags:
-- Uncategorized
----
+= Phrack is back! Again.
+:hp-tags: Uncategorized
 
 So, this is the second time I am writing this article, which really takes writers block to a whole new level. It sucks to loose all of your writing a one fatal click. But enough of my belly aching.  
   

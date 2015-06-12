@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-08-19 02:13:01+00:00
-layout: post
-title: Railgun Error Checking
-categories:
-- railgun
----
+= Railgun Error Checking
+:hp-tags: railgun
 
 One important thing to note about Railgun is that you are querying the API and just as if you were using C++ the API you are calling just might not be there on the system you are trying to call it on. So here is a quick trick to find out if a the function (API) that you are trying to call is available to you:
 

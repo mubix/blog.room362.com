@@ -1,16 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-10-10 21:06:53+00:00
-layout: post
-slug: 20071010because-i-learned-linux-html
-title: because I learned linux
-wordpress_id: 480
-categories:
-- Rant
-tags:
-- Rant
----
+= because I learned linux
+:hp-tags: Rant, Rant
 
 I am in training right now and the instructor made a funny, which I will probably be making into a shirt.
 

@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-04-15 04:52:14+00:00
-layout: post
-slug: 2008415help-hak5-buy-some-ramen-html
-title: Help Hak.5 buy some ramen!
-wordpress_id: 464
-tags:
-- Uncategorized
----
+= Help Hak.5 buy some ramen!
+:hp-tags: Uncategorized
 
 Check out [http://www.hak5.org/stickers](http://www.hak5.org/stickers) to help Hak.5 pay for their 4th Season of Technolust.  
 

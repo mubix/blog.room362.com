@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-08-13 19:35:51+00:00
-layout: post
-slug: 2007813nmap-127001-flash-style-html
-title: 'Nmap 127.0.0.1: Flash style'
-wordpress_id: 502
-tags:
-- Uncategorized
----
+= 'Nmap 127.0.0.1: Flash style'
+:hp-tags: Uncategorized
 
 Originally posted at: [http://tech.nocr.at/hacking-security/nmap-127-0-0-1-flash-style](http://tech.nocr.at/hacking-security/nmap-127-0-0-1-flash-style)  
   

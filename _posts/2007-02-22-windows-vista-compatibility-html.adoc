@@ -1,16 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-02-22 13:34:19+00:00
-layout: post
-slug: 2007222windows-vista-compatibility-html
-title: Windows Vista Compatibility
-wordpress_id: 524
-categories:
-- Microsoft
-tags:
-- Microsoft
----
+= Windows Vista Compatibility
+:hp-tags: Microsoft, Microsoft
 
 I know that I said this was going to be a security blog, but I figured I would continue on my rant on Vista after this happened.  
   

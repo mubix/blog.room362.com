@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2010-09-13 17:45:31+00:00
-layout: post
-title: Am I an Admin? Railgun Script
-categories:
-- metasploit
-- meterpreter
-- railgun
----
+= Am I an Admin? Railgun Script
+:hp-tags: metasploit, meterpreter, railgun
 
 When you first step on a machine, you want to determine quickly if you are just a user or an administrator. Meterpreter doesn't have a way to quickly check this. You could drop to a shell, check the local users group "Adminitrators", and check your user, and correlate any groups that are shared between the outputs. You could do 'getsystem' and if one works other than Kitrap0d. You could also just do a 'ps' and notice that you can see 'SYSTEM' processes.
 

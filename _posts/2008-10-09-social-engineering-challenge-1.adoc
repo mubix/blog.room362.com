@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-10-09 04:59:00+00:00
-layout: post
-title: 'Social Engineering Challenge #1 Answer'
-categories:
-- social engineering
----
+= 'Social Engineering Challenge #1 Answer'
+:hp-tags: social engineering
 
 Well, it’s not the only answer but I will call them that because it’s what worked for me:  
   

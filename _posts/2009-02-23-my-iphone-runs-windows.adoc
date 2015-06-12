@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-02-23 22:50:56+00:00
-layout: post
-title: My iPhone runs Windows
-categories:
-- iphone
-- rant
----
+= My iPhone runs Windows
+:hp-tags: iphone, rant
 
 (This is the 3rd time I am writing this post, FF Fail, then Word crashed, so please excuse the lack of passion)  
   

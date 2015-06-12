@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-12-12 06:53:18+00:00
-layout: post
-title: Hash Types for John the Ripper
-categories:
-- Uncategorized
----
+= Hash Types for John the Ripper
+:hp-tags: Uncategorized
 
 Pentest Monkey is a great resource for a lot of things. One of which is this:
 

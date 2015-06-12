@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-10-09 03:13:25+00:00
-layout: post
-slug: 2007108logmeincom-html
-title: Logmein.com
-wordpress_id: 485
-tags:
-- Uncategorized
----
+= Logmein.com
+:hp-tags: Uncategorized
 
 So, this is my first time writing with [ScribeFire](http://www.scribefire.com/). (We'll see if it auto detects it's name and links to it. But, as you can probably tell by the title, this article isn't about [ScribeFire](http://www.scribefire.com/). It's about [Logmein.com](http://www.logmein.com). Now, you most likely have already seen or used this service, and I have fought back in forth in my head about regurgitating information which I think people already know. However, I'll save that talk for another post. On with it already.  
   

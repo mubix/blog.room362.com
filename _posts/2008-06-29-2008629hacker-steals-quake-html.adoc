@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-06-29 17:04:53+00:00
-layout: post
-slug: 2008629hacker-steals-quake-html
-title: Hacker steals Quake
-wordpress_id: 448
-tags:
-- Breaking News
----
+= Hacker steals Quake
+:hp-tags: Breaking News
 
 On a Dutch news site there was a story about a hacker that stole 50,000 credit cards (well, the information at least) and also stole a prerelease version of Quake Wars. What do you think made the title line? Quake Wars. That puts things in perspective on what is impotant. Big companies like the one that made Quake Wars have the liquid budget to chase this guy down, but the 50,000 individuals don’t.  
   

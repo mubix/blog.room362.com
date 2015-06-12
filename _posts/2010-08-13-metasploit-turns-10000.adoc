@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2010-08-13 16:36:46+00:00
-layout: post
-title: Metasploit turns 10,000
-categories:
-- metasploit
----
+= Metasploit turns 10,000
+:hp-tags: metasploit
 
 ![](/images/postimages/201008_10k_1.png)
 

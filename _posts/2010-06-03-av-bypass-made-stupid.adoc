@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2010-06-03 03:41:13+00:00
-layout: post
-title: AV bypass made stupid
-categories:
-- antivirus
----
+= AV bypass made stupid
+:hp-tags: antivirus
 
 ***WARNING* if you use fgdump like I did, it extracts pwdump to %TEMP% at run time, which is detected by AV.**
 

@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-06-12 01:22:46+00:00
-layout: post
-slug: 2008612talking-to-mud-html
-title: Talking to Mud
-wordpress_id: 455
-tags:
-- Funny
----
+= Talking to Mud
+:hp-tags: Funny
 
 A low doorway in the east wall allows access to the example room, a glowing  
   

@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-01-31 17:45:00+00:00
-layout: post
-title: Retractions - Web App and SAMBA
-categories:
-- ideas
----
+= Retractions - Web App and SAMBA
+:hp-tags: ideas
 
 First: [Using SAMBA to crack Unix passwords](/blog/2008/12/25/using-samba-to-crack-unix-passwords/)  
   

@@ -1,14 +1,5 @@
----
-layout: post
-title: "Metasploit Minute - Mondays with Mubix - Episode 1"
-date: 2014-01-06 14:30:08 -0500
-comments: true
-categories: 
-- hak5
-- metasploit
-- presentations
-- metasploit minute
----
+= "Metasploit Minute - Mondays with Mubix - Episode 1"
+:hp-tags: hak5, metasploit, presentations, metasploit minute
 
 * Show URL: [Hak5](http://hak5.org/category/episodes/metasploit-minute)
 

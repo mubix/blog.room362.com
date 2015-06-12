@@ -1,16 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-04-23 21:35:32+00:00
-layout: post
-slug: 2008423facebook-chat-all-that-and-a-bag-of-cheesy-poofs-html
-title: Facebook chat - All that and a bag of cheesy poofs
-wordpress_id: 461
-categories:
-- Rant
-tags:
-- Rant
----
+= Facebook chat - All that and a bag of cheesy poofs
+:hp-tags: Rant, Rant
 
 Wow. I have to admit, they did the Facebook chat right. I like how it looks and how it works. I would only change one this and allow chats to disembark from the status bar, but other than that, congrats. It is actually keeping me on Facebook longer.  
   

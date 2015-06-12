@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-02-07 20:22:02+00:00
-layout: post
-title: The Middler gets released at ShmooCon!
-categories:
-- cons
-- shmoocon
-- tools
----
+= The Middler gets released at ShmooCon!
+:hp-tags: cons, shmoocon, tools
 
 The official link is up and here it is.. well, until they release the beta:  
   

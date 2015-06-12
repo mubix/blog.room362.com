@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-10-20 14:28:01+00:00
-layout: post
-title: NoVA Hackers
-categories:
-- novahackers
----
+= NoVA Hackers
+:hp-tags: novahackers
 
 I created a google group for the NoVA Hackers meetups (Formerly known as NoVASec Luncheons)
 

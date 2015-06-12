@@ -1,16 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-02-06 21:27:37+00:00
-layout: post
-slug: 200826kvm-mitm-html
-title: KVM MITM
-wordpress_id: 470
-categories:
-- Rant
-tags:
-- Rant
----
+= KVM MITM
+:hp-tags: Rant, Rant
 
 I’ve had an idea and I have been hashing it out the last couple days. I want a smal piece of hardware that runs basically a MITM, but a physical one. Something like those old keyloggers that you plug between a PS/2 keyboard and a computer. If it already exsists, please link me, but this is what I want it to do:  
   

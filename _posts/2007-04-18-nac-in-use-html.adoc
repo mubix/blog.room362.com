@@ -1,15 +1,4 @@
----
-author: mubix
-comments: true
-date: 2007-04-18 16:32:40+00:00
-layout: post
-slug: 2007418nac-in-use-html
-title: NAC in use
-wordpress_id: 520
-categories:
-- Rant
-tags:
-- Rant
----
+= NAC in use
+:hp-tags: Rant, Rant
 
 Recently I was listening to [Episode 66](http://pauldotcom.com/wiki/index.php/Episode66#Open-source_NAC_with_Packet_Fence) of [PaulDotCom Security Weekly](http://www.pauldotcom.com/) and they briefly touched on [Packetfence](http://www.packetfence.org). Packet Fence is a Open Source [NAC](http://en.wikipedia.org/wiki/Network_Access_Control). This is the first time that I have really gotten hand on a NAC. I have heard of NAC and at ShmooCon Labs, I was part of Simple Nomad's team and Vernier's IPS/NAC. However, I didn't get a chance to get hands on during the con. So that puts me in the "noob" category. So, when I explained NAC to the team at work, they asked a question I couldn't answer with any technical expertise. So I will pose the question to you the reader: **What do you use NAC systems for?** [Comment here.](/comment.php?serendipity[entry_id]=98&serendipity[type]=comments) or email me.  Also, the Hack or Halo image has been fixed and is up: [http://blog.vulnerableminds.com/2007/04/shmoocon-07-hack-or-halo-virtual.html](http://blog.vulnerableminds.com/2007/04/shmoocon-07-hack-or-halo-virtual.html)

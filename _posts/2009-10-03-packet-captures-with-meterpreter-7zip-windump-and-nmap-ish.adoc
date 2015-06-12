@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-10-03 02:24:05+00:00
-layout: post
-title: Packet Captures with Meterpreter - 7zip - WinDump - and Nmap-ish
-categories:
-- metasploit
-- meterpreter
----
+= Packet Captures with Meterpreter - 7zip - WinDump - and Nmap-ish
+:hp-tags: metasploit, meterpreter
 
 So this is a pretty crafty way of getting packet captures on a target system. Definitely could be streamlined with some meterpreter scripting fu, but awesome job on the video.
 

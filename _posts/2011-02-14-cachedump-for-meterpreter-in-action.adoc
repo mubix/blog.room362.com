@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-02-14 22:03:37+00:00
-layout: post
-title: Cachedump for Meterpreter in action
-categories:
-- meterpreter
-- cachedump
----
+= Cachedump for Meterpreter in action
+:hp-tags: meterpreter, cachedump
 
 **Update**: Cachedump has been added to the Metasploit trunk:
 

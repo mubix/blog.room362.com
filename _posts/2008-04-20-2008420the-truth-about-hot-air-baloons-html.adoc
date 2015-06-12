@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-04-20 06:40:14+00:00
-layout: post
-slug: 2008420the-truth-about-hot-air-baloons-html
-title: The truth about hot air baloons
-wordpress_id: 462
-tags:
-- Funny
----
+= The truth about hot air baloons
+:hp-tags: Funny
 
    
 

@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2010-06-25 11:31:55+00:00
-layout: post
-title: Get off my lawn! iPhone Geo Blocking
-categories:
-- iphone
-- metadata
----
+= Get off my lawn! iPhone Geo Blocking
+:hp-tags: iphone, metadata
 
 I was recently approached by [savant](https://twitter.com/savant42),  who told me that a bunch of my Twitpics had geo location in them. Larry Pesce from PaulDotCom has been doing research in this field for a while and each time he brings it up I casually checked a couple of my twitpics and came up empty handed.
 

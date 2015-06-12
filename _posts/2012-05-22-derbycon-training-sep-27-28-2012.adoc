@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2012-05-22 19:44:36+00:00
-layout: post
-title: DerbyCon Training (Sep 27-28 2012)
-categories:
-- derbycon
-- training
-- cons
----
+= DerbyCon Training (Sep 27-28 2012)
+:hp-tags: derbycon, training, cons
 
 [@egypt](https://twitter.com/egyp7) and I have teamed up this year to teach at [DerbyCon](https://www.derbycon.com/training-courses/) at the end of September. Here is the **very** basic outline of the class and subject to change:
 

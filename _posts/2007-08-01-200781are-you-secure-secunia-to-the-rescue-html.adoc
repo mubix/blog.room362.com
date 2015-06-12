@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-08-01 21:06:40+00:00
-layout: post
-slug: 200781are-you-secure-secunia-to-the-rescue-html
-title: 'Are you secure: Secunia to the rescue'
-wordpress_id: 506
-tags:
-- Uncategorized
----
+= 'Are you secure: Secunia to the rescue'
+:hp-tags: Uncategorized
 
 Originally Posted on TECH.NOCR.AT @ [http://tech.nocr.at/content/view/22/1/](http://tech.nocr.at/content/view/22/1/)  
   

@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-06-29 23:18:53+00:00
-layout: post
-title: Local Security - DC-NoVA-MD
-categories:
-- novahackers
----
+= Local Security - DC-NoVA-MD
+:hp-tags: novahackers
 
 Looking for local events?  
   

@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2010-12-05 06:58:28+00:00
-layout: post
-title: Offensive and Defensive SSH Patching at NoVA Hackers
-categories:
-- novahackers
-- ssh
-- video
----
+= Offensive and Defensive SSH Patching at NoVA Hackers
+:hp-tags: novahackers, ssh, video
 
 This is definitely not my content, but I did want to highlight the talk Nicholas [1] gave at NoVA Hackers [2] this last November.
 

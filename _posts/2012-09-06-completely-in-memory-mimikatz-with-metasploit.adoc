@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2012-09-06 03:16:47+00:00
-layout: post
-title: Completely In-memory Mimikatz with Metasploit
-categories:
-- metasploit
-- mimikatz
----
+= Completely In-memory Mimikatz with Metasploit
+:hp-tags: metasploit, mimikatz
 
 Executing WCE.exe in memory as demoed by Egypt here: [https://community.rapid7.com/community/metasploit/blog/2012/05/08/eternal-sunshine-of-the-spotless-ram](https://community.rapid7.com/community/metasploit/blog/2012/05/08/eternal-sunshine-of-the-spotless-ram) has two issues with it. 1, you leave a file on disk with your hashes and clear text passwords. That just won't do. 2. There is this DLL called WCEAUX.dll that gets written for the briefest second to disk:
 

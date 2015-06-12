@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-08-12 09:11:48+00:00
-layout: post
-title: Lies
-categories:
-- rant
----
+= Lies
+:hp-tags: rant
 
 When I was in middle school, I told a lie. I was so good at telling lies, and remembering even the infinite details of these lies that I could make them believable. Later in life, I learned that this skill was called “Social Engineering ;-)”, but back to the story; I told everyone that I had won a shopping spree at “Incredible Universe”, now named “Fry’s”. Even the teacher believed me. The kids made lists of what they wanted me to get for them, and I strung it on for way too long. You tell a lie like that though and you get caught eventually. As I did, and learned a hard lesson. At that time in my life I was going through some really rough waters, and having everyone “like” me for even that finite amount of time, helped me cope. Does that make it right? Definitely not. But I remember that experience to this day.
 

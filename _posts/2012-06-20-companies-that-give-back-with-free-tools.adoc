@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2012-06-20 18:34:57+00:00
-layout: post
-title: Companies that give back with free tools
-categories:
-- internet
-- tools
----
+= Companies that give back with free tools
+:hp-tags: internet, tools
 
 Penetration Testing / Red Teaming requires the use of a lot of tools. I don't mind getting called a "script kiddie" because I can accomplish more and faster when I don't have to code every single task I need to do. This post is to point out companies that make this possible and give a small bit of thanks.
 

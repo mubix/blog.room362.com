@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2013-01-06 03:55:45+00:00
-layout: post
-title: Cyber Pickpocketing
-categories:
-- training
-- cyberpickpocket
----
+= Cyber Pickpocketing
+:hp-tags: training, cyberpickpocket
 
 Drink!!
 

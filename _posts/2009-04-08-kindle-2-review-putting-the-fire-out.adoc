@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-04-08 15:46:57+00:00
-layout: post
-title: 'Kindle 2 Review: Putting The Fire Out'
-categories:
-- review
-- kindle
----
+= 'Kindle 2 Review: Putting The Fire Out'
+:hp-tags: review, kindle
 
 Now, before you get all huffy about the title, it's not what you think. Keep reading:  
   

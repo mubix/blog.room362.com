@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-06-24 07:01:36+00:00
-layout: post
-slug: 2007624fonera-fun-html
-title: Fonera Fun
-wordpress_id: 512
-tags:
-- Uncategorized
----
+= Fonera Fun
+:hp-tags: Uncategorized
 
 I received a Fonera router from my friend [boxgamex](http://www.boxgamex.net) and what was the first thing I thought of doing to it? Slaping OpenWRT on it and going to town. Well it took me 2 days of intense R&D but here is what I can tell you to make your life a little easier than mine was:  
   

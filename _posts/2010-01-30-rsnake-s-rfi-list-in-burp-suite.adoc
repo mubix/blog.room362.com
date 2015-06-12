@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2010-01-30 17:00:13+00:00
-layout: post
-title: '@RSnake ’s RFI List in Burp Suite'
-categories:
-- burp
-- rsnake
----
+= '@RSnake ’s RFI List in Burp Suite'
+:hp-tags: burp, rsnake
 
 First of all, get Robert @RSnake Hansen's RFI list here:
 

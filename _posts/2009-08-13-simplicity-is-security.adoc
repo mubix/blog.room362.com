@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-08-13 15:30:29+00:00
-layout: post
-title: Simplicity is Security
-categories:
-- rant
----
+= Simplicity is Security
+:hp-tags: rant
 
 Per the best of the best in presenting, what breeds a good presentation slide deck? Simplicity  
   

@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-07-17 07:49:34+00:00
-layout: post
-title: Metasploit Payloads Explained - Part 1b
-categories:
-- metasploit
-- payloads
----
+= Metasploit Payloads Explained - Part 1b
+:hp-tags: metasploit, payloads
 
 This series was interrupted a bit by the new Metasploit HTTP/HTTPS payloads ([more info](https://community.rapid7.com/community/metasploit/blog/2011/06/29/meterpreter-httphttps-communication)). Definitely not complaining though as the new features *(as will be discussed in part 2) are some epic new additions to the payloads list. However an important change happened while the craziness over the new payloads was going on. ScriptJunkie snuck in an awesome change to msfvenom (a.k.a. msffsm).
 

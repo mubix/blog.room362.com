@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2010-08-04 04:30:36+00:00
-layout: post
-title: Jailbreak SSH horrors strike back
-categories:
-- iphone
-- jailbreak
-- rant
----
+= Jailbreak SSH horrors strike back
+:hp-tags: iphone, jailbreak, rant
 
 Back in 2009 the "[ikee](http://blog.jeltel.com.au/2009/11/interview-with-ikee-iphone-virus.html)" rick-rolling worm went around the iPhone world via the password of 'alpine' on the root account. You are now warned to change your root password when you pop into Cydia and Rock the first time. But this thing just wont stay down.
 

@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-12-26 21:46:37+00:00
-layout: post
-title: Speaking Evolved
-categories:
-- presentations
-- speaking
----
+= Speaking Evolved
+:hp-tags: presentations, speaking
 
 I believe there is a fear in the security community about speaking. Most don’t believe they either have something important enough to say, or have some awesome ‘thing’ and are just too afraid of the stage. Here are some resources and videos that have helped me gain the confidence to speak.  
   

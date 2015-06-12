@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2006-06-17 10:12:48+00:00
-layout: post
-title: Connected in Japan
-categories:
-- rant
----
+= Connected in Japan
+:hp-tags: rant
 
 I'm taking a time out of all the hustle and bustle of Tokyo, Japan to write a little and promise picutres in the near future. Well, once my integrated card reader decides to read xD M-class cards. I just applied the patch from HP but it still has major problems. It gets to the first image and stops reading and I get all kinds of write errors. To add salt to the wound, I forgot my USB cable to my camera, so I really have no way of getting my pictures off the camera. And the hits keep rolling in, I just finished a day in Akihabara, better known as the Electric Town. Whis is the biggest Computer/Electronic shopping 'area' in the world, and not a single store had the type of USB cable I needed. So, you'll get pictures as soon as I can get this crap reader to work.  
   

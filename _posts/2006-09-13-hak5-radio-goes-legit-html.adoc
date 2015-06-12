@@ -1,16 +1,5 @@
----
-author: mubix
-comments: true
-date: 2006-09-13 10:09:06+00:00
-layout: post
-slug: 2006913hak5-radio-goes-legit-html
-title: Hak.5 Radio goes legit
-wordpress_id: 531
-categories:
-- Hak.5
-tags:
-- Hak.5
----
+= Hak.5 Radio goes legit
+:hp-tags: Hak.5, Hak.5
 
 So, Hak.5 Radio is really taking off! We are now certified free and clear, you can check it out below. Just wanted to make a quick quip, more later.  
   

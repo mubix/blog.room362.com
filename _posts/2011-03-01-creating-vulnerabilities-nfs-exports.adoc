@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-03-01 20:40:28+00:00
-layout: post
-title: 'Creating Vulnerabilities: NFS Exports'
-categories:
-- ccdc
-- nfs
----
+= 'Creating Vulnerabilities: NFS Exports'
+:hp-tags: ccdc, nfs
 
 Constant connections and odd binaries running on systems usually get caught pretty quickly in CCDC events. However, NFS exports are hardly ever noticed. Setting it up on an Ubuntu/Debian box is a snap and given the right directory and permissions can lead you right back to getting shell any time you want without a constant connection. Plus, NFS blends right in and can listen on TCP and/or UDP (2049)
 

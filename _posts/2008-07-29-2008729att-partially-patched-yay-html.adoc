@@ -1,16 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-07-29 19:58:35+00:00
-layout: post
-slug: 2008729att-partially-patched-yay-html
-title: ATT partially patched. Yay!
-wordpress_id: 440
-categories:
-- Hacking
-tags:
-- Hacking
----
+= ATT partially patched. Yay!
+:hp-tags: Hacking, Hacking
 
 So, according to my iPhone, the DNS servers that it uses is patched. (209.183.33.23 - schinetdns.mycingular.net) However, when I tried to send an image of the doxpara page through email it gave me an SSL error and asked me to accept the certificate.... Um, no thank you. So, for the time being I will not be checking my email for a while, or for that matter anything I need to authenticate with. Too much? probably, but just erring on the side of caution. I will post the screen caps when I don’t have SSL errors.  
   

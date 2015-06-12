@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-02-20 16:43:44+00:00
-layout: post
-title: Winning Hacker Competitions as Defenders
-categories:
-- ccdc
-- competition
----
+= Winning Hacker Competitions as Defenders
+:hp-tags: ccdc, competition
 
 Let me start off this post by saying that the main focus of any of these competitions is not to win, but to learn. Learning is usually accompanied by tears on the defenders side, but the best way to learn is to fail.  
   

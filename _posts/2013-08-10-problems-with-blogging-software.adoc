@@ -1,11 +1,5 @@
----
-layout: post
-title: "Problems with blogging software"
-date: 2013-08-10 00:43
-comments: true
-categories:
-- rant
----
+= "Problems with blogging software"
+:hp-tags: rant
 
 Problems are that everyone does this whole blogging thing in so many different ways. Me, personally? I like to have a client that I can save drafts it, work on things a little bit here and there and then finalize stuff when I'm ready to post. I have a couple dozen of these posts ready and set with final tweaks needed but my blogging software Squarespace up and moved on to "Squarespace 6". The the current stage you don't have to move to 6 but at some point the owners of Squarespace are going to force everyone over. I don't want to wait for that to happen.
 

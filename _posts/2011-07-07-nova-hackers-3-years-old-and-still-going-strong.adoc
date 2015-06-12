@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-07-07 15:53:13+00:00
-layout: post
-title: NoVA Hackers - 3 years old and still going strong
-categories:
-- novahackers
----
+= NoVA Hackers - 3 years old and still going strong
+:hp-tags: novahackers
 
 I missed the [3 year anniversary](http://novahackers.blogspot.com/2008/04/working-on-it.html) of NoVA Hackers but I did want to make a post about it since we are still going strong and are now at ~150 **active** members.
 

@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-01-06 20:44:18+00:00
-layout: post
-title: Speaking 102 - The Audience Perspective
-categories:
-- speaking
-- presentations
-- rant
----
+= Speaking 102 - The Audience Perspective
+:hp-tags: speaking, presentations, rant
 
 ![](/images/postimages/200901_speaking102_1.png)
 

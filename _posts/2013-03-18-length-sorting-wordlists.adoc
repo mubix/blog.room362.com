@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2013-03-18 20:01:44+00:00
-layout: post
-title: Length Sorting Wordlists
-categories:
-- cracking
-- cli
----
+= Length Sorting Wordlists
+:hp-tags: cracking, cli
 
 This is one of those stupid simple things that are easy to forget so I'm posting it here. Wordlists and dictionaries are awesome for cracking password hashes, and although, thanks to things like Mimikatz and WCE I don't have to, but there is times where it's important.
 

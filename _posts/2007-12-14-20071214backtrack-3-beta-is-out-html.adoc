@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-12-14 06:34:58+00:00
-layout: post
-slug: 20071214backtrack-3-beta-is-out-html
-title: BackTrack 3 Beta is out!
-wordpress_id: 473
-tags:
-- Uncategorized
----
+= BackTrack 3 Beta is out!
+:hp-tags: Uncategorized
 
 <p>Remote Exploit has released BackTrack 3 Beta. An official announcement is due tomorrow, and until then, the ISO and USB images are available on torrent, and the Hak.5 Community, to include myself has really stepped up and footed some HTTP bandwidth for those less fortunate not to behind P2P block and/or retrictions. I will be writing a piece up on the Beta as soon as I get the same thing that the developers have been craving:</p>  
 <p> <b>SLEEP</b></p>  

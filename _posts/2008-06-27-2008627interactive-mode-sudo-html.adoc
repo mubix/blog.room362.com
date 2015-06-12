@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-06-27 16:25:53+00:00
-layout: post
-slug: 2008627interactive-mode-sudo-html
-title: Interactive Mode SUDO
-wordpress_id: 449
-tags:
-- Archiving
----
+= Interactive Mode SUDO
+:hp-tags: Archiving
 
 So, I made a new category basically for posts that I want to keep for myself and also post for other people not to have as hard a time finding: Archiving.  
   

@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-07-13 19:36:05+00:00
-layout: post
-title: Sexism and the religion of hackers
-categories:
-- rant
----
+= Sexism and the religion of hackers
+:hp-tags: rant
 
 Let me preempt this post with the following facts: I am a white male veteran with amazing parents. I went to a good school, and was never under-valued by the people I cared about. I fit no minority profiles in other words. I tell you this so that you can latch on to it as why I don't understand anything in your rebuttal. But I think this gives me a unique view on the issue.
 

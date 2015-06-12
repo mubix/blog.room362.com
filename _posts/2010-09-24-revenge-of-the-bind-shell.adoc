@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2010-09-24 15:20:56+00:00
-layout: post
-title: Revenge of the Bind Shell
-categories:
-- ipv6
----
+= Revenge of the Bind Shell
+:hp-tags: ipv6
 
 <iframe src="//player.vimeo.com/video/15243189" width="500" height="313" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/15243189">Revenge of the Bind Shell</a> from <a href="http://vimeo.com/user3245922">Practical Exploitation</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 

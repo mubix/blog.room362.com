@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-05-30 21:52:59+00:00
-layout: post
-title: Remotely Suspend All Threads with Meterpreter
-categories:
-- metasploit
-- meterpreter
----
+= Remotely Suspend All Threads with Meterpreter
+:hp-tags: metasploit, meterpreter
 
 Just a follow up to my previous post. One of the things that sets that method apart is the fact that the suspension (once the DLL injection occurs) comes from within the process, and it suspends all the child processes as well.
 

@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2006-05-28 02:45:32+00:00
-layout: post
-title: Technical Difficulties
-categories:
-- gaming
----
+= Technical Difficulties
+:hp-tags: gaming
 
 As with any new thing there is always something that goes wrong.  
   

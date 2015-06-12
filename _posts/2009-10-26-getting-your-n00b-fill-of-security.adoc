@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-10-26 23:02:31+00:00
-layout: post
-title: Getting your n00b fill of security
-categories:
-- internet
----
+= Getting your n00b fill of security
+:hp-tags: internet
 
 Continuing my “Getting your fill of” series 
 

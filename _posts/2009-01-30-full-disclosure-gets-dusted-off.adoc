@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-01-30 16:32:10+00:00
-layout: post
-title: Full Disclosure gets dusted off
-wordpress_id: 387
-categories:
-- internet
----
+= Full Disclosure gets dusted off
+:hp-tags: internet
 
 The Full Disclosure mailing list has a long and illustrious past. It has played host to everything from zero days to politics. One thing that has rung true for a number of years, if not since it’s inception is that it is unregulated (save spam of course). However in recent months it has fallen pray to less and less technical discussions, and more bickering, name calling, and outright trolling.  
   

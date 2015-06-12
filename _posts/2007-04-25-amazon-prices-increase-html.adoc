@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-04-25 14:57:15+00:00
-layout: post
-slug: 2007425amazon-prices-increase-html
-title: Amazon Prices Increase!
-wordpress_id: 518
-tags:
-- Uncategorized
----
+= Amazon Prices Increase!
+:hp-tags: Uncategorized
 
 When I checked my Amazon account today, I was amazed to find that about 90% of the books that I have in my “Saved for later” cart have increased in price. What’s going on? I guess this raises a good question. What regulates the rise and fall of prices on the internet? Do you “shop around” for books on the internet? Or do you just go to Amazon.com and buy what you need? I definitely fall in the latter category. Do you know any good sites that compare prices on books? Other than the deceased Froogle and other similar all encompassing consumer compare sites. Well, if you get nothing out of this article other than a list of good books to read, then I have done my job.  
 

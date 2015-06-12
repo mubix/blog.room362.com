@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2012-09-02 05:39:31+00:00
-layout: post
-title: Old School On-target NBNS Spoofing - Part 2
-categories:
-- nbns
-- tools
----
+= Old School On-target NBNS Spoofing - Part 2
+:hp-tags: nbns, tools
 
 So it turns out that Windows Firewall talks IP addresses just like any other firewall, so if you configure FakeNetBIOSNS to tell everyone that the IP address for whatever they looked up is YOUR IP, guess what, no need to bypass the spoof filters ;-) Happy Rob!
 

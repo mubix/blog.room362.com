@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2010-12-24 19:32:56+00:00
-layout: post
-title: Wayback Webapp Hacking
-categories:
-- wayback
-- metasploit
----
+= Wayback Webapp Hacking
+:hp-tags: wayback, metasploit
 
 Archive.org allows you to check the history of sites and pages, but a service most are not aware of is one that allows you to get a list of every page that a Archive.org has for a given domain. This is great for enumerating a web applications, many times you'll find parts of web apps that have been long forgotten (and usually vulnerable).
 

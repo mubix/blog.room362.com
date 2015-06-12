@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-09-07 04:33:48+00:00
-layout: post
-slug: 200897linkedin-unavailable-html
-title: LinkedIn Unavailable
-wordpress_id: 432
-tags:
-- Uncategorized
----
+= LinkedIn Unavailable
+:hp-tags: Uncategorized
 
 For some reason LinkedIn has become unavailable:  
   

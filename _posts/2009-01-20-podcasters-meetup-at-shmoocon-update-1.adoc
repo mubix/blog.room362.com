@@ -1,13 +1,5 @@
----
-layout: post
-title: "Podcaster's Meetup @ ShmooCon Update 1"
-date: 2009-01-20 19:33:35 -0500
-comments: true
-categories: 
-- shmoocon
-- cons
-- postcasters meetup
----
+= "Podcaster's Meetup @ ShmooCon Update 1"
+:hp-tags: shmoocon, cons, postcasters meetup
 
 ## Sponsors:
 

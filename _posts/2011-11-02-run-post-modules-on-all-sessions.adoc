@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-11-02 03:06:18+00:00
-layout: post
-title: Run POST Modules On All Sessions
-categories:
-- metasploit
-- meterpreter
-- post modules
----
+= Run POST Modules On All Sessions
+:hp-tags: metasploit, meterpreter, post modules
 
 [Jcran](http://twitter.com/jcran) recently blogged about an easy way to run a post module on all sessions:
 

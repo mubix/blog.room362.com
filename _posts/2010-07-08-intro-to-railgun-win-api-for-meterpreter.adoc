@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2010-07-08 02:10:34+00:00
-layout: post
-title: 'Intro to RailGun: WIN API for Meterpreter'
-categories:
-- metasploit
-- meterpreter
-- railgun
----
+= 'Intro to RailGun: WIN API for Meterpreter'
+:hp-tags: metasploit, meterpreter, railgun
 
 Back on June 13th, "Patrick HVE" released RAILGUN:
 

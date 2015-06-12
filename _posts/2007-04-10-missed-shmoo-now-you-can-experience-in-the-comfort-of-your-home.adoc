@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-04-10 12:44:59+00:00
-layout: post
-title: Missed Shmoo? Now you can experience in the comfort of your home.
-categories:
-- shmoocon
-- cons
----
+= Missed Shmoo? Now you can experience in the comfort of your home.
+:hp-tags: shmoocon, cons
 
 ![](/images/postimages/hoh.png)
 

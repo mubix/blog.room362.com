@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2012-10-22 03:10:55+00:00
-layout: post
-title: 'AXFR for DNSSEC: DNSSEC Walker'
-categories:
-- dns
----
+= 'AXFR for DNSSEC: DNSSEC Walker'
+:hp-tags: dns
 
 **TL;DR** – DNSSEC Walker traverses a domain’s DNSSEC records to locate it’s regular DNS records.
 

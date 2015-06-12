@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-11-06 06:25:41+00:00
-layout: post
-title: SC World Congress 2008
-categories:
-- internet
----
+= SC World Congress 2008
+:hp-tags: internet
 
 Haven't had enough conferences yet? First, thanks to everyone who entered through email, twitter and commenting on the CSI give away. Second we do have a winner so please stop the flood. But, on to the show.
 

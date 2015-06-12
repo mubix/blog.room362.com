@@ -1,13 +1,5 @@
----
-layout: post
-title: "AD Zone Transfers as a user"
-date: 2013-10-04 23:47:28 -0500
-comments: true
-categories: 
-- active directory
-- powershell
-- cli
----
+= "AD Zone Transfers as a user"
+:hp-tags: active directory, powershell, cli
 
 _cross posted from: http://carnal0wnage.attackresearch.com/2013/10/ad-zone-transfers-as-user.html_
 

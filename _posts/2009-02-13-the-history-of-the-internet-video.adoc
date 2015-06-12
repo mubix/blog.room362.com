@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-02-13 20:04:39+00:00
-layout: post
-title: The History of the Internet - VIDEO
-categories:
-- internet
----
+= The History of the Internet - VIDEO
+:hp-tags: internet
 
 I got this off of a post by [Jason Appelbaum](http://jasonappelbaum.com/) and I thought it important to repost. We all need to remember where we came from once in a while.
 

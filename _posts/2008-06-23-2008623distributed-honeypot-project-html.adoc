@@ -1,16 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-06-23 14:24:16+00:00
-layout: post
-slug: 2008623distributed-honeypot-project-html
-title: Distributed Honeypot Project
-wordpress_id: 452
-categories:
-- Hacking
-tags:
-- Hacking
----
+= Distributed Honeypot Project
+:hp-tags: Hacking, Hacking
 
 So I had another one of my harebrained ideas and it goes something like this:  
   

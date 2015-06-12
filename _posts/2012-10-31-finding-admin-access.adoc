@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2012-10-31 01:28:22+00:00
-layout: post
-title: Finding Admin Access
-categories:
-- metasploit
-- meterpreter
----
+= Finding Admin Access
+:hp-tags: metasploit, meterpreter
 
 You've got shell, and a set of credentials but you're coming up empty on what you can do with those credentials. This is especially problematic when you can't get past UAC as you are either in a AlwaysNotify situation or not a local admin.
 

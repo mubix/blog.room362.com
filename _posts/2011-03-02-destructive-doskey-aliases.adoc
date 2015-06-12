@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-03-02 20:05:22+00:00
-layout: post
-title: Destructive DOSKEY aliases
-categories:
-- ccdc
-- doskey
----
+= Destructive DOSKEY aliases
+:hp-tags: ccdc, doskey
 
 Not sure how far back it goes (Win95?) but 2000, XP and all the way up to Win 7 have a program called DOSKEY:
 

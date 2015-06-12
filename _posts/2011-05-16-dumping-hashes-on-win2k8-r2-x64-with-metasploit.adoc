@@ -1,15 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-05-16 02:35:31+00:00
-layout: post
-title: Dumping Hashes on Win2k8 R2 x64 with Metasploit
-categories:
-- hashdump
-- metasploit
-- meterpreter
-- cracking
----
+= Dumping Hashes on Win2k8 R2 x64 with Metasploit
+:hp-tags: hashdump, metasploit, meterpreter, cracking
 
 When trying to dump password hashes on a Windows 2008 R2 64 bit box I constantly run into the "The parameter is incorrect" error in meterpreter. So I've had to fall back on dropping binaries which I really don't like doing because of the added clean up and chance of getting 'caught'. Well, with a bit of migration you'll be back to passing the hash. Here is how, with a bit of the thought process first:
 

@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2006-06-26 23:41:18+00:00
-layout: post
-title: An Interesting Flight
-categories:
-- rant
-- travel
----
+= An Interesting Flight
+:hp-tags: rant, travel
 
 Well, I am home. Not actually, I'm in the U.s. waiting for my flight to NOVA. I have a very interesting flight, more so than usual. First things first: No, the person next to me wasn't an old lady that wanted to talk my ear off or a crying baby. It was actually a mother of an adorable boy that was sitting near the window. But you don't want to hear about good stuff. That isn't interesting, you want to hear about the oddities, the bad stuff, and Inquirer type news. Well Inquirer, eat your heart out:  
   

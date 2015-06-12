@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-10-31 06:12:23+00:00
-layout: post
-title: Free Pass to CSI 2008
-categories:
-- cons
-- internet
-- csi
----
+= Free Pass to CSI 2008
+:hp-tags: cons, internet, csi
 
 What is CSI? This is what CSI says about it:  
 

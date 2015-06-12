@@ -1,15 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-05-30 16:35:40+00:00
-layout: post
-title: Remote DLL Injection with Meterpreter
-categories:
-- dllinjection
-- metasploit
-- meterpreter
-- railgun
----
+= Remote DLL Injection with Meterpreter
+:hp-tags: dllinjection, metasploit, meterpreter, railgun
 
 Recently Didier Stevens wrote 'Suspender.dll' which is a DLL that will suspend a process and all of it's child processes after a delay. 60 seconds is it's default but you can rename the DLL to add a number (as such 'Suspender10.dll' for 10 seconds) to make the delay whatever you wish. You can find the blog post and download here: [http://blog.didierstevens.com/2011/04/27/suspender-dll/](http://blog.didierstevens.com/2011/04/27/suspender-dll/)
 

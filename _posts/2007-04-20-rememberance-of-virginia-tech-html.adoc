@@ -1,16 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-04-20 15:28:03+00:00
-layout: post
-slug: 2007420rememberance-of-virginia-tech-html
-title: Rememberance of Virginia Tech
-wordpress_id: 519
-post_format:
-- Image
-tags:
-- Uncategorized
----
+= Rememberance of Virginia Tech
+:hp-tags: Image, Uncategorized
 
 
 

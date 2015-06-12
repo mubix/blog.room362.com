@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-12-23 03:45:27+00:00
-layout: post
-title: Shared Links
-categories:
-- links
-- internet
----
+= Shared Links
+:hp-tags: links, internet
 
 When Google Reader decided to remove everything it was good for, we all scrambled to find new homes for things we wanted to share. Tumblr became a place that most of us flocked. I've found Tumblr to be not a very good substitue for Google Reader's functionality (IMHO).
 

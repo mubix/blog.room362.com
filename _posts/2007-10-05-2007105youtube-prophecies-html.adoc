@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-10-05 02:32:45+00:00
-layout: post
-slug: 2007105youtube-prophecies-html
-title: Youtube Prophecies
-wordpress_id: 488
-tags:
-- Uncategorized
----
+= Youtube Prophecies
+:hp-tags: Uncategorized
 
 I found this while Stumbleing around. A very interesting look on what the future might bring.  
 

@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-10-09 15:32:43+00:00
-layout: post
-title: Jasager - Past - Present and Future
-categories:
-- jasager
----
+= Jasager - Past - Present and Future
+:hp-tags: jasager
 
 If you haven't heard already about Jasager.. well you probably don't read this blog, but for those who want to know a bit more about the history of Jasager - Karma on the Fon, where the project is now, and where it's headed, then buckle up, and hang on while we first travel down memory lane.  
 

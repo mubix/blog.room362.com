@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-05-05 17:19:31+00:00
-layout: post
-title: Workshop at ToorCamp with Dark0perator
-categories:
-- training
-- presentations
----
+= Workshop at ToorCamp with Dark0perator
+:hp-tags: training, presentations
 
 Dark0perator and I will be giving a workshop at ToorCamp coming up July 2nd-5th:  
   

@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-03-03 19:38:50+00:00
-layout: post
-title: Issue a Linux command without it going into history
-categories:
-- ccdc
----
+= Issue a Linux command without it going into history
+:hp-tags: ccdc
 
 **CORRECTION**:
 

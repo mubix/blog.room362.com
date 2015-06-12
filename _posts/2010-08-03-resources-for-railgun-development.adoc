@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2010-08-03 14:19:52+00:00
-layout: post
-title: Resources for railgun development
-categories:
-- railgun
-- references
----
+= Resources for railgun development
+:hp-tags: railgun, references
 
 Metasploit's Railgun is awesome, but getting things to work correctly can be a pain. Here are some of the resources that have helped me out:
 

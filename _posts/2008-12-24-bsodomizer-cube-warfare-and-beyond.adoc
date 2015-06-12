@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-12-24 05:59:45+00:00
-layout: post
-title: BSODomizer - Cube Warfare and Beyond
-categories:
-- hardware
-- pranks
----
+= BSODomizer - Cube Warfare and Beyond
+:hp-tags: hardware, pranks
 
 ![](/images/postimages/200812_bsodomizer_1.jpg)
   

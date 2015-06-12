@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2012-10-30 20:05:21+00:00
-layout: post
-title: BypassUAC got a facelift
-categories:
-- metasploit
-- meterpreter
-- uac
----
+= BypassUAC got a facelift
+:hp-tags: metasploit, meterpreter, uac
 
 Dave Kennedy and Kevin Mitnick submitted the "bypassuac" post module to Metasploit a while back (last DerbyCon?). Which is awesome and they did some fantastic work, but I had a few complaints as probably anyone did who used the module on a somewhat modern network.
 

@@ -1,14 +1,5 @@
----
-layout: post
-title: "Installing Metasploit Community Edition on Windows 8"
-date: 2014-01-13 14:32:04 -0500
-comments: true
-categories: 
-- metasploit minute
-- presentations
-- windows 8
-- metasploit
----
+= "Installing Metasploit Community Edition on Windows 8"
+:hp-tags: metasploit minute, presentations, windows 8, metasploit
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/a3nzWgUgQO8" frameborder="0" allowfullscreen></iframe>
 

@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2010-04-29 03:05:13+00:00
-layout: post
-title: Vuln Disclosure Summarized
-categories:
-- rant
----
+= Vuln Disclosure Summarized
+:hp-tags: rant
 
 I have an admittedly limited view of the exploit dev world. However, from what I've seen devs have very few options: (Please correct me if I'm wrong)
 

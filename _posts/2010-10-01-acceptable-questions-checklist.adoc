@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2010-10-01 18:00:51+00:00
-layout: post
-title: Acceptable Questions Checklist
-categories:
-- common sense
-- internet
----
+= Acceptable Questions Checklist
+:hp-tags: common sense, internet
 
 "There is no stupid question" but, if it doesn't meet this checklist, it's officially a time wasting one.
 

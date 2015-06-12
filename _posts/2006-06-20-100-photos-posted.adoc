@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2006-06-20 10:55:52+00:00
-layout: post
-title: 100+ Photos Posted!
-categories:
-- travel
-- japan
----
+= 100+ Photos Posted!
+:hp-tags: travel, japan
 
 I broke down and bought a card reader. So check out my flickr. I have over a hundred pictures posted from the few days that I have been over here, and I'll be posting more and more each day and they will all be in the same flickr set.  
   

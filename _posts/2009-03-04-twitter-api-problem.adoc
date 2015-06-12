@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-03-04 15:54:59+00:00
-layout: post
-title: Twitter API Problem
-categories:
-- rant
----
+= Twitter API Problem
+:hp-tags: rant
 
 ![](/images/postimages/200903_twitter_1.png)  
   

@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2012-07-05 03:44:59+00:00
-layout: post
-title: Bypassing Trend Micro's Service Protection
-categories:
-- metasploit
-- trendmicro
----
+= Bypassing Trend Micro's Service Protection
+:hp-tags: metasploit, trendmicro
 
 [@jabjorkhaug](http://twitter.com/jabjorkhaug) posed the following question on Twitter today:
 

@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-12-05 22:00:00+00:00
-layout: post
-title: GoPC links with ThinLinX
-categories:
-- internet
----
+= GoPC links with ThinLinX
+:hp-tags: internet
 
 Unless you have been hiding under a rock, or just started reading this blog today. You have heard about [GoPC](http://www.gopc.net/). I featured it in my [USB Goodies 2008](/blog/2008/10/15/usb-goodies-2008/) and I love their product. Now that they have entered into a “Strategic Alliance” with a company called [ThinLinX](http://www.thinlinx.com). Now, the details of this alliance and the future it holds aren’t clear at the moment. And of course I have my own speculations. What are yours?   
   

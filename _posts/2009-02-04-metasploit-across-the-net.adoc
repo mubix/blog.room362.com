@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-02-04 18:13:00+00:00
-layout: post
-title: Metasploit Across the Net
-categories:
-- metasploit
-- internet
----
+= Metasploit Across the Net
+:hp-tags: metasploit, internet
 
 Metasploit is awesome, but some don’t know that their are updates all the time via SVN, and even fewer know of places to get good non-svn modules / scripts. Here are a few of my favorites:  
   

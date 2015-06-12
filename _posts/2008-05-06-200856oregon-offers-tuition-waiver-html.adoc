@@ -1,16 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-05-06 06:42:46+00:00
-layout: post
-slug: 200856oregon-offers-tuition-waiver-html
-title: Oregon Offers Tuition Waiver
-wordpress_id: 460
-categories:
-- Rant
-tags:
-- Rant
----
+= Oregon Offers Tuition Waiver
+:hp-tags: Rant, Rant
 
 Oregon’s State Legislature passed a law that provides a full-tuition waiver for a bachelor’s or master’s degree at an Oregon University System institution for children or spouses of service members who died on active duty, became 100 percent disabled in connection with military service, or died as a result of a disability sustained on active duty  
   

@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-02-16 19:23:47+00:00
-layout: post
-title: Metasploit on Wintel Systems
-categories:
-- windows
----
+= Metasploit on Wintel Systems
+:hp-tags: windows
 
 (No I'm not old enough to have used that term when it was the standard)
 

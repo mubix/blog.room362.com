@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-03-11 14:19:36+00:00
-layout: post
-title: The Ethics of Teaching Hacking
-categories:
-- rant
----
+= The Ethics of Teaching Hacking
+:hp-tags: rant
 
 My recent post "[OzymanDNS - Tunneling SSH over DNS](/archives/456-ozymandns-tunneling-ssh-over-dns.html)" caused a good friend, and someone I highly respect in the information security field, [Dave Hull](http://twitter.com/davehull) from [Trusted Signal](http://trustedsignal.com/), to call me out on the ethics of the post.  
   

@@ -1,9 +1,8 @@
 #!/usr/bin/env ruby
 
 list = Dir['_posts/*.adoc']
-
 list.each do |file|
-	readfile = File.open(file, 'r')
+	readfile = File.open(file, 'r', :encoding => "UTF-8")
 	contentsArray = readfile.readlines
 	readfile.close
 	if contentsArray[0] == "---\n"

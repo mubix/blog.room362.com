@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2010-08-03 16:00:38+00:00
-layout: post
-title: AV Tracker
-categories:
-- antivirus
----
+= AV Tracker
+:hp-tags: antivirus
 
 Ever set up a multi/handler and get an odd IP hitting it? Probably forgot about it as internet chatter? Think again, you might have just been caught
 

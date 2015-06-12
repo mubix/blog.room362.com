@@ -1,15 +1,5 @@
----
-author: mubix
-comments: true
-date: 2012-02-03 17:24:59+00:00
-layout: post
-title: A @textfiles approach at gathering the world's DNS - Slides
-categories:
-- presentations
-- cons
-- dns
-- deepmagic
----
+= A @textfiles approach at gathering the world's DNS - Slides
+:hp-tags: presentations, cons, dns, deepmagic
 
 This is my talk that I gave at ShmooCon 2012. It was a great honor to be given the chance to speak at ShmooCon as it has been my second home since 2006 (missed the first one... havent missed one since)
 

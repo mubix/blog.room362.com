@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-08-20 19:14:53+00:00
-layout: post
-title: Populating Your Virtual Victim Domain
-categories:
-- lab
-- ruby
-- scripting
----
+= Populating Your Virtual Victim Domain
+:hp-tags: lab, ruby, scripting
 
 **Update 1**: No this doesn't need to be in memory since you control the system but it was a fun challenge
 

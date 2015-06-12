@@ -1,10 +1,5 @@
----
-layout: post
-title: "ExtAPI Pranks"
-date: 2014-01-10 01:21:45 -0500
-comments: true
-categories: 
----
+= "ExtAPI Pranks"
+:hp-tags: 
 
 Since I've been gone, OJ has released the ExtAPI (Extended API) for Meterpreter. This has some pretty amazing functionality. You can find [OJ](https://twitter.com/TheColonial)'s write up on it and more amazing things he did in [3 months of meterpreter](http://buffered.io/posts/3-months-of-meterpreter/) and on the [Metasploit blog](https://community.rapid7.com/community/metasploit/blog/2013/12/12/weekly-metasploit-update).
 

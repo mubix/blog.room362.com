@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-10-09 06:20:22+00:00
-layout: post
-title: MSFConsole Prompt Fiddling
-categories:
-- metasploit
-- msfconsole
----
+= MSFConsole Prompt Fiddling
+:hp-tags: metasploit, msfconsole
 
 In @[carnal0wnage](http://twitter.com/carnal0wnage) and my presentation at [DerbyCon](http://www.derbycon.com/) 2011 we talked about using [SCREEN](http://linux.die.net/man/1/screen) and [SCRIPT](http://linux.die.net/man/1/script) to keep connections live / use them across SSH sessions, and log everything that happens. What we didn't cover is the fact that there isn't a time stamp for those logs. Now, Metasploit has multiple ways of creating logs:
 

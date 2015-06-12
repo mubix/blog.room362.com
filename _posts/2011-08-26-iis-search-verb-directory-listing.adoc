@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-08-26 18:56:42+00:00
-layout: post
-title: IIS Search Verb Directory Listing
-categories:
-- iis
----
+= IIS Search Verb Directory Listing
+:hp-tags: iis
 
 This: [http://www.securityfocus.com/bid/1756](http://www.securityfocus.com/bid/1756) still works (_on vulnerable hosts, this is an old vuln_) and is very useful:
 

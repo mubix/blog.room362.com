@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-11-29 06:41:46+00:00
-layout: post
-title: Gmail Snooze Button
-categories:
-- rant
----
+= Gmail Snooze Button
+:hp-tags: rant
 
 ![](/images/postimages/200811_gmail_1.png)
 

@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-08-19 19:26:55+00:00
-layout: post
-title: IP Resolution Using Meterpreter’s Railgun
-categories:
-- meterpreter
-- railgun
----
+= IP Resolution Using Meterpreter’s Railgun
+:hp-tags: meterpreter, railgun
 
 I saw a post back in June and it just recently came up again:
 

@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2010-06-28 20:34:43+00:00
-layout: post
-title: Set Wallpaper Meterpreter Script
-categories:
-- metasploit
-- meterpreter
-- script
----
+= Set Wallpaper Meterpreter Script
+:hp-tags: metasploit, meterpreter, script
 
 Certainly nothing to fuss over, but I've had a fascination with setting my target's wallpaper as sort of a calling card for years now. I've been able to set the registry key (HKCUControl PanelDesktopWallpaper), but until recently I didn't know how to get it to refresh so that it displayed without forcing the user to log out...
 

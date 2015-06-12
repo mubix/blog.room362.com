@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-07-13 14:02:13+00:00
-layout: post
-title: GPU Cracking Complaints
-categories:
-- cracking
-- gpu
-- rant
----
+= GPU Cracking Complaints
+:hp-tags: cracking, gpu, rant
 
 I've been cracking passwords for a while and use a myriad of tools in a certain order to get the job done. I find that Cain is still my Go-to for allowing me to visualize the process and do some basic sorting (really wish I could search in-app). But I've been asking around on twitter some questions like Why is GPU cracking for 50k hashes faster than Rainbow Tables (most say the bottleneck is the HDD read style and speed) and many asked what all of my compalints are so I figured this would be the best place (vice multiple emails)
 

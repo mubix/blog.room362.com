@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-06-11 02:11:47+00:00
-layout: post
-title: Rant Back – ValSmith
-categories:
-- rant
----
+= Rant Back – ValSmith
+:hp-tags: rant
 
 Val Smith recently wrote a post on the new [Attack Research / carnal0wnage blog](http://carnal0wnage.attackresearch.com) titled:  
 ”[Security Conferences, pen tests and incident response](http://carnal0wnage.attackresearch.com/node/361)”  

@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-06-24 15:28:00+00:00
-layout: post
-slug: 2008624network-security-projects-using-hacked-wireless-routers-html
-title: Network Security Projects Using Hacked Wireless Routers
-wordpress_id: 450
-tags:
-- Pimping
----
+= Network Security Projects Using Hacked Wireless Routers
+:hp-tags: Pimping
 
 Just wanted to pimp Paul from PaulDotCom’s class coming up here shortly. Also, to register go to  [**http://www.pauldotcom.com/sans**](http://www.pauldotcom.com/sans)  and help their podcast out.
 

@@ -1,15 +1,5 @@
----
-author: mubix
-comments: true
-date: 2010-09-12 15:06:39+00:00
-layout: post
-title: Rapid fire PSEXEC for Metasploit
-categories:
-- metasploit
-- meterpreter
-- resource files
-- script
----
+= Rapid fire PSEXEC for Metasploit
+:hp-tags: metasploit, meterpreter, resource files, script
 
 Exploit modules inside of metasploit don't have the ability to run on multiple hosts with one swing of the bat. So I created some code to facilitate that. It's really not much but there are some really juicy pieces of knowledge I learned on the way here.
 

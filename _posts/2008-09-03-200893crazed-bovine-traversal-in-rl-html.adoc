@@ -1,16 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-09-03 18:13:00+00:00
-layout: post
-slug: 200893crazed-bovine-traversal-in-rl-html
-title: Crazed Bovine Traversal in RL
-wordpress_id: 433
-categories:
-- Hacking
-tags:
-- Hacking
----
+= Crazed Bovine Traversal in RL
+:hp-tags: Hacking, Hacking
 
 As you may have heard me rant and rave about a special USB stick that downloads contact, messaging, and other information from phones just by plugging them in on [Episode 5](http://securabit.com/2008/06/29/securabit-episode-5/) of [Securabit ](http://securabit.com/)or read about it via an earlier posting on my blog ([Crazed Bovine Traversal](/archives/198-Crazed-Bovine-Traversal.html)). A company called Paraben Corporation went out and made it (Motorola and Samsung support only so far)  
   

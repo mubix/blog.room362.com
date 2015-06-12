@@ -1,14 +1,5 @@
----
-author: pragmatk
-comments: true
-date: 2009-10-17 15:36:52+00:00
-layout: post
-title: Hacking Crazy Taxi
-categories:
-- facebook
-- pragmatk
-- guestpost
----
+= Hacking Crazy Taxi
+:hp-tags: facebook, pragmatk, guestpost
 
 I had a bet with my friend about getting #1 on the Crazy Taxi high score page (== motivation for this post).
 

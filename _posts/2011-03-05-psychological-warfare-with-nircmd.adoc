@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-03-05 19:52:27+00:00
-layout: post
-title: Psychological Warfare with NirCMD
-categories:
-- ccdc
-- nircmd
-- cli
----
+= Psychological Warfare with NirCMD
+:hp-tags: ccdc, nircmd, cli
 
 One of the best ways to throw blue teamers off the scent of another host getting owned, which also has the added effect of stressing them out is a batch script that runs through some of the more annoying features in nircmd.exe in succession and at regular intervals:
 

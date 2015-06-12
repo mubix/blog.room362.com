@@ -1,11 +1,5 @@
----
-layout: post
-title: "Application Whitelist Bypass using IEexec.exe"
-date: 2014-01-16 12:30:42 -0500
-comments: true
-author: infosecsmith2
-categories: 
----
+= "Application Whitelist Bypass using IEexec.exe"
+:hp-tags: 
 
 ## Guest post by [@infosecsmith2](https://twitter.com/infosecsmith2)
 

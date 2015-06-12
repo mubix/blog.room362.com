@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-09-16 17:52:22+00:00
-layout: post
-title: Corrections and Questions about Nessus on Securabit
-categories:
-- rant
----
+= Corrections and Questions about Nessus on Securabit
+:hp-tags: rant
 
 *Update* I can't say with 100% certainty that Nessus ever used NMAP as it's base scanner, I was going off of memory. I apologize for not being perfect.  
   

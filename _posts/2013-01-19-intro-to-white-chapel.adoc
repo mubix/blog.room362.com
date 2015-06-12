@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2013-01-19 02:50:08+00:00
-layout: post
-title: Intro to White Chapel
-categories:
-- cracking
-- whitechapel
----
+= Intro to White Chapel
+:hp-tags: cracking, whitechapel
 
 I made a slide deck to kind of explain my latest project. Basically I got fed up with having dictionaries, passwords, and cracking tools but no way to really do better collaboration in a team format as well as just better management for myself. 
 

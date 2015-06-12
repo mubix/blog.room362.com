@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-03-13 05:00:00+00:00
-layout: post
-title: AnonymASS - Hiding Behind The Tubes
-categories:
-- rant
----
+= AnonymASS - Hiding Behind The Tubes
+:hp-tags: rant
 
 First I wanted to say, sorry for this and the last installment of Room362 being non-technical. They are topics that I feel strongly about and so felt impelled to share.One of the biggest problems in the world, IMHO, are people who have unfounded hate. This is compounded by the anonymity of the Internet. Allowing that hate to have no reprocussion or identity. Let me also say I have a deep respect for Free Speech, the depths of which I fear, few truly know. What I don't have a respect for is people who abuse that right. It's ultimately a respect of your fellow man/woman/it, that transends any nationality, race, creed, or color.
 

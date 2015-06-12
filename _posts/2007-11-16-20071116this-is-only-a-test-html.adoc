@@ -1,16 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-11-16 03:50:09+00:00
-layout: post
-slug: 20071116this-is-only-a-test-html
-title: This is only a Test
-wordpress_id: 474
-categories:
-- Rant
-tags:
-- Rant
----
+= This is only a Test
+:hp-tags: Rant, Rant
 
 <p>This is a test of the EMERGENCY SBN, This is only a test. If this was a real security emergency, the FBI would contact you.</p>  
 <p> </p>  

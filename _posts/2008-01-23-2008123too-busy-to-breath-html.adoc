@@ -1,16 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-01-23 18:02:22+00:00
-layout: post
-slug: 2008123too-busy-to-breath-html
-title: Too busy to breath
-wordpress_id: 471
-categories:
-- Rant
-tags:
-- Rant
----
+= Too busy to breath
+:hp-tags: Rant, Rant
 
 This is me complaining that I have too much on my plate. And, it is all my fault that I accepted so much. Here are the projects I currently am working on:  
 

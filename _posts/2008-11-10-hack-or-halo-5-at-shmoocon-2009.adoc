@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-11-10 03:05:13+00:00
-layout: post
-title: Hack or Halo 5 at ShmooCon 2009
-categories:
-- shmoocon
-- cons
----
+= Hack or Halo 5 at ShmooCon 2009
+:hp-tags: shmoocon, cons
 
 ![](/images/postimages/200811_hackhalo_1.jpg)
 

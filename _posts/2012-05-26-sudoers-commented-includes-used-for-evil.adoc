@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2012-05-26 05:33:00+00:00
-layout: post
-title: SUDOERS Commented Includes used for Evil
-categories:
-- sudo
-- post exploitation
-- linux
----
+= SUDOERS Commented Includes used for Evil
+:hp-tags: sudo, post exploitation, linux
 
 I found a number of things interesting when reading the following post:
 

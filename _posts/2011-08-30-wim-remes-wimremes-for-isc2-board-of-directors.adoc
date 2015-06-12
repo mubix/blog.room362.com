@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-08-30 15:25:52+00:00
-layout: post
-title: Wim Remes (@wimremes) for (ISC)2 Board of Directors
-categories:
-- cissp
-- isc2
-- internet
----
+= Wim Remes (@wimremes) for (ISC)2 Board of Directors
+:hp-tags: cissp, isc2, internet
 
 ![](/images/postimages/201108_wimremes_1.png)
 

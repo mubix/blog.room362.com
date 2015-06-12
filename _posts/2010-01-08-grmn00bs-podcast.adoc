@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2010-01-08 18:49:13+00:00
-layout: post
-title: grmn00bs podcast
-categories:
-- podcasts
----
+= grmn00bs podcast
+:hp-tags: podcasts
 
 I was recently on the grmn00bs podcast, I had a great time, and I can't wait to see who they pick up next on their series:
 

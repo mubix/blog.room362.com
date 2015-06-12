@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-06-15 02:52:57+00:00
-layout: post
-slug: 2008615vonage-and-ekiga-on-suse-linux-html
-title: Vonage and Ekiga on SUSE Linux
-wordpress_id: 454
-tags:
-- Uncategorized
----
+= Vonage and Ekiga on SUSE Linux
+:hp-tags: Uncategorized
 
 This was originally posted at [http://www.jpugh.org/2008/01/vonage-and-ekiga-on-suse-linux.html](http://www.jpugh.org/2008/01/vonage-and-ekiga-on-suse-linux.html)  
   

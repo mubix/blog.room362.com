@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-10-24 04:04:18+00:00
-layout: post
-slug: 20071024oh-lord-html
-title: Oh Lord!
-wordpress_id: 479
-tags:
-- Uncategorized
----
+= Oh Lord!
+:hp-tags: Uncategorized
 
 Naturally 7 performing in a New York subway.
 

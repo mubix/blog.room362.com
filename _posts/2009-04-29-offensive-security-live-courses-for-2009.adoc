@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-04-29 15:18:23+00:00
-layout: post
-title: Offensive Security Live Courses for 2009
-categories:
-- traning
----
+= Offensive Security Live Courses for 2009
+:hp-tags: traning
 
 I highly recommend both of these courses, and the chance to get in front of the instructors and ask questions live is worth it IMHO. So bang on those manager doors and work it out, because seats fill quickly and they are limited.   
   

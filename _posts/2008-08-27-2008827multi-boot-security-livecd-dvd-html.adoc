@@ -1,16 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-08-27 03:40:34+00:00
-layout: post
-slug: 2008827multi-boot-security-livecd-dvd-html
-title: Multi-Boot Security LiveCD DVD
-wordpress_id: 435
-categories:
-- Hacking
-tags:
-- Hacking
----
+= Multi-Boot Security LiveCD DVD
+:hp-tags: Hacking, Hacking
 
 _**EDIT: I got to talk about this DVD on the latest episode of **_[_**Securabit**_](http://www.securabit.com/)_** (**_[_**Episode 9**_](http://securabit.com/2008/09/04/securabit-episode-9/)_**)**_  
   

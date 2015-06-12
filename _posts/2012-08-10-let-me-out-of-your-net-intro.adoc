@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2012-08-10 03:22:29+00:00
-layout: post
-title: LetMeOutOfYour.NET – Intro
-categories:
-- egress
----
+= LetMeOutOfYour.NET – Intro
+:hp-tags: egress
 
 Something that is often useful is a known-good. Something out of the control of your adversary or outside modifiers. But back to that in a sec, egress ‘busting’ or getting your payload/backdoor/trojan/c2 out of someone’s network once you’ve gotten that ever elusive “CODE EXECUTION HAPPY DANCE” going on isn’t always easy. There is even a Metasploit payload for it called ‘allports’:
 

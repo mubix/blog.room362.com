@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-05-29 19:35:22+00:00
-layout: post
-title: Getting your fill of Security
-categories:
-- internet
----
+= Getting your fill of Security
+:hp-tags: internet
 
 I recently posted a [blog post](http://www.exoticliability.com/profiles/blogs/getting-your-fill-of-security) to [Exotic Liability](http://www.exoticliability.com/)'s website with the same title, and I realized that it would make a great thing to post to here, and update regularly, or just put it on the wiki I keep saying that I get going here. Enough rambling, here is how you can get your fill of security:
 

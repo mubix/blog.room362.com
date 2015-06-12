@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-02-02 17:48:00+00:00
-layout: post
-title: Bob Stories - Airport Boredom
-categories:
-- internet
----
+= Bob Stories - Airport Boredom
+:hp-tags: internet
 
 I registered [Bobstories.com](http://www.bobstories.com/) after listening to [PaulDotCom](http://www.pauldotcom.com) for a while. I have always told stories of this manor, but never quite put a name to “my friend”. Now that he has a name, it is only fitting that he has a domain and a blog. Please, come, register under the name bob_#### with a [mailinator](http://www.mailinator.com/) address to match, or your own name and email address if you wish. I’ll moderate all posts simply for spam purposes and have them up post haste. So to start things off, here is my Bob story:  
   

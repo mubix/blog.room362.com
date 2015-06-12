@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-02-16 07:48:14+00:00
-layout: post
-title: Interesting DNS Stuff - SRV Records
-categories:
-- dns
----
+= Interesting DNS Stuff - SRV Records
+:hp-tags: dns
 
 The following are good adds to your DNS brute force list:
 

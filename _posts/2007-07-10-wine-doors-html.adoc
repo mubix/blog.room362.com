@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-07-10 13:05:21+00:00
-layout: post
-slug: 2007710wine-doors-html
-title: Wine Doors
-wordpress_id: 509
-tags:
-- Uncategorized
----
+= Wine Doors
+:hp-tags: Uncategorized
 
 I don't use Wine. It's difficult to get anything working and a pain once it is. However since I found out about the <a href="http://www.wine-doors.org/"  title="Wine-Doors">Wine-Doors</a> project, it's made me go back on that thought.  
   

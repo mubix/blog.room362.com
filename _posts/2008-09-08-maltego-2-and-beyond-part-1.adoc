@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-09-08 05:09:00+00:00
-layout: post
-title: Maltego 2 and beyond - Part 1
-categories:
-- hak5
----
+= Maltego 2 and beyond - Part 1
+:hp-tags: hak5
 
 First lets outline whats to come:
 

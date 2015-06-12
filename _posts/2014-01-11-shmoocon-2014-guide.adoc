@@ -1,13 +1,5 @@
----
-layout: post
-title: "ShmooCon 2014 Guide"
-date: 2014-01-11 13:28:58 -0500
-comments: true
-published: false
-categories:
-- shmoocon
-- cons
----
+= "ShmooCon 2014 Guide"
+:hp-tags: shmoocon, cons
 
 There are guides like this all around for conferences big and small
 

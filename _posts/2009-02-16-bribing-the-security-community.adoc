@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-02-16 21:49:00+00:00
-layout: post
-title: Bribing the Security Community
-categories:
-- rant
----
+= Bribing the Security Community
+:hp-tags: rant
 
 So here is the deal. I have a ticket to the [RSA Conference](https://365.rsaconference.com/index.jspa) that is April 20-24 in San Francisco, at Moscone Center. I can’t use it. So I am offering it up as a bribe. Here is the bribe. I need a video of The Middler in action. From start (downloading) to finish (compromise / root / [BeEF](http://www.bindshell.net/tools/beef) / owange) of another machine.  
   

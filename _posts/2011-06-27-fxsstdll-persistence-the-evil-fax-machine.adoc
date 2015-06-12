@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-06-27 14:32:16+00:00
-layout: post
-title: 'fxsst.dll persistence: the evil fax machine'
-categories:
-- persistence
----
+= 'fxsst.dll persistence: the evil fax machine'
+:hp-tags: persistence
 
 Nick Harbour wrote a [post on Mandiants blog](https://blog.mandiant.com/archives/1786) about some Malware that was using a dll called 'fxsst.dll' to hide and stay persistent on a system. The DLL is used by Windows when it is acting as a Fax server (anyone still do that?). He mentions some very interesting points:
 

@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-03-28 02:56:27+00:00
-layout: post
-slug: 2007327shmoocon-infected-with-podcasters-html
-title: ShmooCon infected with podcasters
-wordpress_id: 523
-tags:
-- IPTV
----
+= ShmooCon infected with podcasters
+:hp-tags: IPTV
 
 
 

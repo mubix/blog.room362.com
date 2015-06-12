@@ -1,15 +1,5 @@
----
-author: mubix
-comments: true
-date: 2012-01-03 06:56:22+00:00
-layout: post
-title: (UAC) User Assisted Compromise
-categories:
-- uac
-- meterpreter
-- railgun
-- metasploit
----
+= (UAC) User Assisted Compromise
+:hp-tags: uac, meterpreter, railgun, metasploit
 
 A number of times during tests I've actually run into those mythical creatures called "patched windows machines". At [DerbyCon](http://www.derbycon.com) [Chris Gates](http://twitter.com/carnal0wnage) and I released the "Ask" post module (which I had failed to publish). This module very simply uses the [ShellExecute windows function]("http://msdn.microsoft.com/en-us/library/windows/desktop/bb762153(v=vs.85).aspx") via [Railgun](http://dev.metasploit.com/redmine/projects/framework/wiki/RailgunUsage) with the undocumented (but very well known) operator of 'runas'. These two lines accomplished that:
 

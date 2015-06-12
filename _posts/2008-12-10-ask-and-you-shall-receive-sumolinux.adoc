@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-12-10 21:35:48+00:00
-layout: post
-title: Ask and you shall receive - SumoLinux
-categories:
-- releases
----
+= Ask and you shall receive - SumoLinux
+:hp-tags: releases
 
  If you haven’t seen it yet, I posted about a [Nerv-Labs Live DVD](/archives/218-Multi-Boot-Security-LiveCD-DVD.html) that included all kinds security distros in one bootable DVD. Which was also featured in [Episode 0x415](http://www.hak5.org/episodes/episode-415) of [Hak5](http://www.hak5.org/). Well, there were some things that it was kinda lacking, mainly Helix and Samurai.  
 

@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2013-06-11 13:55:21+00:00
-layout: post
-title: Volume Shadow Copy NTDS.DIT Domain Hashes Remotely - Part 2
-categories:
-- shadowcopy
-- cracking
----
+= Volume Shadow Copy NTDS.DIT Domain Hashes Remotely - Part 2
+:hp-tags: shadowcopy, cracking
 
 Part 2, we have the NTDS.dit file and the SYSTEM.hive file. First we need a few tools:
 

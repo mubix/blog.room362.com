@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-10-04 10:02:21+00:00
-layout: post
-slug: 2007104cut-your-electricity-bill-in-half-html
-title: Cut your electricity bill in Half
-wordpress_id: 489
-tags:
-- Uncategorized
----
+= Cut your electricity bill in Half
+:hp-tags: Uncategorized
 
 Flunk chemistry? Well here is a step by step how to that will gain the awe of your old chemistry teacher.... And save you money on your electricity bill.  
   

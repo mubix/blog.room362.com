@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-07-31 19:59:05+00:00
-layout: post
-slug: 2007731transformers-html
-title: Transformers
-wordpress_id: 507
-tags:
-- Uncategorized
----
+= Transformers
+:hp-tags: Uncategorized
 
 Alright, this is just a quick update. The torrent is still up and functional. Also, I just had to post this. It has a weak but feasible link to tech.  
 <a href="http://www.votemoojj.com/stuff/shoes/index.html"  title="One AWESOME pair of shoes">http://www.votemoojj.com/stuff/shoes/index.html</a>

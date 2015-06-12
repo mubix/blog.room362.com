@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-08-02 11:39:42+00:00
-layout: post
-slug: 200782defcon-and-an-interview-with-dark-tangent-html
-title: DEFCON and an interview with Dark Tangent
-wordpress_id: 505
-tags:
-- Uncategorized
----
+= DEFCON and an interview with Dark Tangent
+:hp-tags: Uncategorized
 
 This is a very cool interview with Dark Tangent, the founder of Defcon, that was done recently.  
   

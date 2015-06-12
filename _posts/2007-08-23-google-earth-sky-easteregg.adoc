@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-08-23 04:20:32+00:00
-layout: post
-title: Google Earth SKY Easteregg
-categories:
-- internet
-- technocrat
----
+= Google Earth SKY Easteregg
+:hp-tags: internet, technocrat
 
 What star is right around the corner?  
   

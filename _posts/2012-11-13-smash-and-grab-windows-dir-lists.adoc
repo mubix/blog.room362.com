@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2012-11-13 08:44:47+00:00
-layout: post
-title: 'Smash and Grab: Windows Dir Lists'
-categories:
-- cli
----
+= 'Smash and Grab: Windows Dir Lists'
+:hp-tags: cli
 
 Looking through network shares can be slow, and waiting for individual searches to finish looking through the whole "drive" is redundant. Easier to just use some Windows voodoo to get a good list to look through offline:
 

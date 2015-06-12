@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-12-06 01:29:27+00:00
-layout: post
-title: Ego Surfing or Caring?
-categories:
-- rant
-- internet
----
+= Ego Surfing or Caring?
+:hp-tags: rant, internet
 
 [Gary Vaynerchuk](http://garyvaynerchuk.com/) of [Wine Library TV](http://tv.winelibrary.com/) made a post about [Ego Searching](http://garyvaynerchuk.com/2008/12/05/ego-searching-or-caring/). He describes in this short video that ego searching when you are trying to make a brand is simply caring about your audience: 
 

@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2006-07-17 15:20:30+00:00
-layout: post
-title: Birthday Wishes
-categories:
-- wishlist
----
+= Birthday Wishes
+:hp-tags: wishlist
 
 I have decided this year, for my birthday, to create a list of so-called “WANTS”. I prefer to see them as “**NEEDS**”. I have intentionally created this list large, as to give the most choices when selecting a gift. I have also tried to provide links to where these items can be bought online for the least amount of money. I have intentionally left prices out of this, and the list is unordered. The top item does not denote the thing that I want the most. You will make me very happy by purchasing any of these items for me. My birthday is on the 30th, so act quickly ;-)  
 

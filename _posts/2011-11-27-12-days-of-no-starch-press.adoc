@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-11-27 23:25:42+00:00
-layout: post
-title: 12 Days of No Starch Press
-categories:
-- nostarch
----
+= 12 Days of No Starch Press
+:hp-tags: nostarch
 
 This Christmas I've decided to spread a little cheer (aka free stuff) ;-) , and I'm doing it in 2600 fashion. Now, I don't know if I have enough readers to pull this off, but here goes:
 

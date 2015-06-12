@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2012-10-07 04:10:51+00:00
-layout: post
-title: Compiling and Release of Netview
-categories:
-- netview
-- tools
-- releases
----
+= Compiling and Release of Netview
+:hp-tags: netview, tools, releases
 
 If you haven't caught [Chris Gates](http://carnal0wnage.attackresearch.com/) ([@carnal0wnage](https://twitter.com/carnal0wnage)) and my [talk](http://www.irongeek.com/i.php?page=videos/derbycon2/1-1-6-rob-fuller-chris-gates-dirty-little-secrets-part-2) at [DerbyCon 2012](http://www.derbycon.com/) - we released 2 tools, [Netview](https://github.com/mubix/netview), and [Ditto](https://github.com/mubix/ditto). Here I'll walk you through compiling Netview yourself, in the next blog post we'll go over compiling Ditto and how you can remove it's icon to reduce the size if you want. But for Netview it's pretty straight forward. First you pull a copy of the GIT repository:
 

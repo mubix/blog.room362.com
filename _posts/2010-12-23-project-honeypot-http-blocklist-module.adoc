@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2010-12-23 23:39:03+00:00
-layout: post
-title: Project Honeypot HTTP Blocklist module
-categories:
-- honey pot
-- metasploit
----
+= Project Honeypot HTTP Blocklist module
+:hp-tags: honey pot, metasploit
 
 Most malicious IP lists focus on the client side threat, where servers (hosted or exploited) host client side exploits or evil scripting.
 

@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-08-17 16:05:11+00:00
-layout: post
-slug: 2007817skype-wont-let-me-log-in-html
-title: Skype wont let me log in!
-wordpress_id: 499
-tags:
-- Uncategorized
----
+= Skype wont let me log in!
+:hp-tags: Uncategorized
 
 Skype dies? What happens if you rely on it to do your job, podcast, or radio station? Time to start thinking of backups.  
   

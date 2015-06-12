@@ -1,13 +1,5 @@
----
-layout: post
-title: "Unkillable Processes"
-date: 2013-08-10 10:39
-comments: true
-categories:
-- railgun
-- x64
-- incomplete
----
+= "Unkillable Processes"
+:hp-tags: railgun, x64, incomplete
 
 Saw this post about a kernel bug in 64 bit Windows that is a DoS, it can also create an unkillable process:
 Blog post: http://waleedassar.blogspot.com/2013/02/kernel-bug-1-processiopriority.html

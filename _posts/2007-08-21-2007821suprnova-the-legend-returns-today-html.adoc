@@ -1,13 +1,4 @@
----
-author: mubix
-comments: true
-date: 2007-08-21 18:51:37+00:00
-layout: post
-slug: 2007821suprnova-the-legend-returns-today-html
-title: 'SuprNova: The Legend Returns Today'
-wordpress_id: 495
-tags:
-- Uncategorized
----
+= 'SuprNova: The Legend Returns Today'
+:hp-tags: Uncategorized
 
 The legendary BitTorrent site â€œSuprNovaâ€� will return today, courtesy of The Pirate Bay. Not surprisingly, the new and improved SuprNova has a special message to the copyright police: â€œYou are the past and the forgotten, we are the Internet and the futureâ€�.<br/><br/><a href="http://torrentfreak.com/suprnova-the-legend-returns-today/">read more</a> | <a href="http://digg.com/tech_news/SuprNova_The_Legend_Returns_Today">digg story</a>

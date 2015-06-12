@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-02-11 06:03:23+00:00
-layout: post
-title: Patch Adams
-categories:
-- internet
----
+= Patch Adams
+:hp-tags: internet
 
 Thought I would share this video, if it isn't a swift kick in the pants to do better with your life I don't what is:
 

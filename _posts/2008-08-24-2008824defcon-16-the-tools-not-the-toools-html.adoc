@@ -1,16 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-08-24 22:12:00+00:00
-layout: post
-slug: 2008824defcon-16-the-tools-not-the-toools-html
-title: 'DEFCON 16: The Tools not the Toools'
-wordpress_id: 436
-categories:
-- Hacking
-tags:
-- Hacking
----
+= 'DEFCON 16: The Tools not the Toools'
+:hp-tags: Hacking, Hacking
 
 Originally posted to the Zero Day blog on Ziff Davis: [http://blogs.zdnet.com/security/?p=1735](http://blogs.zdnet.com/security/?p=1735)  
   

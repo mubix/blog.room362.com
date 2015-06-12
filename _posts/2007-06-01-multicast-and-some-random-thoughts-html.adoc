@@ -1,16 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-06-01 12:56:34+00:00
-layout: post
-slug: 200761multicast-and-some-random-thoughts-html
-title: Multicast and some random thoughts
-wordpress_id: 514
-categories:
-- Rant
-tags:
-- Rant
----
+= Multicast and some random thoughts
+:hp-tags: Rant, Rant
 
 So I am a complete noob when it comes to multicast and recently I have been hearing about it more and more. I know it's been out there since the dawn of time but I simply thought it was a way of broadcasting video across the network. WRONG. So for those who don't know, and correct me if I am wrong, a computer or device sends out a multicast packet headed for a 244.X.X.X and just like a broadcast packet (255.255.255.255) it gets heard by everyone. Also like a broadcast packet, it falls within the broadcast boundary.  
   

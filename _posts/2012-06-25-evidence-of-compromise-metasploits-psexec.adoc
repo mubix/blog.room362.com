@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2012-06-25 18:27:18+00:00
-layout: post
-title: Evidence of Compromise - Metasploit's PSEXEC
-categories:
-- incident response
-- psexec
----
+= Evidence of Compromise - Metasploit's PSEXEC
+:hp-tags: incident response, psexec
 
 Was messing with the Windows service binaries in Metasploit today and I noticed something unique I hadn't noticed before. For the PSEXEC module, the service name (actually just the display name, 'service name' is random) always started with an uppercase 'M'.
 

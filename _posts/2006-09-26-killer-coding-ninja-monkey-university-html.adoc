@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2006-09-26 03:06:33+00:00
-layout: post
-slug: 2006926killer-coding-ninja-monkey-university-html
-title: Killer Coding Ninja Monkey University
-wordpress_id: 530
-tags:
-- Uncategorized
----
+= Killer Coding Ninja Monkey University
+:hp-tags: Uncategorized
 
 ![](http://s3.media.squarespace.com/production/438411/4879756/uploads/ninja.jpg)  
   

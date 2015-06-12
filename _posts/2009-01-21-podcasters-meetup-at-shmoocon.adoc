@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-01-21 16:21:58+00:00
-layout: post
-title: Podcasters Meetup at ShmooCon
-categories:
-- podcasting
-- shmoocon
-- cons
----
+= Podcasters Meetup at ShmooCon
+:hp-tags: podcasting, shmoocon, cons
 
 More information can be found at [http://www.podcastersmeetup.com/](http://www.podcastersmeetup.com/)  
   

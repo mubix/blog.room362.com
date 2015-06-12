@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-12-15 04:39:09+00:00
-layout: post
-title: Burp Suite v1.2 Released
-categories:
-- burp
-- releases
----
+= Burp Suite v1.2 Released
+:hp-tags: burp, releases
 
  It’s official Burp Suite 1.2 is officially released to the masses. It includes a whole host of new features. Mainly (the ones spoke of in the [blog post about the release](http://blog.portswigger.net/2008/12/burp-suite-v12-released.html)):  
 

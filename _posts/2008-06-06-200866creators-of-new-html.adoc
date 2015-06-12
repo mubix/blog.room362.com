@@ -1,16 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-06-06 03:47:00+00:00
-layout: post
-slug: 200866creators-of-new-html
-title: Creators of New
-wordpress_id: 458
-categories:
-- Rant
-tags:
-- Rant
----
+= Creators of New
+:hp-tags: Rant, Rant
 
 What happens when the lights go out. Power is gone and all you have left is your thoughts and a laptop that’s battery is quickly dieing? You write. Movies will take up too much power and it’s too dark to read so you write. What do you write about, does it really matter? You write.  
   

@@ -1,13 +1,4 @@
----
-author: mubix
-comments: true
-date: 2007-08-22 12:17:04+00:00
-layout: post
-slug: 2007822how-to-beat-carnival-games-html
-title: How to beat carnival games!
-wordpress_id: 494
-tags:
-- Uncategorized
----
+= How to beat carnival games!
+:hp-tags: Uncategorized
 
 <p>I know this isn't tech related but if you have ever just been frustrated with not winning, this just might give you the edge you need.  <a href="http://www.blifaloo.com/info/beat-carnival-games.php">http://www.blifaloo.com/info/beat-carnival-games.php</a></p>

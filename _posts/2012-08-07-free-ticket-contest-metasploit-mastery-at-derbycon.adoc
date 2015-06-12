@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2012-08-07 21:24:28+00:00
-layout: post
-title: Free Ticket Contest - Metasploit Mastery at DerbyCon
-categories:
-- derbycon
-- training
-- cons
----
+= Free Ticket Contest - Metasploit Mastery at DerbyCon
+:hp-tags: derbycon, training, cons
 
 Egypt and I have decided to give away a spot in our training event at DerbyCon. This won’t come easy though, you have to submit an essay to us with one of the following topics:  
   

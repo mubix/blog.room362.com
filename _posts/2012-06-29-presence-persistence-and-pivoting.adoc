@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2012-06-29 23:33:56+00:00
-layout: post
-title: Presence, Persistence, and Pivoting
-categories:
-- methodology
----
+= Presence, Persistence, and Pivoting
+:hp-tags: methodology
 
 Everyone does things differently, and explaining what goes through an attackers head when they get a shell is virtually impossible and even more so to generalize into a methodology, but I’ve tried to do that with the “3 ‘P’s of Post Exploitation” and they are in a certain order for a reason but certainly up to circumstance to what order is best.
 

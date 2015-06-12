@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-03-02 19:24:23+00:00
-layout: post
-title: Metasploit heart's Microsoft
-categories:
-- iexpress
-- metasploit
----
+= Metasploit heart's Microsoft
+:hp-tags: iexpress, metasploit
 
 <iframe src="//player.vimeo.com/video/3440084" width="500" height="361" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/3440084">Hiding Meterpreter with IExpress</a> from <a href="http://vimeo.com/mubix">mubix</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
   

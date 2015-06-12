@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2010-06-01 01:11:18+00:00
-layout: post
-title: A very important link...
-categories:
-- internet
----
+= A very important link...
+:hp-tags: internet
 
 Normally I save links for my "Mubix Links" blog to keep the clutter down on this one, but I think this is one that I would like to highlight as important. The NFO, credits and summary to this copyrighted video is what I wish to highlight.
 

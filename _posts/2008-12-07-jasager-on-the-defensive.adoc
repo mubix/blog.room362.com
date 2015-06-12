@@ -1,12 +1,5 @@
----
-author: post_break
-comments: true
-date: 2008-12-07 03:35:00+00:00
-layout: post
-title: 'Jasager: On the Defensive'
-categories:
-- guest posts
----
+= 'Jasager: On the Defensive'
+:hp-tags: guest posts
 
 Guest Article By: Ryan Pfleghaar ([post_break](http://twitter.com/post_break)) of [iamthekiller.net](http://iamthekiller.net/)  
 

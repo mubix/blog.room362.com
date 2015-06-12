@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-06-26 05:45:08+00:00
-layout: post
-title: Metasploit Framework as a Payload
-categories:
-- metasploit
-- meterpreter
----
+= Metasploit Framework as a Payload
+:hp-tags: metasploit, meterpreter
 
 Well, sorta…  
   

@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-03-09 22:03:27+00:00
-layout: post
-title: Metasploit <3s Microsoft
-categories:
-- iexpress
-- metasploit
----
+= Metasploit <3s Microsoft
+:hp-tags: iexpress, metasploit
 
 Update to post: [Metasploit Heart's Microsoft](/blog/2009/03/02/metasploit-hearts-microsoft/)  
   

@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2012-10-24 15:03:58+00:00
-layout: post
-title: lm2ntlm with John the Ripper
-categories:
-- cracking
-- jtr
----
+= lm2ntlm with John the Ripper
+:hp-tags: cracking, jtr
 
 Since I didn't see any documentation bringing how to take an LM hash that you've cracked and convert it to the NTLM equivalent all in one place. And I google how to do it almost every time. I wanted to put all these links in one place and remember how to do it for john. Go-go-gadget blog-notes.
 

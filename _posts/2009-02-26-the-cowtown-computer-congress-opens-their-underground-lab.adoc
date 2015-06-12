@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-02-26 18:09:44+00:00
-layout: post
-title: The Cowtown Computer Congress Opens Their Underground Lab
-categories:
-- ccckc
-- hacker spaces
-- press release
----
+= The Cowtown Computer Congress Opens Their Underground Lab
+:hp-tags: ccckc, hacker spaces, press release
 
 **Official Press Release**:   
 

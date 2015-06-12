@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-09-07 20:22:33+00:00
-layout: post
-title: Notepad is a virus
-categories:
-- av
----
+= Notepad is a virus
+:hp-tags: av
 
 Original Article: [http://sunbeltblog.blogspot.com/2008/09/how-to-make-notepadexe-malicious-file.html](http://sunbeltblog.blogspot.com/2008/09/how-to-make-notepadexe-malicious-file.html) 
 

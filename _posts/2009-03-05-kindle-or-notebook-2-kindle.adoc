@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-03-05 20:19:12+00:00
-layout: post
-title: 2 Kindle or Not(ebook) 2 Kindle
-categories:
-- rant
-- kindle
----
+= 2 Kindle or Not(ebook) 2 Kindle
+:hp-tags: rant, kindle
 
 Recently I have been debating on whether to get a Netbook or the Kindle 2. (I am only in this debate because my lovely wife decided to buy a table and chairs, for the house. There is no winning when they buy things for 'the house' or 'the kids'). 
 

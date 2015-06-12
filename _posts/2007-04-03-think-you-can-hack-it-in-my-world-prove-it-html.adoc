@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-04-03 11:07:42+00:00
-layout: post
-slug: 200743think-you-can-hack-it-in-my-world-prove-it-html
-title: Think you can hack it in my world? Prove it.
-wordpress_id: 522
-tags:
-- Uncategorized
----
+= Think you can hack it in my world? Prove it.
+:hp-tags: Uncategorized
 
 The contest that won two "hackers" PS3s at ShmooCon is now open to the public. I found this post on http://hkashfi.blogspot.com/index.html
 

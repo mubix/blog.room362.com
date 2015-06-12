@@ -1,11 +1,5 @@
----
-layout: post
-title: "Alive Again"
-date: 2014-01-09 22:42:14 -0500
-comments: true
-categories: 
-- rant
----
+= "Alive Again"
+:hp-tags: rant
 
 I've taken a rather long hiatus from blogging. This is mostly because I was fed up with the blogging platform that I had (Squarespace) and didn't really have any alternatives that met all of the features I wanted. 
 

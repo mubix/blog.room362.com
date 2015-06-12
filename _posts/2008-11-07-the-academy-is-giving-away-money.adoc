@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-11-07 15:47:54+00:00
-layout: post
-title: The Academy is giving away money!
-categories:
-- internet
-- hfc
-- theacademy
----
+= The Academy is giving away money!
+:hp-tags: internet, hfc, theacademy
 
 Ok, it's not to you, but it is to a good cause. Here is their blurb:
 

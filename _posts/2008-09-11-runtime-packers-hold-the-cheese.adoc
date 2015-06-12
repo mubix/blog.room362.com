@@ -1,12 +1,5 @@
----
-author: secshoggoth
-comments: true
-date: 2008-09-11 03:30:00+00:00
-layout: post
-title: Runtime Packers - hold the cheese
-categories:
-- packers
----
+= Runtime Packers - hold the cheese
+:hp-tags: packers
 
 ![](/images/postimages/brett-favre-playoff-28.jpg)  
   

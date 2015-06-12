@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-06-01 03:34:00+00:00
-layout: post
-slug: 200861shmoocon-2008-videos-hit-the-shelves-html
-title: ShmooCon 2008 Videos Hit the Shelves
-wordpress_id: 459
-tags:
-- Uncategorized
----
+= ShmooCon 2008 Videos Hit the Shelves
+:hp-tags: Uncategorized
 
 The videos from ShmooCon 2008 have hit the shelves. Go download them at:  
   

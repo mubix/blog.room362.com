@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-11-18 16:58:00+00:00
-layout: post
-title: A Simplified Astaro UTM now FREE to businesses
-categories:
-- news
----
+= A Simplified Astaro UTM now FREE to businesses
+:hp-tags: news
 
 Disclaimer: I was given a demo license of the new free business product to break/review. No money has traded hands. This is my brutally honest opinion of the product.
 

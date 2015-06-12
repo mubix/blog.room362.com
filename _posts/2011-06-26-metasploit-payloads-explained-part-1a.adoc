@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-06-26 17:47:23+00:00
-layout: post
-title: Metasploit Payloads Explained - Part 1a
-categories:
-- metasploit
-- payloads
----
+= Metasploit Payloads Explained - Part 1a
+:hp-tags: metasploit, payloads
 
 In Part 1 I gave an example I used at CCDC with the single 'windows/download_exec'. One of the down sides of that payload is you need to host the binary, giving up an IP/host that can be blocked. Well, Google recently (a couple months ago) allowed people to upload 'anything' to Google docs. And you can then share these files publicly. Probably already see where I'm going with this, but here are some steps to get it going, first upload your malicious binary (not the dropper 'windows/download_exec', but the file it needs to execute). I assume you don't need a picture to find the upload button ;-)
 

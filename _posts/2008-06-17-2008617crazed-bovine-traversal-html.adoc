@@ -1,16 +1,5 @@
----
-author: mubix
-comments: true
-date: 2008-06-17 13:17:16+00:00
-layout: post
-slug: 2008617crazed-bovine-traversal-html
-title: Crazed Bovine Traversal
-wordpress_id: 453
-categories:
-- Hacking
-tags:
-- Hacking
----
+= Crazed Bovine Traversal
+:hp-tags: Hacking, Hacking
 
 So I was at a ‘talk’ recently where the topic was geared toward technically inclined, but the whole talk was geared toward managers and low level IT bubbas, if you will. But as I sat there stabbing myself in the eye with my pencil (hence the mad cow reference) I can up with some hair brained ideas. Now, some of these ideas might already be out there or thought of, and I haven’t googled any of them, just wanted to write them down somewhere for people to comment on.  
   

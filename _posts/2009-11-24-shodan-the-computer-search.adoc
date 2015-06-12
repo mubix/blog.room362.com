@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-11-24 14:21:41+00:00
-layout: post
-title: SHODAN The Computer Search
-categories:
-- infogathering
-- internet
----
+= SHODAN The Computer Search
+:hp-tags: infogathering, internet
 
 If you haven't seen it all over twitter yet, [achillean](http://twitter.com/achillean) released the "beta" of [SHODAN](http://shodan.surtri.com/) yesterday. It's a search engine of basically a nmap of the internet (ports 21, 22, 23 or 80 so far).
 

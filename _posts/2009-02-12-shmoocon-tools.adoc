@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-02-12 15:58:59+00:00
-layout: post
-title: ShmooCon Tools
-categories:
-- shmoocon
-- tools
----
+= ShmooCon Tools
+:hp-tags: shmoocon, tools
 
 It figures that someone who didn’t go actually made a list of tools. (Probably because they didn’t have to suffer the ShmooFlu)  
   

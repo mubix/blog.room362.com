@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2007-09-27 03:54:27+00:00
-layout: post
-slug: 2007927htc-kaiser-gets-us-release-date-html
-title: HTC Kaiser gets US release date
-wordpress_id: 490
-tags:
-- Uncategorized
----
+= HTC Kaiser gets US release date
+:hp-tags: Uncategorized
 
 An ‘Emperor’ among phones, a release date is set and it’s coming soon. What next? An iPhone Nano?  
   

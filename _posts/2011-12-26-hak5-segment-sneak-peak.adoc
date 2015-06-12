@@ -1,15 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-12-26 06:06:20+00:00
-layout: post
-title: Hak5 Segment Sneak Peak
-categories:
-- hak5
-- releases
-- clipboard
-- autoit
----
+= Hak5 Segment Sneak Peak
+:hp-tags: hak5, releases, clipboard, autoit
 
 Since it's Christmas and all, I thought I'd post the code snippet from my Hak5 segment a bit early:
 

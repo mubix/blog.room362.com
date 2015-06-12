@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-12-01 14:11:49+00:00
-layout: post
-title: First day of a No Starch Christmas - Winner
-categories:
-- nostarch
-- internet
----
+= First day of a No Starch Christmas - Winner
+:hp-tags: nostarch, internet
 
 Our first day of No Starch winner is Russ with Room 362 right next to the Fire Hose ;-)
 

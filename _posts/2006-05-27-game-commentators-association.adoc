@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2006-05-27 15:21:29+00:00
-layout: post
-title: Game Commentator’s Association
-categories:
-- gaming
----
+= Game Commentator’s Association
+:hp-tags: gaming
 
 The Game Commentator's Association (GCA) has be graciously asked to host the Hak.5 Counter-Strike: Source tournament tonight. We accepted and will be starting our commentary at the start of the game. More information can be found on the [Hak5](http://www.hak5.org) website and below.  
 
@@ -24,5 +17,3 @@ _The stream will go up ~30 minutes prior with just music._
 Hak.5 LAN parties powered by ![](/images/postimages/200605_gca_2.gif)
   
 As this is the first event that is being hosted by the GCA we welcome feed back. We are also looking for a few good commentators to fill the GCA ranks. If you are interested drop me a line in the IRC channel at [Hak5 IRC Server](irc://irc.hak5.org) - irc.hak5.org #hak5 or email me.  
-  
-jd.mubix

@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2009-02-03 18:35:00+00:00
-layout: post
-title: Ear Trumpet
-categories:
-- robin wood
-- tools
-- egress
----
+= Ear Trumpet
+:hp-tags: robin wood, tools, egress
 
 I have had the idea for this app for a long time, expressed it a few times, but never really pushed, and I sure that I am not the only one who has thought of or wanted an app like [Ear Trumpet](http://www.digininja.org/ear_trumpet.php) by [Robin Wood](http://www.digininja.org/). Well on Jan 21st Sam Buhlig posted to the [PaulDotCom mailing list ](http://mail.pauldotcom.com/cgi-bin/mailman/listinfo/pauldotcom) asking for an app to test a firewall that would answer on all ports. A great discussion spawned off and a couple guys (Dimitrios Kapsalis, and Robin Wood) started work on it.  
   

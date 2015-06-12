@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2011-01-27 15:41:10+00:00
-layout: post
-title: Insider Threat Testing
-categories:
-- rant
----
+= Insider Threat Testing
+:hp-tags: rant
 
 ![](/images/postimages/201101_insider_1.png)
 
