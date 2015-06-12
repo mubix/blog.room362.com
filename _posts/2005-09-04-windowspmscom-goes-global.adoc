@@ -1,11 +1,4 @@
----
-author: mubix
-comments: true
-date: 2005-09-04 04:09:00+00:00
-layout: post
-title: WindowsPMS.com goes GLOBAL
-categories:
-- internet
----
+= WindowsPMS.com goes GLOBAL
+:hp-tags: internet
 
 This is just the night for new web sites. [WindowsPMS](http://www.windowspms.com/) has just gone up and you can check out the site at [http://www.windowspms.com/](http://www.windowspms.com/) or using the navigation button under sites on the left.

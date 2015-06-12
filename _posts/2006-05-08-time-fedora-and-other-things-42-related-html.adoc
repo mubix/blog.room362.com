@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2006-05-08 05:00:00+00:00
-layout: post
-title: Time, Fedora, and other things 42 related.
-categories:
-- tv
-- podcasts
----
+= Time, Fedora, and other things 42 related.
+:hp-tags: tv, podcasts
 
 So, I haven’t posted in a while. Which is due to supreme work related stresses.... no, actually just lazyness, but atleast I am a bit better than say, oh [Darren Kitchen](http://darrenkitchen.net), (April 17th) or [Wess Tobler](http://dankiswess.wordpress.com/) (December 11th). Ok, ya, my last post was on the 6th of April and TECHNICALLY I don’t beat Darren’s but, I actually post something, he posts videos... pfffft. That isn’t a blog. ;-) You know I love you D. Anyways, in other news, I believe I will be hitting the 500+ pictures mark of my son soon. It’s crazy. Oh, and I installed [Fedora Core 5](http://fedora.redhat.com/) on my laptop to test it out. I’ll tell you guys how it’s going.
 

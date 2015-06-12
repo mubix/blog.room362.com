@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2005-09-03 22:28:07+00:00
-layout: post
-title: Badfoo.net
-categories:
-- internet
----
+= Badfoo.net
+:hp-tags: internet
 
 #### **Yes that is right, you heard it here first! [BADFOO.NET](http://www.badfoo.net/) is up!**
 

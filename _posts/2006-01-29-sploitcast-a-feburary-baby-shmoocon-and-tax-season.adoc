@@ -1,15 +1,5 @@
----
-author: mubix
-comments: true
-date: 2006-01-29 02:11:55+00:00
-layout: post
-title: SploitCast, a Feburary baby, ShmooCon and Tax season
-categories:
-- podcasts
-- sploitcast
-- shmoocon
-- cons
----
+= SploitCast, a Feburary baby, ShmooCon and Tax season
+:hp-tags: podcasts, sploitcast, shmoocon, cons
 
 Geez. I never have time anymore to put something on this darn thing. I think I am going to stop apologizing for how long it takes me to post, because it is quite quickly becoming the norm. So anyways, since my last post, I have been to [ShmooCon '06](http://www.shmoocon.org)   
   

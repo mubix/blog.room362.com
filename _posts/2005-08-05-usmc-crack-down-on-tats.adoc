@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2005-08-05 14:56:05+00:00
-layout: post
-title: 'USMC: Crack down on Tats'
-categories:
-- ashleypark
----
+= 'USMC: Crack down on Tats'
+:hp-tags: ashleypark
 
 **(This is a joke)** IN BREAKING NEWS:  The Marine Corps has adopted the no Tat policy. In this bold move, it is Dishonorably discharging 80% of it's current personnel due to this new "Clean or Out" program.  ![](http://www.pcrdist.com/graphics/t-shirts/tatoo-logo.gif)
 

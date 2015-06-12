@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2005-08-01 04:30:19+00:00
-layout: post
-title: Defcon Resolutions
-categories:
-- defcon
-- cons
----
+= Defcon Resolutions
+:hp-tags: defcon, cons
 
 To celebrate the close of DefCon 13 here are my...  
   

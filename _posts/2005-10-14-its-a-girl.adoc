@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2005-10-14 03:22:43+00:00
-layout: post
-title: It's a Girl!
-categories:
-- friends
----
+= It's a Girl!
+:hp-tags: friends
 
 Duder,  
 CONGRATULATIONS!  

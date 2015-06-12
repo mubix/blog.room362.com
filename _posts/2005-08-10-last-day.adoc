@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2005-08-10 20:38:52+00:00
-layout: post
-title: Last Day!!
-categories: 
-- rant
----
+= Last Day!!
+:hp-tags: rant
 
 Today is my last day on a looooog.... 12 hour shift work week. Right now I am hating my life. (Just because of work). It is so busy that I actually have to take a second of it to settle down and moan and complain. So here it is:  
   

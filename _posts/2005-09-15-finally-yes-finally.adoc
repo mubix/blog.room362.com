@@ -1,11 +1,4 @@
----
-author: mubix
-comments: true
-date: 2005-09-15 14:22:03+00:00
-layout: post
-title: Finally.. yes finally!
-categories:
-- internet
----
+= Finally.. yes finally!
+:hp-tags: internet
 
 We are back online! Yes, much to my reporters anguish they are back on the beat. They whined and complained. I think they just wanted another week off is all. Anyways, the news will start pouring back in once I kick a couple butts to the curb. I would like to take this opportunity to welcome a couple new faces to the R362 Approved community. [BADFOO.NET](http://www.badfoo.net) and [SBHIDEOUT.COM](http://www.sbhideout.com) . They have rightfully taken there place among legends. 

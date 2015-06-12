@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2005-10-07 10:27:12+00:00
-layout: post
-title: Hackers are STUCK!
-categories:
-- backtrack
-- livecd
----
+= Hackers are STUCK!
+:hp-tags: backtrack, livecd
 
 Security oriented Linux Live CD "WHAX" is supposedly merging with Auditor.   
 

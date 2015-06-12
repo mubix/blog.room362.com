@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2005-08-02 01:17:10+00:00
-layout: post
-title: Toilet Peril
-categories:
-- work
----
+= Toilet Peril
+:hp-tags: work
 
 One should never be made to make a decision such as the one I'm about to share with you:  Where I work, there are two Male restrooms. One is downstairs, still within 'hurry' distance, and the other is just across the hall. You are probably thinking, 'Where is the decision in that?'. Well this is where it gets interesting. Both are alright for number 1 traffic. No big deal, in and out. But number 2 is a different story. Here are the stats on both restrooms:
 

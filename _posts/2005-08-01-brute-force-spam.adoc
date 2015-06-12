@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2005-08-01 05:52:18+00:00
-layout: post
-title: Brute Force Spam
-categories:
-- internet
----
+= Brute Force Spam
+:hp-tags: internet
 
 Here is the source of the email I got (new hacking sytle, brute force spamming) :  
 

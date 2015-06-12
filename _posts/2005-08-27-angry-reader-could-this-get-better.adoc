@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2005-08-27 22:21:19+00:00
-layout: post
-title: Angry Reader? Could this get better?
-categories:
-- ashleypark
----
+= Angry Reader? Could this get better?
+:hp-tags: ashleypark
 
 **I sent her this today:**  
   

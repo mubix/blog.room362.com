@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2005-10-09 07:19:00+00:00
-layout: post
-title: Whitedust.net
-categories:
-- sharedlinks
----
+= Whitedust.net
+:hp-tags: sharedlinks
 
 For those of you who do not know [Whitedust.net](http://whitedust.net) is the leading independent ‘hacker’ portal. Yes that’s right! All of you Skiddies out there, you may not know who you are but WE DO, this site is NOT for you. Now that that disclaimer is over:  
   

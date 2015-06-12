@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2005-09-06 22:26:27+00:00
-layout: post
-title: R362 Approved
-categories:
-- internet
----
+= R362 Approved
+:hp-tags: internet
 
 It’s a big rave across the internet , so Room362.Com is jumping on the band wagon. (So I’m about a year late, give me a break)  
   

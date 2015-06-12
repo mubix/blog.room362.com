@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2005-08-31 21:55:00+00:00
-layout: post
-title: ASHEE has moved - Updated
-categories:
-- ashleypark
----
+= ASHEE has moved - Updated
+:hp-tags: ashleypark
 
 (Updated because people were having a hard time finding where I had put the site) 
 

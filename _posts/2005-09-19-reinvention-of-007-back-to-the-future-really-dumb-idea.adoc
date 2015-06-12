@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2005-09-19 22:51:03+00:00
-layout: post
-title: Reinvention of 007 + Back to the future = Really dumb idea
-categories:
-- movies
-- rant
----
+= Reinvention of 007 + Back to the future = Really dumb idea
+:hp-tags: movies, rant
 
 **Update** Some nice digg user decided to comment and inform me that this was the FIRST Bond book. Basically Bond before the toys. hmm, nope, still don’t like the idea.  
   

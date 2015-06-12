@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2005-08-23 02:20:36+00:00
-layout: post
-title: CIA / Slient_Bob Case update.
-categories:
-- friends
----
+= CIA / Slient_Bob Case update.
+:hp-tags: friends
 
 Well there is reason behind it. I was following up on the Silent_Bob case. Nothing to report yet, but I am following up on some great leads:  
 

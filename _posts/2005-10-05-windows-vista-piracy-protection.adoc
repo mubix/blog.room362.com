@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2005-10-05 22:48:43+00:00
-layout: post
-title: 'Windows Vista: Piracy protection'
-categories:
-- windows
----
+= 'Windows Vista: Piracy protection'
+:hp-tags: windows
 
 I have stolen a sneak peek at one of the errors that have ALREADY come up in Microsoft Windows Vista.  
   

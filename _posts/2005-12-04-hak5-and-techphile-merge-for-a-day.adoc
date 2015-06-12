@@ -1,14 +1,5 @@
----
-author: mubix
-comments: true
-date: 2005-12-04 17:20:32+00:00
-layout: post
-title: Hak.5 and techPhile merge for a day.
-categories:
-- hak5
-- techphile
-- podcasts
----
+= Hak.5 and techPhile merge for a day.
+:hp-tags: hak5, techphile, podcasts
 
 [![](/images/postimages/hak5_logo_small.gif)](http://www.hak5.org)
 

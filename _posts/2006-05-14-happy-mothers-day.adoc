@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2006-05-14 11:59:05+00:00
-layout: post
-title: Happy Mother's Day
-categories:
-- family
----
+= Happy Mother's Day
+:hp-tags: family
 
 ![](/images/postimages/first_mothers_day.jpg)
 

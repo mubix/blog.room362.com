@@ -1,11 +1,4 @@
----
-author: mubix
-comments: true
-date: 2005-11-14 05:00:00+00:00
-layout: post
-title: Brandon's Birthday
-categories:
-- brandon
----
+= Brandon's Birthday
+:hp-tags: brandon
 
 Today was Brandon's first birthday that he has missed. I hope that he knows that I love him very much. I have just written this on the 30th and back dated it. I miss my brother.

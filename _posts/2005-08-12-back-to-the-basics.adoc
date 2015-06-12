@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2005-08-12 04:11:00+00:00
-layout: post
-title: Back to the Basics
-categories:
-- rant
-- gaming
----
+= Back to the Basics
+:hp-tags: rant, gaming
 
 Age of Empires II - Age of Kings. That is a great game. It has something that not a lot of games have these days. Which is replay value. Once you beat a game, that is it. No more fun. You know all the secrets.
 

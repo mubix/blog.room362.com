@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2005-08-26 05:00:00+00:00
-layout: post
-title: Angry Reader? Keep it going?
-categories:
-- ashleypark
----
+= Angry Reader? Keep it going?
+:hp-tags: ashleypark
 
 Should I respond and keep it going? Give me your comments.. or should I create a poll? If you want me to keep it going, should I:
 

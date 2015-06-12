@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2005-08-16 11:46:18+00:00
-layout: post
-title: New "Advanced" Error system for Windows Vista
-categories:
-- rant
----
+= New "Advanced" Error system for Windows Vista
+:hp-tags: rant
 
 ![](/images/postimages/200508_vista_1.png) 
   

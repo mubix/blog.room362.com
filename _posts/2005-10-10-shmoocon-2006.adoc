@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2005-10-10 09:14:57+00:00
-layout: post
-title: ShmooCon 2006
-categories:
-- cons
-- shmoocon
----
+= ShmooCon 2006
+:hp-tags: cons, shmoocon
 
 I did a search on [Digg.com](http://digg.com) and was suprised to see that not a soul has written about ShmooCon 2006. I guess all you west coasters only care about [DefCon](http://www.defcon.org/). That is discrimination and WE DON’T HAVE TO TAKE IT!. _Back to reality_. Well if you don’t know [ShmooCon](http://www.shmoocon.org/) is basically the DefCon for the east coast and is being held in Washington D.C. . Registration is limited, unlike DefCon, so hurry and whip out those [Paypal](http://www.paypal.com/) accounts. If you had registered before October 1st then it would have only cost you $75. Blame everyone else for not digging it. Here is a quick like to registration to save you lazy people out there a click:  
   

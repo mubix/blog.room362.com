@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2005-08-25 04:11:13+00:00
-layout: post
-title: Angry Reader?
-categories:
-- ashleypark
----
+= Angry Reader?
+:hp-tags: ashleypark
 
 **UPDATE:** I just looked at your ‘referal’ page [http://search.yahoo.com/search?p=www.usmc.com&fr=ieas-dns](http://search.yahoo.com/search?p=www.usmc.com&fr=ieas-dns)  
 

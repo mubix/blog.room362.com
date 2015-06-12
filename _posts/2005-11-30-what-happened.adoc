@@ -1,13 +1,5 @@
----
-author: mubix
-comments: true
-date: 2005-11-30 04:58:40+00:00
-layout: post
-title: What happened!?
-categories:
-- techphile
-- podcasts
----
+= What happened!?
+:hp-tags: techphile, podcasts
 
 Well if you were wondering about me, I didn't die. I am working on a super secret project for Frank Linhares of [techPhile.ca](http://www.techphile.ca)
   

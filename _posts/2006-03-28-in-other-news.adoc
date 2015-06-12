@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2006-03-28 19:56:17+00:00
-layout: post
-title: In other news
-categories:
-- internet
----
+= In other news
+:hp-tags: internet
 
 Pandora is a cool place where you can go and listen to music and it suggests music for you to listen to based off an indepth engine of sorting. Everyone on the podcasting planet has covered this awesome. I don’t know what to call it, tool, application, website ,’thing’. After watching Hak5’s episode showing off time spacing Pandora a while back, a idea started festering in my subconsious. Well, driving home today, it finally surfaced. Imagine a radio station like that. Something like Pandora that you could ‘tune’ into. I just thought I would put it down before someone else came up the idea. So let me spell it out bluntly. I purpose a radio station that you sign up for like XM radio, and you start with a couple channels that you can either personally or as a family start with a base idea, like Country, Top 40, Techno, Hard Rock, Classic Rock, or Children. And then, through a small mic in the station, say yes or no, or push a button, and it starts tuning the station to what it thinks you would like, just like Pandora. Say if you missed a song and you didn’t say yes or now, you can go back, forward, whatever.  
   

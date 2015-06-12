@@ -1,12 +1,5 @@
----
-author: mubix
-comments: true
-date: 2005-08-29 17:23:02+00:00
-layout: post
-title: Angry Reader? And the response...
-categories:
-- ashleypark
----
+= Angry Reader? And the response...
+:hp-tags: ashleypark
 
 **And here is what she sent me back:**  
   
