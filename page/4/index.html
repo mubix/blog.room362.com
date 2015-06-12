@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <title>Room362.com</title>
-    <meta name="description" content="" />
+    <meta name="description" content="Blathering of a security addict" />
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -73,7 +73,7 @@
             
             <h1 class="blog-title">Room362.com</h1>
             <hr>
-            <p class="blog-description"></p>
+            <p class="blog-description">Blathering of a security addict</p>
             <div class="blog-network">
 <!--                 <a href="#" class="fi-social-pinterest"></a>
                 <a href="#" class="fi-social-linkedin"></a>
@@ -107,6 +107,21 @@
 
 
 <main class="content" role="main">
+
+
+    <article class="post tag-cli tag-dig tag-dns">
+        <header class="post-header">
+            <span class="post-meta"><time datetime="2014-01-29">29 Jan 2014</time> </span>
+            <h2 class="post-title"><a href="http://blog.room362.com/2014/01/29/Hostname-bruteforcing-on-the-cheap.html">Hostname bruteforcing on the cheap</a></h2>
+
+        </header>
+        <section class="post-excerpt">
+            <p>Quick update: As @MikeDamm points out, xargs has a -P option that can do the same thing I&#8217;m using parallel for. If you have a supported version of xargs you can use -P 0 to do the same thing as -j0 with parallel, but if your version doesn&#8217;t support the 0 you can simply use the same number parallel uses ala: cat subdomains.txt | xargs -P 122 -I subdomain dig +noall subdomain.microsoft.&hellip;</p>
+        </section>
+        <a class="button read-more right small" href="http://blog.room362.com/2014/01/29/Hostname-bruteforcing-on-the-cheap.html">Read more</a>
+        <aside class="tags fi-pricetag-multiple">Posted on <a href="http://blog.room362.com/tag/cli">cli</a>, <a href="http://blog.room362.com/tag/dig"> dig</a>, <a href="http://blog.room362.com/tag/dns"> dns</a></aside>
+        <div class="clearfix"></div>
+    </article>
 
 
     <article class="post tag-shmoocon tag-cons tag-defense tag-java tag-emet">
