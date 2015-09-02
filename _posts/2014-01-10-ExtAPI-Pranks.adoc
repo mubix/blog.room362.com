@@ -1,5 +1,5 @@
 = ExtAPI Pranks
-:hp-tags: 
+:hp-tags: code, meterpreter, extapi
 
 Since I've been gone, OJ has released the ExtAPI (Extended API) for Meterpreter. This has some pretty amazing functionality. You can find https://twitter.com/TheColonial[OJ]'s write up on it and more amazing things he did in http://buffered.io/posts/3-months-of-meterpreter/[3 months of meterpreter] and on the https://community.rapid7.com/community/metasploit/blog/2013/12/12/weekly-metasploit-update[Metasploit blog].
 
