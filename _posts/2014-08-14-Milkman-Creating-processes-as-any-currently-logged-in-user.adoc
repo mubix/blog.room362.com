@@ -8,7 +8,6 @@ Here is a blog post that I made [about setting the proxies for SYSTEM](/blog/201
 Along comes `RunAsCurrentUser-2.0.3.1.exe` I found this gem by messing up a search on google for RunAsUser. Found it [on this IBM support post](https://www-304.ibm.com/support/docview.wss?uid=swg21506033).
 
 ![](/images/postimages/201408_ibm_runascurrentuser.png)
-TODO: Update image
 
 Link to direct download: http://software.bigfix.com/download/bes/util/RunAsCurrentUser-2.0.3.1.exe
 
